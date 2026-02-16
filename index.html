@@ -19,7 +19,7 @@
     }
     .logo { width: 90px; height: auto; justify-self:center; }
 
-    /* Texto superior un poco más grande */
+    /* Texto superior */
     .header-text { text-align:center; }
     .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
     .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
@@ -31,28 +31,40 @@
       .header-text { margin: 6px 0; }
     }
 
-    /* Título principal */
+    /* Título */
     h1 { margin: 12px 0 6px; font-size: 26px; color:#2c7be5; }
     .subtitulo { margin: 0 0 18px; color:#333; }
 
     .fila { margin: 14px 0; }
     select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
-
-    /* Botón general */
     button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
     button:hover { background:#1a5fc4; }
 
-    /* Estado (modo/pregunta/aciertos) en verde UNED y más grande */
+    /* Estado (modo/pregunta/aciertos) */
     .estado {
       margin-top:12px;
-      font-size: 16px;           /* un poco más grande */
+      font-size: 16px;
       font-weight: 700;
-      color: #0B6E4F;            /* verde institucional aproximado UNED */
+      color: #0B6E4F; /* verde institucional aproximado */
     }
 
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Respuestas: todas iguales en el azul original */
+    /* Pregunta: centrada, mayor, verde */
+    #enunciado {
+      text-align:center;
+      font-size: 20px;
+      color:#0B6E4F;
+      margin: 10px 0 16px;
+    }
+
+    /* Opciones: más estrechas y centradas */
+    #opciones {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Respuestas: mismo azul */
     .opcion {
       display:block;
       width:100%;
@@ -68,7 +80,14 @@
     .opcion:hover { background:#1a5fc4; }
     .opcion:disabled { opacity: 0.75; cursor: not-allowed; }
 
-    .feedback { margin-top: 12px; padding: 12px; border-radius: 8px; display:none; text-align:left; }
+    .feedback {
+      margin: 12px auto 0;
+      padding: 12px;
+      border-radius: 8px;
+      display:none;
+      text-align:left;
+      max-width: 680px;
+    }
     .ok { background:#e8f7ee; border:1px solid #bde5c8; }
     .ko { background:#fdeaea; border:1px solid #f5bcbc; }
 
@@ -78,17 +97,75 @@
     .excelente { background:#d4edda; border:1px solid #c3e6cb; }
     .progreso { background:#f8d7da; border:1px solid #f5c6cb; }
 
+    /* Informe final */
+    .resumen {
+      text-align:left;
+      margin-top: 16px;
+      max-width: 820px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .resumen h3 { margin: 18px 0 8px; }
+    .item {
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:12px;
+      margin:10px 0;
+      background:#fff;
+    }
+    .item .q { font-weight:700; margin-bottom:8px; }
+    .item.ok { border-color:#bde5c8; background:#f1fbf5; }
+    .item.ko { border-color:#f5bcbc; background:#fff3f3; }
+    .item small { color:#555; display:block; margin-top:8px; }
+
     /* Pie */
     .footer {
       margin-top: 22px;
       padding-top: 14px;
-      border-top: 2px solid #9ec5fe; /* línea separadora azul claro */
+      border-top: 2px solid #9ec5fe;
       text-align: left;
       font-size: 13px;
       color: #444;
       line-height: 1.6;
+      position: relative; /* para colocar los logos en esquina inferior derecha */
+      min-height: 140px;  /* reserva espacio para los logos */
     }
     .footer strong { color:#222; }
+
+    /* Bloque logos RATTE + MAPETIC en esquina inferior derecha */
+    .grupos {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: end;
+      text-align: center;
+    }
+    .grupo {
+      width: 78px; /* un pelín más pequeño que el logo UNED (90px) */
+    }
+    .grupo img {
+      width: 78px;
+      height: auto;
+      display: block;
+      margin: 0 auto 6px;
+    }
+    .grupo .caption {
+      font-size: 12px; /* un poco más pequeño que el texto del footer */
+      color: #444;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 600px) {
+      .footer { min-height: 0; }
+      .grupos {
+        position: static;
+        margin-top: 12px;
+        justify-content: start;
+      }
+    }
   </style>
 </head>
 
@@ -97,13 +174,11 @@
 
     <div class="header">
       <img class="logo" src="logo-uned.png" alt="Logo UNED" />
-
       <div class="header-text">
         <p class="linea1">UNED — Grado en Pedagogía</p>
-        <p class="linea2">Asignatura: <strong>Medio, Recursos Didácticos y Tecnología Educativa</strong></p>
+        <p class="linea2">Asignatura: <strong>Medios, Recursos Didácticos y Tecnología Educativa</strong></p>
         <p class="linea3">Herramienta abierta de autoevaluación tipo test</p>
       </div>
-
       <img class="logo" src="logo-libro.png" alt="Logo del libro base" />
     </div>
 
@@ -133,13 +208,23 @@
         “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.
         (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
       </p>
-
       <p>
         <strong>IP:</strong> Esteban Vázquez-Cano.<br>
         <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong>
       </p>
-
       <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
+
+      <!-- Bloque inferior derecho: RATTE + MAPETIC -->
+      <div class="grupos" aria-label="Grupos de investigación e innovación docente">
+        <div class="grupo">
+          <img src="logo-guion-radte.png" alt="Logo grupo de investigación RATTE" />
+          <div class="caption">Grupo de investigación<br><strong>RATTE</strong></div>
+        </div>
+        <div class="grupo">
+          <img src="logo-mape-tic.png" alt="Logo grupo de innovación docente MAPETIC" />
+          <div class="caption">Grupo de innovación docente<br><strong>MAPETIC</strong></div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -154,6 +239,9 @@
     let partida = [];
     let indice = 0;
     let aciertos = 0;
+
+    // Historial para informe final
+    let historial = [];
 
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -258,6 +346,7 @@
 
       indice = 0;
       aciertos = 0;
+      historial = [];
 
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
@@ -307,12 +396,19 @@
       const p = partida[indice];
       const correcta = p.correcta;
 
+      historial.push({
+        pregunta: p.pregunta,
+        opciones: p.opciones,
+        correcta: correcta,
+        elegida: idxElegido,
+        explicacion: p.explicacion || ""
+      });
+
       const botones = document.querySelectorAll("#opciones button");
       botones.forEach(b => b.disabled = true);
 
       const fb = document.getElementById("feedback");
-
-      let esperaMs = 2000; // por defecto, 2s si acierta
+      let esperaMs = 2000;
 
       if (idxElegido === correcta) {
         aciertos++;
@@ -324,13 +420,14 @@
         const exp = (p.explicacion && p.explicacion.trim() !== "")
           ? ("<br><br><em>Explicación:</em> " + p.explicacion)
           : "";
+
+        esperaMs = 10000;
+
         fb.innerHTML =
           "<strong>❌ Respuesta incorrecta.</strong><br>" +
           "La correcta es: <strong>" + textoCorrecto + "</strong>." +
-          exp;
-
-        // Cambio solicitado: 12 segundos para leer cuando falla
-        esperaMs = 12000;
+          exp +
+          "<br><br><small><em>Esta explicación se cerrará después de 10 segundos.</em></small>";
       }
 
       fb.style.display = "block";
@@ -365,11 +462,55 @@
         badgeClase = "badge progreso";
       }
 
+      const correctas = historial.filter(h => h.elegida === h.correcta);
+      const incorrectas = historial.filter(h => h.elegida !== h.correcta);
+
+      function renderItem(h, tipo) {
+        const correctaTxt = h.opciones[h.correcta];
+        const elegidaTxt = h.opciones[h.elegida];
+        const exp = (h.explicacion && h.explicacion.trim() !== "") ? h.explicacion : "Sin explicación registrada.";
+
+        if (tipo === "ok") {
+          return `
+            <div class="item ok">
+              <div class="q">${h.pregunta}</div>
+              <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="item ko">
+            <div class="q">${h.pregunta}</div>
+            <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
+            <div><strong>Respuesta correcta:</strong> ${correctaTxt}</div>
+            <small><em>Explicación:</em> ${exp}</small>
+          </div>
+        `;
+      }
+
+      const bloqueCorrectas = correctas.length
+        ? correctas.map(h => renderItem(h, "ok")).join("")
+        : "<p>No hay respuestas correctas en esta partida.</p>";
+
+      const bloqueIncorrectas = incorrectas.length
+        ? incorrectas.map(h => renderItem(h, "ko")).join("")
+        : "<p>No hay respuestas incorrectas en esta partida.</p>";
+
       panel.innerHTML = `
         <h2>Partida finalizada</h2>
         <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
         <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+
+        <div class="resumen">
+          <h3>Resumen de respuestas correctas</h3>
+          ${bloqueCorrectas}
+
+          <h3>Resumen de respuestas incorrectas (con explicación)</h3>
+          ${bloqueIncorrectas}
+        </div>
+
         <div class="fila" style="margin-top:16px;">
           <button onclick="iniciarPartida()">Jugar otras 10</button>
         </div>
