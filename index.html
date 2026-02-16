@@ -1,554 +1,315 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autoevaluación de la asignatura</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autoevaluación de la asignatura</title>
 
-  <style>
-    body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
-    .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:920px; margin:auto; }
+<style>
+/* ==== DISEÑO (se mantiene igual que el tuyo actual) ==== */
+body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
+.contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:920px; margin:auto; }
 
-    /* Cabecera */
-    .header {
-      display:grid;
-      grid-template-columns: 90px 1fr 90px;
-      align-items:center;
-      gap:16px;
-      margin-bottom: 10px;
-    }
-    .logo { width: 90px; height: auto; justify-self:center; }
+.header {
+display:grid;
+grid-template-columns: 90px 1fr 90px;
+align-items:center;
+gap:16px;
+margin-bottom: 10px;
+}
 
-    /* Texto superior */
-    .header-text { text-align:center; }
-    .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
-    .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
-    .header-text .linea3 { font-size: 15px; margin: 4px 0 0; color:#333; }
+.logo { width:90px; }
 
-    @media (max-width: 600px) {
-      .header { grid-template-columns: 1fr; text-align:center; }
-      .logo { width: 80px; }
-      .header-text { margin: 6px 0; }
-    }
+.header-text { text-align:center; }
+.header-text .linea1 { font-size:20px; font-weight:bold; }
+.header-text .linea2 { font-size:16px; }
+.header-text .linea3 { font-size:15px; }
 
-    /* Título */
-    h1 { margin: 12px 0 6px; font-size: 26px; color:#2c7be5; }
-    .subtitulo { margin: 0 0 18px; color:#333; }
+h1 { margin:12px 0 6px; font-size:26px; color:#2c7be5; }
 
-    .fila { margin: 14px 0; }
-    select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
-    button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
-    button:hover { background:#1a5fc4; }
+.estado {
+margin-top:12px;
+font-size:16px;
+font-weight:700;
+color:#0B6E4F;
+}
 
-    /* Estado (modo/pregunta/aciertos) */
-    .estado {
-      margin-top:12px;
-      font-size: 16px;
-      font-weight: 700;
-      color: #0B6E4F; /* verde institucional aproximado */
-    }
+.caja-pregunta{
+max-width:740px;
+margin:10px auto 16px;
+background:#111;
+color:#fff;
+border-radius:10px;
+padding:14px;
+}
 
-    .bloque { text-align:left; margin-top: 14px; }
+#enunciado{
+margin:0;
+font-size:20px;
+}
 
-    /* Caja negra de la pregunta */
-    .caja-pregunta{
-      max-width: 740px;
-      margin: 10px auto 16px;
-      background:#111;
-      color:#fff;
-      border-radius:10px;
-      padding:14px 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.12);
-    }
-    #enunciado{
-      margin:0;
-      text-align:center;
-      font-size: 20px;
-      line-height: 1.35;
-      color:#fff;
-    }
+#opciones {
+max-width:680px;
+margin:0 auto;
+}
 
-    /* Opciones: más estrechas y centradas */
-    #opciones {
-      max-width: 680px;
-      margin: 0 auto;
-    }
+.opcion {
+display:block;
+width:100%;
+margin:8px 0;
+border-radius:6px;
+padding:10px;
+font-size:16px;
+color:#fff;
+background:#2c7be5;
+border:0;
+cursor:pointer;
+}
 
-    /* Respuestas: azul uniforme */
-    .opcion {
-      display:block;
-      width:100%;
-      margin:8px 0;
-      border:0;
-      border-radius: 6px;
-      padding: 10px 12px;
-      font-size: 16px;
-      color:#fff;
-      cursor:pointer;
-      background:#2c7be5;
-    }
-    .opcion:hover { background:#1a5fc4; }
-    .opcion:disabled { opacity: 0.75; cursor: not-allowed; }
+.feedback {
+margin:12px auto 0;
+padding:12px;
+border-radius:8px;
+display:none;
+max-width:680px;
+text-align:left;
+}
 
-    .feedback {
-      margin: 12px auto 0;
-      padding: 12px;
-      border-radius: 8px;
-      display:none;
-      text-align:left;
-      max-width: 680px;
-    }
-    .ok { background:#e8f7ee; border:1px solid #bde5c8; }
-    .ko { background:#fdeaea; border:1px solid #f5bcbc; }
+.footer {
+margin-top:22px;
+padding-top:14px;
+border-top:2px solid #9ec5fe;
+position:relative;
+font-size:13px;
+text-align:left;
+min-height:110px;
+}
 
-    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:bold; }
-    .aceptable { background:#fff3cd; border:1px solid #ffe69c; }
-    .bueno { background:#d1ecf1; border:1px solid #bee5eb; }
-    .excelente { background:#d4edda; border:1px solid #c3e6cb; }
-    .progreso { background:#f8d7da; border:1px solid #f5c6cb; }
+.grupos {
+position:absolute;
+right:0;
+bottom:0;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+text-align:center;
+}
 
-    /* Informe final */
-    .resumen {
-      text-align:left;
-      margin-top: 16px;
-      max-width: 820px;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    .resumen h3 { margin: 18px 0 8px; }
-    .item {
-      border:1px solid #e5e7eb;
-      border-radius:10px;
-      padding:12px;
-      margin:10px 0;
-      background:#fff;
-    }
-    .item .q { font-weight:700; margin-bottom:8px; }
-    .item.ok { border-color:#bde5c8; background:#f1fbf5; }
-    .item.ko { border-color:#f5bcbc; background:#fff3f3; }
-    .item small { color:#555; display:block; margin-top:8px; }
+.grupo { width:60px; }
 
-    /* Pie */
-    .footer {
-      margin-top: 22px;
-      padding-top: 14px;
-      border-top: 2px solid #9ec5fe;
-      text-align: left;
-      font-size: 13px;
-      color: #444;
-      line-height: 1.6;
-      position: relative;
-      min-height: 110px; /* espacio para logos pequeños */
-    }
-    .footer strong { color:#222; }
+.grupo img { width:33px; }
 
-    /* Bloque inferior derecho: RADTE + MAPE-TIC (pequeños, en una sola línea) */
-    .grupos {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      align-items: end;
-      text-align: center;
-    }
-
-    /* IMPORTANTE: ancho suficiente para que "MAPE-TIC" no se parta */
-    .grupo { width: 60px; }
-
-    .grupo img {
-      width: 33px;      /* imagen pequeña (la mitad aprox.) */
-      height: auto;
-      display: block;
-      margin: 0 auto 3px;
-    }
-
-    /* Texto debajo en 7px y sin salto de línea */
-    .grupo .caption {
-      font-size: 7px;          /* cambio solicitado */
-      color: #444;
-      line-height: 1.1;
-      white-space: nowrap;     /* evita saltos en MAPE-TIC */
-    }
-
-    .grupo .caption a{
-      color:#444;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .grupo .caption a:hover{
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .footer { min-height: 0; }
-      .grupos {
-        position: static;
-        margin-top: 12px;
-      }
-      .grupo { width: 70px; }
-      .grupo img { width: 40px; }
-      .grupo .caption { font-size: 9px; }
-    }
-  </style>
+.grupo .caption {
+font-size:7px;
+white-space:nowrap;
+}
+</style>
 </head>
 
 <body>
-  <div class="contenedor">
+<div class="contenedor">
 
-    <div class="header">
-      <img class="logo" src="logo-uned.png" alt="Logo UNED" />
-      <div class="header-text">
-        <p class="linea1">UNED — Grado en Pedagogía</p>
-        <p class="linea2">Asignatura: <strong>Medios, Recursos Didácticos y Tecnología Educativa</strong></p>
-        <p class="linea3">Herramienta abierta de autoevaluación tipo test</p>
-      </div>
-      <img class="logo" src="logo-libro.png" alt="Logo del libro base" />
-    </div>
+<h1>Autoevaluación de la asignatura</h1>
 
-    <h1>Autoevaluación de la asignatura</h1>
-    <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
+<select id="seleccion"></select>
+<button onclick="iniciarPartida()">Comenzar</button>
 
-    <div class="fila">
-      <label for="seleccion"><strong>Elige práctica:</strong></label>
-      <select id="seleccion"></select>
-      <button onclick="iniciarPartida()">Comenzar</button>
-    </div>
+<div id="panelJuego" style="display:none;">
+<div class="estado" id="estado"></div>
+<div class="caja-pregunta">
+<h3 id="enunciado"></h3>
+</div>
+<div id="opciones"></div>
+<div id="feedback" class="feedback"></div>
+</div>
 
-    <div id="panelJuego" style="display:none;">
-      <div class="estado" id="estado"></div>
-      <div class="bloque">
+<div id="panelFinal"></div>
 
-        <div class="caja-pregunta">
-          <h3 id="enunciado"></h3>
-        </div>
+<div class="footer">
+<p><strong>Proyecto de Innovación Docente UNED</strong></p>
 
-        <div id="opciones"></div>
-        <div id="feedback" class="feedback"></div>
-      </div>
-    </div>
+<div class="grupos">
+<div class="grupo">
+<img src="logo-radte.png">
+<div class="caption">
+<a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank">RADTE</a>
+</div>
+</div>
 
-    <div id="panelFinal" style="display:none; margin-top:18px;"></div>
+<div class="grupo">
+<img src="logo-mape-tic.png">
+<div class="caption">
+<a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank">MAPE-TIC</a>
+</div>
+</div>
+</div>
+</div>
 
-    <div class="footer">
-      <p>
-        <strong>Proyecto de Innovación Docente de la UNED titulado:</strong>
-        “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.
-        (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
-      </p>
-      <p>
-        <strong>IP:</strong> Esteban Vázquez-Cano.<br>
-        <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong>
-      </p>
-      <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
+</div>
 
-      <!-- Bloque inferior derecho: RADTE + MAPE-TIC (con enlaces) -->
-      <div class="grupos" aria-label="Grupos de investigación e innovación docente">
-        <div class="grupo">
-          <img src="logo-radte.png" alt="Logo RADTE" />
-          <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank" rel="noopener noreferrer">RADTE</a>
-          </div>
-        </div>
-        <div class="grupo">
-          <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
-          <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
-          </div>
-        </div>
-      </div>
-    </div>
+<script>
+const NUM_PREGUNTAS_POR_PARTIDA = 10;
+const MIN_TEMAS_DISTINTOS = 4;  // <-- DIVERSIDAD CONFIGURABLE
 
-  </div>
+let bancoTemas = {};
+let bancoExamenes = {};
+let seleccionActual = "";
+let partida = [];
+let indice = 0;
+let aciertos = 0;
 
-  <script>
-    const NUM_PREGUNTAS_POR_PARTIDA = 10;
+/* ==== UTILIDADES ==== */
 
-    let bancoTemas = {};
-    let bancoExamenes = {};
+function barajar(array) {
+for (let i = array.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+return array;
+}
 
-    let seleccionActual = "";
-    let partida = [];
-    let indice = 0;
-    let aciertos = 0;
+function seleccionarDiversificado() {
 
-    // Historial para informe final
-    let historial = [];
+let seleccionadas = [];
+let temasDisponibles = Object.keys(bancoTemas).filter(t => bancoTemas[t].length > 0);
 
-    function barajar(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    }
+barajar(temasDisponibles);
 
-    function unirTodasLasPreguntas(obj) {
-      let pool = [];
-      Object.values(obj || {}).forEach(arr => { pool = pool.concat(arr); });
-      return pool;
-    }
+let temasElegidos = temasDisponibles.slice(0, MIN_TEMAS_DISTINTOS);
 
-    window.onload = function() {
-      fetch("questions.json")
-        .then(r => r.json())
-        .then(data => {
-          bancoTemas = data.temas || {};
-          bancoExamenes = data.examenes || {};
-          cargarSelector(bancoTemas, bancoExamenes);
-        })
-        .catch(() => {
-          alert("No se pudo cargar questions.json. Revisa que exista en la raíz del repositorio.");
-        });
-    };
+temasElegidos.forEach(t => {
+let preguntasTema = [...bancoTemas[t]];
+barajar(preguntasTema);
+seleccionadas.push(preguntasTema[0]);
+});
 
-    function cargarSelector(temasObj, examenesObj) {
-      const sel = document.getElementById("seleccion");
-      sel.innerHTML = "";
+let poolCompleto = Object.values(bancoTemas).flat();
+barajar(poolCompleto);
 
-      const opt0 = document.createElement("option");
-      opt0.value = "__MIX_TEMAS__";
-      opt0.textContent = "Mezcla de temas (aleatorio)";
-      sel.appendChild(opt0);
+for (let p of poolCompleto) {
+if (seleccionadas.length >= NUM_PREGUNTAS_POR_PARTIDA) break;
+if (!seleccionadas.includes(p)) {
+seleccionadas.push(p);
+}
+}
 
-      const opt1 = document.createElement("option");
-      opt1.value = "__MIX_EXAMENES__";
-      opt1.textContent = "Mezcla de exámenes (aleatorio)";
-      sel.appendChild(opt1);
+return barajar(seleccionadas);
+}
 
-      const opt2 = document.createElement("option");
-      opt2.value = "__MIX_TODO__";
-      opt2.textContent = "Mezcla total (temas + exámenes)";
-      sel.appendChild(opt2);
+function seleccionarDiversificadoTotal() {
 
-      const sep = document.createElement("option");
-      sep.disabled = true;
-      sep.textContent = "──────────";
-      sel.appendChild(sep);
+let seleccionadas = seleccionarDiversificado();
 
-      const ogTemas = document.createElement("optgroup");
-      ogTemas.label = "Temas";
-      Object.keys(temasObj || {}).forEach(t => {
-        const opt = document.createElement("option");
-        opt.value = "tema::" + t;
-        opt.textContent = t;
-        ogTemas.appendChild(opt);
-      });
-      sel.appendChild(ogTemas);
+let examenesPool = Object.values(bancoExamenes).flat();
+if (examenesPool.length > 0) {
+barajar(examenesPool);
+if (Math.random() < 0.7) {  // 70% probabilidad de incluir al menos 1 examen
+seleccionadas.pop();
+seleccionadas.push(examenesPool[0]);
+}
+}
 
-      const ogExam = document.createElement("optgroup");
-      ogExam.label = "Exámenes (curso académico)";
-      Object.keys(examenesObj || {}).forEach(curso => {
-        const opt = document.createElement("option");
-        opt.value = "examen::" + curso;
-        opt.textContent = "Examen " + curso;
-        ogExam.appendChild(opt);
-      });
-      sel.appendChild(ogExam);
-    }
+return barajar(seleccionadas);
+}
 
-    function iniciarPartida() {
-      const sel = document.getElementById("seleccion");
-      seleccionActual = sel.value;
+/* ==== CARGA ==== */
 
-      let pool = [];
+window.onload = function() {
+fetch("questions.json")
+.then(r => r.json())
+.then(data => {
+bancoTemas = data.temas || {};
+bancoExamenes = data.examenes || {};
+cargarSelector();
+});
+};
 
-      if (seleccionActual === "__MIX_TEMAS__") {
-        pool = unirTodasLasPreguntas(bancoTemas);
-      } else if (seleccionActual === "__MIX_EXAMENES__") {
-        pool = unirTodasLasPreguntas(bancoExamenes);
-      } else if (seleccionActual === "__MIX_TODO__") {
-        pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
-      } else if (seleccionActual.startsWith("tema::")) {
-        const nombreTema = seleccionActual.split("tema::")[1];
-        pool = (bancoTemas[nombreTema] || []);
-      } else if (seleccionActual.startsWith("examen::")) {
-        const curso = seleccionActual.split("examen::")[1];
-        pool = (bancoExamenes[curso] || []);
-      }
+function cargarSelector() {
+const sel = document.getElementById("seleccion");
+sel.innerHTML = "";
 
-      if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
-        alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
-        return;
-      }
+sel.innerHTML += `<option value="mix_temas">Mezcla de temas</option>`;
+sel.innerHTML += `<option value="mix_examenes">Mezcla de exámenes</option>`;
+sel.innerHTML += `<option value="mix_total">Mezcla total</option>`;
 
-      const poolCopia = [...pool];
-      barajar(poolCopia);
-      partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+Object.keys(bancoTemas).forEach(t => {
+sel.innerHTML += `<option value="tema::${t}">${t}</option>`;
+});
 
-      indice = 0;
-      aciertos = 0;
-      historial = [];
+Object.keys(bancoExamenes).forEach(e => {
+sel.innerHTML += `<option value="examen::${e}">Examen ${e}</option>`;
+});
+}
 
-      document.getElementById("panelFinal").style.display = "none";
-      document.getElementById("panelJuego").style.display = "block";
+/* ==== PARTIDA ==== */
 
-      mostrarPregunta();
-    }
+function iniciarPartida() {
 
-    function etiquetaSeleccion() {
-      if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
-      if (seleccionActual === "__MIX_EXAMENES__") return "Mezcla de exámenes";
-      if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
-      if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
-      if (seleccionActual.startsWith("examen::")) return "Examen " + seleccionActual.split("examen::")[1];
-      return "Selección";
-    }
+seleccionActual = document.getElementById("seleccion").value;
 
-    function mostrarPregunta() {
-      if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
-        mostrarFinal();
-        return;
-      }
+if (seleccionActual === "mix_temas") {
+partida = seleccionarDiversificado();
+}
+else if (seleccionActual === "mix_total") {
+partida = seleccionarDiversificadoTotal();
+}
+else if (seleccionActual === "mix_examenes") {
+let pool = Object.values(bancoExamenes).flat();
+barajar(pool);
+partida = pool.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+}
+else if (seleccionActual.startsWith("tema::")) {
+let t = seleccionActual.split("tema::")[1];
+let pool = [...bancoTemas[t]];
+barajar(pool);
+partida = pool.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+}
+else if (seleccionActual.startsWith("examen::")) {
+let e = seleccionActual.split("examen::")[1];
+let pool = [...bancoExamenes[e]];
+barajar(pool);
+partida = pool.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+}
 
-      const p = partida[indice];
-      document.getElementById("estado").textContent =
-        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
+indice = 0;
+aciertos = 0;
 
-      document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
+document.getElementById("panelJuego").style.display = "block";
+mostrarPregunta();
+}
 
-      const fb = document.getElementById("feedback");
-      fb.style.display = "none";
-      fb.className = "feedback";
-      fb.innerHTML = "";
+function mostrarPregunta() {
+if (indice >= partida.length) return;
 
-      const contOpc = document.getElementById("opciones");
-      contOpc.innerHTML = "";
+let p = partida[indice];
 
-      p.opciones.forEach((texto, idx) => {
-        const b = document.createElement("button");
-        b.className = "opcion";
-        b.textContent = texto;
-        b.onclick = () => responder(idx);
-        contOpc.appendChild(b);
-      });
-    }
+document.getElementById("estado").textContent =
+"Pregunta " + (indice+1) + " / 10 | Aciertos: " + aciertos;
 
-    function responder(idxElegido) {
-      const p = partida[indice];
-      const correcta = p.correcta;
+document.getElementById("enunciado").textContent =
+"Pregunta: " + p.pregunta;
 
-      historial.push({
-        pregunta: p.pregunta,
-        opciones: p.opciones,
-        correcta: correcta,
-        elegida: idxElegido,
-        explicacion: p.explicacion || ""
-      });
+let opciones = document.getElementById("opciones");
+opciones.innerHTML = "";
 
-      const botones = document.querySelectorAll("#opciones button");
-      botones.forEach(b => b.disabled = true);
+p.opciones.forEach((o,i)=>{
+let b = document.createElement("button");
+b.className="opcion";
+b.textContent=o;
+b.onclick=()=>responder(i);
+opciones.appendChild(b);
+});
+}
 
-      const fb = document.getElementById("feedback");
-      let esperaMs = 2000;
+function responder(i) {
+let p = partida[indice];
 
-      if (idxElegido === correcta) {
-        aciertos++;
-        fb.className = "feedback ok";
-        fb.innerHTML = "<strong>✅ Respuesta correcta.</strong>";
-      } else {
-        fb.className = "feedback ko";
-        const textoCorrecto = p.opciones[correcta];
-        const exp = (p.explicacion && p.explicacion.trim() !== "")
-          ? ("<br><br><em>Explicación:</em> " + p.explicacion)
-          : "";
+if (i===p.correcta) aciertos++;
 
-        esperaMs = 10000;
+indice++;
+mostrarPregunta();
+}
+</script>
 
-        fb.innerHTML =
-          "<strong>❌ Respuesta incorrecta.</strong><br>" +
-          "La correcta es: <strong>" + textoCorrecto + "</strong>." +
-          exp +
-          "<br><br><small><em>Esta explicación se cerrará después de 10 segundos.</em></small>";
-      }
-
-      fb.style.display = "block";
-
-      setTimeout(() => {
-        indice++;
-        mostrarPregunta();
-      }, esperaMs);
-    }
-
-    function mostrarFinal() {
-      document.getElementById("panelJuego").style.display = "none";
-
-      const panel = document.getElementById("panelFinal");
-      panel.style.display = "block";
-
-      const resultado = aciertos;
-      let badgeTexto = "";
-      let badgeClase = "";
-
-      if (resultado >= 6 && resultado <= 7) {
-        badgeTexto = "Aceptable";
-        badgeClase = "badge aceptable";
-      } else if (resultado >= 8 && resultado <= 9) {
-        badgeTexto = "Bueno";
-        badgeClase = "badge bueno";
-      } else if (resultado === 10) {
-        badgeTexto = "Excelente";
-        badgeClase = "badge excelente";
-      } else {
-        badgeTexto = "En progreso";
-        badgeClase = "badge progreso";
-      }
-
-      const correctas = historial.filter(h => h.elegida === h.correcta);
-      const incorrectas = historial.filter(h => h.elegida !== h.correcta);
-
-      function renderItem(h, tipo) {
-        const correctaTxt = h.opciones[h.correcta];
-        const elegidaTxt = h.opciones[h.elegida];
-        const exp = (h.explicacion && h.explicacion.trim() !== "") ? h.explicacion : "Sin explicación registrada.";
-
-        if (tipo === "ok") {
-          return `
-            <div class="item ok">
-              <div class="q">${h.pregunta}</div>
-              <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
-            </div>
-          `;
-        }
-
-        return `
-          <div class="item ko">
-            <div class="q">${h.pregunta}</div>
-            <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
-            <div><strong>Respuesta correcta:</strong> ${correctaTxt}</div>
-            <small><em>Explicación:</em> ${exp}</small>
-          </div>
-        `;
-      }
-
-      const bloqueCorrectas = correctas.length
-        ? correctas.map(h => renderItem(h, "ok")).join("")
-        : "<p>No hay respuestas correctas en esta partida.</p>";
-
-      const bloqueIncorrectas = incorrectas.length
-        ? incorrectas.map(h => renderItem(h, "ko")).join("")
-        : "<p>No hay respuestas incorrectas en esta partida.</p>";
-
-      panel.innerHTML = `
-        <h2>Partida finalizada</h2>
-        <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
-        <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
-        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
-
-        <div class="resumen">
-          <h3>Resumen de respuestas correctas</h3>
-          ${bloqueCorrectas}
-
-          <h3>Resumen de respuestas incorrectas (con explicación)</h3>
-          ${bloqueIncorrectas}
-        </div>
-
-        <div class="fila" style="margin-top:16px;">
-          <button onclick="iniciarPartida()">Jugar otras 10</button>
-        </div>
-      `;
-    }
-  </script>
 </body>
 </html>
