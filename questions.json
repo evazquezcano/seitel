@@ -1810,7 +1810,215 @@
     "explicacion": "El objetivo es mejorar aprendizaje, seguimiento y personalización."
   }
 ],
-    "Tema 7": []
+    "Tema 7": [
+  {
+    "pregunta": "¿Cuál es la relación entre la protección de datos y el derecho a la intimidad?",
+    "opciones": [
+      "La protección de datos y el derecho a la intimidad son términos intercambiables",
+      "El derecho a la intimidad es un subconjunto de la protección de datos",
+      "La protección de datos es un subconjunto del derecho a la intimidad",
+      "No hay relación entre la protección de datos y el derecho a la intimidad"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "La intimidad es un derecho más amplio (vida privada personal y familiar, comunicaciones, etc.). La protección de datos es una manifestación específica que regula el tratamiento de datos personales para preservar esa intimidad."
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal del Reglamento (UE) 2016/679 (GDPR) en el contexto europeo?",
+    "opciones": [
+      "Establecer normativas para la protección de datos a nivel mundial",
+      "Armonizar las legislaciones nacionales de los Estados miembros de la Unión Europea",
+      "Ser irrelevante para la protección de datos en Europa",
+      "Introducir restricciones excesivas a la libertad digital"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El GDPR establece un marco común y coherente en la UE para garantizar una protección uniforme de los datos personales y facilitar la libre circulación de datos en el mercado único digital."
+  },
+  {
+    "pregunta": "¿Qué papel desempeña Internet actualmente en relación con los derechos digitales?",
+    "opciones": [
+      "Ha tenido un impacto negativo en la protección de los derechos digitales",
+      "Es una herramienta que facilita el ejercicio de los derechos digitales",
+      "No tiene relevancia en el ámbito de los derechos digitales",
+      "Ha generado confusión en cuanto a los derechos digitales"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Internet posibilita el acceso a información y comunicación, la participación ciudadana y la acción colectiva, favoreciendo el ejercicio de derechos digitales, aunque también introduce riesgos que deben gestionarse."
+  },
+  {
+    "pregunta": "¿Por qué se considera crucial la promulgación de la Ley Orgánica 3/2018, de 5 de diciembre, en España?",
+    "opciones": [
+      "Porque establece un marco legal para la educación digital",
+      "Porque otorga más poder al Estado sobre los datos personales de los ciudadanos",
+      "Porque refuerza los derechos digitales de los ciudadanos",
+      "Porque limita el acceso de los ciudadanos a Internet"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "La LO 3/2018 refuerza la protección de datos y garantiza derechos digitales, alineándose con el marco europeo e incorporando respuestas normativas a desafíos de la era digital."
+  },
+  {
+    "pregunta": "¿Qué afirmación describe correctamente un aspecto esencial de la protección de datos como derecho fundamental autónomo y no absoluto?",
+    "opciones": [
+      "Los datos personales se refieren únicamente a la identidad física de una persona",
+      "Los ficheros de datos personales se caracterizan por su uso indiscriminado y sin restricciones",
+      "Las garantías frente al uso de la informática se centran en limitar la recopilación de datos incluso con fines legítimos",
+      "El habeas data otorga a los individuos el derecho a controlar el uso de los datos insertos en un programa informático, en línea con el principio de proporcionalidad"
+    ],
+    "correcta": 3,
+    "nivel": "medio",
+    "explicacion": "El habeas data se vincula al control de los datos personales y a que cualquier limitación del derecho sea proporcional al fin legítimo perseguido, evitando injerencias excesivas."
+  },
+
+  {
+    "pregunta": "¿Qué establece el principio del interés superior del menor en la protección de datos?",
+    "opciones": [
+      "Debe primar sobre cualquier otro principio en la aplicación de la ley",
+      "Es un principio sin relevancia en la protección de datos",
+      "Se refiere exclusivamente a la protección de datos de los menores",
+      "No está respaldado por la legislación española"
+    ],
+    "correcta": 0,
+    "nivel": "medio",
+    "explicacion": "El interés superior del menor es un principio reconocido en marcos internacionales y europeos y está contemplado en el ordenamiento español, orientando la aplicación normativa cuando hay menores implicados."
+  },
+  {
+    "pregunta": "¿Qué rango tienen los derechos al honor, a la intimidad personal y familiar y a la propia imagen según la Constitución Española de 1978?",
+    "opciones": [
+      "No tienen rango de derechos fundamentales",
+      "Tienen rango de derechos fundamentales",
+      "Tienen un rango inferior a otros derechos constitucionales",
+      "No están contemplados en la Constitución Española"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "La Constitución Española reconoce estos derechos como fundamentales (art. 18), vinculados a la dignidad y la autonomía personal."
+  },
+  {
+    "pregunta": "¿Por qué se considera el derecho a la protección de datos un derecho fundamental autónomo según el Tribunal Constitucional?",
+    "opciones": [
+      "Porque está vinculado directamente al derecho a la intimidad",
+      "Porque es independiente del derecho a la intimidad",
+      "Porque no tiene relevancia en el ámbito educativo",
+      "Porque es un derecho que puede ser limitado por el Estado"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Se considera autónomo por su alcance propio, su regulación específica y su incidencia transversal en múltiples ámbitos, más allá de la intimidad estricta."
+  },
+  {
+    "pregunta": "¿Qué requisitos debe cumplir el consentimiento para el tratamiento de datos personales según la normativa española?",
+    "opciones": [
+      "Libre, específico, informado e inequívoco",
+      "Libre, general, informado e inequívoco",
+      "Específico, limitado, informado y ambiguo",
+      "Específico, legal, inequívoco y restringido"
+    ],
+    "correcta": 0,
+    "nivel": "medio",
+    "explicacion": "El consentimiento debe ser voluntario (libre), para finalidades concretas (específico), con información clara (informado) y expresado sin dudas (inequívoco)."
+  },
+  {
+    "pregunta": "¿Por qué es importante proteger especialmente los datos sensibles del alumnado (por ejemplo, origen racial)?",
+    "opciones": [
+      "Porque no tienen importancia en el ámbito educativo",
+      "Porque su tratamiento solo requiere el consentimiento del estudiante",
+      "Porque su divulgación puede vulnerar derechos fundamentales y favorecer discriminación",
+      "Porque no existe legislación que los proteja"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "La divulgación de datos sensibles puede provocar estigmatización, discriminación y vulneración de derechos (igualdad, dignidad, no discriminación), además de quebrar la confidencialidad exigida por la normativa."
+  },
+
+  {
+    "pregunta": "¿Cuál es la edad mínima a partir de la cual un menor puede consentir el tratamiento de sus datos personales según la normativa española?",
+    "opciones": [
+      "12 años",
+      "14 años",
+      "16 años",
+      "No existe una edad mínima establecida"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "En España, a partir de los 14 años se reconoce capacidad para consentir el tratamiento de datos personales; por debajo de esa edad, el consentimiento corresponde a quienes ostenten la patria potestad o tutela."
+  },
+  {
+    "pregunta": "¿Qué disposición legal establece que los mayores de catorce años pueden consentir el tratamiento automatizado de sus datos personales?",
+    "opciones": [
+      "Ley Orgánica 3/2018",
+      "Artículo 162 del Código Civil",
+      "Artículo 4.3 de la Ley Orgánica 1/1996",
+      "Artículo 13 del Real Decreto 1720/2007"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "La referencia indicada es el artículo 4.3 de la Ley Orgánica 1/1996, que reconoce capacidad de consentimiento a partir de los 14 años en el marco previsto."
+  },
+  {
+    "pregunta": "¿Qué requisito debe cumplirse para recabar datos que permitan obtener información sobre otros miembros del grupo familiar de un menor?",
+    "opciones": [
+      "El consentimiento del menor",
+      "El consentimiento del tutor legal",
+      "El consentimiento de los titulares de esos datos",
+      "No es necesario ningún consentimiento"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "Los datos de cada miembro familiar pertenecen a su titular; por tanto, debe recabarse el consentimiento de las personas a las que se refieren esos datos, garantizando su autodeterminación informativa."
+  },
+  {
+    "pregunta": "¿Qué deben conocer el alumnado y sus padres o representantes legales antes de la recogida de datos personales según la normativa española?",
+    "opciones": [
+      "La finalidad y la identidad del responsable del tratamiento",
+      "Solo la finalidad para la que se recogen los datos",
+      "La finalidad, los destinatarios de la información y los derechos de acceso, rectificación, cancelación y oposición",
+      "La identidad del responsable y los derechos de acceso, rectificación, cancelación y oposición"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "La información previa debe garantizar transparencia: finalidad, posibles destinatarios y derechos (ARCO), permitiendo un consentimiento y ejercicio de derechos verdaderamente informados."
+  },
+  {
+    "pregunta": "¿Cuál es la base legal para no publicar imágenes del alumnado en la web del centro educativo sin consentimiento previo?",
+    "opciones": [
+      "El derecho fundamental a la propia imagen reconocido en la Constitución Española",
+      "La Ley Orgánica 3/2018",
+      "El artículo 13 del Real Decreto 1720/2007",
+      "El artículo 4.3 de la Ley Orgánica 1/1996"
+    ],
+    "correcta": 0,
+    "nivel": "medio",
+    "explicacion": "El derecho a la propia imagen es un derecho fundamental (art. 18.1 CE) que otorga control sobre el uso y difusión de la imagen, incluido el ámbito digital."
+  },
+
+  {
+    "pregunta": "¿Qué incluye el artículo 83.1 de la Ley Orgánica 3/2018 respecto a la educación digital?",
+    "opciones": [
+      "La regulación general de los medios digitales en la sociedad",
+      "La formación exclusiva del profesorado en competencias digitales",
+      "La inserción del alumnado en la sociedad digital y la formación en un uso seguro y respetuoso de los medios digitales",
+      "La creación de pruebas de acceso a cuerpos superiores relacionadas con la protección de datos"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "El artículo orienta al sistema educativo a garantizar la inserción plena del alumnado en la sociedad digital y educar en un uso seguro, responsable y respetuoso de los medios."
+  },
+  {
+    "pregunta": "¿Qué responsabilidad compartida entre el Gobierno central y las Administraciones educativas se recoge en el artículo 97 de la Ley Orgánica 3/2018?",
+    "opciones": [
+      "La elaboración de un plan de acceso a Internet",
+      "La regulación de la competencia digital en el currículo",
+      "La inclusión de la competencia digital y la prevención de riesgos derivados del uso de las TIC en el currículo escolar",
+      "La promoción de acciones formativas exclusivamente para el profesorado"
+    ],
+    "correcta": 2,
+    "nivel": "medio",
+    "explicacion": "El artículo enfatiza incorporar la competencia digital y la prevención de riesgos (incluida violencia en la red) en el desarrollo curricular, como responsabilidad institucional y educativa."
+  }
+]
   },
   "examenes": {
     "2021-22": [],
