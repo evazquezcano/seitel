@@ -50,7 +50,7 @@
 
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Caja negra de la pregunta (con texto blanco) */
+    /* Caja negra de la pregunta */
     .caja-pregunta{
       max-width: 740px;
       margin: 10px auto 16px;
@@ -74,7 +74,7 @@
       margin: 0 auto;
     }
 
-    /* Respuestas: mismo azul */
+    /* Respuestas: azul uniforme */
     .opcion {
       display:block;
       width:100%;
@@ -142,7 +142,7 @@
     }
     .footer strong { color:#222; }
 
-    /* Bloque inferior derecho: RADTE + MAPE-TIC (MITAD de tamaño) */
+    /* Bloque inferior derecho: RADTE + MAPE-TIC (pequeños, en una sola línea) */
     .grupos {
       position: absolute;
       right: 0;
@@ -153,18 +153,25 @@
       align-items: end;
       text-align: center;
     }
-    .grupo { width: 33px; } /* mitad de 66px */
+
+    /* IMPORTANTE: ancho suficiente para que "MAPE-TIC" no se parta */
+    .grupo { width: 60px; }
+
     .grupo img {
-      width: 33px;
+      width: 33px;      /* imagen pequeña (la mitad aprox.) */
       height: auto;
       display: block;
       margin: 0 auto 3px;
     }
+
+    /* Texto debajo en 7px y sin salto de línea */
     .grupo .caption {
-      font-size: 7px; /* letra inferior */
+      font-size: 7px;          /* cambio solicitado */
       color: #444;
       line-height: 1.1;
+      white-space: nowrap;     /* evita saltos en MAPE-TIC */
     }
+
     .grupo .caption a{
       color:#444;
       text-decoration: none;
@@ -180,8 +187,9 @@
         position: static;
         margin-top: 12px;
       }
-      .grupo { width: 40px; }
+      .grupo { width: 70px; }
       .grupo img { width: 40px; }
+      .grupo .caption { font-size: 9px; }
     }
   </style>
 </head>
@@ -398,7 +406,6 @@
       document.getElementById("estado").textContent =
         "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
 
-      // Cambio solicitado: prefijo "Pregunta: "
       document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
 
       const fb = document.getElementById("feedback");
