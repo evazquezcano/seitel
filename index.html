@@ -50,12 +50,22 @@
 
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Pregunta: centrada, mayor, verde */
-    #enunciado {
+    /* Pregunta: en caja negra, letra blanca */
+    .caja-pregunta{
+      max-width: 740px;
+      margin: 10px auto 16px;
+      background:#111;           /* negro */
+      color:#fff;                /* blanco */
+      border-radius:10px;
+      padding:14px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    }
+    #enunciado{
+      margin:0;
       text-align:center;
       font-size: 20px;
-      color:#0B6E4F;
-      margin: 10px 0 16px;
+      line-height: 1.35;
+      color:#fff;
     }
 
     /* Opciones: más estrechas y centradas */
@@ -127,35 +137,35 @@
       font-size: 13px;
       color: #444;
       line-height: 1.6;
-      position: relative; /* para colocar los logos en esquina inferior derecha */
-      min-height: 140px;  /* reserva espacio para los logos */
+      position: relative;
+      min-height: 125px; /* espacio para logos en esquina inferior derecha */
     }
     .footer strong { color:#222; }
 
-    /* Bloque logos RATTE + MAPETIC en esquina inferior derecha */
+    /* Bloque inferior derecho: RADTE + MAPE-TIC (más pequeños) */
     .grupos {
       position: absolute;
       right: 0;
       bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 12px;
       align-items: end;
       text-align: center;
     }
     .grupo {
-      width: 78px; /* un pelín más pequeño que el logo UNED (90px) */
+      width: 66px; /* más pequeños */
     }
     .grupo img {
-      width: 78px;
+      width: 66px;
       height: auto;
       display: block;
-      margin: 0 auto 6px;
+      margin: 0 auto 4px;
     }
     .grupo .caption {
-      font-size: 12px; /* un poco más pequeño que el texto del footer */
+      font-size: 12px;
       color: #444;
-      line-height: 1.2;
+      line-height: 1.1;
     }
 
     @media (max-width: 600px) {
@@ -163,7 +173,6 @@
       .grupos {
         position: static;
         margin-top: 12px;
-        justify-content: start;
       }
     }
   </style>
@@ -194,7 +203,12 @@
     <div id="panelJuego" style="display:none;">
       <div class="estado" id="estado"></div>
       <div class="bloque">
-        <h3 id="enunciado"></h3>
+
+        <!-- Caja negra para la pregunta -->
+        <div class="caja-pregunta">
+          <h3 id="enunciado"></h3>
+        </div>
+
         <div id="opciones"></div>
         <div id="feedback" class="feedback"></div>
       </div>
@@ -214,15 +228,15 @@
       </p>
       <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
 
-      <!-- Bloque inferior derecho: RATTE + MAPETIC -->
+      <!-- Bloque inferior derecho: RADTE + MAPE-TIC -->
       <div class="grupos" aria-label="Grupos de investigación e innovación docente">
         <div class="grupo">
-          <img src="logo-guion-radte.png" alt="Logo grupo de investigación RATTE" />
-          <div class="caption">Grupo de investigación<br><strong>RATTE</strong></div>
+          <img src="logo-radte.png" alt="Logo RADTE" />
+          <div class="caption"><strong>RADTE</strong></div>
         </div>
         <div class="grupo">
-          <img src="logo-mape-tic.png" alt="Logo grupo de innovación docente MAPETIC" />
-          <div class="caption">Grupo de innovación docente<br><strong>MAPETIC</strong></div>
+          <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
+          <div class="caption"><strong>MAPE-TIC</strong></div>
         </div>
       </div>
     </div>
