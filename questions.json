@@ -362,7 +362,361 @@
         "explicacion": "El docente facilita conexiones y redes de aprendizaje."
       }
     ],
-    "Tema 3": [],
+    "Tema 3": [
+  {
+    "pregunta": "¿Cuál es la función principal del educador del siglo XXI?",
+    "opciones": [
+      "Transmitir contenidos cerrados",
+      "Actuar como mediador del aprendizaje",
+      "Sustituir los libros por tecnología",
+      "Evaluar únicamente competencias digitales"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El docente asume un papel de mediador que facilita el acceso al conocimiento y orienta el aprendizaje."
+  },
+  {
+    "pregunta": "¿Qué significa el modelo de docente BACC?",
+    "opciones": [
+      "Buscar, Analizar, Comunicar y Corregir",
+      "Buscar, Adaptar, Crear y Compartir",
+      "Base, Aplicación, Comunicación y Control",
+      "Blog, Aula, Clase y Contenido"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El modelo BACC describe al docente que busca, adapta, crea y comparte recursos digitales."
+  },
+  {
+    "pregunta": "¿Qué marco europeo describe las competencias digitales del profesorado?",
+    "opciones": [
+      "CEFR",
+      "DigCompEdu",
+      "PISA",
+      "UNESCO 2030"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "DigCompEdu es el marco europeo que define la competencia digital docente."
+  },
+  {
+    "pregunta": "¿Cuántas áreas competenciales incluye DigCompEdu?",
+    "opciones": ["4","5","6","8"],
+    "correcta": 2,
+    "nivel": "basico",
+    "explicacion": "DigCompEdu se estructura en seis áreas competenciales."
+  },
+  {
+    "pregunta": "¿Qué documento del INTEF estructura la Competencia Digital Docente en España?",
+    "opciones": [
+      "LOMCE",
+      "MCCDD del INTEF",
+      "Informe Delors",
+      "DigComp 2.1"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El INTEF publica el Marco Común de Competencia Digital Docente."
+  },
+  {
+    "pregunta": "La competencia digital implica principalmente:",
+    "opciones": [
+      "Uso técnico exclusivo",
+      "Uso crítico y seguro de las TIC",
+      "Programación avanzada",
+      "Dominio de redes sociales"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "Incluye uso crítico, seguro y responsable de la tecnología."
+  },
+  {
+    "pregunta": "¿Qué conceptos amplían el enfoque tradicional de TIC?",
+    "opciones": ["LMS","TAC y TEP","ERP","STEM"],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "Se proponen las TAC y TEP como evolución hacia aprendizaje y participación."
+  },
+  {
+    "pregunta": "¿Qué efecto puede asociarse a un uso intensivo de la tecnología?",
+    "opciones": [
+      "Mejora automática",
+      "Peores resultados académicos",
+      "Eliminación de brecha digital",
+      "Sustitución del currículo"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El uso intensivo no garantiza mejora y puede asociarse a peores resultados."
+  },
+  {
+    "pregunta": "¿Qué principio central recoge el decálogo de Manuel Area?",
+    "opciones": [
+      "La tecnología es el centro",
+      "Lo relevante debe ser lo educativo",
+      "El ordenador genera innovación",
+      "Memorización digital suficiente"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "Se prioriza la finalidad pedagógica sobre la herramienta tecnológica."
+  },
+  {
+    "pregunta": "¿Para qué se integra la tecnología en la programación didáctica?",
+    "opciones": [
+      "Cumplir normativa",
+      "Mejorar el desarrollo curricular",
+      "Sustituir evaluación",
+      "Reducir contenidos"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "Debe vincularse a objetivos, contenidos, competencias y evaluación."
+  },
+
+  {
+    "pregunta": "¿Qué implica adoptar el modelo BACC?",
+    "opciones": [
+      "Uso pasivo de recursos",
+      "Actitud activa de búsqueda, adaptación y creación",
+      "Delegar producción",
+      "Eliminar materiales impresos"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El docente asume un rol activo en creación y difusión de recursos."
+  },
+  {
+    "pregunta": "¿Qué caracteriza a las TAC frente a las TIC?",
+    "opciones": [
+      "Eliminan pedagogía",
+      "Centran la tecnología en el aprendizaje",
+      "Son exclusivamente técnicas",
+      "Excluyen participación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Las TAC enfatizan el valor pedagógico de la tecnología."
+  },
+  {
+    "pregunta": "¿Cómo se integra la competencia digital en el currículo?",
+    "opciones": [
+      "De forma aislada",
+      "De manera transversal",
+      "Solo en informática",
+      "Solo en evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Se concibe como competencia transversal en todas las áreas."
+  },
+  {
+    "pregunta": "¿Qué aporta la comunidad de aprendizaje digital?",
+    "opciones": [
+      "Sustitución docente",
+      "Construcción colaborativa del conocimiento",
+      "Reducción interacción",
+      "Evaluación automática"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Favorece colaboración y aprendizaje compartido."
+  },
+  {
+    "pregunta": "¿Cómo se estructura el MCCDD del INTEF?",
+    "opciones": [
+      "3 áreas",
+      "5 áreas y 21 competencias",
+      "6 áreas",
+      "4 áreas"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Se organiza en cinco áreas con veintiuna competencias."
+  },
+  {
+    "pregunta": "¿Qué efecto tiene una sólida competencia digital docente?",
+    "opciones": [
+      "Ninguno",
+      "Facilita metodologías innovadoras",
+      "Sustituye planificación",
+      "Solo afecta evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Permite integrar metodologías activas y mejorar el aprendizaje."
+  },
+  {
+    "pregunta": "¿Qué implica considerar la tecnología como recurso curricular?",
+    "opciones": [
+      "Uso ocasional",
+      "Integración coherente en planificación",
+      "Actividad extracurricular",
+      "Sustitución currículo"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Debe estar integrada en objetivos, contenidos y evaluación."
+  },
+  {
+    "pregunta": "¿Qué finalidad tienen las TEP?",
+    "opciones": [
+      "Reducir participación",
+      "Fomentar empoderamiento",
+      "Limitar redes",
+      "Centrarse en teoría"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Promueven participación activa y ciudadanía digital."
+  },
+  {
+    "pregunta": "¿Qué riesgo existe sin planificación pedagógica?",
+    "opciones": [
+      "Innovación garantizada",
+      "Uso superficial sin impacto",
+      "Mejora automática",
+      "Reducción preparación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "La tecnología puede quedarse en uso superficial."
+  },
+  {
+    "pregunta": "¿Qué caracteriza a una escuela digitalmente competente?",
+    "opciones": [
+      "Muchos dispositivos",
+      "Integración metodología y organización",
+      "Eliminar libros",
+      "Eliminar evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Implica coherencia entre tecnología, pedagogía y organización."
+  },
+
+  {
+    "pregunta": "¿Qué implica concebir la escuela como comunidad digital?",
+    "opciones": [
+      "Virtualidad total",
+      "Colaboración y construcción compartida",
+      "Eliminar evaluación",
+      "Reducir autonomía"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Supone colaboración activa y aprendizaje compartido."
+  },
+  {
+    "pregunta": "¿Qué relación existe entre DigCompEdu y el MCCDD?",
+    "opciones": [
+      "Sin relación",
+      "Adaptación al contexto español",
+      "Sustitución total",
+      "Eliminación marco europeo"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "El marco español adapta el enfoque europeo."
+  },
+  {
+    "pregunta": "¿Qué ocurre si se prioriza lo tecnológico sobre lo educativo?",
+    "opciones": [
+      "Innovación automática",
+      "Desplazamiento del sentido formativo",
+      "Mejora rendimiento",
+      "Incremento competencias"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Se pierde la finalidad pedagógica del proceso educativo."
+  },
+  {
+    "pregunta": "¿Qué implica competencia digital como competencia clave?",
+    "opciones": [
+      "Área aislada",
+      "Integración transversal",
+      "Reducción técnica",
+      "Evaluación única"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Se incorpora transversalmente en todas las áreas."
+  },
+  {
+    "pregunta": "¿Qué dimensión institucional acompaña la competencia digital?",
+    "opciones": [
+      "Acumulación dispositivos",
+      "Cultura organizativa coherente",
+      "Externalización",
+      "Supresión planificación"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Requiere coherencia institucional y cultura organizativa."
+  },
+  {
+    "pregunta": "¿Qué metodologías favorece la integración tecnológica?",
+    "opciones": [
+      "Clases magistrales digitales",
+      "Metodologías activas y colaborativas",
+      "Reducción interacción",
+      "Supresión evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Favorece participación activa y aprendizaje colaborativo."
+  },
+  {
+    "pregunta": "¿Qué riesgo supone reducir competencia digital a habilidades técnicas?",
+    "opciones": [
+      "Fortalece pensamiento crítico",
+      "Elimina dimensión crítica y ética",
+      "Incrementa ciudadanía",
+      "Mejora cultura"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "La competencia digital incluye dimensión crítica y ética."
+  },
+  {
+    "pregunta": "¿Qué implica empoderamiento digital del alumnado?",
+    "opciones": [
+      "Consumo pasivo",
+      "Participación activa y responsable",
+      "Dependencia tecnológica",
+      "Uso restringido"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Supone participación activa y responsable en entornos digitales."
+  },
+  {
+    "pregunta": "¿Qué coherencia debe existir entre currículo y tecnología?",
+    "opciones": [
+      "Tecnología subordinada a objetivos",
+      "Currículo subordinado al software",
+      "Eliminar evaluación",
+      "Eliminar planificación"
+    ],
+    "correcta": 0,
+    "nivel": "avanzado",
+    "explicacion": "La tecnología debe adaptarse a objetivos y competencias."
+  },
+  {
+    "pregunta": "¿Qué define a un centro digitalmente competente?",
+    "opciones": [
+      "Gran inversión tecnológica",
+      "Integración estratégica tecnología y pedagogía",
+      "Uso intensivo sin evaluación",
+      "Digitalización en PDF"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Se caracteriza por estrategia, coherencia pedagógica y cultura organizativa."
+  }
+]
+,
     "Tema 4": [],
     "Tema 5": [],
     "Tema 6": [],
