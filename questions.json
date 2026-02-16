@@ -1,22 +1,16 @@
 {
-  "Tema 2": [
-    {
-      "pregunta": "Ejemplo de pregunta básica del Tema 2",
-      "opciones": [
-        "Opción A",
-        "Opción B",
-        "Opción C",
-        "Opción D"
-      ],
-      "correcta": 0,
-      "nivel": "basico",
-      "explicacion": "Explicación breve de por qué la opción A es correcta."
-    }
-  ],
-
-  "Tema 3": [],
-  "Tema 4": [],
-  "Tema 5": [],
-  "Tema 6": [],
-  "Tema 7": []
+  "temas": {
+    "Tema 2": [],
+    "Tema 3": [],
+    "Tema 4": [],
+    "Tema 5": [],
+    "Tema 6": [],
+    "Tema 7": []
+  },
+  "examenes": {
+    "2021-22": [],
+    "2022-23": [],
+    "2023-24": [],
+    "2024-25": []
+  }
 }
