@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juego de Autoevaluación</title>
+  <title>Autoevaluación de la asignatura</title>
 
   <style>
     body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
     .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:920px; margin:auto; }
 
-    /* Título: más pequeño y azul */
+    /* Título principal (más pequeño y azul) */
     h1 { margin: 12px 0 6px; font-size: 26px; color:#2c7be5; }
     .subtitulo { margin: 0 0 18px; color:#333; }
 
@@ -17,11 +17,20 @@
     select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
     button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
     button:hover { background:#1a5fc4; }
-    button.secundario { background:#6c757d; }
-    button.secundario:hover { background:#545b62; }
 
-    .opcion { display:block; width:100%; margin:8px 0; }
     .estado { margin-top:12px; font-size: 14px; color:#333; }
+    .bloque { text-align:left; margin-top: 14px; }
+    .opcion { display:block; width:100%; margin:8px 0; border:0; color:#fff; cursor:pointer; }
+
+    /* Tonos suaves (coherentes) de azul para respuestas */
+    .tono1 { background:#2c7be5; }
+    .tono1:hover { background:#1a5fc4; }
+    .tono2 { background:#3a86ff; }
+    .tono2:hover { background:#2b6fe0; }
+    .tono3 { background:#4dabf7; }
+    .tono3:hover { background:#339af0; }
+    .tono4 { background:#5c9ded; }
+    .tono4:hover { background:#3b82d3; }
 
     .feedback { margin-top: 12px; padding: 12px; border-radius: 8px; display:none; text-align:left; }
     .ok { background:#e8f7ee; border:1px solid #bde5c8; }
@@ -33,8 +42,6 @@
     .excelente { background:#d4edda; border:1px solid #c3e6cb; }
     .progreso { background:#f8d7da; border:1px solid #f5c6cb; }
 
-    .bloque { text-align:left; margin-top: 14px; }
-
     /* Cabecera: dos logos + texto centrado */
     .header {
       display:grid;
@@ -43,27 +50,17 @@
       gap:16px;
       margin-bottom: 10px;
     }
+    .logo { width: 90px; height: auto; justify-self:center; }
 
-    .logo {
-      width: 90px;
-      height: auto;
-      justify-self:center;
-    }
+    /* Texto superior un poco más grande */
+    .header-text { text-align:center; }
+    .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
+    .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
+    .header-text .linea3 { font-size: 15px; margin: 4px 0 0; color:#333; }
 
-    .header-text {
-      text-align:center; /* centrado solicitado */
-    }
-
-    .header-text .linea1 { font-size: 18px; font-weight: bold; margin: 0; }
-    .header-text .linea2 { font-size: 14px; margin: 4px 0 0; color:#333; }
-    .header-text .linea3 { font-size: 14px; margin: 2px 0 0; color:#333; }
-
-    /* Adaptación móvil: apila */
+    /* Adaptación móvil */
     @media (max-width: 600px) {
-      .header {
-        grid-template-columns: 1fr;
-        text-align:center;
-      }
+      .header { grid-template-columns: 1fr; text-align:center; }
       .logo { width: 80px; }
       .header-text { margin: 6px 0; }
     }
@@ -72,7 +69,7 @@
     .footer {
       margin-top: 22px;
       padding-top: 14px;
-      border-top: 1px solid #e6e6e6;
+      border-top: 2px solid #9ec5fe; /* línea separadora azul claro */
       text-align: left;
       font-size: 13px;
       color: #444;
@@ -85,7 +82,6 @@
 <body>
   <div class="contenedor">
 
-    <!-- CABECERA: logo UNED + texto centrado + logo libro -->
     <div class="header">
       <img class="logo" src="logo-uned.png" alt="Logo UNED" />
 
@@ -98,7 +94,8 @@
       <img class="logo" src="logo-libro.png" alt="Logo del libro base" />
     </div>
 
-    <h1>Juego de Autoevaluación</h1>
+    <!-- Cambio solicitado: título principal -->
+    <h1>Autoevaluación de la asignatura</h1>
     <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
 
     <div class="fila">
@@ -285,9 +282,12 @@
       const contOpc = document.getElementById("opciones");
       contOpc.innerHTML = "";
 
+      // alterna 4 tonos coherentes (no demasiados)
+      const tonos = ["tono1", "tono2", "tono3", "tono4"];
+
       p.opciones.forEach((texto, idx) => {
         const b = document.createElement("button");
-        b.className = "opcion";
+        b.className = "opcion " + tonos[idx % tonos.length];
         b.textContent = texto;
         b.onclick = () => responder(idx);
         contOpc.appendChild(b);
@@ -303,6 +303,8 @@
 
       const fb = document.getElementById("feedback");
 
+      let esperaMs = 2000; // por defecto, 2s si acierta
+
       if (idxElegido === correcta) {
         aciertos++;
         fb.className = "feedback ok";
@@ -313,11 +315,13 @@
         const exp = (p.explicacion && p.explicacion.trim() !== "")
           ? ("<br><br><em>Explicación:</em> " + p.explicacion)
           : "";
-
         fb.innerHTML =
           "<strong>❌ Respuesta incorrecta.</strong><br>" +
           "La correcta es: <strong>" + textoCorrecto + "</strong>." +
           exp;
+
+        // Cambio solicitado: 7 segundos para leer cuando falla
+        esperaMs = 7000;
       }
 
       fb.style.display = "block";
@@ -325,7 +329,7 @@
       setTimeout(() => {
         indice++;
         mostrarPregunta();
-      }, 2000);
+      }, esperaMs);
     }
 
     function mostrarFinal() {
