@@ -62,9 +62,9 @@
     const NUM_PREGUNTAS_POR_PARTIDA = 10;
 
     // ====== ESTADO DEL JUEGO ======
-    let bancoPorTema = {};      // { "Tema 1": [preguntas...], "Tema 2": [...] }
+    let bancoPorTema = {};      // { "Tema 2": [preguntas...], ... }
     let temaActual = "";
-    let partida = [];           // array de preguntas seleccionadas para esta partida
+    let partida = [];           // preguntas seleccionadas para esta partida
     let indice = 0;             // pregunta actual (0..9)
     let aciertos = 0;           // número de aciertos
 
@@ -96,11 +96,13 @@
       const sel = document.getElementById("tema");
       sel.innerHTML = "";
 
+      // Opción mezcla
       const optMix = document.createElement("option");
       optMix.value = "__MEZCLA__";
       optMix.textContent = "Mezcla de temas (aleatorio)";
       sel.appendChild(optMix);
 
+      // Temas del JSON
       temas.forEach(t => {
         const opt = document.createElement("option");
         opt.value = t;
@@ -114,6 +116,7 @@
       const sel = document.getElementById("tema");
       temaActual = sel.value;
 
+      // Pool de preguntas según tema o mezcla
       let pool = [];
       if (temaActual === "__MEZCLA__") {
         Object.values(bancoPorTema).forEach(arr => pool = pool.concat(arr));
@@ -121,18 +124,22 @@
         pool = bancoPorTema[temaActual] || [];
       }
 
+      // Validación: mínimo 10 preguntas
       if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
         alert("En el tema seleccionado no hay suficientes preguntas. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
         return;
       }
 
+      // Selección aleatoria de 10 sin repetición
       const poolCopia = [...pool];
       barajar(poolCopia);
       partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
 
+      // Reset contadores
       indice = 0;
       aciertos = 0;
 
+      // Mostrar panel juego
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
 
@@ -171,11 +178,12 @@
       });
     }
 
-    // ====== RESPONDER ======
+    // ====== RESPONDER (explicación SOLO si falla) ======
     function responder(idxElegido) {
       const p = partida[indice];
       const correcta = p.correcta;
 
+      // Evitar doble clic
       const botones = document.querySelectorAll("#opciones button");
       botones.forEach(b => b.disabled = true);
 
@@ -184,16 +192,17 @@
       if (idxElegido === correcta) {
         aciertos++;
         fb.className = "feedback ok";
-        fb.textContent = "✅ Correcto.";
+        fb.textContent = "✅ Respuesta correcta.";
       } else {
         fb.className = "feedback ko";
         const textoCorrecto = p.opciones[correcta];
         const exp = p.explicacion ? (" " + p.explicacion) : "";
-        fb.textContent = "❌ Incorrecto. La respuesta correcta era: " + textoCorrecto + "." + exp;
+        fb.textContent = "❌ Respuesta incorrecta. La correcta es: " + textoCorrecto + "." + exp;
       }
 
       fb.style.display = "block";
 
+      // Siguiente pregunta
       setTimeout(() => {
         indice++;
         mostrarPregunta();
@@ -211,6 +220,7 @@
       let badgeTexto = "";
       let badgeClase = "";
 
+      // Reglas de insignias
       if (resultado >= 6 && resultado <= 7) {
         badgeTexto = "Aceptable";
         badgeClase = "badge aceptable";
@@ -221,6 +231,7 @@
         badgeTexto = "Excelente";
         badgeClase = "badge excelente";
       } else {
+        // Sugerencia formativa (0–5)
         badgeTexto = "En progreso";
         badgeClase = "badge progreso";
       }
