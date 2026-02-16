@@ -1,6 +1,6 @@
 {
   "temas": {
-    "Tema 2": [[
+    "Tema 2": [
   {
     "pregunta": "¿Cómo define el texto la Tecnología Educativa?",
     "opciones": [
@@ -363,7 +363,6 @@
     "nivel": "avanzado",
     "explicacion": "El docente facilita conexiones y redes de aprendizaje."
   }
-]
 ],
     "Tema 3": [],
     "Tema 4": [],
