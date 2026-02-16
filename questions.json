@@ -1,6 +1,370 @@
 {
   "temas": {
-    "Tema 2": [],
+    "Tema 2": [[
+  {
+    "pregunta": "¿Cómo define el texto la Tecnología Educativa?",
+    "opciones": [
+      "Como el uso exclusivo de dispositivos digitales en el aula",
+      "Como una disciplina que estudia y aplica recursos tecnológicos para mejorar los procesos educativos",
+      "Como la programación de software educativo",
+      "Como la digitalización de los libros de texto"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El tema define la Tecnología Educativa como una disciplina que estudia y aplica recursos tecnológicos para mejorar los procesos de enseñanza y aprendizaje."
+  },
+  {
+    "pregunta": "¿En qué década comenzó a consolidarse la Tecnología Educativa como campo académico?",
+    "opciones": [
+      "Década de 1950",
+      "Década de 1960",
+      "Década de 1970",
+      "Década de 1980"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El texto señala que su consolidación académica comenzó en la década de 1960."
+  },
+  {
+    "pregunta": "¿Qué autor está vinculado al conectivismo según el tema?",
+    "opciones": [
+      "Jean Piaget",
+      "George Siemens",
+      "B.F. Skinner",
+      "Jerome Bruner"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El texto identifica a George Siemens como uno de los principales representantes del conectivismo."
+  },
+  {
+    "pregunta": "¿Qué elemento es central en el enfoque conectivista?",
+    "opciones": [
+      "La memorización repetitiva",
+      "La red de conexiones entre nodos de información",
+      "El refuerzo conductista",
+      "La enseñanza magistral"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El conectivismo se basa en la creación y mantenimiento de redes de información y conexiones entre nodos."
+  },
+  {
+    "pregunta": "¿Qué dimensión incluye el diseño de entornos digitales de aprendizaje?",
+    "opciones": [
+      "Dimensión técnica exclusivamente",
+      "Dimensión pedagógica",
+      "Dimensión administrativa",
+      "Dimensión económica"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El texto señala que la dimensión pedagógica implica diseño y planificación de entornos de aprendizaje."
+  },
+  {
+    "pregunta": "¿Qué principio conectivista afirma que el aprendizaje puede residir en dispositivos no humanos?",
+    "opciones": [
+      "Diversidad de opiniones",
+      "Actualización constante",
+      "Aprendizaje en dispositivos no humanos",
+      "Interacción social"
+    ],
+    "correcta": 2,
+    "nivel": "basico",
+    "explicacion": "Uno de los principios del conectivismo establece explícitamente que el aprendizaje puede residir en dispositivos no humanos."
+  },
+  {
+    "pregunta": "¿Qué organización internacional aparece citada en relación con la Tecnología Educativa?",
+    "opciones": [
+      "OMS",
+      "UNESCO",
+      "ISTE",
+      "OCDE"
+    ],
+    "correcta": 2,
+    "nivel": "basico",
+    "explicacion": "El tema menciona ISTE como organización relevante en el ámbito de la tecnología educativa."
+  },
+  {
+    "pregunta": "¿Qué caracteriza a la Tecnología Educativa como disciplina académica?",
+    "opciones": [
+      "Su carácter exclusivamente técnico",
+      "Su enfoque interdisciplinar",
+      "Su dependencia del hardware",
+      "Su orientación exclusivamente instrumental"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El texto subraya el carácter interdisciplinar de la Tecnología Educativa."
+  },
+  {
+    "pregunta": "¿Qué aspecto se considera reto actual en el desarrollo tecnológico educativo?",
+    "opciones": [
+      "Eliminar la presencialidad",
+      "Garantizar acceso equitativo",
+      "Reducir el currículo",
+      "Sustituir al docente"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El texto destaca la equidad y el acceso como retos fundamentales."
+  },
+  {
+    "pregunta": "¿Qué elemento es esencial en entornos digitales de aprendizaje?",
+    "opciones": [
+      "El aislamiento individual",
+      "La interacción y conectividad",
+      "La repetición mecánica",
+      "La evaluación memorística"
+    ],
+    "correcta": 1,
+    "nivel": "basico",
+    "explicacion": "El documento destaca la interacción y conectividad como elementos centrales en los entornos digitales."
+  },
+
+  {
+    "pregunta": "¿Qué diferencia existe entre visión instrumental y visión pedagógica de la Tecnología Educativa?",
+    "opciones": [
+      "La instrumental elimina al docente",
+      "La instrumental se centra en dispositivos y la pedagógica en procesos educativos",
+      "La pedagógica evita tecnología",
+      "La instrumental es más reciente"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El texto distingue entre una concepción centrada en herramientas y otra orientada a procesos de enseñanza-aprendizaje."
+  },
+  {
+    "pregunta": "¿Cómo se relaciona el conectivismo con el aprendizaje digital?",
+    "opciones": [
+      "Niega la tecnología",
+      "Plantea aprendizaje en redes y conexiones",
+      "Defiende la memorización secuencial",
+      "Elimina interacción"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El conectivismo sostiene que el aprendizaje ocurre en redes de información y conexiones."
+  },
+  {
+    "pregunta": "¿Qué implica la diversidad de opiniones en conectivismo?",
+    "opciones": [
+      "Conocimiento único",
+      "Aprendizaje enriquecido por múltiples perspectivas",
+      "Centralización del saber",
+      "Red cerrada"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El principio indica que el conocimiento se construye a partir de múltiples perspectivas."
+  },
+  {
+    "pregunta": "¿Por qué la Tecnología Educativa es interdisciplinar?",
+    "opciones": [
+      "Depende solo de informática",
+      "Integra pedagogía, comunicación y tecnología",
+      "Sustituye pedagogía",
+      "Reduce complejidad"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El documento destaca la integración de saberes pedagógicos, tecnológicos y comunicativos."
+  },
+  {
+    "pregunta": "¿De qué depende la innovación educativa según el tema?",
+    "opciones": [
+      "Del recurso tecnológico en sí",
+      "Del enfoque pedagógico adoptado",
+      "Del hardware",
+      "De la eliminación del currículo"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El texto enfatiza que la innovación depende del uso pedagógico contextualizado."
+  },
+  {
+    "pregunta": "¿Qué papel cumplen las redes en el conectivismo?",
+    "opciones": [
+      "Almacenamiento estático",
+      "Nodos dinámicos de conocimiento",
+      "Sustituyen evaluación",
+      "Eliminan docente"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "Las redes actúan como nodos dinámicos que facilitan actualización y conexión del conocimiento."
+  },
+  {
+    "pregunta": "¿Qué relación tiene la competencia digital con la Tecnología Educativa?",
+    "opciones": [
+      "Secundaria",
+      "Esencial para desarrollo profesional docente",
+      "Exclusivamente técnica",
+      "Irrelevante"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El texto la presenta como competencia clave del profesorado."
+  },
+  {
+    "pregunta": "¿Qué implica actualización constante del conocimiento?",
+    "opciones": [
+      "Memorización",
+      "Capacidad de conectar información nueva",
+      "Estabilidad conceptual",
+      "Red cerrada"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El conectivismo señala que la habilidad de conectar información actualizada es esencial."
+  },
+  {
+    "pregunta": "¿Por qué es relevante la integración pedagógica de tecnología?",
+    "opciones": [
+      "Mejora estética",
+      "Transforma procesos metodológicos",
+      "Reduce currículo",
+      "Sustituye evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El texto insiste en su papel transformador de metodologías."
+  },
+  {
+    "pregunta": "¿Qué desafío supone la brecha digital?",
+    "opciones": [
+      "Universal acceso",
+      "Desigualdad en desarrollo competencial",
+      "Exceso de recursos",
+      "Red cerrada"
+    ],
+    "correcta": 1,
+    "nivel": "medio",
+    "explicacion": "El acceso desigual limita el desarrollo de competencias digitales."
+  },
+
+  {
+    "pregunta": "¿Por qué la Tecnología Educativa no se reduce a dispositivos?",
+    "opciones": [
+      "Obsolescencia",
+      "Transformación pedagógica y organizativa",
+      "Sustituye currículo",
+      "Elimina docente"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Implica rediseño pedagógico y transformación de procesos."
+  },
+  {
+    "pregunta": "¿Qué implica que el aprendizaje pueda residir en dispositivos no humanos?",
+    "opciones": [
+      "Conocimiento interno exclusivo",
+      "Conocimiento distribuido en redes",
+      "Eliminación docente",
+      "Memorización"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "El conectivismo amplía la concepción tradicional del conocimiento hacia sistemas distribuidos."
+  },
+  {
+    "pregunta": "¿Cómo se articula dimensión pedagógica y tecnológica?",
+    "opciones": [
+      "Independientes",
+      "Tecnología determina pedagogía",
+      "Pedagogía orienta tecnología",
+      "Sin planificación"
+    ],
+    "correcta": 2,
+    "nivel": "avanzado",
+    "explicacion": "El diseño pedagógico debe orientar el uso de tecnología."
+  },
+  {
+    "pregunta": "¿Qué representa la red en el conectivismo?",
+    "opciones": [
+      "Jerarquía rígida",
+      "Conexiones dinámicas entre nodos",
+      "Aislamiento",
+      "Control central"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "La red simboliza conexiones dinámicas entre nodos de información."
+  },
+  {
+    "pregunta": "¿Qué cambio conceptual introduce el conectivismo?",
+    "opciones": [
+      "Reafirma conductismo",
+      "Integra redes digitales y conocimiento distribuido",
+      "Elimina dimensión social",
+      "Rechaza tecnología"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Amplía teorías previas incorporando redes digitales."
+  },
+  {
+    "pregunta": "¿Qué implica entender el aprendizaje como conexión de nodos?",
+    "opciones": [
+      "Reducir interacción",
+      "Priorizar relaciones significativas",
+      "Eliminar currículo",
+      "Eliminar evaluación"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "Se prioriza la capacidad de establecer conexiones significativas."
+  },
+  {
+    "pregunta": "¿Qué implica innovación tecnológica sin enfoque pedagógico?",
+    "opciones": [
+      "Transformación garantizada",
+      "Escaso impacto educativo",
+      "Mejora automática",
+      "Sustitución curricular"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "El texto indica que sin integración pedagógica no hay transformación real."
+  },
+  {
+    "pregunta": "¿Qué relación existe entre interdisciplinariedad y consolidación académica?",
+    "opciones": [
+      "Reduce campo",
+      "Integra marcos teóricos diversos",
+      "Limita investigación",
+      "Simplifica teoría"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "La interdisciplinariedad permite consolidar el campo académico."
+  },
+  {
+    "pregunta": "¿Qué implica actualización constante en entornos digitales?",
+    "opciones": [
+      "Estabilidad conceptual",
+      "Competencia para conectar nueva información",
+      "Red cerrada",
+      "Memorización repetitiva"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "La actualización constante exige capacidad de conexión continua."
+  },
+  {
+    "pregunta": "¿Qué consecuencia pedagógica tiene la concepción conectivista?",
+    "opciones": [
+      "Docente como transmisor exclusivo",
+      "Docente como facilitador de conexiones",
+      "Aprendizaje pasivo",
+      "Eliminación interacción"
+    ],
+    "correcta": 1,
+    "nivel": "avanzado",
+    "explicacion": "El docente facilita conexiones y redes de aprendizaje."
+  }
+]
+],
     "Tema 3": [],
     "Tema 4": [],
     "Tema 5": [],
