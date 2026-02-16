@@ -28,7 +28,6 @@
     .progreso { background:#f8d7da; border:1px solid #f5c6cb; }
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Cabecera institucional */
     .header {
       display:flex;
       align-items:center;
@@ -49,7 +48,6 @@
     .header-text .linea2 { font-size: 14px; margin: 4px 0 0; color:#333; }
     .header-text .linea3 { font-size: 14px; margin: 2px 0 0; color:#333; }
 
-    /* Pie */
     .footer {
       margin-top: 22px;
       padding-top: 14px;
@@ -57,6 +55,7 @@
       text-align: left;
       font-size: 13px;
       color: #444;
+      line-height: 1.6;
     }
     .footer strong { color:#222; }
   </style>
@@ -65,9 +64,7 @@
 <body>
   <div class="contenedor">
 
-    <!-- CABECERA -->
     <div class="header">
-      <!-- Si el archivo se llama distinto, cambie logo-uned.png por su nombre -->
       <img class="logo" src="logo-uned.png" alt="Logo UNED" />
       <div class="header-text">
         <p class="linea1">UNED — Grado en Pedagogía</p>
@@ -100,190 +97,17 @@
       <button class="secundario" onclick="recargar()">Recargar página</button>
     </div>
 
-    <!-- PIE -->
     <div class="footer">
-      <p><strong>Proyecto de investigación / innovación docente:</strong><br>
-      Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante universitario.</p>
+      <p><strong>Proyecto de Innovación Docente de la UNED titulado:</strong><br>
+      “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.<br>
+      (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).</p>
+
+      <p><strong>IP:</strong> Esteban Vázquez-Cano.<br>
+      <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong></p>
+
       <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
     </div>
 
   </div>
-
-  <script>
-    const NUM_PREGUNTAS_POR_PARTIDA = 10;
-
-    let bancoPorTema = {};
-    let temaActual = "";
-    let partida = [];
-    let indice = 0;
-    let aciertos = 0;
-
-    function barajar(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    }
-
-    function recargar() { location.reload(); }
-
-    window.onload = function() {
-      fetch("questions.json")
-        .then(r => r.json())
-        .then(data => {
-          bancoPorTema = data;
-          cargarSelectorTemas(Object.keys(bancoPorTema));
-        })
-        .catch(() => {
-          alert("No se pudo cargar questions.json. Revisa que el archivo exista y esté en la raíz del repositorio.");
-        });
-    };
-
-    function cargarSelectorTemas(temas) {
-      const sel = document.getElementById("tema");
-      sel.innerHTML = "";
-
-      const optMix = document.createElement("option");
-      optMix.value = "__MEZCLA__";
-      optMix.textContent = "Mezcla de temas (aleatorio)";
-      sel.appendChild(optMix);
-
-      temas.forEach(t => {
-        const opt = document.createElement("option");
-        opt.value = t;
-        opt.textContent = t;
-        sel.appendChild(opt);
-      });
-    }
-
-    function iniciarPartida() {
-      const sel = document.getElementById("tema");
-      temaActual = sel.value;
-
-      let pool = [];
-      if (temaActual === "__MEZCLA__") {
-        Object.values(bancoPorTema).forEach(arr => pool = pool.concat(arr));
-      } else {
-        pool = bancoPorTema[temaActual] || [];
-      }
-
-      if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
-        alert("En el tema seleccionado no hay suficientes preguntas. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
-        return;
-      }
-
-      const poolCopia = [...pool];
-      barajar(poolCopia);
-      partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
-
-      indice = 0;
-      aciertos = 0;
-
-      document.getElementById("panelFinal").style.display = "none";
-      document.getElementById("panelJuego").style.display = "block";
-
-      mostrarPregunta();
-    }
-
-    function mostrarPregunta() {
-      if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
-        mostrarFinal();
-        return;
-      }
-
-      const p = partida[indice];
-      const temaTexto = (temaActual === "__MEZCLA__") ? "Mezcla de temas" : temaActual;
-
-      document.getElementById("estado").textContent =
-        "Tema: " + temaTexto + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
-
-      document.getElementById("enunciado").textContent = p.pregunta;
-
-      const fb = document.getElementById("feedback");
-      fb.style.display = "none";
-      fb.className = "feedback";
-      fb.textContent = "";
-
-      const contOpc = document.getElementById("opciones");
-      contOpc.innerHTML = "";
-
-      p.opciones.forEach((texto, idx) => {
-        const b = document.createElement("button");
-        b.className = "opcion";
-        b.textContent = texto;
-        b.onclick = () => responder(idx);
-        contOpc.appendChild(b);
-      });
-    }
-
-    function responder(idxElegido) {
-      const p = partida[indice];
-      const correcta = p.correcta;
-
-      const botones = document.querySelectorAll("#opciones button");
-      botones.forEach(b => b.disabled = true);
-
-      const fb = document.getElementById("feedback");
-
-      if (idxElegido === correcta) {
-        aciertos++;
-        fb.className = "feedback ok";
-        fb.textContent = "✅ Respuesta correcta.";
-      } else {
-        fb.className = "feedback ko";
-        const textoCorrecto = p.opciones[correcta];
-        const exp = p.explicacion ? (" " + p.explicacion) : "";
-        fb.textContent = "❌ Respuesta incorrecta. La correcta es: " + textoCorrecto + "." + exp;
-      }
-
-      fb.style.display = "block";
-
-      setTimeout(() => {
-        indice++;
-        mostrarPregunta();
-      }, 700);
-    }
-
-    function mostrarFinal() {
-      document.getElementById("panelJuego").style.display = "none";
-
-      const panel = document.getElementById("panelFinal");
-      panel.style.display = "block";
-
-      const resultado = aciertos;
-      let badgeTexto = "";
-      let badgeClase = "";
-
-      if (resultado >= 6 && resultado <= 7) {
-        badgeTexto = "Aceptable";
-        badgeClase = "badge aceptable";
-      } else if (resultado >= 8 && resultado <= 9) {
-        badgeTexto = "Bueno";
-        badgeClase = "badge bueno";
-      } else if (resultado === 10) {
-        badgeTexto = "Excelente";
-        badgeClase = "badge excelente";
-      } else {
-        badgeTexto = "En progreso";
-        badgeClase = "badge progreso";
-      }
-
-      panel.innerHTML = `
-        <h2>Partida finalizada</h2>
-        <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
-        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
-        <div class="fila" style="margin-top:16px;">
-          <button onclick="iniciarPartida()">Jugar otras 10</button>
-          <button class="secundario" onclick="finalizar()">Salir</button>
-        </div>
-      `;
-    }
-
-    function finalizar() {
-      const panel = document.getElementById("panelFinal");
-      panel.innerHTML += `<p style="margin-top:12px;">Puedes cerrar la pestaña o recargar cuando quieras volver a jugar.</p>`;
-    }
-  </script>
 </body>
 </html>
