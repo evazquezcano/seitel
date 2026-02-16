@@ -1,37 +1,22 @@
 {
-  "Tema 1": [
+  "Tema 2": [
     {
-      "pregunta": "¿Qué es la tecnología educativa?",
+      "pregunta": "Ejemplo de pregunta básica del Tema 2",
       "opciones": [
-        "Un conjunto de dispositivos digitales",
-        "El estudio y aplicación de herramientas para mejorar el aprendizaje",
-        "Solo el uso de ordenadores en el aula",
-        "Un tipo de software educativo"
+        "Opción A",
+        "Opción B",
+        "Opción C",
+        "Opción D"
       ],
-      "correcta": 1
-    },
-    {
-      "pregunta": "¿Qué significa TIC?",
-      "opciones": [
-        "Tecnologías Integradas Curriculares",
-        "Tecnologías de la Información y la Comunicación",
-        "Técnicas de Innovación Curricular",
-        "Transferencia Informática Cognitiva"
-      ],
-      "correcta": 1
+      "correcta": 0,
+      "nivel": "basico",
+      "explicacion": "Explicación breve de por qué la opción A es correcta."
     }
   ],
 
-  "Tema 2": [
-    {
-      "pregunta": "¿Qué es la gamificación?",
-      "opciones": [
-        "Jugar en clase sin objetivos",
-        "Usar videojuegos comerciales en el aula",
-        "Aplicar mecánicas de juego en contextos educativos",
-        "Evaluar mediante exámenes tipo test"
-      ],
-      "correcta": 2
-    }
-  ]
+  "Tema 3": [],
+  "Tema 4": [],
+  "Tema 5": [],
+  "Tema 6": [],
+  "Tema 7": []
 }
