@@ -50,12 +50,12 @@
 
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Pregunta: en caja negra, letra blanca */
+    /* Caja negra de la pregunta (con texto blanco) */
     .caja-pregunta{
       max-width: 740px;
       margin: 10px auto 16px;
-      background:#111;           /* negro */
-      color:#fff;                /* blanco */
+      background:#111;
+      color:#fff;
       border-radius:10px;
       padding:14px 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,.12);
@@ -138,34 +138,40 @@
       color: #444;
       line-height: 1.6;
       position: relative;
-      min-height: 125px; /* espacio para logos en esquina inferior derecha */
+      min-height: 110px; /* espacio para logos pequeños */
     }
     .footer strong { color:#222; }
 
-    /* Bloque inferior derecho: RADTE + MAPE-TIC (más pequeños) */
+    /* Bloque inferior derecho: RADTE + MAPE-TIC (MITAD de tamaño) */
     .grupos {
       position: absolute;
       right: 0;
       bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 10px;
       align-items: end;
       text-align: center;
     }
-    .grupo {
-      width: 66px; /* más pequeños */
-    }
+    .grupo { width: 33px; } /* mitad de 66px */
     .grupo img {
-      width: 66px;
+      width: 33px;
       height: auto;
       display: block;
-      margin: 0 auto 4px;
+      margin: 0 auto 3px;
     }
     .grupo .caption {
-      font-size: 12px;
+      font-size: 10px; /* letra inferior */
       color: #444;
       line-height: 1.1;
+    }
+    .grupo .caption a{
+      color:#444;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .grupo .caption a:hover{
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -174,6 +180,8 @@
         position: static;
         margin-top: 12px;
       }
+      .grupo { width: 40px; }
+      .grupo img { width: 40px; }
     }
   </style>
 </head>
@@ -204,7 +212,6 @@
       <div class="estado" id="estado"></div>
       <div class="bloque">
 
-        <!-- Caja negra para la pregunta -->
         <div class="caja-pregunta">
           <h3 id="enunciado"></h3>
         </div>
@@ -228,15 +235,19 @@
       </p>
       <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
 
-      <!-- Bloque inferior derecho: RADTE + MAPE-TIC -->
+      <!-- Bloque inferior derecho: RADTE + MAPE-TIC (con enlaces) -->
       <div class="grupos" aria-label="Grupos de investigación e innovación docente">
         <div class="grupo">
           <img src="logo-radte.png" alt="Logo RADTE" />
-          <div class="caption"><strong>RADTE</strong></div>
+          <div class="caption">
+            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank" rel="noopener noreferrer">RADTE</a>
+          </div>
         </div>
         <div class="grupo">
           <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
-          <div class="caption"><strong>MAPE-TIC</strong></div>
+          <div class="caption">
+            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
+          </div>
         </div>
       </div>
     </div>
@@ -387,7 +398,8 @@
       document.getElementById("estado").textContent =
         "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
 
-      document.getElementById("enunciado").textContent = p.pregunta;
+      // Cambio solicitado: prefijo "Pregunta: "
+      document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
 
       const fb = document.getElementById("feedback");
       fb.style.display = "none";
