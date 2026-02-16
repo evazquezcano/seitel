@@ -7,8 +7,9 @@
 
   <style>
     body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
-    .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:720px; margin:auto; }
-    h1 { margin-top: 0; }
+    .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:860px; margin:auto; }
+    h1 { margin: 10px 0 6px; }
+    .subtitulo { margin: 0 0 18px; color:#333; }
     .fila { margin: 14px 0; }
     select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
     button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
@@ -26,13 +27,57 @@
     .excelente { background:#d4edda; border:1px solid #c3e6cb; }
     .progreso { background:#f8d7da; border:1px solid #f5c6cb; }
     .bloque { text-align:left; margin-top: 14px; }
+
+    /* Cabecera institucional */
+    .header {
+      display:flex;
+      align-items:center;
+      gap:16px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-bottom: 10px;
+    }
+    .logo {
+      width: 90px;
+      height: auto;
+    }
+    .header-text {
+      text-align:left;
+      max-width: 640px;
+    }
+    .header-text .linea1 { font-size: 18px; font-weight: bold; margin: 0; }
+    .header-text .linea2 { font-size: 14px; margin: 4px 0 0; color:#333; }
+    .header-text .linea3 { font-size: 14px; margin: 2px 0 0; color:#333; }
+
+    /* Pie */
+    .footer {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 1px solid #e6e6e6;
+      text-align: left;
+      font-size: 13px;
+      color: #444;
+    }
+    .footer strong { color:#222; }
   </style>
 </head>
 
 <body>
   <div class="contenedor">
+
+    <!-- CABECERA -->
+    <div class="header">
+      <!-- Si el archivo se llama distinto, cambie logo-uned.png por su nombre -->
+      <img class="logo" src="logo-uned.png" alt="Logo UNED" />
+      <div class="header-text">
+        <p class="linea1">UNED — Grado en Pedagogía</p>
+        <p class="linea2">Asignatura: <strong>Medio, Recursos Didácticos y Tecnología Educativa</strong></p>
+        <p class="linea3">Herramienta abierta de autoevaluación tipo test</p>
+      </div>
+    </div>
+
     <h1>Juego de Autoevaluación</h1>
-    <p>Practica preguntas tipo test por temáticas. Cada partida tiene <strong>10 preguntas</strong>.</p>
+    <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas.</p>
 
     <div class="fila">
       <label for="tema"><strong>Elige tema:</strong></label>
@@ -42,7 +87,6 @@
 
     <div id="panelJuego" style="display:none;">
       <div class="estado" id="estado"></div>
-
       <div class="bloque">
         <h3 id="enunciado"></h3>
         <div id="opciones"></div>
@@ -55,20 +99,25 @@
     <div class="fila" style="margin-top:18px;">
       <button class="secundario" onclick="recargar()">Recargar página</button>
     </div>
+
+    <!-- PIE -->
+    <div class="footer">
+      <p><strong>Proyecto de investigación / innovación docente:</strong><br>
+      Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante universitario.</p>
+      <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
+    </div>
+
   </div>
 
   <script>
-    // ====== CONFIGURACIÓN DIDÁCTICA ======
     const NUM_PREGUNTAS_POR_PARTIDA = 10;
 
-    // ====== ESTADO DEL JUEGO ======
-    let bancoPorTema = {};      // { "Tema 2": [preguntas...], ... }
+    let bancoPorTema = {};
     let temaActual = "";
-    let partida = [];           // preguntas seleccionadas para esta partida
-    let indice = 0;             // pregunta actual (0..9)
-    let aciertos = 0;           // número de aciertos
+    let partida = [];
+    let indice = 0;
+    let aciertos = 0;
 
-    // ====== UTILIDADES ======
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -79,7 +128,6 @@
 
     function recargar() { location.reload(); }
 
-    // ====== CARGA INICIAL DEL BANCO ======
     window.onload = function() {
       fetch("questions.json")
         .then(r => r.json())
@@ -96,13 +144,11 @@
       const sel = document.getElementById("tema");
       sel.innerHTML = "";
 
-      // Opción mezcla
       const optMix = document.createElement("option");
       optMix.value = "__MEZCLA__";
       optMix.textContent = "Mezcla de temas (aleatorio)";
       sel.appendChild(optMix);
 
-      // Temas del JSON
       temas.forEach(t => {
         const opt = document.createElement("option");
         opt.value = t;
@@ -111,12 +157,10 @@
       });
     }
 
-    // ====== INICIO DE PARTIDA ======
     function iniciarPartida() {
       const sel = document.getElementById("tema");
       temaActual = sel.value;
 
-      // Pool de preguntas según tema o mezcla
       let pool = [];
       if (temaActual === "__MEZCLA__") {
         Object.values(bancoPorTema).forEach(arr => pool = pool.concat(arr));
@@ -124,29 +168,24 @@
         pool = bancoPorTema[temaActual] || [];
       }
 
-      // Validación: mínimo 10 preguntas
       if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
         alert("En el tema seleccionado no hay suficientes preguntas. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
         return;
       }
 
-      // Selección aleatoria de 10 sin repetición
       const poolCopia = [...pool];
       barajar(poolCopia);
       partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
 
-      // Reset contadores
       indice = 0;
       aciertos = 0;
 
-      // Mostrar panel juego
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
 
       mostrarPregunta();
     }
 
-    // ====== MOSTRAR PREGUNTA ======
     function mostrarPregunta() {
       if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
         mostrarFinal();
@@ -154,8 +193,8 @@
       }
 
       const p = partida[indice];
-
       const temaTexto = (temaActual === "__MEZCLA__") ? "Mezcla de temas" : temaActual;
+
       document.getElementById("estado").textContent =
         "Tema: " + temaTexto + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
 
@@ -178,12 +217,10 @@
       });
     }
 
-    // ====== RESPONDER (explicación SOLO si falla) ======
     function responder(idxElegido) {
       const p = partida[indice];
       const correcta = p.correcta;
 
-      // Evitar doble clic
       const botones = document.querySelectorAll("#opciones button");
       botones.forEach(b => b.disabled = true);
 
@@ -202,25 +239,22 @@
 
       fb.style.display = "block";
 
-      // Siguiente pregunta
       setTimeout(() => {
         indice++;
         mostrarPregunta();
       }, 700);
     }
 
-    // ====== FINAL: NOTA + INSIGNIA + CONTINUAR ======
     function mostrarFinal() {
       document.getElementById("panelJuego").style.display = "none";
 
       const panel = document.getElementById("panelFinal");
       panel.style.display = "block";
 
-      const resultado = aciertos; // sobre 10
+      const resultado = aciertos;
       let badgeTexto = "";
       let badgeClase = "";
 
-      // Reglas de insignias
       if (resultado >= 6 && resultado <= 7) {
         badgeTexto = "Aceptable";
         badgeClase = "badge aceptable";
@@ -231,7 +265,6 @@
         badgeTexto = "Excelente";
         badgeClase = "badge excelente";
       } else {
-        // Sugerencia formativa (0–5)
         badgeTexto = "En progreso";
         badgeClase = "badge progreso";
       }
