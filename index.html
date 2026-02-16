@@ -36,14 +36,8 @@
       flex-wrap:wrap;
       margin-bottom: 10px;
     }
-    .logo {
-      width: 90px;
-      height: auto;
-    }
-    .header-text {
-      text-align:left;
-      max-width: 640px;
-    }
+    .logo { width: 90px; height: auto; }
+    .header-text { text-align:left; max-width: 640px; }
     .header-text .linea1 { font-size: 18px; font-weight: bold; margin: 0; }
     .header-text .linea2 { font-size: 14px; margin: 4px 0 0; color:#333; }
     .header-text .linea3 { font-size: 14px; margin: 2px 0 0; color:#333; }
@@ -74,11 +68,11 @@
     </div>
 
     <h1>Juego de Autoevaluación</h1>
-    <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas.</p>
+    <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o por exámenes.</p>
 
     <div class="fila">
-      <label for="tema"><strong>Elige tema:</strong></label>
-      <select id="tema"></select>
+      <label for="seleccion"><strong>Elige práctica:</strong></label>
+      <select id="seleccion"></select>
       <button onclick="iniciarPartida()">Comenzar</button>
     </div>
 
@@ -109,5 +103,257 @@
     </div>
 
   </div>
+
+  <script>
+    // ====== CONFIGURACIÓN DIDÁCTICA ======
+    const NUM_PREGUNTAS_POR_PARTIDA = 10;
+
+    // ====== BANCO (nuevo formato) ======
+    // questions.json:
+    // { "temas": {"Tema 2":[...], ...}, "examenes":{"2021-22":[...], ...} }
+    let bancoTemas = {};
+    let bancoExamenes = {};
+
+    // ====== ESTADO DEL JUEGO ======
+    let seleccionActual = "";   // valor del selector (p.ej., "tema::Tema 2", "examen::2021-22", "__MIX_TEMAS__" ...)
+    let partida = [];
+    let indice = 0;
+    let aciertos = 0;
+
+    // ====== UTILIDADES ======
+    function barajar(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function recargar() { location.reload(); }
+
+    function unirTodasLasPreguntas(obj) {
+      // obj: {"Tema 2":[...], "Tema 3":[...]}
+      let pool = [];
+      Object.values(obj || {}).forEach(arr => { pool = pool.concat(arr); });
+      return pool;
+    }
+
+    // ====== CARGA INICIAL DEL BANCO ======
+    window.onload = function() {
+      fetch("questions.json")
+        .then(r => r.json())
+        .then(data => {
+          bancoTemas = data.temas || {};
+          bancoExamenes = data.examenes || {};
+          cargarSelector(bancoTemas, bancoExamenes);
+        })
+        .catch(() => {
+          alert("No se pudo cargar questions.json. Revisa que el archivo exista y esté en la raíz del repositorio.");
+        });
+    };
+
+    function cargarSelector(temasObj, examenesObj) {
+      const sel = document.getElementById("seleccion");
+      sel.innerHTML = "";
+
+      // Opciones de mezcla (primero)
+      const opt0 = document.createElement("option");
+      opt0.value = "__MIX_TEMAS__";
+      opt0.textContent = "Mezcla de temas (aleatorio)";
+      sel.appendChild(opt0);
+
+      const opt1 = document.createElement("option");
+      opt1.value = "__MIX_EXAMENES__";
+      opt1.textContent = "Mezcla de exámenes (aleatorio)";
+      sel.appendChild(opt1);
+
+      const opt2 = document.createElement("option");
+      opt2.value = "__MIX_TODO__";
+      opt2.textContent = "Mezcla total (temas + exámenes)";
+      sel.appendChild(opt2);
+
+      // Separador visual (no seleccionable)
+      const sep = document.createElement("option");
+      sep.disabled = true;
+      sep.textContent = "──────────";
+      sel.appendChild(sep);
+
+      // Optgroup: Temas
+      const ogTemas = document.createElement("optgroup");
+      ogTemas.label = "Temas";
+      Object.keys(temasObj || {}).forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = "tema::" + t;
+        opt.textContent = t;
+        ogTemas.appendChild(opt);
+      });
+      sel.appendChild(ogTemas);
+
+      // Optgroup: Exámenes
+      const ogExam = document.createElement("optgroup");
+      ogExam.label = "Exámenes (curso académico)";
+      Object.keys(examenesObj || {}).forEach(curso => {
+        const opt = document.createElement("option");
+        opt.value = "examen::" + curso;
+        opt.textContent = "Examen " + curso;
+        ogExam.appendChild(opt);
+      });
+      sel.appendChild(ogExam);
+    }
+
+    // ====== INICIO DE PARTIDA ======
+    function iniciarPartida() {
+      const sel = document.getElementById("seleccion");
+      seleccionActual = sel.value;
+
+      // 1) Elegir el pool según la selección
+      let pool = [];
+
+      if (seleccionActual === "__MIX_TEMAS__") {
+        pool = unirTodasLasPreguntas(bancoTemas);
+      } else if (seleccionActual === "__MIX_EXAMENES__") {
+        pool = unirTodasLasPreguntas(bancoExamenes);
+      } else if (seleccionActual === "__MIX_TODO__") {
+        pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
+      } else if (seleccionActual.startsWith("tema::")) {
+        const nombreTema = seleccionActual.split("tema::")[1];
+        pool = (bancoTemas[nombreTema] || []);
+      } else if (seleccionActual.startsWith("examen::")) {
+        const curso = seleccionActual.split("examen::")[1];
+        pool = (bancoExamenes[curso] || []);
+      }
+
+      // 2) Validación: mínimo 10 preguntas
+      if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
+        alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
+        return;
+      }
+
+      // 3) Seleccionar 10 aleatorias sin repetición
+      const poolCopia = [...pool];
+      barajar(poolCopia);
+      partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+
+      // 4) Reset
+      indice = 0;
+      aciertos = 0;
+
+      // 5) Mostrar juego
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "block";
+
+      mostrarPregunta();
+    }
+
+    function etiquetaSeleccion() {
+      if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
+      if (seleccionActual === "__MIX_EXAMENES__") return "Mezcla de exámenes";
+      if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
+      if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
+      if (seleccionActual.startsWith("examen::")) return "Examen " + seleccionActual.split("examen::")[1];
+      return "Selección";
+    }
+
+    // ====== MOSTRAR PREGUNTA ======
+    function mostrarPregunta() {
+      if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
+        mostrarFinal();
+        return;
+      }
+
+      const p = partida[indice];
+      document.getElementById("estado").textContent =
+        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
+
+      document.getElementById("enunciado").textContent = p.pregunta;
+
+      const fb = document.getElementById("feedback");
+      fb.style.display = "none";
+      fb.className = "feedback";
+      fb.textContent = "";
+
+      const contOpc = document.getElementById("opciones");
+      contOpc.innerHTML = "";
+
+      p.opciones.forEach((texto, idx) => {
+        const b = document.createElement("button");
+        b.className = "opcion";
+        b.textContent = texto;
+        b.onclick = () => responder(idx);
+        contOpc.appendChild(b);
+      });
+    }
+
+    // ====== RESPONDER (explicación SOLO si falla) ======
+    function responder(idxElegido) {
+      const p = partida[indice];
+      const correcta = p.correcta;
+
+      const botones = document.querySelectorAll("#opciones button");
+      botones.forEach(b => b.disabled = true);
+
+      const fb = document.getElementById("feedback");
+
+      if (idxElegido === correcta) {
+        aciertos++;
+        fb.className = "feedback ok";
+        fb.textContent = "✅ Respuesta correcta.";
+      } else {
+        fb.className = "feedback ko";
+        const textoCorrecto = p.opciones[correcta];
+        const exp = p.explicacion ? (" " + p.explicacion) : "";
+        fb.textContent = "❌ Respuesta incorrecta. La correcta es: " + textoCorrecto + "." + exp;
+      }
+
+      fb.style.display = "block";
+
+      setTimeout(() => {
+        indice++;
+        mostrarPregunta();
+      }, 700);
+    }
+
+    // ====== FINAL: NOTA + INSIGNIA + CONTINUAR ======
+    function mostrarFinal() {
+      document.getElementById("panelJuego").style.display = "none";
+
+      const panel = document.getElementById("panelFinal");
+      panel.style.display = "block";
+
+      const resultado = aciertos;
+      let badgeTexto = "";
+      let badgeClase = "";
+
+      if (resultado >= 6 && resultado <= 7) {
+        badgeTexto = "Aceptable";
+        badgeClase = "badge aceptable";
+      } else if (resultado >= 8 && resultado <= 9) {
+        badgeTexto = "Bueno";
+        badgeClase = "badge bueno";
+      } else if (resultado === 10) {
+        badgeTexto = "Excelente";
+        badgeClase = "badge excelente";
+      } else {
+        badgeTexto = "En progreso";
+        badgeClase = "badge progreso";
+      }
+
+      panel.innerHTML = `
+        <h2>Partida finalizada</h2>
+        <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
+        <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
+        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+        <div class="fila" style="margin-top:16px;">
+          <button onclick="iniciarPartida()">Jugar otras 10</button>
+          <button class="secundario" onclick="finalizar()">Salir</button>
+        </div>
+      `;
+    }
+
+    function finalizar() {
+      const panel = document.getElementById("panelFinal");
+      panel.innerHTML += `<p style="margin-top:12px;">Puedes cerrar la pestaña o recargar cuando quieras volver a jugar.</p>`;
+    }
+  </script>
 </body>
 </html>
