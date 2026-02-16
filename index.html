@@ -9,7 +9,7 @@
     body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
     .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:920px; margin:auto; }
 
-    /* Título: más pequeño y azul (mismo azul que botones) */
+    /* Título: más pequeño y azul */
     h1 { margin: 12px 0 6px; font-size: 26px; color:#2c7be5; }
     .subtitulo { margin: 0 0 18px; color:#333; }
 
@@ -35,27 +35,38 @@
 
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Cabecera institucional con 2 logos */
+    /* Cabecera: dos logos + texto centrado */
     .header {
-      display:flex;
+      display:grid;
+      grid-template-columns: 90px 1fr 90px;
       align-items:center;
-      justify-content:space-between;
       gap:16px;
-      flex-wrap:wrap;
       margin-bottom: 10px;
     }
+
     .logo {
       width: 90px;
       height: auto;
+      justify-self:center;
     }
+
     .header-text {
-      flex: 1;
-      min-width: 260px;
-      text-align:left;
+      text-align:center; /* centrado solicitado */
     }
+
     .header-text .linea1 { font-size: 18px; font-weight: bold; margin: 0; }
     .header-text .linea2 { font-size: 14px; margin: 4px 0 0; color:#333; }
     .header-text .linea3 { font-size: 14px; margin: 2px 0 0; color:#333; }
+
+    /* Adaptación móvil: apila */
+    @media (max-width: 600px) {
+      .header {
+        grid-template-columns: 1fr;
+        text-align:center;
+      }
+      .logo { width: 80px; }
+      .header-text { margin: 6px 0; }
+    }
 
     /* Pie */
     .footer {
@@ -74,7 +85,7 @@
 <body>
   <div class="contenedor">
 
-    <!-- CABECERA: logo UNED (izq) + texto (centro) + logo libro (dcha) -->
+    <!-- CABECERA: logo UNED + texto centrado + logo libro -->
     <div class="header">
       <img class="logo" src="logo-uned.png" alt="Logo UNED" />
 
@@ -84,7 +95,6 @@
         <p class="linea3">Herramienta abierta de autoevaluación tipo test</p>
       </div>
 
-      <!-- IMPORTANTE: suba el archivo logo-libro.png al repositorio -->
       <img class="logo" src="logo-libro.png" alt="Logo del libro base" />
     </div>
 
@@ -109,12 +119,16 @@
     <div id="panelFinal" style="display:none; margin-top:18px;"></div>
 
     <div class="footer">
-      <p><strong>Proyecto de Innovación Docente de la UNED titulado:</strong><br>
-      “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.<br>
-      (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).</p>
+      <p>
+        <strong>Proyecto de Innovación Docente de la UNED titulado:</strong>
+        “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.
+        (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
+      </p>
 
-      <p><strong>IP:</strong> Esteban Vázquez-Cano.<br>
-      <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong></p>
+      <p>
+        <strong>IP:</strong> Esteban Vázquez-Cano.<br>
+        <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong>
+      </p>
 
       <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
     </div>
@@ -122,21 +136,16 @@
   </div>
 
   <script>
-    // ====== CONFIGURACIÓN ======
     const NUM_PREGUNTAS_POR_PARTIDA = 10;
 
-    // questions.json:
-    // { "temas": {...}, "examenes": {...} }
     let bancoTemas = {};
     let bancoExamenes = {};
 
-    // ====== ESTADO ======
     let seleccionActual = "";
     let partida = [];
     let indice = 0;
     let aciertos = 0;
 
-    // ====== UTILIDADES ======
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -151,7 +160,6 @@
       return pool;
     }
 
-    // ====== CARGA ======
     window.onload = function() {
       fetch("questions.json")
         .then(r => r.json())
@@ -169,7 +177,6 @@
       const sel = document.getElementById("seleccion");
       sel.innerHTML = "";
 
-      // Mezclas
       const opt0 = document.createElement("option");
       opt0.value = "__MIX_TEMAS__";
       opt0.textContent = "Mezcla de temas (aleatorio)";
@@ -185,13 +192,11 @@
       opt2.textContent = "Mezcla total (temas + exámenes)";
       sel.appendChild(opt2);
 
-      // Separador
       const sep = document.createElement("option");
       sep.disabled = true;
       sep.textContent = "──────────";
       sel.appendChild(sep);
 
-      // Temas
       const ogTemas = document.createElement("optgroup");
       ogTemas.label = "Temas";
       Object.keys(temasObj || {}).forEach(t => {
@@ -202,7 +207,6 @@
       });
       sel.appendChild(ogTemas);
 
-      // Exámenes
       const ogExam = document.createElement("optgroup");
       ogExam.label = "Exámenes (curso académico)";
       Object.keys(examenesObj || {}).forEach(curso => {
@@ -214,7 +218,6 @@
       sel.appendChild(ogExam);
     }
 
-    // ====== INICIO ======
     function iniciarPartida() {
       const sel = document.getElementById("seleccion");
       seleccionActual = sel.value;
@@ -262,7 +265,6 @@
       return "Selección";
     }
 
-    // ====== PREGUNTAS ======
     function mostrarPregunta() {
       if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
         mostrarFinal();
@@ -292,7 +294,6 @@
       });
     }
 
-    // Explicación SOLO si falla (y visible)
     function responder(idxElegido) {
       const p = partida[indice];
       const correcta = p.correcta;
@@ -321,21 +322,19 @@
 
       fb.style.display = "block";
 
-      // Más tiempo para leer la explicación cuando hay error
       setTimeout(() => {
         indice++;
         mostrarPregunta();
       }, 2000);
     }
 
-    // ====== FINAL ======
     function mostrarFinal() {
       document.getElementById("panelJuego").style.display = "none";
 
       const panel = document.getElementById("panelFinal");
       panel.style.display = "block";
 
-      const resultado = aciertos; // sobre 10
+      const resultado = aciertos;
       let badgeTexto = "";
       let badgeClase = "";
 
