@@ -45,7 +45,7 @@
       margin-top:12px;
       font-size: 16px;
       font-weight: 700;
-      color: #0B6E4F; /* verde institucional aproximado */
+      color: #0B6E4F;
     }
 
     .bloque { text-align:left; margin-top: 14px; }
@@ -138,38 +138,37 @@
       color: #444;
       line-height: 1.6;
       position: relative;
-      min-height: 110px; /* espacio para logos pequeños */
+      min-height: 110px;
     }
     .footer strong { color:#222; }
 
-    /* Bloque inferior derecho: RADTE + MAPE-TIC (pequeños, en una sola línea) */
+    /* Bloque inferior derecho: RADTE + MAPE-TIC */
     .grupos {
       position: absolute;
       right: 0;
       bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 6px;
       align-items: end;
+      justify-items: end;
       text-align: center;
     }
 
-    /* IMPORTANTE: ancho suficiente para que "MAPE-TIC" no se parta */
-    .grupo { width: 60px; }
+    .grupo { width: 60px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
 
     .grupo img {
-      width: 33px;      /* imagen pequeña (la mitad aprox.) */
+      width: 33px;
       height: auto;
       display: block;
       margin: 0 auto 3px;
     }
 
-    /* Texto debajo en 7px y sin salto de línea */
     .grupo .caption {
-      font-size: 7px;          /* cambio solicitado */
+      font-size: 7px;
       color: #444;
       line-height: 1.1;
-      white-space: nowrap;     /* evita saltos en MAPE-TIC */
+      white-space: nowrap;
     }
 
     .grupo .caption a{
@@ -186,6 +185,7 @@
       .grupos {
         position: static;
         margin-top: 12px;
+        justify-items: center;
       }
       .grupo { width: 70px; }
       .grupo img { width: 40px; }
@@ -208,12 +208,12 @@
     </div>
 
     <h1>Autoevaluación de la asignatura</h1>
-    <p class="subtitulo">Cada partida tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
+    <p class="subtitulo">Cada práctica tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
 
     <div class="fila">
       <label for="seleccion"><strong>Elige práctica:</strong></label>
       <select id="seleccion"></select>
-      <button onclick="iniciarPartida()">Comenzar</button>
+      <button onclick="iniciarPractica()">Comenzar</button>
     </div>
 
     <div id="panelJuego" style="display:none;">
@@ -233,17 +233,17 @@
 
     <div class="footer">
       <p>
-        <strong>Proyecto de Innovación Docente de la UNED titulado:</strong>
+        <strong>Proyecto de Innovación Docente de la UNED:</strong>
         “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.
         (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
       </p>
       <p>
-        <strong>IP:</strong> Esteban Vázquez-Cano.<br>
-        <strong>Desarrollador de esta herramienta mediante Vibe Coding.</strong>
+        <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED). Desarrollador de esta herramienta mediante Vibe Coding.
       </p>
-      <p><strong>Nota:</strong> Recurso abierto y gratuito para práctica formativa (no sustituye la evaluación oficial de la asignatura).</p>
+      <p>
+        <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
+      </p>
 
-      <!-- Bloque inferior derecho: RADTE + MAPE-TIC (con enlaces) -->
       <div class="grupos" aria-label="Grupos de investigación e innovación docente">
         <div class="grupo">
           <img src="logo-radte.png" alt="Logo RADTE" />
@@ -263,13 +263,13 @@
   </div>
 
   <script>
-    const NUM_PREGUNTAS_POR_PARTIDA = 10;
+    const NUM_PREGUNTAS_POR_PRACTICA = 10;
 
     let bancoTemas = {};
     let bancoExamenes = {};
 
     let seleccionActual = "";
-    let partida = [];
+    let practica = [];
     let indice = 0;
     let aciertos = 0;
 
@@ -338,17 +338,17 @@
       sel.appendChild(ogTemas);
 
       const ogExam = document.createElement("optgroup");
-      ogExam.label = "Exámenes (curso académico)";
-      Object.keys(examenesObj || {}).forEach(curso => {
-        const opt = document.createElement("option");
-        opt.value = "examen::" + curso;
-        opt.textContent = "Examen " + curso;
-        ogExam.appendChild(opt);
-      });
+      ogExam.label = "Exámenes realizados en pasadas convocatorias";
+
+      const optAllExam = document.createElement("option");
+      optAllExam.value = "__EXAMENES_PASADOS__";
+      optAllExam.textContent = "Exámenes (pasadas convocatorias)";
+      ogExam.appendChild(optAllExam);
+
       sel.appendChild(ogExam);
     }
 
-    function iniciarPartida() {
+    function iniciarPractica() {
       const sel = document.getElementById("seleccion");
       seleccionActual = sel.value;
 
@@ -360,6 +360,8 @@
         pool = unirTodasLasPreguntas(bancoExamenes);
       } else if (seleccionActual === "__MIX_TODO__") {
         pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
+      } else if (seleccionActual === "__EXAMENES_PASADOS__") {
+        pool = unirTodasLasPreguntas(bancoExamenes);
       } else if (seleccionActual.startsWith("tema::")) {
         const nombreTema = seleccionActual.split("tema::")[1];
         pool = (bancoTemas[nombreTema] || []);
@@ -368,14 +370,14 @@
         pool = (bancoExamenes[curso] || []);
       }
 
-      if (pool.length < NUM_PREGUNTAS_POR_PARTIDA) {
-        alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + NUM_PREGUNTAS_POR_PARTIDA + ".");
+      if (pool.length < NUM_PREGUNTAS_POR_PRACTICA) {
+        alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + NUM_PREGUNTAS_POR_PRACTICA + ".");
         return;
       }
 
       const poolCopia = [...pool];
       barajar(poolCopia);
-      partida = poolCopia.slice(0, NUM_PREGUNTAS_POR_PARTIDA);
+      practica = poolCopia.slice(0, NUM_PREGUNTAS_POR_PRACTICA);
 
       indice = 0;
       aciertos = 0;
@@ -391,20 +393,21 @@
       if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
       if (seleccionActual === "__MIX_EXAMENES__") return "Mezcla de exámenes";
       if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
+      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes realizados en pasadas convocatorias";
       if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
       if (seleccionActual.startsWith("examen::")) return "Examen " + seleccionActual.split("examen::")[1];
       return "Selección";
     }
 
     function mostrarPregunta() {
-      if (indice >= NUM_PREGUNTAS_POR_PARTIDA) {
+      if (indice >= NUM_PREGUNTAS_POR_PRACTICA) {
         mostrarFinal();
         return;
       }
 
-      const p = partida[indice];
+      const p = practica[indice];
       document.getElementById("estado").textContent =
-        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PARTIDA + " | Aciertos: " + aciertos;
+        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PRACTICA + " | Aciertos: " + aciertos;
 
       document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
 
@@ -426,7 +429,7 @@
     }
 
     function responder(idxElegido) {
-      const p = partida[indice];
+      const p = practica[indice];
       const correcta = p.correcta;
 
       historial.push({
@@ -524,14 +527,14 @@
 
       const bloqueCorrectas = correctas.length
         ? correctas.map(h => renderItem(h, "ok")).join("")
-        : "<p>No hay respuestas correctas en esta partida.</p>";
+        : "<p>No hay respuestas correctas en esta práctica.</p>";
 
       const bloqueIncorrectas = incorrectas.length
         ? incorrectas.map(h => renderItem(h, "ko")).join("")
-        : "<p>No hay respuestas incorrectas en esta partida.</p>";
+        : "<p>No hay respuestas incorrectas en esta práctica.</p>";
 
       panel.innerHTML = `
-        <h2>Partida finalizada</h2>
+        <h2>Práctica finalizada</h2>
         <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
         <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
@@ -545,7 +548,7 @@
         </div>
 
         <div class="fila" style="margin-top:16px;">
-          <button onclick="iniciarPartida()">Jugar otras 10</button>
+          <button onclick="iniciarPractica()">Hacer otra práctica (10 preguntas)</button>
         </div>
       `;
     }
