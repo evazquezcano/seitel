@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autoevaluación de la asignatura</title>
+  <title>SEITEL</title>
+
+  <script defer data-domain="TU_DOMINIO_AQUI"
+          src="https://plausible.io/js/script.js"></script>
 
   <style>
     body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
@@ -32,13 +35,26 @@
     }
 
     /* Título */
-    h1 { margin: 12px 0 6px; font-size: 26px; color:#2c7be5; }
+    h1 { margin: 12px 0 6px; font-size: 26px; color:#006633; line-height: 1.15; }
+    .seitel-tagline { display:block; font-size: 16px; font-weight: 700; margin-top: 6px; color:#006633; }
     .subtitulo { margin: 0 0 18px; color:#333; }
 
     .fila { margin: 14px 0; }
     select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
     button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
     button:hover { background:#1a5fc4; }
+
+    .btn-link{
+      display:inline-block;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background:#2c7be5;
+      color:#fff;
+      text-decoration:none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .btn-link:hover{ background:#1a5fc4; }
 
     /* Estado (modo/pregunta/aciertos) */
     .estado {
@@ -138,9 +154,14 @@
       color: #444;
       line-height: 1.6;
       position: relative;
-      min-height: 110px;
+      min-height: 170px;
     }
     .footer strong { color:#222; }
+
+    .transparencia {
+      margin-top: 8px;
+      color:#444;
+    }
 
     /* Bloque inferior derecho: RADTE + MAPE-TIC */
     .grupos {
@@ -149,17 +170,18 @@
       bottom: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 6px;
+      gap: 4px;
       align-items: end;
       justify-items: end;
       text-align: center;
     }
 
-    .grupo { width: 60px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
+    .grupo { width: 64px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
 
     .grupo img {
-      width: 33px;
-      height: auto;
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
       display: block;
       margin: 0 auto 3px;
     }
@@ -187,8 +209,8 @@
         margin-top: 12px;
         justify-items: center;
       }
-      .grupo { width: 70px; }
-      .grupo img { width: 40px; }
+      .grupo { width: 76px; }
+      .grupo img { width: 42px; height: 42px; }
       .grupo .caption { font-size: 9px; }
     }
   </style>
@@ -207,7 +229,10 @@
       <img class="logo" src="logo-libro.png" alt="Logo del libro base" />
     </div>
 
-    <h1>Autoevaluación de la asignatura</h1>
+    <h1>
+      SEITEL
+      <span class="seitel-tagline">Smart Evaluation &amp; Innovation in TEchnology-Enhanced Learning</span>
+    </h1>
     <p class="subtitulo">Cada práctica tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
 
     <div class="fila">
@@ -238,10 +263,24 @@
         (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
       </p>
       <p>
-        <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED). Desarrollador de esta herramienta mediante Vibe Coding.
+        <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED).<br>
+        Desarrollador de esta herramienta mediante Vibe Coding.
+      </p>
+      <p>
+        <strong>Desarrollo técnico:</strong> Aplicación web estática desarrollada mediante arquitectura HTML5, CSS3 y JavaScript vanilla, con banco de ítems estructurado en formato JSON y lógica de evaluación formativa automatizada y competencial (Vibe Coding).
+      </p>
+      <p>
+        <strong>Protección de datos y cumplimiento normativo:</strong> La herramienta funciona íntegramente en el navegador y no recoge datos personales identificables. Solo utiliza analítica agregada anonimizada en modo cookieless (visitas, prácticas y frecuencia de error por ítem mediante identificadores hash no reversibles), sin identificación ni perfilado de usuarios, conforme a los principios de minimización y privacidad desde el diseño del Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018.
       </p>
       <p>
         <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
+      </p>
+      <div class="fila" style="margin: 6px 0 10px;">
+        <a class="btn-link" href="XXX" target="_blank" rel="noopener noreferrer">Guía de funcionamiento de esta herramienta</a>
+      </div>
+
+      <p class="transparencia">
+        Se recopilan métricas agregadas anónimas de uso (visitas, prácticas completadas y frecuencia de error por ítem), sin cookies ni identificación personal, conforme al principio de minimización de datos.
       </p>
 
       <div class="grupos" aria-label="Grupos de investigación e innovación docente">
@@ -263,7 +302,9 @@
   </div>
 
   <script>
-    const NUM_PREGUNTAS_POR_PRACTICA = 10;
+    /* Implementación privacy-by-design (Plausible cookieless): FNV-1a 32-bit para question_id (12 hex), evento 'question_wrong' al fallar (sin texto), y 'practice_completed' una sola vez al mostrar el informe final; todo protegido con if (window.plausible) para resiliencia. */
+
+    let numPreguntasPractica = 10;
 
     let bancoTemas = {};
     let bancoExamenes = {};
@@ -275,6 +316,9 @@
 
     // Historial para informe final
     let historial = [];
+
+    // Control de evento (solo una vez por práctica)
+    let practiceCompletedSent = false;
 
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -288,6 +332,15 @@
       let pool = [];
       Object.values(obj || {}).forEach(arr => { pool = pool.concat(arr); });
       return pool;
+    }
+
+    function hashQuestion(str) {
+      let h = 0x811c9dc5;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = (h * 0x01000193) >>> 0;
+      }
+      return h.toString(16).substring(0, 12);
     }
 
     window.onload = function() {
@@ -322,6 +375,11 @@
       opt2.textContent = "Mezcla total (temas + exámenes)";
       sel.appendChild(opt2);
 
+      const opt3 = document.createElement("option");
+      opt3.value = "__SIMULACRO_EXAMEN__";
+      opt3.textContent = "Simulacro de examen (20 preguntas)";
+      sel.appendChild(opt3);
+
       const sep = document.createElement("option");
       sep.disabled = true;
       sep.textContent = "──────────";
@@ -353,35 +411,80 @@
       seleccionActual = sel.value;
 
       let pool = [];
+      let poolExamenes = unirTodasLasPreguntas(bancoExamenes);
 
-      if (seleccionActual === "__MIX_TEMAS__") {
-        pool = unirTodasLasPreguntas(bancoTemas);
-      } else if (seleccionActual === "__MIX_EXAMENES__") {
-        pool = unirTodasLasPreguntas(bancoExamenes);
-      } else if (seleccionActual === "__MIX_TODO__") {
-        pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
-      } else if (seleccionActual === "__EXAMENES_PASADOS__") {
-        pool = unirTodasLasPreguntas(bancoExamenes);
-      } else if (seleccionActual.startsWith("tema::")) {
-        const nombreTema = seleccionActual.split("tema::")[1];
-        pool = (bancoTemas[nombreTema] || []);
-      } else if (seleccionActual.startsWith("examen::")) {
-        const curso = seleccionActual.split("examen::")[1];
-        pool = (bancoExamenes[curso] || []);
+      // Por defecto
+      numPreguntasPractica = 10;
+
+      if (seleccionActual === "__SIMULACRO_EXAMEN__") {
+        numPreguntasPractica = 20;
+
+        const temasNombres = Object.keys(bancoTemas || {});
+        const temasShuffle = barajar([...temasNombres]);
+
+        let seleccionTemas = [];
+        const maxDeTemas = Math.min(12, numPreguntasPractica - 8); // objetivo típico: 12 temas + 8 exámenes
+        for (let i = 0; i < temasShuffle.length; i++) {
+          const t = temasShuffle[i];
+          const arr = (bancoTemas[t] || []);
+          if (arr.length === 0) continue;
+
+          const copia = barajar([...arr]);
+          const take = Math.min(2, copia.length);
+          for (let k = 0; k < take; k++) {
+            seleccionTemas.push(copia[k]);
+          }
+          if (seleccionTemas.length >= maxDeTemas) break;
+        }
+
+        // Completar si faltan preguntas de temas (por falta de ítems), sin exceder maxDeTemas
+        if (seleccionTemas.length < maxDeTemas) {
+          const todasTemas = unirTodasLasPreguntas(bancoTemas);
+          const faltan = maxDeTemas - seleccionTemas.length;
+          const extra = barajar([...todasTemas]).slice(0, faltan);
+          seleccionTemas = seleccionTemas.concat(extra);
+        }
+
+        const restantes = numPreguntasPractica - seleccionTemas.length;
+        const seleccionExam = barajar([...poolExamenes]).slice(0, Math.max(0, restantes));
+
+        practica = barajar(seleccionTemas.concat(seleccionExam)).slice(0, numPreguntasPractica);
+      } else {
+        if (seleccionActual === "__MIX_TEMAS__") {
+          pool = unirTodasLasPreguntas(bancoTemas);
+        } else if (seleccionActual === "__MIX_EXAMENES__") {
+          pool = unirTodasLasPreguntas(bancoExamenes);
+        } else if (seleccionActual === "__MIX_TODO__") {
+          pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
+        } else if (seleccionActual === "__EXAMENES_PASADOS__") {
+          pool = unirTodasLasPreguntas(bancoExamenes);
+        } else if (seleccionActual.startsWith("tema::")) {
+          const nombreTema = seleccionActual.split("tema::")[1];
+          pool = (bancoTemas[nombreTema] || []);
+        } else if (seleccionActual.startsWith("examen::")) {
+          const curso = seleccionActual.split("examen::")[1];
+          pool = (bancoExamenes[curso] || []);
+        }
+
+        if (pool.length < numPreguntasPractica) {
+          alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + numPreguntasPractica + ".");
+          return;
+        }
+
+        const poolCopia = [...pool];
+        barajar(poolCopia);
+        practica = poolCopia.slice(0, numPreguntasPractica);
       }
 
-      if (pool.length < NUM_PREGUNTAS_POR_PRACTICA) {
-        alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + NUM_PREGUNTAS_POR_PRACTICA + ".");
+      if (practica.length < numPreguntasPractica) {
+        alert("No hay suficientes preguntas para generar la práctica solicitada. Revisa el banco de ítems.");
         return;
       }
-
-      const poolCopia = [...pool];
-      barajar(poolCopia);
-      practica = poolCopia.slice(0, NUM_PREGUNTAS_POR_PRACTICA);
 
       indice = 0;
       aciertos = 0;
       historial = [];
+      practiceCompletedSent = false;
 
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
@@ -394,20 +497,21 @@
       if (seleccionActual === "__MIX_EXAMENES__") return "Mezcla de exámenes";
       if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
       if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes realizados en pasadas convocatorias";
+      if (seleccionActual === "__SIMULACRO_EXAMEN__") return "Simulacro de examen";
       if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
       if (seleccionActual.startsWith("examen::")) return "Examen " + seleccionActual.split("examen::")[1];
       return "Selección";
     }
 
     function mostrarPregunta() {
-      if (indice >= NUM_PREGUNTAS_POR_PRACTICA) {
+      if (indice >= numPreguntasPractica) {
         mostrarFinal();
         return;
       }
 
       const p = practica[indice];
       document.getElementById("estado").textContent =
-        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + NUM_PREGUNTAS_POR_PRACTICA + " | Aciertos: " + aciertos;
+        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + numPreguntasPractica + " | Aciertos: " + aciertos;
 
       document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
 
@@ -451,6 +555,12 @@
         fb.className = "feedback ok";
         fb.innerHTML = "<strong>✅ Respuesta correcta.</strong>";
       } else {
+        // Plausible: registrar fallo por ítem (hash determinista), sin texto ni datos adicionales
+        const qid = hashQuestion(p.pregunta || "");
+        if (window.plausible) {
+          window.plausible('question_wrong', { props: { question_id: qid } });
+        }
+
         fb.className = "feedback ko";
         const textoCorrecto = p.opciones[correcta];
         const exp = (p.explicacion && p.explicacion.trim() !== "")
@@ -481,16 +591,25 @@
       panel.style.display = "block";
 
       const resultado = aciertos;
+
+      // Plausible: práctica completada (solo una vez), después de calcular la nota
+      if (!practiceCompletedSent && window.plausible) {
+        window.plausible('practice_completed');
+        practiceCompletedSent = true;
+      }
+
+      const ratio = (numPreguntasPractica > 0) ? (resultado / numPreguntasPractica) : 0;
+
       let badgeTexto = "";
       let badgeClase = "";
 
-      if (resultado >= 6 && resultado <= 7) {
+      if (ratio >= 0.6 && ratio < 0.8) {
         badgeTexto = "Aceptable";
         badgeClase = "badge aceptable";
-      } else if (resultado >= 8 && resultado <= 9) {
+      } else if (ratio >= 0.8 && ratio < 1) {
         badgeTexto = "Bueno";
         badgeClase = "badge bueno";
-      } else if (resultado === 10) {
+      } else if (ratio === 1) {
         badgeTexto = "Excelente";
         badgeClase = "badge excelente";
       } else {
@@ -536,7 +655,7 @@
       panel.innerHTML = `
         <h2>Práctica finalizada</h2>
         <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
-        <p><strong>Resultado:</strong> ${resultado}/10 aciertos</p>
+        <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
 
         <div class="resumen">
@@ -548,7 +667,7 @@
         </div>
 
         <div class="fila" style="margin-top:16px;">
-          <button onclick="iniciarPractica()">Hacer otra práctica (10 preguntas)</button>
+          <button onclick="iniciarPractica()">Hacer otra práctica (${numPreguntasPractica} preguntas)</button>
         </div>
       `;
     }
