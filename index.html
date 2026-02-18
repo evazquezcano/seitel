@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEITEL</title>
 
-  <script defer data-domain="TU_DOMINIO_AQUI"
-          src="https://plausible.io/js/script.js"></script>
+  <!-- Microsoft Clarity (gratuito): pega este script en <head> y sustituye CLARITY_PROJECT_ID -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+  </script>
 
   <style>
     body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
@@ -261,7 +267,7 @@
         <strong>Desarrollo técnico:</strong> Aplicación web estática desarrollada mediante arquitectura HTML5, CSS3 y JavaScript vanilla, con banco de ítems estructurado en formato JSON y lógica de evaluación formativa automatizada y competencial (Vibe Coding).
       </p>
       <p>
-        <strong>Protección de datos y cumplimiento normativo:</strong> La herramienta funciona íntegramente en el navegador y no recoge datos personales identificables. Solo utiliza analítica agregada anonimizada en modo cookieless (visitas, prácticas y frecuencia de error por ítem mediante identificadores hash no reversibles), sin identificación ni perfilado de usuarios, conforme a los principios de minimización y privacidad desde el diseño del Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018.
+        <strong>Protección de datos y cumplimiento normativo:</strong> La herramienta funciona íntegramente en el navegador y no recoge datos personales identificables. Solo utiliza analítica agregada anonimizada (visitas, prácticas y frecuencia de error por ítem mediante identificadores hash no reversibles), sin identificación ni perfilado de usuarios, conforme a los principios de minimización y privacidad desde el diseño del Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018.
       </p>
       <p>
         <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
@@ -290,7 +296,14 @@
   </div>
 
   <script>
-    /* Implementación privacy-by-design (Plausible cookieless): FNV-1a 32-bit para question_id (12 hex), evento 'question_wrong' al fallar (sin texto), y 'practice_completed' una sola vez al mostrar el informe final; todo protegido con if (window.plausible) para resiliencia. */
+    /* Analítica gratuita con Microsoft Clarity:
+       - Pageviews: automáticos por el script de Clarity.
+       - practice_completed: se envía una vez al finalizar la práctica: window.clarity("event","practice_completed")
+       - question_wrong: se envía solo si la respuesta es incorrecta. Para Top-20, se adjunta un tag "question_id" con hash (12 hex) del enunciado:
+         window.clarity("set","question_id", HASH) + window.clarity("event","question_wrong")
+       - Resiliencia: llamadas protegidas con if (window.clarity).
+       Referencia API: window.clarity("event", ...) y window.clarity("set", ...) :contentReference[oaicite:0]{index=0}
+    */
 
     let numPreguntasPractica = 10;
 
@@ -302,7 +315,6 @@
     let indice = 0;
     let aciertos = 0;
 
-    // Historial para informe final
     let historial = [];
 
     // Control de evento (solo una vez por práctica)
@@ -323,6 +335,7 @@
     }
 
     function hashQuestion(str) {
+      // FNV-1a 32-bit determinista; devuelve 12 chars hex
       let h = 0x811c9dc5;
       for (let i = 0; i < str.length; i++) {
         h ^= str.charCodeAt(i);
@@ -410,7 +423,7 @@
         const temasShuffle = barajar([...temasNombres]);
 
         let seleccionTemas = [];
-        const maxDeTemas = Math.min(12, numPreguntasPractica - 8); // objetivo típico: 12 temas + 8 exámenes
+        const maxDeTemas = Math.min(12, numPreguntasPractica - 8); // 12 de temas + 8 exámenes (si hay banco)
 
         for (let i = 0; i < temasShuffle.length; i++) {
           const t = temasShuffle[i];
@@ -419,9 +432,8 @@
 
           const copia = barajar([...arr]);
           const take = Math.min(2, copia.length);
-          for (let k = 0; k < take; k++) {
-            seleccionTemas.push(copia[k]);
-          }
+          for (let k = 0; k < take; k++) seleccionTemas.push(copia[k]);
+
           if (seleccionTemas.length >= maxDeTemas) break;
         }
 
@@ -540,9 +552,11 @@
         fb.className = "feedback ok";
         fb.innerHTML = "<strong>✅ Respuesta correcta.</strong>";
       } else {
+        // Clarity: registrar fallo por ítem (hash determinista), sin texto ni datos personales
         const qid = hashQuestion(p.pregunta || "");
-        if (window.plausible) {
-          window.plausible('question_wrong', { props: { question_id: qid } });
+        if (window.clarity) {
+          window.clarity("set", "question_id", qid);
+          window.clarity("event", "question_wrong");
         }
 
         fb.className = "feedback ko";
@@ -576,8 +590,9 @@
 
       const resultado = aciertos;
 
-      if (!practiceCompletedSent && window.plausible) {
-        window.plausible('practice_completed');
+      // Clarity: práctica completada (solo una vez), después de calcular resultado
+      if (!practiceCompletedSent && window.clarity) {
+        window.clarity("event", "practice_completed");
         practiceCompletedSent = true;
       }
 
