@@ -132,11 +132,11 @@
     .ok { background:#e8f7ee; border:1px solid #bde5c8; }
     .ko { background:#fdeaea; border:1px solid #f5bcbc; }
 
-    /* Insignias (nuevo esquema) */
+    /* Insignias (nuevo esquema solicitado) */
     .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:bold; }
-    .enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; }   /* naranja/ámbar */
-    .adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; }   /* azul */
-    .avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#0b6e4f; }   /* verde */
+    .enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; } /* naranja/ámbar */
+    .adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; } /* azul */
+    .avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#0b6e4f; } /* verde */
 
     .resumen {
       text-align:left;
@@ -263,38 +263,46 @@
         <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED).<br>
         Desarrollador de esta herramienta mediante Vibe Coding.
       </p>
+
+      <!-- (1) Sustitución de Desarrollo técnico -->
       <p>
-        <strong>Desarrollo técnico:</strong> Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend ni almacenamiento persistente. El banco de ítems se estructura en formato JSON y es procesado dinámicamente mediante lógica de evaluación formativa automatizada y competencial. La herramienta integra un script externo de analítica agregada (Microsoft Clarity) y ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding).
+        <strong>Desarrollo técnico:</strong>
+        Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend ni almacenamiento persistente.
+        El banco de ítems se estructura en formato JSON y es procesado dinámicamente mediante lógica de evaluación formativa automatizada y competencial.
+        La herramienta integra un script externo de analítica agregada (Microsoft Clarity) y ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding).
       </p>
+
+      <!-- (2) Sustitución de Protección de datos -->
       <p>
-        <strong>Protección de datos:</strong> La herramienta opera íntegramente en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento de datos personales identificables. La evaluación se realiza localmente y no genera perfiles individuales. La analítica implementada se limita a métricas agregadas de uso y rendimiento por ítem mediante identificadores técnicos pseudonimizados y hash no reversibles, sin identificación directa del usuario. El sistema integra Microsoft Clarity como proveedor externo de analítica web, bajo tratamiento agregado y conforme a los principios de minimización y privacidad desde el diseño (art. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.
+        <strong>Protección de datos:</strong>
+        La herramienta opera íntegramente en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento de datos personales identificables.
+        La evaluación se realiza localmente y no genera perfiles individuales.
+        La analítica implementada se limita a métricas agregadas de uso y rendimiento por ítem mediante identificadores técnicos pseudonimizados y hash no reversibles, sin identificación directa del usuario.
+        El sistema integra Microsoft Clarity como proveedor externo de analítica web, bajo tratamiento agregado y conforme a los principios de minimización y privacidad desde el diseño (art. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.
       </p>
+
       <p>
         <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
       </p>
 
-      <!-- Botón: abre la infografía en una ventana/pestaña diferente
-           IMPORTANTE: guarda el PNG en tu repositorio con este nombre:
-           infografia_guia_seitel_uned_con_logos_v3.png
-      -->
+      <!-- (4) Botón guía: abre la infografía en otra pestaña/ventana -->
       <div class="guia-center">
-        <a class="btn-link"
-           href="infografia_guia_seitel_uned_con_logos_v3.png"
-           target="_blank"
-           rel="noopener noreferrer">Guía de funcionamiento</a>
+        <a class="btn-link" href="guia_web.png" target="_blank" rel="noopener noreferrer">Guía de funcionamiento</a>
       </div>
 
       <div class="grupos-bottom" aria-label="Grupos de investigación e innovación docente">
         <div class="grupo">
           <img src="logo-radte.png" alt="Logo RADTE" />
           <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank" rel="noopener noreferrer">RADTE</a>
+            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1"
+               target="_blank" rel="noopener noreferrer">RADTE</a>
           </div>
         </div>
         <div class="grupo">
           <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
           <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
+            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html"
+               target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
           </div>
         </div>
       </div>
@@ -596,22 +604,24 @@
 
       const resultado = aciertos;
 
-      // Clarity: práctica completada (solo una vez), después de calcular resultado
+      // Clarity: práctica completada (solo una vez)
       if (!practiceCompletedSent && window.clarity) {
         window.clarity("event", "practice_completed");
         practiceCompletedSent = true;
       }
 
-      // ---- NUEVO: Insignias + nota sobre 10 en simulacro ----
+      // (3) Insignias + nota sobre 10 en simulacro
       const esSimulacro = (seleccionActual === "__SIMULACRO_EXAMEN__" && numPreguntasPractica === 20);
 
-      // Nota sobre 10 solo para simulacro (regla de 3)
+      // Regla de 3: 20 aciertos => 10
       const notaExamen = esSimulacro ? ((resultado / 20) * 10) : null;
+
+      // Redondeo a 1 decimal (formato académico, legible)
       const notaExamenTxt = esSimulacro ? (Math.round(notaExamen * 10) / 10).toFixed(1) : "";
 
-      // Criterio de insignia:
-      // - Prácticas (10): 0-4 En proceso, 5-7 Adecuado, 8-10 Avanzado
-      // - Simulacro (20): se aplica a la nota sobre 10 (0-4, 5-7, 8-10)
+      // Insignia:
+      // - Prácticas de 10: se aplica a aciertos (1-4 / 5-7 / 8-10)
+      // - Simulacro de 20: se aplica a la nota sobre 10 (0-4 / 5-7 / 8-10)
       const baseParaInsignia = esSimulacro ? notaExamen : resultado;
 
       let badgeTexto = "";
@@ -627,7 +637,6 @@
         badgeTexto = "Avanzado";
         badgeClase = "badge avanzado";
       }
-      // -------------------------------------------------------
 
       const correctas = historial.filter(h => h.elegida === h.correcta);
       const incorrectas = historial.filter(h => h.elegida !== h.correcta);
