@@ -29,7 +29,7 @@
 
     /* Logos cabecera */
     .logo-uned { width: 90px; height: auto; justify-self:center; }
-    .logo-seitel { width: 94px; height: auto; justify-self:center; } /* un punto más grande que UNED */
+    .logo-seitel { width: 104px; height: auto; justify-self:center; } /* +10px respecto a 94px */
 
     /* Texto superior */
     .header-text { text-align:center; }
@@ -40,12 +40,12 @@
     @media (max-width: 600px) {
       .header { grid-template-columns: 1fr; text-align:center; }
       .logo-uned { width: 80px; }
-      .logo-seitel { width: 84px; }
+      .logo-seitel { width: 84px; } /* móvil se mantiene */
       .header-text { margin: 6px 0; }
     }
 
     /* Título (azul institucional de botones) */
-    h1 { margin: 12px 0 6px; font-size: 34px; color:#2c7be5; line-height: 1.1; }
+    h1 { margin: 12px 0 6px; font-size: 38px; color:#2c7be5; line-height: 1.1; } /* 34px -> 38px */
     .seitel-tagline { display:block; font-size: 17px; font-weight: 700; margin-top: 8px; color:#2c7be5; }
     .subtitulo { margin: 14px 0 18px; color:#333; }
 
@@ -228,7 +228,7 @@
     </div>
 
     <h1>
-      SEITEL
+      SEITEL-UNED
       <span class="seitel-tagline">Smart Evaluation &amp; Innovation in Technology-Enhanced Learning</span>
     </h1>
 
@@ -274,7 +274,7 @@
       </p>
 
       <div class="guia-center">
-        <a class="btn-link" href="XXX" target="_blank" rel="noopener noreferrer">Guía de funcionamiento de esta herramienta</a>
+        <a class="btn-link" href="XXX" target="_blank" rel="noopener noreferrer">Guía de funcionamiento</a>
       </div>
 
       <div class="grupos-bottom" aria-label="Grupos de investigación e innovación docente">
