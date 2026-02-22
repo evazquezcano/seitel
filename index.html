@@ -26,12 +26,8 @@
       gap:16px;
       margin-bottom: 10px;
     }
-
-    /* Logos cabecera */
     .logo-uned { width: 90px; height: auto; justify-self:center; }
     .logo-seitel { width: 104px; height: auto; justify-self:center; } /* +10px respecto a 94px */
-
-    /* Texto superior */
     .header-text { text-align:center; }
     .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
     .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
@@ -50,7 +46,7 @@
     .subtitulo { margin: 14px 0 18px; color:#333; }
 
     .fila { margin: 14px 0; }
-    select, button { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
+    select, button, input { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
     button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
     button:hover { background:#1a5fc4; }
 
@@ -66,20 +62,16 @@
     }
     .btn-link:hover{ background:#1a5fc4; }
 
-    /* Guía centrada */
-    .guia-center{
-      text-align:center;
-      margin: 18px 0 6px;
-    }
+    .guia-center{ text-align:center; margin: 18px 0 6px; }
 
-    /* Estado (modo/pregunta/aciertos) */
+    /* Estado */
     .estado {
       margin-top:12px;
       font-size: 16px;
       font-weight: 700;
       color: #0B6E4F;
     }
-
+    .estado .timer { color:#8a2be2; font-weight:800; } /* violeta suave */
     .bloque { text-align:left; margin-top: 14px; }
 
     /* Caja negra de la pregunta */
@@ -101,11 +93,7 @@
     }
 
     /* Opciones */
-    #opciones {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
+    #opciones { max-width: 680px; margin: 0 auto; }
     .opcion {
       display:block;
       width:100%;
@@ -132,11 +120,11 @@
     .ok { background:#e8f7ee; border:1px solid #bde5c8; }
     .ko { background:#fdeaea; border:1px solid #f5bcbc; }
 
-    /* Insignias (nuevo esquema solicitado) */
-    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:bold; }
-    .enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; } /* naranja/ámbar */
-    .adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; } /* azul */
-    .avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#0b6e4f; } /* verde */
+    /* Insignias (nuevo criterio) */
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:800; }
+    .badge-enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; } /* naranja suave */
+    .badge-adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; } /* azul */
+    .badge-avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#1b5e20; } /* verde */
 
     .resumen {
       text-align:left;
@@ -177,33 +165,11 @@
       gap: 18px;
       text-align:center;
     }
-
     .grupo { width: 86px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
-
-    .grupo img {
-      width: 44px;
-      height: 44px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto 6px;
-    }
-
-    .grupo .caption {
-      font-size: 10px;
-      color: #444;
-      line-height: 1.1;
-      white-space: nowrap;
-    }
-
-    .grupo .caption a{
-      color:#444;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .grupo .caption a:hover{
-      text-decoration: underline;
-    }
-
+    .grupo img { width: 44px; height: 44px; object-fit: contain; display: block; margin: 0 auto 6px; }
+    .grupo .caption { font-size: 10px; color: #444; line-height: 1.1; white-space: nowrap; }
+    .grupo .caption a{ color:#444; text-decoration: none; font-weight: 700; }
+    .grupo .caption a:hover{ text-decoration: underline; }
     @media (max-width: 600px) {
       body { padding: 20px; }
       .grupo { width: 96px; }
@@ -211,6 +177,51 @@
       .grupo .caption { font-size: 11px; }
       .grupos-bottom{ gap: 14px; }
     }
+
+    /* Modal / checklist PRE/POST */
+    .modal-backdrop{
+      position:fixed; inset:0;
+      background:rgba(0,0,0,.45);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+      z-index:9999;
+    }
+    .modal{
+      width:min(760px, 100%);
+      background:#fff;
+      border-radius:14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      padding:18px 18px 14px;
+      text-align:left;
+    }
+    .modal h2{ margin:0 0 10px; color:#2c7be5; font-size:20px; }
+    .modal p{ margin:8px 0; color:#333; line-height:1.5; }
+    .modal .row{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px; }
+    .modal label{ font-weight:700; }
+    .modal input[type="text"]{ flex:1; min-width:240px; border:1px solid #d0d7de; }
+    .checklist{ margin:10px 0 8px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px; background:#f8fafc; }
+    .checklist .itemc{ display:flex; gap:10px; align-items:flex-start; margin:8px 0; }
+    .checklist input{ margin-top:3px; }
+    .modal .actions{ display:flex; justify-content:flex-end; gap:10px; margin-top:12px; }
+    .btn-sec{ background:#6c757d; }
+    .btn-sec:hover{ background:#545b62; }
+    .hint{ font-size:12px; color:#555; margin-top:6px; }
+    .warn{ font-size:12px; color:#7a4b00; margin-top:6px; }
+
+    /* Resumen envío Forms */
+    .envio-box{
+      max-width: 740px;
+      margin: 12px auto 0;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:14px 14px;
+      background:#f8fafc;
+      text-align:left;
+    }
+    .envio-box code{ background:#eef2ff; padding:2px 6px; border-radius:8px; }
+    .envio-actions{ margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; }
   </style>
 </head>
 
@@ -232,10 +243,12 @@
       <span class="seitel-tagline">Smart Evaluation &amp; Innovation in Technology-Enhanced Learning</span>
     </h1>
 
-    <p class="subtitulo">Cada práctica tiene <strong>10 preguntas</strong>. Feedback inmediato y práctica por temáticas o exámenes.</p>
+    <p class="subtitulo">
+      Prácticas de <strong>10 preguntas</strong>, simulacro de <strong>20</strong>, y modo <strong>PRETEST/POSTTEST</strong> (20 preguntas, 15 minutos, sin feedback)
+    </p>
 
     <div class="fila">
-      <label for="seleccion"><strong>Elige práctica:</strong></label>
+      <label for="seleccion"><strong>Elige modalidad:</strong></label>
       <select id="seleccion"></select>
       <button onclick="iniciarPractica()">Comenzar</button>
     </div>
@@ -263,29 +276,16 @@
         <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED).<br>
         Desarrollador de esta herramienta mediante Vibe Coding.
       </p>
-
-      <!-- (1) Sustitución de Desarrollo técnico -->
       <p>
-        <strong>Desarrollo técnico:</strong>
-        Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend ni almacenamiento persistente.
-        El banco de ítems se estructura en formato JSON y es procesado dinámicamente mediante lógica de evaluación formativa automatizada y competencial.
-        La herramienta integra un script externo de analítica agregada (Microsoft Clarity) y ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding).
+        <strong>Desarrollo técnico:</strong> Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend ni almacenamiento persistente. El banco de ítems se estructura en formato JSON y es procesado dinámicamente mediante lógica de evaluación formativa automatizada y competencial. La herramienta integra un script externo de analítica agregada (Microsoft Clarity) y ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding).
       </p>
-
-      <!-- (2) Sustitución de Protección de datos -->
       <p>
-        <strong>Protección de datos:</strong>
-        La herramienta opera íntegramente en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento de datos personales identificables.
-        La evaluación se realiza localmente y no genera perfiles individuales.
-        La analítica implementada se limita a métricas agregadas de uso y rendimiento por ítem mediante identificadores técnicos pseudonimizados y hash no reversibles, sin identificación directa del usuario.
-        El sistema integra Microsoft Clarity como proveedor externo de analítica web, bajo tratamiento agregado y conforme a los principios de minimización y privacidad desde el diseño (art. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.
+        <strong>Protección de datos:</strong> La herramienta opera íntegramente en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento de datos personales identificables. La evaluación se realiza localmente y no genera perfiles individuales. La analítica implementada se limita a métricas agregadas de uso y rendimiento por ítem mediante identificadores técnicos pseudonimizados y hash no reversibles, sin identificación directa del usuario. El sistema integra Microsoft Clarity como proveedor externo de analítica web, bajo tratamiento agregado y conforme a los principios de minimización y privacidad desde el diseño (art. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.
       </p>
-
       <p>
         <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
       </p>
 
-      <!-- (4) Botón guía: abre la infografía en otra pestaña/ventana -->
       <div class="guia-center">
         <a class="btn-link" href="guia_web.png" target="_blank" rel="noopener noreferrer">Guía de funcionamiento</a>
       </div>
@@ -294,15 +294,13 @@
         <div class="grupo">
           <img src="logo-radte.png" alt="Logo RADTE" />
           <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1"
-               target="_blank" rel="noopener noreferrer">RADTE</a>
+            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank" rel="noopener noreferrer">RADTE</a>
           </div>
         </div>
         <div class="grupo">
           <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
           <div class="caption">
-            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html"
-               target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
+            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
           </div>
         </div>
       </div>
@@ -310,29 +308,76 @@
 
   </div>
 
+  <!-- Modal checklist PRE/POST -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Antes de iniciar</h2>
+      <p id="modalIntro"></p>
+
+      <div class="row">
+        <label for="codigoParticipante">Código de participación</label>
+        <input id="codigoParticipante" type="text" placeholder="Ejemplo: SEITEL_0001" autocomplete="off" />
+      </div>
+      <div class="hint">Necesitas el código proporcionado por el profesor para poder enviar resultados.</div>
+
+      <div class="checklist" id="checklistBox">
+        <div class="itemc"><input type="checkbox" id="c1"><label for="c1">Dispongo de 15 minutos sin interrupciones</label></div>
+        <div class="itemc"><input type="checkbox" id="c2"><label for="c2">Entiendo que no hay feedback y no podré retroceder</label></div>
+        <div class="itemc"><input type="checkbox" id="c3"><label for="c3">Al finalizar haré una captura de pantalla del resultado</label></div>
+        <div class="itemc"><input type="checkbox" id="c4"><label for="c4">Tras finalizar, abriré el formulario y adjuntaré la captura</label></div>
+      </div>
+      <div class="warn">Importante: el enlace para enviar resultados aparecerá al finalizar el test.</div>
+
+      <div class="actions">
+        <button class="btn-sec" onclick="cerrarModal()">Cancelar</button>
+        <button id="btnContinuarModal" onclick="confirmarModal()" disabled>Iniciar</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     /* Analítica gratuita con Microsoft Clarity:
        - Pageviews: automáticos por el script de Clarity.
-       - practice_completed: se envía una vez al finalizar la práctica: window.clarity("event","practice_completed")
-       - question_wrong: se envía solo si la respuesta es incorrecta. Para Top-20, se adjunta un tag "question_id" con hash (12 hex) del enunciado:
-         window.clarity("set","question_id", HASH) + window.clarity("event","question_wrong")
-       - Resiliencia: llamadas protegidas con if (window.clarity).
+       - practice_completed: se envía al finalizar cualquier práctica “normal”.
+       - pretest_completed / posttest_completed: se envían al finalizar cada test, con código NO enviado (solo evento).
+       - question_wrong: se envía solo si la respuesta es incorrecta (modo práctica con feedback).
     */
 
-    let numPreguntasPractica = 10;
+    // ---- Microsoft Forms prefill (IDs internos) ----
+    const FORMS_BASE = "https://forms.office.com/Pages/ResponsePage.aspx?id=SHBYtXCgrUO2VCCjHpstmYwnW_4oYD1LtgDlQkpWB19UOUVOQ0tRSDdaSllCWDI0VzdYNDNZSkdUNC4u";
+    const FORMS_FIELD_CODE = "r2342c3db78274ba7a5326c8584aa6f80";
+    const FORMS_FIELD_TYPE = "r5eed09c2fa204c8c974d933ef0f99c4c";
+    const FORMS_FIELD_SCORE_PRE = "rba5cd72f98b948d3af4a74ed100675c0";
+    const FORMS_FIELD_SCORE_POST = "r9d09974cd55f479883f20d4de67ee407";
 
+    // ---- Modos ----
+    const MODE_PRETEST = "__PRETEST__";
+    const MODE_POSTTEST = "__POSTTEST__";
+    const MODE_SIMULACRO = "__SIMULACRO_EXAMEN__";
+
+    // Tiempo PRE/POST: 15 minutos
+    const TEST_DURATION_SEC = 15 * 60;
+
+    let numPreguntasPractica = 10;
     let bancoTemas = {};
     let bancoExamenes = {};
+    let bancoPretest = [];
+    let bancoPosttest = [];
 
     let seleccionActual = "";
     let practica = [];
     let indice = 0;
     let aciertos = 0;
-
     let historial = [];
 
-    // Control de evento (solo una vez por práctica)
     let practiceCompletedSent = false;
+
+    // PRE/POST session
+    let participantCode = "";
+    let testStartTs = null;
+    let testTimer = null;
+    let remainingSec = 0;
+    let testModeActive = null; // PRETEST / POSTTEST
 
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -349,7 +394,6 @@
     }
 
     function hashQuestion(str) {
-      // FNV-1a 32-bit determinista; devuelve 12 chars hex
       let h = 0x811c9dc5;
       for (let i = 0; i < str.length; i++) {
         h ^= str.charCodeAt(i);
@@ -358,13 +402,32 @@
       return h.toString(16).substring(0, 12);
     }
 
+    function pad2(n){ return String(n).padStart(2, "0"); }
+    function formatDateEU(d){
+      return `${pad2(d.getDate())}-${pad2(d.getMonth()+1)}-${d.getFullYear()}`;
+    }
+    function formatTime24(d){
+      return `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+    }
+    function formatMMSS(sec){
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${pad2(m)}:${pad2(s)}`;
+    }
+
     window.onload = function() {
       fetch("questions.json")
         .then(r => r.json())
         .then(data => {
           bancoTemas = data.temas || {};
           bancoExamenes = data.examenes || {};
+
+          // Para PRE/POST: se esperan arrays en data.pretest y data.posttest (si no existen, quedarán vacíos)
+          bancoPretest = Array.isArray(data.pretest) ? data.pretest : [];
+          bancoPosttest = Array.isArray(data.posttest) ? data.posttest : [];
+
           cargarSelector(bancoTemas, bancoExamenes);
+          prepararModal();
         })
         .catch(() => {
           alert("No se pudo cargar questions.json. Revisa que exista en la raíz del repositorio.");
@@ -375,6 +438,22 @@
       const sel = document.getElementById("seleccion");
       sel.innerHTML = "";
 
+      // PRE/POST primero
+      const optPre = document.createElement("option");
+      optPre.value = MODE_PRETEST;
+      optPre.textContent = "PRETEST (20 preguntas, 15 minutos, sin feedback)";
+      sel.appendChild(optPre);
+
+      const optPost = document.createElement("option");
+      optPost.value = MODE_POSTTEST;
+      optPost.textContent = "POSTTEST (20 preguntas, 15 minutos, sin feedback)";
+      sel.appendChild(optPost);
+
+      const sep0 = document.createElement("option");
+      sep0.disabled = true;
+      sep0.textContent = "──────────";
+      sel.appendChild(sep0);
+
       const opt0 = document.createElement("option");
       opt0.value = "__MIX_TEMAS__";
       opt0.textContent = "Mezcla de temas (aleatorio)";
@@ -382,16 +461,16 @@
 
       const opt1 = document.createElement("option");
       opt1.value = "__MIX_EXAMENES__";
-      opt1.textContent = "Mezcla de exámenes (aleatorio)";
+      opt1.textContent = "Exámenes pasadas convocatorias (aleatorio)";
       sel.appendChild(opt1);
 
       const opt2 = document.createElement("option");
       opt2.value = "__MIX_TODO__";
-      opt2.textContent = "Mezcla total (temas + exámenes)";
+      opt2.textContent = "Mezcla total (temas + pasadas convocatorias)";
       sel.appendChild(opt2);
 
       const opt3 = document.createElement("option");
-      opt3.value = "__SIMULACRO_EXAMEN__";
+      opt3.value = MODE_SIMULACRO;
       opt3.textContent = "Simulacro de examen (20 preguntas)";
       sel.appendChild(opt3);
 
@@ -411,33 +490,94 @@
       sel.appendChild(ogTemas);
 
       const ogExam = document.createElement("optgroup");
-      ogExam.label = "Exámenes realizados en pasadas convocatorias";
+      ogExam.label = "Exámenes pasadas convocatorias";
 
       const optAllExam = document.createElement("option");
       optAllExam.value = "__EXAMENES_PASADOS__";
-      optAllExam.textContent = "Exámenes (pasadas convocatorias)";
+      optAllExam.textContent = "Exámenes pasadas convocatorias";
       ogExam.appendChild(optAllExam);
 
       sel.appendChild(ogExam);
+    }
+
+    function prepararModal(){
+      const code = document.getElementById("codigoParticipante");
+      const cbs = ["c1","c2","c3","c4"].map(id => document.getElementById(id));
+      const btn = document.getElementById("btnContinuarModal");
+
+      function validate(){
+        const okCode = (code.value || "").trim().length >= 4;
+        const okChecks = cbs.every(cb => cb.checked);
+        btn.disabled = !(okCode && okChecks);
+      }
+      code.addEventListener("input", validate);
+      cbs.forEach(cb => cb.addEventListener("change", validate));
+    }
+
+    function abrirModal(tipo){
+      testModeActive = tipo; // PRETEST / POSTTEST
+      document.getElementById("modalBackdrop").style.display = "flex";
+      document.getElementById("modalBackdrop").setAttribute("aria-hidden", "false");
+
+      const t = (tipo === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      document.getElementById("modalTitle").textContent = `Vas a iniciar el ${t}`;
+      document.getElementById("modalIntro").innerHTML =
+        `Duración máxima <strong>15 minutos</strong>. <strong>Sin feedback</strong> y <strong>sin retroceso</strong>. ` +
+        `Al finalizar, realiza una <strong>captura de pantalla del resultado</strong> y usa el botón <strong>Enviar resultados</strong> para abrir el formulario oficial.`;
+
+      // reset
+      document.getElementById("codigoParticipante").value = "";
+      ["c1","c2","c3","c4"].forEach(id => document.getElementById(id).checked = false);
+      document.getElementById("btnContinuarModal").disabled = true;
+      setTimeout(()=>document.getElementById("codigoParticipante").focus(), 50);
+    }
+
+    function cerrarModal(){
+      document.getElementById("modalBackdrop").style.display = "none";
+      document.getElementById("modalBackdrop").setAttribute("aria-hidden", "true");
+      testModeActive = null;
+    }
+
+    function confirmarModal(){
+      participantCode = (document.getElementById("codigoParticipante").value || "").trim();
+      if (!participantCode) return;
+
+      cerrarModal();
+      iniciarPrePost(testModeActive);
     }
 
     function iniciarPractica() {
       const sel = document.getElementById("seleccion");
       seleccionActual = sel.value;
 
+      // PRE/POST
+      if (seleccionActual === MODE_PRETEST || seleccionActual === MODE_POSTTEST) {
+        // Verificar que hay banco
+        if (seleccionActual === MODE_PRETEST && (!Array.isArray(bancoPretest) || bancoPretest.length < 20)) {
+          alert("No hay suficientes preguntas de PRETEST en questions.json (se esperan 20). Añade un array 'pretest' con 20 preguntas.");
+          return;
+        }
+        if (seleccionActual === MODE_POSTTEST && (!Array.isArray(bancoPosttest) || bancoPosttest.length < 20)) {
+          alert("No hay suficientes preguntas de POSTTEST en questions.json (se esperan 20). Añade un array 'posttest' con 20 preguntas.");
+          return;
+        }
+        abrirModal(seleccionActual);
+        return;
+      }
+
+      // ---- Prácticas normales ----
       let pool = [];
       let poolExamenes = unirTodasLasPreguntas(bancoExamenes);
-
       numPreguntasPractica = 10;
 
-      if (seleccionActual === "__SIMULACRO_EXAMEN__") {
+      if (seleccionActual === MODE_SIMULACRO) {
         numPreguntasPractica = 20;
 
         const temasNombres = Object.keys(bancoTemas || {});
         const temasShuffle = barajar([...temasNombres]);
 
         let seleccionTemas = [];
-        const maxDeTemas = Math.min(12, numPreguntasPractica - 8); // 12 de temas + 8 exámenes (si hay banco)
+        const maxDeTemas = Math.min(12, numPreguntasPractica - 8);
 
         for (let i = 0; i < temasShuffle.length; i++) {
           const t = temasShuffle[i];
@@ -474,9 +614,6 @@
         } else if (seleccionActual.startsWith("tema::")) {
           const nombreTema = seleccionActual.split("tema::")[1];
           pool = (bancoTemas[nombreTema] || []);
-        } else if (seleccionActual.startsWith("examen::")) {
-          const curso = seleccionActual.split("examen::")[1];
-          pool = (bancoExamenes[curso] || []);
         }
 
         if (pool.length < numPreguntasPractica) {
@@ -487,15 +624,12 @@
         practica = barajar([...pool]).slice(0, numPreguntasPractica);
       }
 
-      if (practica.length < numPreguntasPractica) {
-        alert("No hay suficientes preguntas para generar la práctica solicitada. Revisa el banco de ítems.");
-        return;
-      }
-
       indice = 0;
       aciertos = 0;
       historial = [];
       practiceCompletedSent = false;
+
+      detenerTimer(); // por si venía de un test
 
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
@@ -503,15 +637,120 @@
       mostrarPregunta();
     }
 
+    function iniciarPrePost(tipo){
+      // tipo: MODE_PRETEST / MODE_POSTTEST
+      numPreguntasPractica = 20;
+      indice = 0;
+      aciertos = 0;
+      historial = [];
+      practiceCompletedSent = false;
+
+      practica = (tipo === MODE_PRETEST)
+        ? barajar([...bancoPretest]).slice(0, 20)
+        : barajar([...bancoPosttest]).slice(0, 20);
+
+      // Iniciar timer
+      testStartTs = new Date();
+      remainingSec = TEST_DURATION_SEC;
+      iniciarTimer();
+
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "block";
+
+      mostrarPreguntaPrePost();
+    }
+
+    function iniciarTimer(){
+      detenerTimer();
+      actualizarEstadoPrePost(); // primer render
+      testTimer = setInterval(() => {
+        remainingSec--;
+        if (remainingSec <= 0) {
+          remainingSec = 0;
+          detenerTimer();
+          // terminar automáticamente
+          mostrarFinalPrePost(true);
+          return;
+        }
+        actualizarEstadoPrePost();
+      }, 1000);
+    }
+    function detenerTimer(){
+      if (testTimer) {
+        clearInterval(testTimer);
+        testTimer = null;
+      }
+    }
+
     function etiquetaSeleccion() {
+      if (seleccionActual === MODE_PRETEST) return "PRETEST";
+      if (seleccionActual === MODE_POSTTEST) return "POSTTEST";
       if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
-      if (seleccionActual === "__MIX_EXAMENES__") return "Mezcla de exámenes";
+      if (seleccionActual === "__MIX_EXAMENES__") return "Exámenes pasadas convocatorias";
       if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
-      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes realizados en pasadas convocatorias";
-      if (seleccionActual === "__SIMULACRO_EXAMEN__") return "Simulacro de examen";
+      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes pasadas convocatorias";
+      if (seleccionActual === MODE_SIMULACRO) return "Simulacro de examen";
       if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
-      if (seleccionActual.startsWith("examen::")) return "Examen " + seleccionActual.split("examen::")[1];
       return "Selección";
+    }
+
+    function actualizarEstadoPrePost(){
+      const t = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      document.getElementById("estado").innerHTML =
+        `Modo: ${t} | Pregunta ${indice + 1}/${numPreguntasPractica} | Aciertos: ${aciertos} | Tiempo restante: <span class="timer">${formatMMSS(remainingSec)}</span>`;
+    }
+
+    function mostrarPreguntaPrePost() {
+      if (indice >= numPreguntasPractica) {
+        mostrarFinalPrePost(false);
+        return;
+      }
+
+      actualizarEstadoPrePost();
+
+      const p = practica[indice];
+      document.getElementById("enunciado").textContent = p.pregunta;
+
+      const fb = document.getElementById("feedback");
+      fb.style.display = "none";
+      fb.className = "feedback";
+      fb.innerHTML = "";
+
+      const contOpc = document.getElementById("opciones");
+      contOpc.innerHTML = "";
+
+      p.opciones.forEach((texto, idx) => {
+        const b = document.createElement("button");
+        b.className = "opcion";
+        b.textContent = texto;
+        b.onclick = () => responderPrePost(idx);
+        contOpc.appendChild(b);
+      });
+    }
+
+    function responderPrePost(idxElegido){
+      if (remainingSec <= 0) return;
+
+      const p = practica[indice];
+      const correcta = p.correcta;
+
+      // guardar historial mínimo (opcional)
+      historial.push({
+        pregunta: p.pregunta,
+        correcta: correcta,
+        elegida: idxElegido
+      });
+
+      const botones = document.querySelectorAll("#opciones button");
+      botones.forEach(b => b.disabled = true);
+
+      if (idxElegido === correcta) aciertos++;
+
+      // Sin feedback y sin retroceso: avanzar inmediato
+      setTimeout(() => {
+        indice++;
+        mostrarPreguntaPrePost();
+      }, 120);
     }
 
     function mostrarPregunta() {
@@ -566,7 +805,6 @@
         fb.className = "feedback ok";
         fb.innerHTML = "<strong>✅ Respuesta correcta.</strong>";
       } else {
-        // Clarity: registrar fallo por ítem (hash determinista), sin texto ni datos personales
         const qid = hashQuestion(p.pregunta || "");
         if (window.clarity) {
           window.clarity("set", "question_id", qid);
@@ -596,6 +834,65 @@
       }, esperaMs);
     }
 
+    function construirFormsUrl(tipo, codigo, score){
+      const enc = encodeURIComponent;
+      let url = FORMS_BASE
+        + `&${FORMS_FIELD_CODE}=${enc(codigo)}`
+        + `&${FORMS_FIELD_TYPE}=${enc(tipo)}`;
+
+      if (tipo === "PRETEST") {
+        url += `&${FORMS_FIELD_SCORE_PRE}=${enc(String(score))}`;
+      } else {
+        url += `&${FORMS_FIELD_SCORE_POST}=${enc(String(score))}`;
+      }
+      return url;
+    }
+
+    function mostrarFinalPrePost(forzadoPorTiempo){
+      detenerTimer();
+      document.getElementById("panelJuego").style.display = "none";
+
+      const panel = document.getElementById("panelFinal");
+      panel.style.display = "block";
+
+      const fin = new Date();
+      const inicio = testStartTs || new Date();
+      const tipo = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      const score = aciertos;
+
+      // Clarity event (sin código)
+      if (window.clarity) {
+        window.clarity("event", tipo === "PRETEST" ? "pretest_completed" : "posttest_completed");
+      }
+
+      const urlForms = construirFormsUrl(tipo, participantCode, score);
+
+      panel.innerHTML = `
+        <h2>${tipo} finalizado</h2>
+        ${forzadoPorTiempo ? `<p><strong>Tiempo agotado.</strong> Se ha cerrado el test automáticamente.</p>` : ``}
+        <div class="envio-box">
+          <p><strong>Resumen para envío</strong></p>
+          <p><strong>Código:</strong> <code>${participantCode}</code></p>
+          <p><strong>Tipo de envío:</strong> <code>${tipo}</code></p>
+          <p><strong>Resultado:</strong> <code>${score}/20</code></p>
+          <p class="hint">Adjunta en el formulario la captura de pantalla de este resultado.</p>
+          <div class="envio-actions">
+            <a class="btn-link" href="${urlForms}" target="_blank" rel="noopener noreferrer">Enviar resultados (Microsoft Forms)</a>
+            <button onclick="reiniciarHome()">Volver</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function reiniciarHome(){
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "none";
+      detenerTimer();
+      participantCode = "";
+      testStartTs = null;
+      remainingSec = 0;
+    }
+
     function mostrarFinal() {
       document.getElementById("panelJuego").style.display = "none";
 
@@ -604,40 +901,71 @@
 
       const resultado = aciertos;
 
-      // Clarity: práctica completada (solo una vez)
       if (!practiceCompletedSent && window.clarity) {
         window.clarity("event", "practice_completed");
         practiceCompletedSent = true;
       }
 
-      // (3) Insignias + nota sobre 10 en simulacro
-      const esSimulacro = (seleccionActual === "__SIMULACRO_EXAMEN__" && numPreguntasPractica === 20);
-
-      // Regla de 3: 20 aciertos => 10
-      const notaExamen = esSimulacro ? ((resultado / 20) * 10) : null;
-
-      // Redondeo a 1 decimal (formato académico, legible)
-      const notaExamenTxt = esSimulacro ? (Math.round(notaExamen * 10) / 10).toFixed(1) : "";
-
-      // Insignia:
-      // - Prácticas de 10: se aplica a aciertos (1-4 / 5-7 / 8-10)
-      // - Simulacro de 20: se aplica a la nota sobre 10 (0-4 / 5-7 / 8-10)
-      const baseParaInsignia = esSimulacro ? notaExamen : resultado;
-
+      // ---- Insignia (nuevo criterio) ----
       let badgeTexto = "";
       let badgeClase = "";
 
-      if (baseParaInsignia <= 4) {
-        badgeTexto = "En proceso";
-        badgeClase = "badge enproceso";
-      } else if (baseParaInsignia >= 5 && baseParaInsignia <= 7) {
-        badgeTexto = "Adecuado";
-        badgeClase = "badge adecuado";
+      if (numPreguntasPractica === 10) {
+        if (resultado >= 1 && resultado <= 4) {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        } else if (resultado >= 5 && resultado <= 7) {
+          badgeTexto = "Adecuado";
+          badgeClase = "badge badge-adecuado";
+        } else if (resultado >= 8 && resultado <= 10) {
+          badgeTexto = "Avanzado";
+          badgeClase = "badge badge-avanzado";
+        } else {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        }
       } else {
-        badgeTexto = "Avanzado";
-        badgeClase = "badge avanzado";
+        // Simulacro (20): nota sobre 10
+        const nota10 = (numPreguntasPractica > 0) ? (resultado * 10 / numPreguntasPractica) : 0;
+        const notaTxt = nota10.toFixed(1).replace(".", ",");
+        // Insignia usando misma lógica pero escalada a 20
+        if (resultado >= 1 && resultado <= 8) {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        } else if (resultado >= 9 && resultado <= 14) {
+          badgeTexto = "Adecuado";
+          badgeClase = "badge badge-adecuado";
+        } else if (resultado >= 15 && resultado <= 20) {
+          badgeTexto = "Avanzado";
+          badgeClase = "badge badge-avanzado";
+        } else {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        }
+
+        // añadimos nota examen
+        panel.innerHTML = `
+          <h2>Práctica finalizada</h2>
+          <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
+          <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
+          <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
+          <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+        `;
+        // y seguimos con resumen
+        return renderResumen(panel, resultado);
       }
 
+      panel.innerHTML = `
+        <h2>Práctica finalizada</h2>
+        <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
+        <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
+        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+      `;
+
+      return renderResumen(panel, resultado);
+    }
+
+    function renderResumen(panel, resultado){
       const correctas = historial.filter(h => h.elegida === h.correcta);
       const incorrectas = historial.filter(h => h.elegida !== h.correcta);
 
@@ -673,17 +1001,7 @@
         ? incorrectas.map(h => renderItem(h, "ko")).join("")
         : "<p>No hay respuestas incorrectas en esta práctica.</p>";
 
-      const bloqueNotaSimulacro = esSimulacro
-        ? `<p><strong>Tu nota en el examen sería:</strong> ${notaExamenTxt}/10</p>`
-        : "";
-
-      panel.innerHTML = `
-        <h2>Práctica finalizada</h2>
-        <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
-        <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
-        ${bloqueNotaSimulacro}
-        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
-
+      panel.innerHTML += `
         <div class="resumen">
           <h3>Resumen de respuestas correctas</h3>
           ${bloqueCorrectas}
