@@ -239,9 +239,8 @@
   <div class="contenedor">
 
     <div class="header">
-      <!-- OJO: este nombre incluye doble espacio "Copia␠␠de..." -->
-      <!-- Si tu archivo en GitHub se llama distinto, cambia el src por el nombre real -->
-      <img class="logo-uned" src="Copia%20%20de%20uned%20logo%20alta%20res.JPG" alt="Logo UNED" />
+      <!-- LOGO UNED (como en tu código anterior) -->
+      <img class="logo-uned" src="logo-uned.png" alt="Logo UNED" />
       <div class="header-text">
         <p class="linea1">UNED — Grado en Pedagogía</p>
         <p class="linea2">Asignatura: <strong>Medios, Recursos Didácticos y Tecnología Educativa</strong></p>
@@ -352,8 +351,6 @@
   </div>
 
   <script>
-    /* Analítica gratuita con Microsoft Clarity */
-
     // ---- Microsoft Forms prefill (IDs internos) ----
     const FORMS_BASE = "https://forms.office.com/Pages/ResponsePage.aspx?id=SHBYtXCgrUO2VCCjHpstmYwnW_4oYD1LtgDlQkpWB19UOUVOQ0tRSDdaSllCWDI0VzdYNDNZSkdUNC4u";
     const FORMS_FIELD_CODE = "r2342c3db78274ba7a5326c8584aa6f80";
@@ -433,7 +430,6 @@
     }
 
     window.onload = function() {
-      // anti-caché (GitHub Pages suele cachear)
       const url = "questions.json?ts=" + Date.now();
 
       fetch(url)
@@ -456,7 +452,6 @@
             `Causa probable: el archivo no está en la raíz, el nombre no coincide, o el JSON tiene un error de sintaxis.<br>` +
             `<small>Detalle técnico: ${String(e)}</small>`
           );
-          // deja al menos el selector con un mensaje
           const sel = document.getElementById("seleccion");
           sel.innerHTML = `<option>ERROR: no se cargó questions.json</option>`;
         });
@@ -588,7 +583,6 @@
         return;
       }
 
-      // ---- Prácticas normales ----
       let pool = [];
       let poolExamenes = unirTodasLasPreguntas(bancoExamenes);
       numPreguntasPractica = 10;
@@ -780,10 +774,8 @@
       const tipo = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
       const score = aciertos;
 
-      // Duración real (si se agotó, será aprox TEST_DURATION_SEC)
       const durSec = Math.max(0, Math.round((fin.getTime() - inicio.getTime()) / 1000));
 
-      // Clarity event (sin código)
       if (window.clarity) {
         window.clarity("event", tipo === "PRETEST" ? "pretest_completed" : "posttest_completed");
       }
