@@ -27,7 +27,7 @@
       margin-bottom: 10px;
     }
     .logo-uned { width: 90px; height: auto; justify-self:center; }
-    .logo-seitel { width: 104px; height: auto; justify-self:center; } /* +10px respecto a 94px */
+    .logo-seitel { width: 104px; height: auto; justify-self:center; }
     .header-text { text-align:center; }
     .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
     .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
@@ -36,11 +36,10 @@
     @media (max-width: 600px) {
       .header { grid-template-columns: 1fr; text-align:center; }
       .logo-uned { width: 80px; }
-      .logo-seitel { width: 84px; } /* móvil se mantiene */
+      .logo-seitel { width: 84px; }
       .header-text { margin: 6px 0; }
     }
 
-    /* Título (azul institucional de botones) */
     h1 { margin: 12px 0 6px; font-size: 38px; color:#2c7be5; line-height: 1.1; }
     .seitel-tagline { display:block; font-size: 17px; font-weight: 700; margin-top: 8px; color:#2c7be5; }
     .subtitulo { margin: 14px 0 18px; color:#333; }
@@ -71,10 +70,10 @@
       font-weight: 700;
       color: #0B6E4F;
     }
-    .estado .timer { color:#8a2be2; font-weight:800; } /* violeta suave */
+    .estado .timer { color:#8a2be2; font-weight:800; }
+
     .bloque { text-align:left; margin-top: 14px; }
 
-    /* Caja negra de la pregunta */
     .caja-pregunta{
       max-width: 740px;
       margin: 10px auto 16px;
@@ -92,7 +91,6 @@
       color:#fff;
     }
 
-    /* Opciones */
     #opciones { max-width: 680px; margin: 0 auto; }
     .opcion {
       display:block;
@@ -120,11 +118,11 @@
     .ok { background:#e8f7ee; border:1px solid #bde5c8; }
     .ko { background:#fdeaea; border:1px solid #f5bcbc; }
 
-    /* Insignias (nuevo criterio) */
+    /* Insignias */
     .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:800; }
-    .badge-enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; } /* naranja suave */
-    .badge-adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; } /* azul */
-    .badge-avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#1b5e20; } /* verde */
+    .badge-enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; }
+    .badge-adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; }
+    .badge-avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#1b5e20; }
 
     .resumen {
       text-align:left;
@@ -222,6 +220,18 @@
     }
     .envio-box code{ background:#eef2ff; padding:2px 6px; border-radius:8px; }
     .envio-actions{ margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; }
+
+    /* Aviso visible si falla la carga del JSON */
+    .alerta-json{
+      max-width: 740px;
+      margin: 12px auto 0;
+      border:1px solid #f5bcbc;
+      border-radius:12px;
+      padding:12px 14px;
+      background:#fff3f3;
+      text-align:left;
+      display:none;
+    }
   </style>
 </head>
 
@@ -229,7 +239,9 @@
   <div class="contenedor">
 
     <div class="header">
-      <img class="logo-uned" src="logo-uned.png" alt="Logo UNED" />
+      <!-- OJO: este nombre incluye doble espacio "Copia␠␠de..." -->
+      <!-- Si tu archivo en GitHub se llama distinto, cambia el src por el nombre real -->
+      <img class="logo-uned" src="Copia%20%20de%20uned%20logo%20alta%20res.JPG" alt="Logo UNED" />
       <div class="header-text">
         <p class="linea1">UNED — Grado en Pedagogía</p>
         <p class="linea2">Asignatura: <strong>Medios, Recursos Didácticos y Tecnología Educativa</strong></p>
@@ -249,9 +261,13 @@
 
     <div class="fila">
       <label for="seleccion"><strong>Elige modalidad:</strong></label>
-      <select id="seleccion"></select>
+      <select id="seleccion">
+        <option>Cargando modalidades…</option>
+      </select>
       <button onclick="iniciarPractica()">Comenzar</button>
     </div>
+
+    <div class="alerta-json" id="alertaJson"></div>
 
     <div id="panelJuego" style="display:none;">
       <div class="estado" id="estado"></div>
@@ -336,12 +352,7 @@
   </div>
 
   <script>
-    /* Analítica gratuita con Microsoft Clarity:
-       - Pageviews: automáticos por el script de Clarity.
-       - practice_completed: se envía al finalizar cualquier práctica “normal”.
-       - pretest_completed / posttest_completed: se envían al finalizar cada test, con código NO enviado (solo evento).
-       - question_wrong: se envía solo si la respuesta es incorrecta (modo práctica con feedback).
-    */
+    /* Analítica gratuita con Microsoft Clarity */
 
     // ---- Microsoft Forms prefill (IDs internos) ----
     const FORMS_BASE = "https://forms.office.com/Pages/ResponsePage.aspx?id=SHBYtXCgrUO2VCCjHpstmYwnW_4oYD1LtgDlQkpWB19UOUVOQ0tRSDdaSllCWDI0VzdYNDNZSkdUNC4u";
@@ -368,8 +379,8 @@
     let practica = [];
     let indice = 0;
     let aciertos = 0;
-    let historial = [];
 
+    let historial = [];
     let practiceCompletedSent = false;
 
     // PRE/POST session
@@ -377,7 +388,13 @@
     let testStartTs = null;
     let testTimer = null;
     let remainingSec = 0;
-    let testModeActive = null; // PRETEST / POSTTEST
+    let testModeActive = null;
+
+    function mostrarAlertaJson(msg){
+      const box = document.getElementById("alertaJson");
+      box.style.display = "block";
+      box.innerHTML = msg;
+    }
 
     function barajar(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -416,21 +433,32 @@
     }
 
     window.onload = function() {
-      fetch("questions.json")
-        .then(r => r.json())
+      // anti-caché (GitHub Pages suele cachear)
+      const url = "questions.json?ts=" + Date.now();
+
+      fetch(url)
+        .then(r => {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
         .then(data => {
           bancoTemas = data.temas || {};
           bancoExamenes = data.examenes || {};
-
-          // Para PRE/POST: se esperan arrays en data.pretest y data.posttest (si no existen, quedarán vacíos)
           bancoPretest = Array.isArray(data.pretest) ? data.pretest : [];
           bancoPosttest = Array.isArray(data.posttest) ? data.posttest : [];
 
           cargarSelector(bancoTemas, bancoExamenes);
           prepararModal();
         })
-        .catch(() => {
-          alert("No se pudo cargar questions.json. Revisa que exista en la raíz del repositorio.");
+        .catch((e) => {
+          mostrarAlertaJson(
+            `<strong>No se pudo cargar <code>questions.json</code>.</strong><br>` +
+            `Causa probable: el archivo no está en la raíz, el nombre no coincide, o el JSON tiene un error de sintaxis.<br>` +
+            `<small>Detalle técnico: ${String(e)}</small>`
+          );
+          // deja al menos el selector con un mensaje
+          const sel = document.getElementById("seleccion");
+          sel.innerHTML = `<option>ERROR: no se cargó questions.json</option>`;
         });
     };
 
@@ -438,7 +466,6 @@
       const sel = document.getElementById("seleccion");
       sel.innerHTML = "";
 
-      // PRE/POST primero
       const optPre = document.createElement("option");
       optPre.value = MODE_PRETEST;
       optPre.textContent = "PRETEST (20 preguntas, 15 minutos, sin feedback)";
@@ -515,7 +542,7 @@
     }
 
     function abrirModal(tipo){
-      testModeActive = tipo; // PRETEST / POSTTEST
+      testModeActive = tipo;
       document.getElementById("modalBackdrop").style.display = "flex";
       document.getElementById("modalBackdrop").setAttribute("aria-hidden", "false");
 
@@ -525,7 +552,6 @@
         `Duración máxima <strong>15 minutos</strong>. <strong>Sin feedback</strong> y <strong>sin retroceso</strong>. ` +
         `Al finalizar, realiza una <strong>captura de pantalla del resultado</strong> y usa el botón <strong>Enviar resultados</strong> para abrir el formulario oficial.`;
 
-      // reset
       document.getElementById("codigoParticipante").value = "";
       ["c1","c2","c3","c4"].forEach(id => document.getElementById(id).checked = false);
       document.getElementById("btnContinuarModal").disabled = true;
@@ -541,7 +567,6 @@
     function confirmarModal(){
       participantCode = (document.getElementById("codigoParticipante").value || "").trim();
       if (!participantCode) return;
-
       cerrarModal();
       iniciarPrePost(testModeActive);
     }
@@ -550,15 +575,13 @@
       const sel = document.getElementById("seleccion");
       seleccionActual = sel.value;
 
-      // PRE/POST
       if (seleccionActual === MODE_PRETEST || seleccionActual === MODE_POSTTEST) {
-        // Verificar que hay banco
         if (seleccionActual === MODE_PRETEST && (!Array.isArray(bancoPretest) || bancoPretest.length < 20)) {
-          alert("No hay suficientes preguntas de PRETEST en questions.json (se esperan 20). Añade un array 'pretest' con 20 preguntas.");
+          alert("No hay suficientes preguntas de PRETEST en questions.json (se esperan 20).");
           return;
         }
         if (seleccionActual === MODE_POSTTEST && (!Array.isArray(bancoPosttest) || bancoPosttest.length < 20)) {
-          alert("No hay suficientes preguntas de POSTTEST en questions.json (se esperan 20). Añade un array 'posttest' con 20 preguntas.");
+          alert("No hay suficientes preguntas de POSTTEST en questions.json (se esperan 20).");
           return;
         }
         abrirModal(seleccionActual);
@@ -620,7 +643,6 @@
           alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + numPreguntasPractica + ".");
           return;
         }
-
         practica = barajar([...pool]).slice(0, numPreguntasPractica);
       }
 
@@ -629,7 +651,7 @@
       historial = [];
       practiceCompletedSent = false;
 
-      detenerTimer(); // por si venía de un test
+      detenerTimer();
 
       document.getElementById("panelFinal").style.display = "none";
       document.getElementById("panelJuego").style.display = "block";
@@ -638,7 +660,6 @@
     }
 
     function iniciarPrePost(tipo){
-      // tipo: MODE_PRETEST / MODE_POSTTEST
       numPreguntasPractica = 20;
       indice = 0;
       aciertos = 0;
@@ -649,7 +670,6 @@
         ? barajar([...bancoPretest]).slice(0, 20)
         : barajar([...bancoPosttest]).slice(0, 20);
 
-      // Iniciar timer
       testStartTs = new Date();
       remainingSec = TEST_DURATION_SEC;
       iniciarTimer();
@@ -662,13 +682,12 @@
 
     function iniciarTimer(){
       detenerTimer();
-      actualizarEstadoPrePost(); // primer render
+      actualizarEstadoPrePost();
       testTimer = setInterval(() => {
         remainingSec--;
         if (remainingSec <= 0) {
           remainingSec = 0;
           detenerTimer();
-          // terminar automáticamente
           mostrarFinalPrePost(true);
           return;
         }
@@ -680,18 +699,6 @@
         clearInterval(testTimer);
         testTimer = null;
       }
-    }
-
-    function etiquetaSeleccion() {
-      if (seleccionActual === MODE_PRETEST) return "PRETEST";
-      if (seleccionActual === MODE_POSTTEST) return "POSTTEST";
-      if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
-      if (seleccionActual === "__MIX_EXAMENES__") return "Exámenes pasadas convocatorias";
-      if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
-      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes pasadas convocatorias";
-      if (seleccionActual === MODE_SIMULACRO) return "Simulacro de examen";
-      if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
-      return "Selección";
     }
 
     function actualizarEstadoPrePost(){
@@ -734,23 +741,96 @@
       const p = practica[indice];
       const correcta = p.correcta;
 
-      // guardar historial mínimo (opcional)
-      historial.push({
-        pregunta: p.pregunta,
-        correcta: correcta,
-        elegida: idxElegido
-      });
+      historial.push({ pregunta: p.pregunta, correcta, elegida: idxElegido });
 
       const botones = document.querySelectorAll("#opciones button");
       botones.forEach(b => b.disabled = true);
 
       if (idxElegido === correcta) aciertos++;
 
-      // Sin feedback y sin retroceso: avanzar inmediato
       setTimeout(() => {
         indice++;
         mostrarPreguntaPrePost();
       }, 120);
+    }
+
+    function construirFormsUrl(tipo, codigo, score){
+      const enc = encodeURIComponent;
+      let url = FORMS_BASE
+        + `&${FORMS_FIELD_CODE}=${enc(codigo)}`
+        + `&${FORMS_FIELD_TYPE}=${enc(tipo)}`;
+
+      if (tipo === "PRETEST") {
+        url += `&${FORMS_FIELD_SCORE_PRE}=${enc(String(score))}`;
+      } else {
+        url += `&${FORMS_FIELD_SCORE_POST}=${enc(String(score))}`;
+      }
+      return url;
+    }
+
+    function mostrarFinalPrePost(forzadoPorTiempo){
+      detenerTimer();
+      document.getElementById("panelJuego").style.display = "none";
+
+      const panel = document.getElementById("panelFinal");
+      panel.style.display = "block";
+
+      const fin = new Date();
+      const inicio = testStartTs || new Date();
+      const tipo = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      const score = aciertos;
+
+      // Duración real (si se agotó, será aprox TEST_DURATION_SEC)
+      const durSec = Math.max(0, Math.round((fin.getTime() - inicio.getTime()) / 1000));
+
+      // Clarity event (sin código)
+      if (window.clarity) {
+        window.clarity("event", tipo === "PRETEST" ? "pretest_completed" : "posttest_completed");
+      }
+
+      const urlForms = construirFormsUrl(tipo, participantCode, score);
+
+      panel.innerHTML = `
+        <h2>${tipo} finalizado</h2>
+        ${forzadoPorTiempo ? `<p><strong>Tiempo agotado.</strong> Se ha cerrado el test automáticamente.</p>` : ``}
+
+        <div class="envio-box">
+          <p><strong>Resumen (obligatorio para la actividad voluntaria)</strong></p>
+          <p><strong>Código:</strong> <code>${participantCode}</code></p>
+          <p><strong>Modo:</strong> <code>${tipo}</code></p>
+          <p><strong>Resultado:</strong> <code>${score}/20</code></p>
+          <p><strong>Fecha y hora (local):</strong> <code>${formatDateEU(fin)} ${formatTime24(fin)}</code></p>
+          <p><strong>Duración estimada:</strong> <code>${formatMMSS(durSec)}</code></p>
+
+          <p class="warn"><strong>Instrucción:</strong> realiza una <strong>captura de pantalla</strong> de esta pantalla y adjúntala en el formulario.</p>
+
+          <div class="envio-actions">
+            <a class="btn-link" href="${urlForms}" target="_blank" rel="noopener noreferrer">Enviar resultados (Microsoft Forms)</a>
+            <button onclick="reiniciarHome()">Volver</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function reiniciarHome(){
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "none";
+      detenerTimer();
+      participantCode = "";
+      testStartTs = null;
+      remainingSec = 0;
+    }
+
+    function etiquetaSeleccion() {
+      if (seleccionActual === MODE_PRETEST) return "PRETEST";
+      if (seleccionActual === MODE_POSTTEST) return "POSTTEST";
+      if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
+      if (seleccionActual === "__MIX_EXAMENES__") return "Exámenes pasadas convocatorias";
+      if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
+      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes pasadas convocatorias";
+      if (seleccionActual === MODE_SIMULACRO) return "Simulacro de examen";
+      if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
+      return "Selección";
     }
 
     function mostrarPregunta() {
@@ -834,65 +914,6 @@
       }, esperaMs);
     }
 
-    function construirFormsUrl(tipo, codigo, score){
-      const enc = encodeURIComponent;
-      let url = FORMS_BASE
-        + `&${FORMS_FIELD_CODE}=${enc(codigo)}`
-        + `&${FORMS_FIELD_TYPE}=${enc(tipo)}`;
-
-      if (tipo === "PRETEST") {
-        url += `&${FORMS_FIELD_SCORE_PRE}=${enc(String(score))}`;
-      } else {
-        url += `&${FORMS_FIELD_SCORE_POST}=${enc(String(score))}`;
-      }
-      return url;
-    }
-
-    function mostrarFinalPrePost(forzadoPorTiempo){
-      detenerTimer();
-      document.getElementById("panelJuego").style.display = "none";
-
-      const panel = document.getElementById("panelFinal");
-      panel.style.display = "block";
-
-      const fin = new Date();
-      const inicio = testStartTs || new Date();
-      const tipo = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
-      const score = aciertos;
-
-      // Clarity event (sin código)
-      if (window.clarity) {
-        window.clarity("event", tipo === "PRETEST" ? "pretest_completed" : "posttest_completed");
-      }
-
-      const urlForms = construirFormsUrl(tipo, participantCode, score);
-
-      panel.innerHTML = `
-        <h2>${tipo} finalizado</h2>
-        ${forzadoPorTiempo ? `<p><strong>Tiempo agotado.</strong> Se ha cerrado el test automáticamente.</p>` : ``}
-        <div class="envio-box">
-          <p><strong>Resumen para envío</strong></p>
-          <p><strong>Código:</strong> <code>${participantCode}</code></p>
-          <p><strong>Tipo de envío:</strong> <code>${tipo}</code></p>
-          <p><strong>Resultado:</strong> <code>${score}/20</code></p>
-          <p class="hint">Adjunta en el formulario la captura de pantalla de este resultado.</p>
-          <div class="envio-actions">
-            <a class="btn-link" href="${urlForms}" target="_blank" rel="noopener noreferrer">Enviar resultados (Microsoft Forms)</a>
-            <button onclick="reiniciarHome()">Volver</button>
-          </div>
-        </div>
-      `;
-    }
-
-    function reiniciarHome(){
-      document.getElementById("panelFinal").style.display = "none";
-      document.getElementById("panelJuego").style.display = "none";
-      detenerTimer();
-      participantCode = "";
-      testStartTs = null;
-      remainingSec = 0;
-    }
-
     function mostrarFinal() {
       document.getElementById("panelJuego").style.display = "none";
 
@@ -906,7 +927,6 @@
         practiceCompletedSent = true;
       }
 
-      // ---- Insignia (nuevo criterio) ----
       let badgeTexto = "";
       let badgeClase = "";
 
@@ -925,10 +945,9 @@
           badgeClase = "badge badge-enproceso";
         }
       } else {
-        // Simulacro (20): nota sobre 10
         const nota10 = (numPreguntasPractica > 0) ? (resultado * 10 / numPreguntasPractica) : 0;
         const notaTxt = nota10.toFixed(1).replace(".", ",");
-        // Insignia usando misma lógica pero escalada a 20
+
         if (resultado >= 1 && resultado <= 8) {
           badgeTexto = "En proceso";
           badgeClase = "badge badge-enproceso";
@@ -943,7 +962,6 @@
           badgeClase = "badge badge-enproceso";
         }
 
-        // añadimos nota examen
         panel.innerHTML = `
           <h2>Práctica finalizada</h2>
           <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
@@ -951,8 +969,7 @@
           <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
           <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
         `;
-        // y seguimos con resumen
-        return renderResumen(panel, resultado);
+        return renderResumen(panel);
       }
 
       panel.innerHTML = `
@@ -961,11 +978,10 @@
         <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
       `;
-
-      return renderResumen(panel, resultado);
+      return renderResumen(panel);
     }
 
-    function renderResumen(panel, resultado){
+    function renderResumen(panel){
       const correctas = historial.filter(h => h.elegida === h.correcta);
       const incorrectas = historial.filter(h => h.elegida !== h.correcta);
 
