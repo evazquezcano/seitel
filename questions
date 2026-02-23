@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SEITEL — Questions</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a2e; --card2:#0f172a;
+      --txt:#e8eefc; --muted:#b7c3e6;
+      --accent:#6aa6ff; --ok:#39d98a; --bad:#ff5c5c;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:16px;
+      --btn:#172a4d;
+      --btn2:#1f3b72;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(106,166,255,.22), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(57,217,138,.10), transparent 55%),
+                  var(--bg);
+      color:var(--txt);
+      min-height:100vh;
+    }
+    header{
+      max-width:1100px; margin:28px auto 14px; padding:0 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand h1{font-size:18px; margin:0; letter-spacing:.4px}
+    .brand small{display:block; color:var(--muted); margin-top:2px}
+    .pill{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--border);
+      padding:8px 10px; border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
+
+    main{max-width:1100px; margin:0 auto; padding:0 18px 40px;}
+    .grid{display:grid; grid-template-columns: 340px 1fr; gap:16px;}
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr;} }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius:var(--radius);
+      padding:16px;
+    }
+    .card h2{margin:0 0 10px; font-size:16px}
+    .card p{margin:8px 0; color:var(--muted); line-height:1.35}
+    .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    label{font-size:12px; color:var(--muted)}
+    select, input{
+      width:100%;
+      background:rgba(255,255,255,.03);
+      color:var(--txt);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px 12px;
+      outline:none;
+    }
+    select:disabled, input:disabled{opacity:.65}
+    .btn{
+      cursor:pointer;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      color:var(--txt);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px 12px;
+      transition:.15s;
+      font-weight:600;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(106,166,255,.35)}
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(106,166,255,.28), rgba(106,166,255,.10));
+      border-color: rgba(106,166,255,.35);
+    }
+    .btn.danger{
+      background: linear-gradient(180deg, rgba(255,92,92,.22), rgba(255,92,92,.08));
+      border-color: rgba(255,92,92,.35);
+    }
+    .meta{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;
+      color:var(--muted); font-size:12px;
+    }
+    .meta b{color:var(--txt); font-weight:700}
+    .hr{height:1px; background:var(--border); margin:14px 0}
+
+    .qhead{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+    }
+    .progress{
+      width:220px;
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--border);
+      border-radius:999px;
+      overflow:hidden;
+      height:10px;
+      margin-top:6px;
+    }
+    .bar{height:100%; width:0%; background: linear-gradient(90deg, rgba(106,166,255,.85), rgba(57,217,138,.65));}
+    .qtitle{margin:0; font-size:16px; line-height:1.35}
+    .qsub{margin:6px 0 0; color:var(--muted); font-size:12px}
+    .answers{display:grid; gap:10px; margin-top:14px}
+    .opt{
+      text-align:left;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      cursor:pointer;
+      transition:.12s;
+      line-height:1.25;
+    }
+    .opt:hover{border-color: rgba(106,166,255,.35)}
+    .opt[disabled]{cursor:not-allowed; opacity:.75}
+    .opt.correct{border-color: rgba(57,217,138,.55); background: rgba(57,217,138,.10)}
+    .opt.wrong{border-color: rgba(255,92,92,.55); background: rgba(255,92,92,.08)}
+    .feedback{
+      margin-top:14px;
+      padding:12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      display:none;
+    }
+    .feedback strong{color:var(--txt)}
+    .footerActions{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; margin-top:14px; align-items:center;
+    }
+    .leftActions, .rightActions{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .timer{
+      font-variant-numeric: tabular-nums;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--txt);
+      font-size:12px;
+    }
+    .hidden{display:none !important;}
+    .notice{
+      font-size:12px; color:var(--muted);
+      border:1px dashed rgba(255,255,255,.18);
+      padding:10px 12px;
+      border-radius:14px;
+      background: rgba(255,255,255,.02);
+    }
+    .result{
+      text-align:center;
+      padding:18px;
+    }
+    .result h2{margin:0 0 8px}
+    .result .big{font-size:34px; font-weight:800; letter-spacing:.4px}
+    .result .muted{color:var(--muted); margin-top:6px}
+    a.link{color:var(--accent); text-decoration:none}
+    a.link:hover{text-decoration:underline}
+  </style>
+
+  <!-- Si ya integras Clarity en index.html y NO quieres duplicarlo, puedes eliminar este bloque -->
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <div>
+        <h1>SEITEL — Banco de ítems</h1>
+        <small>Modo práctica, simulacro y PRETEST/POSTTEST (sin backend; ejecución en cliente).</small>
+      </div>
+    </div>
+    <div class="pill" id="statusPill">Inicializando…</div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <!-- Panel de control -->
+      <section class="card">
+        <h2>Configuración</h2>
+
+        <div class="row">
+          <div style="flex:1; min-width:220px;">
+            <label for="mode">Modalidad</label>
+            <select id="mode">
+              <option value="practice10">Práctica (10 preguntas)</option>
+              <option value="mock20">Simulacro (20 preguntas)</option>
+              <option value="pretest">PRETEST (20 preguntas, 15 min, sin feedback)</option>
+              <option value="posttest">POSTTEST (20 preguntas, 15 min, sin feedback)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div style="flex:1; min-width:220px;">
+            <label for="source">Banco</label>
+            <select id="source">
+              <option value="temas">Temas</option>
+              <option value="examenes">Exámenes pasadas convocatorias</option>
+            </select>
+          </div>
+          <div style="flex:1; min-width:220px;">
+            <label for="topic">Tema</label>
+            <select id="topic"></select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div style="flex:1; min-width:220px;">
+            <label for="level">Nivel</label>
+            <select id="level">
+              <option value="todos">Todos</option>
+              <option value="basico">Básico</option>
+              <option value="avanzado">Avanzado</option>
+              <option value="examen">Examen</option>
+            </select>
+          </div>
+          <div style="flex:1; min-width:220px;">
+            <label for="shuffle">Aleatorizar</label>
+            <select id="shuffle">
+              <option value="yes">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="notice" id="modeNotice">
+          En <b>PRETEST/POSTTEST</b>: 15 minutos, 20 ítems, <b>sin feedback</b> y <b>sin retroceso</b>.
+        </div>
+
+        <div class="footerActions" style="margin-top:12px">
+          <div class="leftActions">
+            <button class="btn primary" id="startBtn">Comenzar</button>
+            <button class="btn danger" id="resetBtn">Reiniciar</button>
+          </div>
+        </div>
+
+        <div class="meta" style="margin-top:12px">
+          <div>Ítems cargados: <b id="loadedCount">—</b></div>
+          <div>Selección: <b id="selectedCount">—</b></div>
+        </div>
+
+        <div class="hr"></div>
+
+        <p style="margin:0; font-size:12px; color:var(--muted)">
+          Nota técnica: El banco principal se carga desde <code>questions.json</code>. PRETEST/POSTTEST se integran en el propio HTML. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+        </p>
+      </section>
+
+      <!-- Área de test -->
+      <section class="card" id="testCard">
+        <div id="preStart" class="notice">
+          Configura la modalidad y pulsa <b>Comenzar</b>.
+          <div style="margin-top:8px">
+            Si usas esta página desde <code>index.html</code>, puedes abrirla como <code>questions.html</code> y enlazarla desde el botón de “Comenzar”.
+          </div>
+        </div>
+
+        <div id="inTest" class="hidden">
+          <div class="qhead">
+            <div style="flex:1">
+              <p class="qsub" id="qMeta">Pregunta —</p>
+              <h2 class="qtitle" id="qText">—</h2>
+            </div>
+            <div style="min-width:240px; text-align:right">
+              <div class="timer hidden" id="timerPill">15:00</div>
+              <div class="progress" aria-label="Progreso del test">
+                <div class="bar" id="progressBar"></div>
+              </div>
+              <p class="qsub" id="progressText">0 / 0</p>
+            </div>
+          </div>
+
+          <div class="answers" id="answers"></div>
+
+          <div class="feedback" id="feedback"></div>
+
+          <div class="footerActions">
+            <div class="leftActions">
+              <button class="btn" id="prevBtn">Anterior</button>
+              <button class="btn" id="nextBtn">Siguiente</button>
+            </div>
+            <div class="rightActions">
+              <button class="btn primary" id="finishBtn">Finalizar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="result" class="hidden result">
+          <h2>Resultado</h2>
+          <div class="big" id="scoreBig">—</div>
+          <div class="muted" id="scoreDetail">—</div>
+          <div class="hr"></div>
+          <div class="muted">
+            Recomendación operativa: realiza una <b>captura de pantalla</b> para evidencias de investigación (si procede).
+          </div>
+          <div style="margin-top:12px">
+            <button class="btn primary" id="againBtn">Hacer otro test</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    /***********************
+     * 1) PRETEST / POSTTEST (20 ítems cada uno)
+     *    Estructura: { pregunta, opciones[], correcta }
+     ***********************/
+    const PRETEST = [
+      {
+        pregunta: "¿Cuáles son las tres tendencias que existieron desde el principio en el campo de la Tecnología Educativa?",
+        opciones: [
+          "La tendencia conductista, la tendencia cognitivista y la tendencia constructivista, que representan las tres grandes corrientes psicológicas que han fundamentado el diseño instruccional a lo largo del siglo XX",
+          "La tendencia presencial, la tendencia semipresencial y la tendencia en línea, que reflejan la evolución de los formatos de enseñanza mediada por tecnología desde los años 80 hasta la actualidad",
+          "La tendencia preservativa o normativa, la pedagogía medial-funcional o adaptativa y la apropiación reflexiva práctica, activa y crítica de los medios como portadores de contenidos y mensajes",
+          "La tendencia instrumentalista, la tendencia humanista y la tendencia crítica, que representan los tres grandes paradigmas que han orientado la investigación en tecnología educativa a lo largo del último tercio del siglo XX"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué señala Wagner (2012) sobre la distancia entre el sistema educativo actual y las necesidades reales de la sociedad de la información?",
+        opciones: [
+          "Afirma que las escuelas y universidades están ofreciendo una formación excesivamente especializada en competencias digitales, descuidando los conocimientos fundamentales de las disciplinas académicas tradicionales",
+          "Sostiene que los estudiantes de hoy no están preparados para afrontar los retos que la sociedad les demanda porque las escuelas y universidades están demasiado preocupadas en instruirles para unos exámenes que nada tienen que ver con dichos retos",
+          "Defiende que la brecha entre la formación académica y las necesidades del mercado laboral solo puede superarse mediante la colaboración directa entre las instituciones educativas y las empresas tecnológicas privadas",
+          "Concluye que la solución a esta distancia reside en la digitalización completa de los sistemas educativos, eliminando los exámenes tradicionales y sustituyéndolos por portafolios de competencias digitales"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué informe de la «National School Board Association» evidenció en 2010 sobre el uso de Internet por parte de los estudiantes?",
+        opciones: [
+          "Que el 100% de los estudiantes con acceso a Internet lo utilizaba exclusivamente con fines de entretenimiento, sin que existiera evidencia de usos educativos espontáneos fuera del horario escolar",
+          "Que el 96% de los estudiantes con acceso a Internet empleaba herramientas de interacción social con texto, imágenes y vídeo, y que incluso niños de Educación Primaria eran ya creadores de contenidos multimedia",
+          "Que el uso de herramientas de interacción social en Internet correlacionaba negativamente con el rendimiento académico en todas las etapas educativas, siendo los estudiantes de mayor rendimiento los que menos las utilizaban",
+          "Que solo el 30% de los estudiantes con acceso a Internet era capaz de crear contenidos multimedia de forma autónoma, siendo la mayoría consumidores pasivos de información sin competencias de producción digital"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué permite la licencia Creative Commons en el contexto del uso de materiales didácticos digitales creados por docentes?",
+        opciones: [
+          "Permite que el docente registre sus materiales digitales como propiedad intelectual exclusiva, impidiendo que otros docentes los utilicen, modifiquen o redistribuyan sin el pago de una tasa de licencia previamente establecida",
+          "Garantiza que los materiales solo puedan ser utilizados por los estudiantes del propio docente que los creó, protegiendo la autoría y evitando que los recursos digitales sean empleados fuera del contexto para el que fueron diseñados",
+          "Permite que el trabajo se pueda compartir y redistribuir de forma legal, pudiendo realizar modificaciones y mejoras para su uso posterior, garantizando los derechos de la autoría y valorando el trabajo, esfuerzo y contribución del docente al desarrollo de la didáctica con base en TIC",
+          "Obliga a todos los docentes que utilicen materiales con esta licencia a publicar sus propias adaptaciones en el mismo repositorio donde encontraron el recurso original, generando una red de intercambio bidireccional y obligatorio"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "Según Cope y Kalantzis (2009), el Cambio 4 «Ampliar la gama y combinación de los modos de representación» señala una brecha entre docentes y estudiantes. ¿En qué consiste exactamente esa brecha?",
+        opciones: [
+          "Los estudiantes prefieren contenidos escritos mientras los docentes apuestan por lo audiovisual",
+          "Los docentes dominan mejor las herramientas digitales, pero no las integran curricularmente",
+          "Los estudiantes carecen de alfabetización digital suficiente para aprovechar los nuevos medios",
+          "Los estudiantes ya explotan las posibilidades de los nuevos medios mientras los educadores aún no han hecho un uso suficiente de ellas"
+        ],
+        correcta: 3
+      },
+      {
+        pregunta: "Según la Fundación Curalia (2012), ¿qué capacidad define exclusivamente el enfoque del Nivel 3 del smartphone educativo?",
+        opciones: [
+          "Valorar críticamente el trabajo de compañeros durante actividades grupales dentro del aula",
+          "Utilizar juegos y aplicaciones interactivas para afianzar contenidos curriculares",
+          "Participar activamente en el diseño, creación y publicación de actividades y proyectos mediante las herramientas del smartphone",
+          "Consumir contenidos digitales de forma autónoma en cualquier lugar y momento"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué institución fue pionera en la creación del OpenCourseWare (OCW) y en qué año lo lanzó?",
+        opciones: [
+          "El Instituto Tecnológico de Massachusetts (MIT), que en el año 2001 creó el OpenCourseWare como iniciativa pionera de acceso libre y gratuito a materiales académicos",
+          "La Universidad de Stanford, que en 2008 lanzó el OpenCourseWare como plataforma para ofrecer cursos de inteligencia artificial de forma gratuita",
+          "La Universidad de Harvard, que en 2012 impulsó el OpenCourseWare junto al MIT como respuesta a la creciente demanda de formación en abierto",
+          "La UNESCO, que en 2001 promovió el OpenCourseWare como parte del Informe Delors sobre las competencias necesarias para el siglo XXI"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Qué característica diferenciadora ofrece Social Mention respecto a otros buscadores de monitorización en redes sociales?",
+        opciones: [
+          "Además de buscar menciones en tiempo real en medios sociales, ofrece una valoración de la marca o palabra insertada y cuenta con Social Mention Alerts para recibir avisos programados cuando la palabra clave sea mencionada",
+          "Permite filtrar contenidos por idioma y período de tiempo y ofrece suscripción a un canal RSS asociado a cada búsqueda realizada en blogs y microblogs",
+          "Rastrea noticias de más de 50.000 medios europeos permitiendo filtrar por región, fuentes, temáticas y período de tiempo combinándolo con Google Alerts",
+          "Facilita la gestión colaborativa de proyectos permitiendo crear un timing de acciones y asignarlas a personas concretas con alertas automáticas por correo"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cuál es la función principal de la aplicación Quiver en el ámbito educativo?",
+        opciones: [
+          "Permitir la descarga de modelos tridimensionales anatómicos para visualizarlos directamente en el espacio del aula sin necesidad de imprimir ningún material físico",
+          "Crear marcadores digitales personalizados que generan escenarios de realidad aumentada a partir de fotografías tomadas con la cámara del dispositivo móvil",
+          "Colorear láminas impresas obtenidas de la web para que, mediante la cámara del dispositivo móvil, los dibujos cobren vida en escenarios de Realidad Aumentada útiles para el aprendizaje",
+          "Funcionar como plataforma de videoconferencia educativa enriquecida con elementos tridimensionales para conectar aulas de distintos países en tiempo real"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué es Blender y cuáles son sus características más relevantes para el ámbito educativo?",
+        opciones: [
+          "Es una aplicación móvil exclusiva para iOS que permite crear marcadores de realidad aumentada a partir de fotografías del entorno para usarlos en clases de ciencias naturales",
+          "Es una plataforma web de modelado 3D diseñada específicamente para escolares de primaria, con interfaz simplificada y limitada a formas geométricas básicas de colores",
+          "Es un programa multiplataforma de software libre dedicado al modelado, animación y creación de gráficos tridimensionales para representar objetos de ciencias como estructuras anatómicas, biológicas o elementos de laboratorio",
+          "Es una herramienta de diseño exclusiva para dispositivos iPad que permite modelar objetos en tres dimensiones para su impresión con impresoras 3D escolares de bajo coste"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué responsabilidad comparten Gobierno y Administraciones educativas según el art. 97 LO 3/2018?",
+        opciones: [
+          "Regular redes sociales",
+          "Incluir competencia digital y prevención de riesgos en currículo",
+          "Sustituir legislación",
+          "Automatizar enseñanza"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué establece el artículo 83.1 de la LO 3/2018 sobre educación digital?",
+        opciones: [
+          "Regulación exclusiva del profesorado",
+          "Inserción del alumnado en sociedad digital y uso seguro",
+          "Eliminación TIC",
+          "Sustitución currículo"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "Si consideramos los diferentes niveles de uso educativo del smartphone, cuando este dispositivo es utilizado como apoyo para consumir materiales complementarios como podcasts, vídeos y lecturas, estaríamos ante el nivel:",
+        opciones: ["4","3","2","1"],
+        correcta: 3
+      },
+      {
+        pregunta: "«Scratch» es un programa que tiene diferentes beneficios en los procesos de enseñanza-aprendizaje, pero por sus características no es recomendable su uso para:",
+        opciones: [
+          "Alumnado con sobredotación intelectual",
+          "Alumnado con dificultades de aprendizaje",
+          "Alumnado con autismo o discapacidad intelectual",
+          "Ninguna de las opciones anteriores es correcta"
+        ],
+        correcta: 3
+      },
+      {
+        pregunta: "Los cursos MOOC se han bifurcado en dos tendencias principales, señale qué opción es la correcta:",
+        opciones: ["SOOCs y GROOCs","SPOCs y COOCs","dMOOCs y zMOOCs","cMOOCs y xMOOCs"],
+        correcta: 3
+      },
+      {
+        pregunta: "En un centro educativo, el estudiante puede otorgar su consentimiento para el tratamiento de sus datos cuando tiene:",
+        opciones: ["12 años","16 años","14 años","18 años"],
+        correcta: 2
+      },
+      {
+        pregunta: "EVOKE:",
+        opciones: ["Es una aplicación de realidad aumentada","Es una aplicación de realidad virtual","Es un juego experiencial","Es una red social educativa"],
+        correcta: 2
+      },
+      {
+        pregunta: "Scratch está basado en el lenguaje de programación:",
+        opciones: ["HTML","COBOL","LOGO","C++"],
+        correcta: 2
+      },
+      {
+        pregunta: "El proyecto DigCompEdu, destinado a orientar la formación y promover en las aulas una integración efectiva y educativa de las competencias digitales, contempla 5 niveles concretados en áreas de competencias. Indique cuál de las siguientes forma parte de dichas áreas de competencias:",
+        opciones: ["Seguridad en la red","Creación de contenidos digitales","Comunicación y colaboración on line","Todas son correctas"],
+        correcta: 3
+      },
+      {
+        pregunta: "Los derechos que la Ley de propiedad intelectual reconoce a los autores de las obras son:",
+        opciones: ["Derechos morales y patrimoniales","Derechos de autoría y distribución","Derechos de marca y modificación","Derecho a la libertad de expresión y opinión"],
+        correcta: 0
+      }
+    ];
+
+    const POSTTEST = [
+      {
+        pregunta: "¿Cómo define la AECT la Tecnología Educativa en su formulación de 2007?",
+        opciones: [
+          "Como el conjunto de dispositivos digitales y plataformas virtuales diseñados para sustituir los materiales didácticos tradicionales en los procesos de enseñanza presencial y a distancia",
+          "Como el estudio y la práctica ética de proporcionar y mejorar los aprendizajes, creando, usando y aplicando los adecuados procesos y recursos tecnológicos",
+          "Como la disciplina que estudia exclusivamente el impacto de los medios audiovisuales en el rendimiento académico del alumnado de educación primaria y secundaria",
+          "Como el campo científico que diseña y evalúa sistemas de instrucción automatizados capaces de sustituir al docente en contextos de aprendizaje masivo en línea"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Por qué es difícil atribuir un mejor desempeño académico exclusivamente al efecto de la tecnología según el texto?",
+        opciones: [
+          "Porque la tecnología siempre genera efectos negativos en el rendimiento académico que compensan sus beneficios, haciendo imposible demostrar una mejora neta atribuible exclusivamente a su uso",
+          "Porque en los estudios sobre educación entran muchas variables no controlables, como las características psicoevolutivas, familiares y contextuales de cada alumno, y los resultados no pueden extrapolarse a todos los contextos similares",
+          "Porque los docentes no están suficientemente formados para diseñar experiencias de aprendizaje con tecnología que permitan medir con rigor el impacto específico de los recursos digitales utilizados",
+          "Porque las instituciones educativas no han desarrollado instrumentos de evaluación suficientemente precisos para medir el impacto diferencial de la tecnología en el rendimiento de cada estudiante"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuáles son los cinco aprendizajes fundamentales que el informe Delors (1996) de la UNESCO establece para el alumnado del siglo XXI?",
+        opciones: [
+          "Aprender a conocer, aprender a hacer, aprender a convivir, aprender a colaborar y aprender a ser, aprendizajes que se expresan en las competencias clave para el desarrollo educativo, personal y profesional de los ciudadanos",
+          "Aprender a buscar, aprender a seleccionar, aprender a crear, aprender a difundir y aprender a evaluar la información digital, competencias que orientan el tratamiento de la información en la sociedad del conocimiento",
+          "Aprender a leer, aprender a escribir, aprender a calcular, aprender a razonar y aprender a comunicarse, habilidades instrumentales básicas que siguen siendo el fundamento de cualquier proceso formativo eficaz",
+          "Aprender a emprender, aprender a innovar, aprender a liderar, aprender a gestionar y aprender a competir, competencias orientadas a la inserción exitosa en el mercado laboral del siglo XXI"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Qué distinción fundamental establece el texto entre «innovar» con tecnología y el mero uso de técnicas o recursos diferentes en el aula?",
+        opciones: [
+          "Innovar consiste en adquirir los dispositivos tecnológicos más avanzados disponibles en el mercado e incorporarlos al aula antes que los centros educativos competidores del entorno",
+          "Innovar implica únicamente cambiar el soporte en el que se presentan los contenidos, pasando de los materiales impresos a los formatos digitales accesibles desde cualquier dispositivo",
+          "Innovar no es utilizar una técnica o recurso diferente en el aula, sino demostrar que con esa técnica o recurso el estudiante aprende más y mejor, ahondando en los procesos pedagógicos que subyacen al empleo de la tecnología",
+          "Innovar equivale a introducir cualquier herramienta digital en el proceso de enseñanza-aprendizaje, independientemente de si mejora o no los resultados académicos del alumnado"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "Según la Fundación Curalia (2012), ¿qué actividad caracteriza específicamente el Nivel 1 del uso educativo del smartphone?",
+        opciones: [
+          "Utilizar el dispositivo como apoyo para consumir materiales complementarios como podcast, vídeos y lecturas",
+          "Interactuar con aplicaciones multimedia para contrastar el nivel de conocimientos adquiridos",
+          "Participar en el diseño y desarrollo de proyectos mediante herramientas de creación digital",
+          "Explorar herramientas colaborativas para analizar el trabajo de otros compañeros"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "Según Cope y Kalantzis (2009), el Cambio 4 «Ampliar la gama y combinación de los modos de representación» señala una brecha entre docentes y estudiantes. ¿En qué consiste exactamente esa brecha?",
+        opciones: [
+          "Los estudiantes prefieren contenidos escritos mientras los docentes apuestan por lo audiovisual",
+          "Los docentes dominan mejor las herramientas digitales, pero no las integran curricularmente",
+          "Los estudiantes carecen de alfabetización digital suficiente para aprovechar los nuevos medios",
+          "Los estudiantes ya explotan las posibilidades de los nuevos medios mientras los educadores aún no han hecho un uso suficiente de ellas"
+        ],
+        correcta: 3
+      },
+      {
+        pregunta: "¿Quiénes acuñaron el término MOOC y en qué contexto surgió por primera vez?",
+        opciones: [
+          "Dave Cormier y Bryan Alexander acuñaron el acrónimo en Canadá para designar el curso en línea «Connectivism and Connective Knowledge» realizado por Siemens y Downes en 2008",
+          "George Siemens y Stephen Downes crearon el término al diseñar el primer curso masivo en abierto ofrecido por la Universidad de Harvard en 2008",
+          "Sebastian Thrun y Andrew Ng desarrollaron el concepto en Stanford como base para el posterior lanzamiento de la plataforma Coursera en 2012",
+          "Ivan Illich y Bernie Sanders propusieron el término en 1971 como parte de su visión de una educación accesible y gratuita para toda la ciudadanía"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Qué principio del conectivismo formulado por Siemens (2004) fundamenta la formación masiva en los MOOC?",
+        opciones: [
+          "El conocimiento se transmite linealmente desde el docente hacia el estudiante a través de contenidos estructurados en secuencias predefinidas",
+          "El aprendizaje depende exclusivamente de la calidad de los contenidos digitales ofrecidos por las instituciones en las plataformas en abierto",
+          "El conocimiento personal se construye en red, que alimenta a organizaciones e instituciones, que retroalimentan esa red facilitando nuevo aprendizaje al individuo",
+          "La formación masiva se basa en la evaluación objetiva de contenidos mediante pruebas estandarizadas que garantizan la acreditación del aprendizaje"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Cuál es la función principal de la aplicación Quiver en el ámbito educativo?",
+        opciones: [
+          "Permitir la descarga de modelos tridimensionales anatómicos para visualizarlos directamente en el espacio del aula sin necesidad de imprimir ningún material físico",
+          "Crear marcadores digitales personalizados que generan escenarios de realidad aumentada a partir de fotografías tomadas con la cámara del dispositivo móvil",
+          "Colorear láminas impresas obtenidas de la web para que, mediante la cámara del dispositivo móvil, los dibujos cobren vida en escenarios de Realidad Aumentada útiles para el aprendizaje",
+          "Funcionar como plataforma de videoconferencia educativa enriquecida con elementos tridimensionales para conectar aulas de distintos países en tiempo real"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué elemento diferencia a la Realidad Mixta de la Realidad Aumentada y de la Realidad Virtual?",
+        opciones: [
+          "La Realidad Mixta integra objetos digitales en un entorno real, abarcando tanto la Realidad Aumentada como la Realidad Virtual, sin limitarse únicamente al mundo físico ni al virtual",
+          "La Realidad Mixta únicamente superpone información digital sobre el entorno real, sin modificar la percepción del mundo físico que rodea al usuario en ningún momento",
+          "La Realidad Mixta crea un entorno completamente artificial e imaginario donde el usuario queda totalmente aislado del mundo físico que le rodea",
+          "La Realidad Mixta es simplemente otro nombre para la Realidad Virtual cuando se utiliza con dispositivos móviles en contextos educativos formales"
+        ],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cuál es el objetivo principal del Reglamento (UE) 2016/679 (RGPD)?",
+        opciones: [
+          "Establecer una normativa mundial",
+          "Armonizar las legislaciones nacionales de los Estados miembros de la UE",
+          "Introducir restricciones excesivas",
+          "Sustituir las constituciones nacionales"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuál es la relación entre la protección de datos y el derecho a la intimidad?",
+        opciones: [
+          "Son términos intercambiables",
+          "El derecho a la intimidad es un subconjunto de la protección de datos",
+          "La protección de datos es un subconjunto del derecho a la intimidad",
+          "No existe relación"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "La UNESCO fue pionera en regular el tipo de aprendizaje competencial del estudiante y lo hizo por primera vez a través del:",
+        opciones: [
+          "Informe PISA (2000)",
+          "Informe Eurydice (2002)",
+          "Informe Delors (1996)",
+          "Informe TALIS (1995)"
+        ],
+        correcta: 2
+      },
+      {
+        pregunta: "«DigComp» es un acrónimo que propone un mapa de competencias digitales y ha sido propuesto por:",
+        opciones: ["PISA","OCDE","Comisión Europea","España"],
+        correcta: 2
+      },
+      {
+        pregunta: "Los cursos MOOC se han bifurcado en dos tendencias principales, señale qué opción es la correcta:",
+        opciones: ["SOOCs y GROOCs","SPOCs y COOCs","dMOOCs y zMOOCs","cMOOCs y xMOOCs"],
+        correcta: 3
+      },
+      {
+        pregunta: "Si consideramos los diferentes niveles de uso educativo del smartphone, cuando este dispositivo es utilizado como apoyo para consumir materiales complementarios como podcasts, vídeos y lecturas, estaríamos ante el nivel:",
+        opciones: ["4","3","2","1"],
+        correcta: 3
+      },
+      {
+        pregunta: "La investigación, la experimentación y la mejora continua de los procesos de enseñanza:",
+        opciones: [
+          "Es exclusiva de la docencia en la Enseñanza Superior",
+          "Hace referencia exclusivamente a la innovación tecnológica",
+          "No es en sí una función docente, pero sí es recomendable",
+          "Es una función de los docentes que se ha contemplado en las últimas leyes educativas"
+        ],
+        correcta: 3
+      },
+      {
+        pregunta: "La investigación ha demostrado que el modelo de clase invertida (Flipped classroom) es más efectivo en unos ámbitos que en otros; en el que parece tener mayor efectividad es en:",
+        opciones: ["Científico","Humanístico","Tecnológico","Literario"],
+        correcta: 1
+      },
+      {
+        pregunta: "Uno de los siguientes principios no es aplicable al aprendizaje adaptado y personalizado, señale cuál:",
+        opciones: [
+          "Aprendizaje progresivo competencial",
+          "Adaptabilidad a la interpretación y representación de la realidad simbólica",
+          "Flexibilidad y adaptabilidad de los entornos de aprendizaje",
+          "Diversidad en la tipología de estudiantes y aprendizajes"
+        ],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Por qué es importante ampliar la gama y combinación de modos de representación en los contextos ubicuos de aprendizaje?",
+        opciones: [
+          "Porque los nuevos medios digitales han hecho obsoletos los textos escritos",
+          "Porque solo a través de medios audiovisuales se puede lograr el aprendizaje significativo",
+          "Porque los estudiantes han desarrollado nuevas formas de comunicación y las propuestas didácticas deben adaptarse",
+          "Porque el lenguaje tradicional es insuficiente para cualquier tipo de aprendizaje"
+        ],
+        correcta: 2
+      }
+    ];
+
+    /***********************
+     * 2) Estado global
+     ***********************/
+    const $ = (id) => document.getElementById(id);
+
+    const statusPill = $("statusPill");
+    const modeSel = $("mode");
+    const sourceSel = $("source");
+    const topicSel = $("topic");
+    const levelSel = $("level");
+    const shuffleSel = $("shuffle");
+    const startBtn = $("startBtn");
+    const resetBtn = $("resetBtn");
+
+    const loadedCount = $("loadedCount");
+    const selectedCount = $("selectedCount");
+
+    const modeNotice = $("modeNotice");
+
+    const preStart = $("preStart");
+    const inTest = $("inTest");
+    const resultBox = $("result");
+
+    const qMeta = $("qMeta");
+    const qText = $("qText");
+    const answersBox = $("answers");
+    const feedbackBox = $("feedback");
+    const progressBar = $("progressBar");
+    const progressText = $("progressText");
+    const prevBtn = $("prevBtn");
+    const nextBtn = $("nextBtn");
+    const finishBtn = $("finishBtn");
+    const againBtn = $("againBtn");
+
+    const timerPill = $("timerPill");
+
+    let bank = null;         // questions.json completo
+    let selected = [];       // ítems seleccionados para el test actual
+    let current = 0;
+    let answers = [];        // respuestas del usuario (índice) o null
+    let locked = false;      // para bloquear (pre/post)
+    let showFeedback = true; // práctica/simulacro sí; pre/post no
+    let allowBack = true;    // pre/post no
+
+    // Temporizador
+    let timerSeconds = null;
+    let timerHandle = null;
+
+    /***********************
+     * 3) Utilidades
+     ***********************/
+    function shuffleArray(arr){
+      const a = arr.slice();
+      for(let i=a.length-1; i>0; i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function fmtTime(s){
+      const mm = String(Math.floor(s/60)).padStart(2,"0");
+      const ss = String(s%60).padStart(2,"0");
+      return `${mm}:${ss}`;
+    }
+
+    function stopTimer(){
+      if(timerHandle){ clearInterval(timerHandle); timerHandle = null; }
+    }
+
+    function startTimerIfNeeded(){
+      stopTimer();
+      if(timerSeconds === null) return;
+
+      timerPill.classList.remove("hidden");
+      timerPill.textContent = fmtTime(timerSeconds);
+
+      timerHandle = setInterval(() => {
+        timerSeconds--;
+        timerPill.textContent = fmtTime(Math.max(0,timerSeconds));
+        if(timerSeconds <= 0){
+          stopTimer();
+          finishTest(true);
+        }
+      }, 1000);
+    }
+
+    /***********************
+     * 4) Carga del banco principal (questions.json)
+     ***********************/
+    async function loadBank(){
+      statusPill.textContent = "Cargando questions.json…";
+      try{
+        const res = await fetch("./questions.json", { cache: "no-store" });
+        if(!res.ok) throw new Error("No se pudo cargar questions.json");
+        bank = await res.json();
+        statusPill.textContent = "Banco cargado";
+        initSelectors();
+      }catch(e){
+        statusPill.textContent = "Error: questions.json";
+        console.error(e);
+        // Aun así permitimos PRE/POST sin questions.json
+        bank = { temas:{}, examenes:{} };
+        initSelectors();
+      }
+    }
+
+    function initSelectors(){
+      // Rellenar temas inicialmente
+      refreshTopics();
+      refreshCounts();
+
+      modeSel.addEventListener("change", () => {
+        const isPrePost = (modeSel.value === "pretest" || modeSel.value === "posttest");
+        // En PRE/POST: no depende del banco externo; desactivamos selectores de temas
+        sourceSel.disabled = isPrePost;
+        topicSel.disabled = isPrePost;
+        levelSel.disabled = isPrePost;
+        shuffleSel.disabled = false; // sí podemos aleatorizar dentro del pre/post
+
+        modeNotice.style.display = isPrePost ? "block" : "none";
+        refreshCounts();
+      });
+
+      sourceSel.addEventListener("change", () => {
+        refreshTopics();
+        refreshCounts();
+      });
+      topicSel.addEventListener("change", refreshCounts);
+      levelSel.addEventListener("change", refreshCounts);
+      shuffleSel.addEventListener("change", refreshCounts);
+
+      startBtn.addEventListener("click", startTest);
+      resetBtn.addEventListener("click", hardReset);
+      prevBtn.addEventListener("click", () => goto(current - 1));
+      nextBtn.addEventListener("click", () => goto(current + 1));
+      finishBtn.addEventListener("click", () => finishTest(false));
+      againBtn.addEventListener("click", hardReset);
+
+      // Estado inicial
+      modeSel.dispatchEvent(new Event("change"));
+    }
+
+    function refreshTopics(){
+      const src = sourceSel.value; // temas | examenes
+      const obj = (bank && bank[src]) ? bank[src] : {};
+      const keys = Object.keys(obj);
+
+      topicSel.innerHTML = "";
+      if(keys.length === 0){
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "— (no disponible)";
+        topicSel.appendChild(opt);
+        return;
+      }
+
+      for(const k of keys){
+        const opt = document.createElement("option");
+        opt.value = k;
+        opt.textContent = k;
+        topicSel.appendChild(opt);
+      }
+    }
+
+    function getPoolFromBank(){
+      const src = sourceSel.value;
+      const topic = topicSel.value;
+      const level = levelSel.value;
+
+      const obj = (bank && bank[src] && bank[src][topic]) ? bank[src][topic] : [];
+      const pool = obj.filter(q => {
+        if(level === "todos") return true;
+        return (q.nivel || "").toLowerCase() === level.toLowerCase();
+      });
+
+      return pool;
+    }
+
+    function refreshCounts(){
+      const m = modeSel.value;
+      if(m === "pretest"){
+        loadedCount.textContent = PRETEST.length;
+        selectedCount.textContent = "20";
+        return;
+      }
+      if(m === "posttest"){
+        loadedCount.textContent = POSTTEST.length;
+        selectedCount.textContent = "20";
+        return;
+      }
+
+      const pool = getPoolFromBank();
+      loadedCount.textContent = pool.length;
+
+      const need = (m === "practice10") ? 10 : 20;
+      selectedCount.textContent = Math.min(need, pool.length);
+    }
+
+    /***********************
+     * 5) Construcción del test
+     ***********************/
+    function buildSelection(){
+      const m = modeSel.value;
+      const doShuffle = (shuffleSel.value === "yes");
+
+      locked = false;
+      showFeedback = true;
+      allowBack = true;
+      timerSeconds = null;
+
+      if(m === "pretest"){
+        selected = doShuffle ? shuffleArray(PRETEST) : PRETEST.slice();
+        selected = selected.slice(0, 20);
+        locked = true;
+        showFeedback = false;
+        allowBack = false;
+        timerSeconds = 15 * 60;
+        return;
+      }
+
+      if(m === "posttest"){
+        selected = doShuffle ? shuffleArray(POSTTEST) : POSTTEST.slice();
+        selected = selected.slice(0, 20);
+        locked = true;
+        showFeedback = false;
+        allowBack = false;
+        timerSeconds = 15 * 60;
+        return;
+      }
+
+      // práctica / simulacro desde banco externo
+      const pool = getPoolFromBank();
+      const need = (m === "practice10") ? 10 : 20;
+
+      let base = doShuffle ? shuffleArray(pool) : pool.slice();
+      selected = base.slice(0, Math.min(need, base.length));
+
+      locked = false;
+      showFeedback = true;
+      allowBack = true;
+      timerSeconds = null; // sin temporizador por defecto
+    }
+
+    function startTest(){
+      buildSelection();
+      if(selected.length === 0){
+        alert("No hay ítems disponibles para la selección actual.");
+        return;
+      }
+
+      answers = new Array(selected.length).fill(null);
+      current = 0;
+
+      preStart.classList.add("hidden");
+      resultBox.classList.add("hidden");
+      inTest.classList.remove("hidden");
+
+      feedbackBox.style.display = "none";
+      render();
+
+      prevBtn.disabled = true;
+      nextBtn.disabled = (selected.length <= 1);
+      finishBtn.disabled = false;
+
+      // Reglas pre/post
+      if(!allowBack){
+        prevBtn.classList.add("hidden");
+      }else{
+        prevBtn.classList.remove("hidden");
+      }
+
+      startTimerIfNeeded();
+    }
+
+    function render(){
+      const q = selected[current];
+      const idx = current + 1;
+
+      const srcLabel = (modeSel.value === "pretest") ? "PRETEST"
+                     : (modeSel.value === "posttest") ? "POSTTEST"
+                     : `${sourceSel.value.toUpperCase()} · ${topicSel.value || "—"} · ${levelSel.value.toUpperCase()}`;
+
+      qMeta.textContent = `${srcLabel} — Pregunta ${idx} de ${selected.length}`;
+      qText.textContent = q.pregunta;
+
+      // Progreso
+      const pct = ((idx-1) / (selected.length-1 || 1)) * 100;
+      progressBar.style.width = `${Math.max(0, Math.min(100, pct))}%`;
+      progressText.textContent = `${idx} / ${selected.length}`;
+
+      // Botones nav
+      prevBtn.disabled = (current === 0);
+      nextBtn.disabled = (current >= selected.length - 1);
+
+      // En pre/post: “Siguiente” si no respondido aún se mantiene activo,
+      // pero no permitimos volver: allowBack=false ya lo controla.
+      // Render opciones
+      answersBox.innerHTML = "";
+      const chosen = answers[current];
+
+      q.opciones.forEach((optTxt, optIdx) => {
+        const b = document.createElement("button");
+        b.className = "opt";
+        b.type = "button";
+        b.textContent = optTxt;
+
+        // Estados de corrección solo si hay feedback
+        if(showFeedback && chosen !== null){
+          if(optIdx === q.correcta) b.classList.add("correct");
+          if(optIdx === chosen && chosen !== q.correcta) b.classList.add("wrong");
+          b.disabled = true;
+        }
+
+        // En pre/post: al responder bloqueamos esa pregunta y avanzamos automáticamente
+        if(!showFeedback && chosen !== null){
+          b.disabled = true;
+        }
+
+        b.addEventListener("click", () => choose(optIdx));
+        answersBox.appendChild(b);
+      });
+
+      // Feedback (solo práctica/simulacro)
+      if(showFeedback && chosen !== null){
+        const ok = (chosen === q.correcta);
+        feedbackBox.style.display = "block";
+        const expl = (q.explicacion) ? ` ${q.explicacion}` : "";
+        feedbackBox.innerHTML = ok
+          ? `<strong>Correcta.</strong>${expl ? "<br/>" + expl : ""}`
+          : `<strong>Incorrecta.</strong> La opción correcta es: <strong>${q.opciones[q.correcta]}</strong>${expl ? "<br/>" + expl : ""}`;
+      }else{
+        feedbackBox.style.display = "none";
+      }
+    }
+
+    function choose(optIdx){
+      // Si ya contestó, no permitir cambios (especialmente en pre/post)
+      if(answers[current] !== null) return;
+
+      answers[current] = optIdx;
+
+      if(showFeedback){
+        render(); // muestra feedback y bloquea
+        return;
+      }
+
+      // PRE/POST: sin feedback; autoadvance si no es última
+      render();
+      if(current < selected.length - 1){
+        goto(current + 1);
+      }else{
+        finishTest(false);
+      }
+    }
+
+    function goto(i){
+      if(i < 0 || i >= selected.length) return;
+
+      // No permitir retroceso en pre/post
+      if(!allowBack && i < current) return;
+
+      current = i;
+      render();
+    }
+
+    function finishTest(autoByTimeout){
+      stopTimer();
+
+      // Puntuación
+      let correct = 0;
+      for(let i=0;i<selected.length;i++){
+        if(answers[i] === selected[i].correcta) correct++;
+      }
+      const total = selected.length;
+
+      inTest.classList.add("hidden");
+      resultBox.classList.remove("hidden");
+
+      const pct = Math.round((correct/total)*100);
+      $("scoreBig").textContent = `${correct} / ${total}`;
+      $("scoreDetail").textContent = autoByTimeout
+        ? `Tiempo agotado. Rendimiento: ${pct}%.`
+        : `Rendimiento: ${pct}%.`;
+
+      // Reset UI nav
+      timerPill.classList.add("hidden");
+    }
+
+    function hardReset(){
+      stopTimer();
+      selected = [];
+      answers = [];
+      current = 0;
+      locked = false;
+      timerSeconds = null;
+
+      inTest.classList.add("hidden");
+      resultBox.classList.add("hidden");
+      preStart.classList.remove("hidden");
+
+      prevBtn.classList.remove("hidden");
+      timerPill.classList.add("hidden");
+
+      refreshCounts();
+    }
+
+    // Init
+    loadBank();
+  </script>
+</body>
+</html>
