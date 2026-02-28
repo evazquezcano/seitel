@@ -429,6 +429,17 @@
       return `${pad2(m)}:${pad2(s)}`;
     }
 
+    // ==========================================================
+    // NUEVO: Formato largo en español para el sello de finalización
+    // ==========================================================
+    function formatDateLongES(d){
+      const meses = [
+        "enero","febrero","marzo","abril","mayo","junio",
+        "julio","agosto","septiembre","octubre","noviembre","diciembre"
+      ];
+      return `${d.getDate()} de ${meses[d.getMonth()]} de ${d.getFullYear()}`;
+    }
+
     window.onload = function() {
       const url = "questions.json?ts=" + Date.now();
 
@@ -791,7 +802,10 @@
           <p><strong>Código:</strong> <code>${participantCode}</code></p>
           <p><strong>Modo:</strong> <code>${tipo}</code></p>
           <p><strong>Resultado:</strong> <code>${score}/20</code></p>
-          <p><strong>Fecha y hora (local):</strong> <code>${formatDateEU(fin)} ${formatTime24(fin)}</code></p>
+
+          <!-- Sello en formato largo (lo que pides para capturas): -->
+          <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
+
           <p><strong>Duración estimada:</strong> <code>${formatMMSS(durSec)}</code></p>
 
           <p class="warn"><strong>Instrucción:</strong> realiza una <strong>captura de pantalla</strong> de esta pantalla y adjúntala en el formulario.</p>
@@ -912,6 +926,7 @@
       const panel = document.getElementById("panelFinal");
       panel.style.display = "block";
 
+      const fin = new Date(); // NUEVO: sello temporal para cualquier práctica
       const resultado = aciertos;
 
       if (!practiceCompletedSent && window.clarity) {
@@ -960,6 +975,9 @@
           <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
           <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
           <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+
+          <!-- NUEVO: sello temporal -->
+          <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
         `;
         return renderResumen(panel);
       }
@@ -969,6 +987,9 @@
         <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
         <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+
+        <!-- NUEVO: sello temporal -->
+        <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
       `;
       return renderResumen(panel);
     }
