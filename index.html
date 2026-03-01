@@ -144,6 +144,22 @@
     .item.ko { border-color:#f5bcbc; background:#fff3f3; }
     .item small { color:#555; display:block; margin-top:8px; }
 
+    /* ✅ NUEVO: sello de fecha/hora robusto en móvil */
+    .summary-datetime{
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px dashed #c7d2fe;
+      border-radius: 10px;
+      background: #eef2ff;
+      font-size: 14px;
+      line-height: 1.35;
+      word-break: break-word;
+      text-align:left;
+      max-width: 740px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
     .footer {
       margin-top: 22px;
       padding-top: 14px;
@@ -430,7 +446,7 @@
     }
 
     // ==========================================================
-    // NUEVO: Formato largo en español para el sello de finalización
+    // Formato largo en español para el sello de finalización
     // ==========================================================
     function formatDateLongES(d){
       const meses = [
@@ -665,6 +681,9 @@
     }
 
     function iniciarPrePost(tipo){
+      // ✅ NUEVO: fijar modo de forma determinista (evita inconsistencias en móvil)
+      seleccionActual = tipo;
+
       numPreguntasPractica = 20;
       indice = 0;
       aciertos = 0;
@@ -803,8 +822,10 @@
           <p><strong>Modo:</strong> <code>${tipo}</code></p>
           <p><strong>Resultado:</strong> <code>${score}/20</code></p>
 
-          <!-- Sello en formato largo (lo que pides para capturas): -->
-          <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
+          <!-- ✅ NUEVO: sello robusto en móvil -->
+          <div class="summary-datetime">
+            <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+          </div>
 
           <p><strong>Duración estimada:</strong> <code>${formatMMSS(durSec)}</code></p>
 
@@ -926,7 +947,7 @@
       const panel = document.getElementById("panelFinal");
       panel.style.display = "block";
 
-      const fin = new Date(); // NUEVO: sello temporal para cualquier práctica
+      const fin = new Date(); // sello temporal para cualquier práctica
       const resultado = aciertos;
 
       if (!practiceCompletedSent && window.clarity) {
@@ -951,45 +972,49 @@
           badgeTexto = "En proceso";
           badgeClase = "badge badge-enproceso";
         }
-      } else {
-        const nota10 = (numPreguntasPractica > 0) ? (resultado * 10 / numPreguntasPractica) : 0;
-        const notaTxt = nota10.toFixed(1).replace(".", ",");
-
-        if (resultado >= 1 && resultado <= 8) {
-          badgeTexto = "En proceso";
-          badgeClase = "badge badge-enproceso";
-        } else if (resultado >= 9 && resultado <= 14) {
-          badgeTexto = "Adecuado";
-          badgeClase = "badge badge-adecuado";
-        } else if (resultado >= 15 && resultado <= 20) {
-          badgeTexto = "Avanzado";
-          badgeClase = "badge badge-avanzado";
-        } else {
-          badgeTexto = "En proceso";
-          badgeClase = "badge badge-enproceso";
-        }
 
         panel.innerHTML = `
           <h2>Práctica finalizada</h2>
           <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
           <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
-          <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
           <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
 
-          <!-- NUEVO: sello temporal -->
-          <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
+          <!-- ✅ NUEVO: sello robusto en móvil -->
+          <div class="summary-datetime">
+            <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+          </div>
         `;
         return renderResumen(panel);
+      }
+
+      const nota10 = (numPreguntasPractica > 0) ? (resultado * 10 / numPreguntasPractica) : 0;
+      const notaTxt = nota10.toFixed(1).replace(".", ",");
+
+      if (resultado >= 1 && resultado <= 8) {
+        badgeTexto = "En proceso";
+        badgeClase = "badge badge-enproceso";
+      } else if (resultado >= 9 && resultado <= 14) {
+        badgeTexto = "Adecuado";
+        badgeClase = "badge badge-adecuado";
+      } else if (resultado >= 15 && resultado <= 20) {
+        badgeTexto = "Avanzado";
+        badgeClase = "badge badge-avanzado";
+      } else {
+        badgeTexto = "En proceso";
+        badgeClase = "badge badge-enproceso";
       }
 
       panel.innerHTML = `
         <h2>Práctica finalizada</h2>
         <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
         <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
+        <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
         <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
 
-        <!-- NUEVO: sello temporal -->
-        <p><strong>Práctica realizada:</strong> <code>${formatDateLongES(fin)} a las ${formatTime24(fin)}</code></p>
+        <!-- ✅ NUEVO: sello robusto en móvil -->
+        <div class="summary-datetime">
+          <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+        </div>
       `;
       return renderResumen(panel);
     }
