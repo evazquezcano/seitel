@@ -2582,10 +2582,34 @@
       {
         "pregunta": "¿Cuál es la relación entre la protección de datos y el derecho a la intimidad?",
         "opciones": [
-          "Son términos intercambiables b) El derecho a la intimidad es un subconjunto de la protección de datos c) La protección de datos es un subconjunto del derecho a la intimidad d) No existe relación",
-          "¿Cuál es el objetivo principal del Reglamento (UE) 2016/679 (RGPD)?",
-          "Establecer una normativa mundial b) Armonizar las legislaciones nacionales de los Estados miembros de la UE c) Introducir restricciones excesivas d) Sustituir las constituciones nacionales",
-          "¿Qué papel desempeña Internet en relación con los derechos digitales?"
+          "Son términos intercambiables",
+          "El derecho a la intimidad es un subconjunto de la protección de datos",
+          "La protección de datos es un subconjunto del derecho a la intimidad",
+          "No existe relación"
+        ],
+        "correcta": 2,
+        "nivel": "basico",
+        "explicacion": "El derecho a la intimidad es un concepto más amplio que protege la vida privada de las personas. La protección de datos constituye una manifestación específica de ese derecho, centrada en regular el tratamiento de datos personales para garantizar privacidad y seguridad."
+      },
+      {
+        "pregunta": "¿Cuál es el objetivo principal del Reglamento (UE) 2016/679 (RGPD)?",
+        "opciones": [
+          "Establecer una normativa mundial",
+          "Armonizar las legislaciones nacionales de los Estados miembros de la UE",
+          "Introducir restricciones excesivas",
+          "Sustituir las constituciones nacionales"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "El RGPD busca unificar y armonizar la normativa de protección de datos en la Unión Europea, garantizando un nivel homogéneo de protección y facilitando la libre circulación de datos en el mercado digital europeo."
+      },
+      {
+        "pregunta": "¿Qué papel desempeña Internet en relación con los derechos digitales?",
+        "opciones": [
+          "Impacto exclusivamente negativo",
+          "Facilita el ejercicio de derechos digitales",
+          "Es irrelevante",
+          "Genera únicamente confusión normativa"
         ],
         "correcta": 1,
         "nivel": "basico",
@@ -2594,10 +2618,34 @@
       {
         "pregunta": "¿Por qué fue relevante la promulgación de la Ley Orgánica 3/2018 en España?",
         "opciones": [
-          "Limita el acceso a Internet b) Otorga poder ilimitado al Estado c) Refuerza los derechos digitales y adapta el RGPD al ordenamiento español d) Sustituye la Constitución",
-          "¿Qué caracteriza el derecho a la protección de datos como derecho fundamental autónomo?",
-          "Es equivalente al derecho a la intimidad b) Carece de protección constitucional c) Permite controlar el uso de los datos personales conforme al principio de proporcionalidad d) Se limita al ámbito tecnológico",
-          "¿Qué establece el principio del interés superior del menor en protección de datos?"
+          "Limita el acceso a Internet",
+          "Otorga poder ilimitado al Estado",
+          "Refuerza los derechos digitales y adapta el RGPD al ordenamiento español",
+          "Sustituye la Constitución"
+        ],
+        "correcta": 2,
+        "nivel": "basico",
+        "explicacion": "La LO 3/2018 adapta el RGPD al contexto español y refuerza derechos digitales, incluyendo privacidad en línea y protección de menores."
+      },
+      {
+        "pregunta": "¿Qué caracteriza el derecho a la protección de datos como derecho fundamental autónomo?",
+        "opciones": [
+          "Es equivalente al derecho a la intimidad",
+          "Carece de protección constitucional",
+          "Permite controlar el uso de los datos personales conforme al principio de proporcionalidad",
+          "Se limita al ámbito tecnológico"
+        ],
+        "correcta": 2,
+        "nivel": "basico",
+        "explicacion": "El Tribunal Constitucional reconoce la protección de datos como derecho autónomo, vinculado al control sobre la información personal y sujeto al principio de proporcionalidad."
+      },
+      {
+        "pregunta": "¿Qué establece el principio del interés superior del menor en protección de datos?",
+        "opciones": [
+          "Carece de respaldo legal",
+          "Es irrelevante",
+          "Debe primar en cualquier actuación que afecte al menor",
+          "Se aplica solo en ámbito sanitario"
         ],
         "correcta": 2,
         "nivel": "basico",
@@ -2606,10 +2654,34 @@
       {
         "pregunta": "¿Qué rango tienen los derechos al honor, intimidad y propia imagen en la Constitución Española?",
         "opciones": [
-          "No son fundamentales b) Son derechos fundamentales c) Son secundarios d) No están recogidos",
-          "¿Por qué el derecho a la protección de datos es considerado autónomo?",
-          "Depende del derecho a la intimidad b) Es independiente y tiene regulación específica c) No tiene regulación d) Es inferior a otros derechos",
-          "¿Qué requisitos debe cumplir el consentimiento para el tratamiento de datos?"
+          "No son fundamentales",
+          "Son derechos fundamentales",
+          "Son secundarios",
+          "No están recogidos"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "El artículo 18 de la Constitución Española reconoce estos derechos como fundamentales, garantizando protección reforzada."
+      },
+      {
+        "pregunta": "¿Por qué el derecho a la protección de datos es considerado autónomo?",
+        "opciones": [
+          "Depende del derecho a la intimidad",
+          "Es independiente y tiene regulación específica",
+          "No tiene regulación",
+          "Es inferior a otros derechos"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "El Tribunal Constitucional reconoce su autonomía por su amplitud de protección y regulación específica."
+      },
+      {
+        "pregunta": "¿Qué requisitos debe cumplir el consentimiento para el tratamiento de datos?",
+        "opciones": [
+          "Libre, específico, informado e inequívoco",
+          "General y ambiguo",
+          "Implícito",
+          "Automático"
         ],
         "correcta": 0,
         "nivel": "basico",
@@ -2618,10 +2690,34 @@
       {
         "pregunta": "¿Por qué es necesario proteger datos especialmente sensibles en educación?",
         "opciones": [
-          "Carecen de importancia b) Su divulgación puede vulnerar derechos fundamentales c) No existe normativa d) Solo requieren aviso verbal",
-          "¿Cuál es la edad mínima para consentir tratamiento de datos en España?",
-          "12 años b) 14 años c) 16 años d) No existe límite",
-          "¿Qué disposición establece capacidad de consentimiento desde los 14 años?"
+          "Carecen de importancia",
+          "Su divulgación puede vulnerar derechos fundamentales",
+          "No existe normativa",
+          "Solo requieren aviso verbal"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "Datos sensibles como origen racial o salud requieren protección reforzada para evitar discriminación o vulneración de dignidad."
+      },
+      {
+        "pregunta": "¿Cuál es la edad mínima para consentir tratamiento de datos en España?",
+        "opciones": [
+          "12 años",
+          "14 años",
+          "16 años",
+          "No existe límite"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "La normativa española establece los 14 años como edad mínima para prestar consentimiento válido en tratamiento de datos personales."
+      },
+      {
+        "pregunta": "¿Qué disposición establece capacidad de consentimiento desde los 14 años?",
+        "opciones": [
+          "Ley Orgánica 3/2018",
+          "Artículo 4.3 de la Ley Orgánica 1/1996",
+          "Código Penal",
+          "Real Decreto educativo"
         ],
         "correcta": 1,
         "nivel": "basico",
@@ -2630,10 +2726,34 @@
       {
         "pregunta": "¿Qué consentimiento es necesario para recabar datos de miembros familiares?",
         "opciones": [
-          "Del menor b) Del tutor c) De los titulares de esos datos d) No es necesario",
-          "¿Qué información debe proporcionarse antes de recoger datos personales?",
-          "Solo finalidad b) Finalidad, destinatarios y derechos ARCO c) Solo identidad responsable d) Ninguna",
-          "¿Cuál es la base legal para no publicar imágenes de alumnado sin consentimiento?"
+          "Del menor",
+          "Del tutor",
+          "De los titulares de esos datos",
+          "No es necesario"
+        ],
+        "correcta": 2,
+        "nivel": "basico",
+        "explicacion": "Cada titular debe consentir el tratamiento de sus propios datos personales."
+      },
+      {
+        "pregunta": "¿Qué información debe proporcionarse antes de recoger datos personales?",
+        "opciones": [
+          "Solo finalidad",
+          "Finalidad, destinatarios y derechos ARCO",
+          "Solo identidad responsable",
+          "Ninguna"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "La normativa exige informar sobre finalidad, destinatarios y derechos de acceso, rectificación, cancelación y oposición."
+      },
+      {
+        "pregunta": "¿Cuál es la base legal para no publicar imágenes de alumnado sin consentimiento?",
+        "opciones": [
+          "Artículo 18.1 CE (derecho a la propia imagen)",
+          "Reglamento interno escolar",
+          "Costumbre",
+          "Código civil"
         ],
         "correcta": 0,
         "nivel": "basico",
@@ -2642,14 +2762,62 @@
       {
         "pregunta": "¿Qué establece el artículo 83.1 de la LO 3/2018 sobre educación digital?",
         "opciones": [
-          "Regulación exclusiva del profesorado b) Inserción del alumnado en sociedad digital y uso seguro c) Eliminación TIC d) Sustitución currículo",
-          "¿Qué responsabilidad comparten Gobierno y Administraciones educativas según el art. 97 LO 3/2018?",
-          "Regular redes sociales b) Incluir competencia digital y prevención de riesgos en currículo c) Sustituir legislación d) Automatizar enseñanza",
-          "¿Qué implica el derecho al olvido digital?"
+          "Regulación exclusiva del profesorado",
+          "Inserción del alumnado en sociedad digital y uso seguro",
+          "Eliminación TIC",
+          "Sustitución currículo"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "El sistema educativo debe garantizar formación en uso seguro y responsable de medios digitales."
+      },
+      {
+        "pregunta": "¿Qué responsabilidad comparten Gobierno y Administraciones educativas según el art. 97 LO 3/2018?",
+        "opciones": [
+          "Regular redes sociales",
+          "Incluir competencia digital y prevención de riesgos en currículo",
+          "Sustituir legislación",
+          "Automatizar enseñanza"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "La ley establece incorporación curricular de competencia digital y prevención de riesgos digitales."
+      },
+      {
+        "pregunta": "¿Qué implica el derecho al olvido digital?",
+        "opciones": [
+          "Eliminación total de datos públicos",
+          "Solicitar supresión de datos cuando no sean pertinentes",
+          "Eliminación normativa",
+          "Automatización"
         ],
         "correcta": 1,
         "nivel": "basico",
         "explicacion": "Permite solicitar eliminación de información cuando vulnera derechos o ha perdido relevancia."
+      },
+      {
+        "pregunta": "¿Qué principio rige limitación del tratamiento de datos?",
+        "opciones": [
+          "Publicidad",
+          "Proporcionalidad",
+          "Arbitrio",
+          "Automatización"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "Cualquier tratamiento debe ser proporcional al fin legítimo perseguido."
+      },
+      {
+        "pregunta": "¿Qué desafío plantea sociedad digital para centros educativos?",
+        "opciones": [
+          "Simplificación",
+          "Garantizar protección de datos y formación digital responsable",
+          "Eliminar tecnología",
+          "Sustituir docentes"
+        ],
+        "correcta": 1,
+        "nivel": "basico",
+        "explicacion": "La digitalización exige equilibrio entre innovación y protección de derechos fundamentales."
       }
     ]
   },
