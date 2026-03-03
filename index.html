@@ -589,8 +589,12 @@
     function confirmarModal(){
       participantCode = (document.getElementById("codigoParticipante").value || "").trim();
       if (!participantCode) return;
+
+      // ✅ FIX: capturar el modo ANTES de cerrar el modal (cerrarModal pone testModeActive = null)
+      const tipo = testModeActive;
+
       cerrarModal();
-      iniciarPrePost(testModeActive);
+      iniciarPrePost(tipo);
     }
 
     function iniciarPractica() {
