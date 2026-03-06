@@ -21,7 +21,7 @@
           "La investigación básica sobre los efectos cognitivos de los medios digitales en el cerebro humano durante las etapas de desarrollo infantil y adolescente",
           "El diseño de infraestructuras tecnológicas para los centros educativos que garanticen la conectividad universal del alumnado independientemente de su contexto socioeconómico"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "La aplicación de la TE en su vertiente didáctica, evaluativa y organizativa son los núcleos sobre el que pivota su objetivo, siendo una disciplina que facilita, vehicula o promueve nuevas formas de afrontar el desarrollo de la educación con recursos y medios tecnológicos."
       },
@@ -33,7 +33,7 @@
           "La tendencia preservativa o normativa, la pedagogía medial-funcional o adaptativa y la apropiación reflexiva práctica, activa y crítica de los medios como portadores de contenidos y mensajes",
           "La tendencia instrumentalista, la tendencia humanista y la tendencia crítica, que representan los tres grandes paradigmas que han orientado la investigación en tecnología educativa a lo largo del último tercio del siglo XX"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Existieron desde el principio tres tendencias: (1) la preservativa o normativa, ligada a la protección de la infancia; (2) la pedagogía medial-funcional o adaptativa, orientada a mejorar los aprendizajes mediante los medios; y (3) la apropiación reflexiva, práctica, activa y crítica de los medios como portadores de contenidos y mensajes."
       },
@@ -45,7 +45,7 @@
           "Que la Tecnología Educativa había generado un cambio radical en las prácticas docentes y era necesario institucionalizar sus resultados en los currículos escolares oficiales",
           "Que la Tecnología Educativa todavía no había tenido un gran impacto, existía duda de si existiría ese impacto y era difícil identificar si un programa o proyecto entraba realmente dentro del campo de la disciplina"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Chadwick publicó en enero de 1979 el artículo «Why Educational Technology Is Failing», en el que señalaba que la tecnología educativa todavía no había tenido un gran impacto, existía duda de si lo tendría y era difícil identificar qué proyectos entraban realmente dentro de la disciplina."
       },
@@ -57,7 +57,7 @@
           "El concepto de «competencia», cuya integración en el sistema europeo y español dio lugar a la competencia básica/clave «Tratamiento de la información y competencia digital», orientada a buscar, obtener, procesar y comunicar información para transformarla en conocimiento",
           "El concepto de «personalización», que ha orientado el diseño de sistemas de inteligencia artificial capaces de adaptar los contenidos y las actividades al ritmo y las necesidades de cada estudiante"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El concepto clave que ha influido en cómo entender la tecnología educativa en el siglo XXI ha sido el de «competencia», cuya integración a nivel europeo y español dio lugar a la competencia «Tratamiento de la información y competencia digital», cuya finalidad es que el alumnado busque, obtenga, procese y comunique información para transformarla en conocimiento."
       },
@@ -81,7 +81,7 @@
           "Sosteniendo que la tecnología ha desplazado definitivamente al docente de su función central en el proceso educativo, convirtiéndolo en un mero facilitador de recursos digitales",
           "Sosteniendo que en los últimos 20 años la tecnología ha reorganizado cómo vivimos, cómo nos comunicamos y cómo aprendemos, y que las necesidades de aprendizaje y las teorías educativas deben ser reflejo de los entornos sociales subyacentes"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "George Siemens (2007) sostiene que «en los últimos 20 años, la tecnología ha reorganizado cómo vivimos, cómo nos comunicamos y cómo aprendemos» y que «las necesidades de aprendizaje y de teorías que describían los principios y procesos de aprendizaje, deberían ser reflejo de los entornos sociales subyacentes»."
       },
@@ -93,7 +93,7 @@
           "Como una especialización dentro del ámbito de la Didáctica y otras ciencias aplicadas a la Educación, referida específicamente al diseño, desarrollo y aplicación de recursos en procesos educativos más allá de los meramente instructivos, incluyendo también la Educación Social",
           "Como una disciplina teórica sin aplicación práctica directa en los centros educativos, cuya función principal es generar marcos conceptuales que orienten la política educativa de los organismos internacionales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Bartolomé señala que la TE encuentra su papel como una especialización dentro del ámbito de la Didáctica y otras ciencias aplicadas a la Educación, refiriéndose específicamente al diseño, desarrollo y aplicación de recursos en procesos educativos, no únicamente instructivos, sino también en la Educación Social y otros campos."
       },
@@ -129,7 +129,7 @@
           "Es una disciplina muy joven en comparación con otros campos de la didáctica y la organización escolar, aunque en permanente cambio conceptual y práctico desde el último tercio del siglo XX",
           "Su capacidad para integrar en un único marco teórico todas las corrientes pedagógicas existentes, desde el conductismo hasta el conectivismo, haciendo innecesarias las demás subdisciplinas didácticas"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "A diferencia de otros campos de la didáctica y la organización escolar, la Tecnología Educativa es una disciplina muy joven, aunque en permanente cambio conceptual y práctico, habiendo empezado a desarrollarse formalmente a lo largo de los últimos veinticinco años del siglo XX."
       },
@@ -141,7 +141,7 @@
           "Afirma que las tecnologías son irrelevantes para el aprendizaje si no van acompañadas de una profunda reforma del sistema de evaluación que abandone los exámenes tradicionales como instrumento de medición",
           "Señala que el potencial de las tecnologías reside en las oportunidades que ofrecen para cambiar la enseñanza, facilitar la reflexión sobre la experiencia, promover el aprendizaje in situ y crear comunidad en tiempo real, trabajando con otros en una comunidad que aprende y comparte abiertamente"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Downes señala que el potencial de las tecnologías reside en las oportunidades que ofrecen para cambiar la enseñanza, facilitar la reflexión sobre la experiencia y promover el aprendizaje in situ. Destaca las posibilidades de creación de comunidad en tiempo real, de trabajo con otros en una comunidad que aprende y que comparte abiertamente lo que sabe."
       },
@@ -177,7 +177,7 @@
           "Ha avanzado hacia una ruptura teórica con los planteamientos eficientistas, incorporando una visión ecléctica con aportaciones humanas, éticas, morales, emancipatorias y democráticas, dando lugar a la denominada Tecnología Educativa Crítica",
           "Ha centrado su evolución en el desarrollo de plataformas de aprendizaje adaptativo basadas en big data, consolidando el enfoque cuantitativo como paradigma dominante de la investigación en tecnología educativa"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La tecnología educativa ha avanzado hacia una ruptura teórica con los planteamientos de base eficientista, incorporando una visión ecléctica con aportaciones de índole humana, ética, moral, emancipatoria y democrática, dando lugar a lo que se ha denominado Tecnología Educativa Crítica, con aportaciones esenciales de autores como Hlynka y Belland (1991)."
       },
@@ -201,7 +201,7 @@
           "Principalmente asociaciones de carácter interdisciplinar que reunían a docentes, ingenieros y diseñadores gráficos interesados en la producción de materiales audiovisuales para la enseñanza presencial",
           "Fundamentalmente consorcios universitarios que agrupaban a los departamentos de Ciencias de la Educación de las principales universidades estadounidenses para coordinar sus líneas de investigación en diseño instruccional"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "En este periodo se crearon y consolidaron asociaciones como la Association for Educational and Training Technology (AETT), Association for Educational and Communication and Technology (AECT), Association of Media & Technology in Education (AMTEC), American Educational Research Association (AERA) y American Society for Training and Development (ASTD), entre otras."
       },
@@ -213,7 +213,7 @@
           "Entiende que todo cuerpo de conocimientos prácticos constituye una tecnología siempre que sea compatible con la ciencia, esté regulado por el método científico y se utilice para controlar procesos naturales o sociales",
           "Define la tecnología como el dominio técnico de los instrumentos y herramientas que permiten transformar la realidad, siendo la educación uno de sus campos de aplicación junto con la medicina y la ingeniería"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Bunge (1985) entiende que todo cuerpo de conocimientos prácticos constituye una tecnología siempre que sea compatible con la ciencia, esté regulado por el método científico y se utilice para controlar procesos naturales o sociales."
       },
@@ -225,7 +225,7 @@
           "Una orientación comercial impulsada por las empresas tecnológicas privadas, que han desplazado a las instituciones académicas en la definición de las líneas prioritarias de investigación en la disciplina",
           "Una orientación hacia el diseño de entornos que fomentan el aprendizaje con la participación-reflexión de todos los agentes implicados en contextos auténticos, con la finalidad de comprender los fenómenos y aportar soluciones a problemas reales, fundamentada en la ética"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Valverde (2015) considera que actualmente la investigación en TE se orienta especialmente hacia el diseño de entornos que fomentan el aprendizaje con la participación-reflexión de todos los agentes implicados en contextos auténticos y con la finalidad de comprender los fenómenos y aportar soluciones a problemas reales, siendo la ética una base fundamental."
       },
@@ -237,7 +237,7 @@
           "Señala que la TE ha pasado por diferentes estadios que han ido desde los estudios comparativos y el análisis de los atributos estructurales de los medios, hasta el estudio de los atributos simbólicos, las actitudes hacia los medios, la importancia de los contextos, las estrategias de aplicación y la incorporación de la tecnología desde la perspectiva sociocrítica",
           "Considera que la TE no ha experimentado una evolución real en sus estadios históricos, sino una sucesión de modas pedagógicas que no han modificado sustancialmente la práctica docente en los centros educativos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Cabero señala que en la evolución de la TE no podemos olvidar que se han pasado por diferentes estadios: desde los estudios comparativos y el análisis de los atributos estructurales de los medios, el estudio de los atributos simbólicos y las interacciones con los estudiantes, la significación de las actitudes hacia los medios, la importancia de los contextos, el estudio de las estrategias de aplicación y, finalmente, la incorporación de la tecnología desde la perspectiva sociocrítica."
       },
@@ -261,7 +261,7 @@
           "Porque los docentes no están suficientemente formados para diseñar experiencias de aprendizaje con tecnología que permitan medir con rigor el impacto específico de los recursos digitales utilizados",
           "Porque las instituciones educativas no han desarrollado instrumentos de evaluación suficientemente precisos para medir el impacto diferencial de la tecnología en el rendimiento de cada estudiante"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "En los estudios sobre educación entran muchas variables no controlables, ya que cada alumno tiene características psicoevolutivas, familiares y contextuales muy singulares. Por ello, casi nunca un mejor desempeño puede atribuirse en exclusiva al efecto de la tecnología, ni pueden extrapolarse evidencias positivas a todos los contextos similares."
       },
@@ -273,7 +273,7 @@
           "Innovar no es utilizar una técnica o recurso diferente en el aula, sino demostrar que con esa técnica o recurso el estudiante aprende más y mejor, ahondando en los procesos pedagógicos que subyacen al empleo de la tecnología",
           "Innovar equivale a introducir cualquier herramienta digital en el proceso de enseñanza-aprendizaje, independientemente de si mejora o no los resultados académicos del alumnado"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Innovar no es utilizar una técnica o un recurso diferente en el aula, sino demostrar que con esa técnica o recurso el estudiante aprende más y mejor. Es necesario ahondar en los procesos pedagógicos que subyacen al empleo de la tecnología; sin evaluación y experimentación que lo demuestre, permanecerá más como una moda que como una innovación."
       },
@@ -285,7 +285,7 @@
           "Competencia intercultural, competencia emprendedora y competencia ciudadana, dimensiones que orientan la formación hacia los valores de la sociedad democrática y del mercado globalizado",
           "Usar herramientas de manera interactiva, interactuar en grupos heterogéneos y actuar de forma autónoma, tres dimensiones en torno a las que se organizan las competencias que debe poseer un recién egresado"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El Proyecto DeSeCo (2005) organiza las competencias del egresado en torno a tres dimensiones: usar herramientas de manera interactiva, interactuar en grupos heterogéneos y actuar de forma autónoma."
       },
@@ -297,7 +297,7 @@
           "El aprendizaje conectivista reposa sobre una diversidad de opiniones, conecta nodos especializados, reconoce que el conocimiento puede residir en dispositivos no humanos y que la capacidad para aprender es más importante que el conocimiento que se tiene",
           "El conectivismo sostiene que el aprendizaje solo es posible cuando el estudiante recibe retroalimentación inmediata de un docente experto que valida o corrige cada conexión establecida entre conceptos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Entre las principales características del aprendizaje en red basado en el conectivismo (Siemens, 2004) se encuentran: el aprendizaje reposa sobre una diversidad de opiniones, aprender es conectar nodos especializados, el conocimiento puede residir en dispositivos no humanos y la capacidad para aprender es más importante que el conocimiento que se tiene."
       },
@@ -321,7 +321,7 @@
           "Contenido, metodología, recursos, evaluación y tutoría, componentes esenciales del diseño instruccional que deben reformularse para adaptarse a los principios del aprendizaje en red",
           "Ubicuidad, colaboración, diversidad, internacionalización y pluralidad de formas y modelos, dimensiones en torno a las que se construirá el aprendizaje en red en las instituciones educativas del futuro"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El aprendizaje en red se construirá en torno a cinco dimensiones: ubicuidad (aprendizaje en cualquier momento y lugar), colaboración (aprendizaje interactivo y cooperativo), diversidad (adaptación a distintos objetivos y ritmos), internacionalización (apertura intercultural) y pluralidad de formas y modelos (diferentes configuraciones educativas)."
       },
@@ -333,7 +333,7 @@
           "El docente ha de asumir el papel de tutor-guía del proceso de aprendizaje, facilitando la creación de significados mediante estrategias metacognitivas, resolviendo conflictos, cuidando la relación con las familias y atendiendo las diferencias individuales con mentalidad abierta y tolerante",
           "El docente debe especializarse exclusivamente en el diseño de materiales digitales, dejando la tutorización y el seguimiento individualizado a profesionales de la orientación educativa con formación psicopedagógica"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "En la nueva identidad docente, el profesor ha de actuar como tutor-guía del proceso de aprendizaje de los estudiantes, facilitando la creación de significados y aplicando estrategias metacognitivas para enseñarles a pensar, aprender y organizar la información, mientras también resuelve conflictos, cuida la relación con las familias y atiende las diferencias individuales."
       },
@@ -357,7 +357,7 @@
           "Defiende que la brecha entre la formación académica y las necesidades del mercado laboral solo puede superarse mediante la colaboración directa entre las instituciones educativas y las empresas tecnológicas privadas",
           "Concluye que la solución a esta distancia reside en la digitalización completa de los sistemas educativos, eliminando los exámenes tradicionales y sustituyéndolos por portafolios de competencias digitales"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Wagner (2012) señala que «los estudiantes de hoy no están preparados para afrontar los retos que la sociedad les demanda, entre otras cosas, porque las escuelas y universidades están demasiado preocupadas en instruirles para unos exámenes que nada tienen que ver con lo primero»."
       },
@@ -369,7 +369,7 @@
           "Defiende que la educación debe contribuir a la formación de ciudadanos éticos, comprometidos con la construcción de la paz, la defensa de los derechos humanos y los valores de la democracia, no solo proveyendo competencias para el presente y el futuro",
           "Propone que la formación ciudadana sea responsabilidad exclusiva de las familias y las instituciones religiosas, limitando el papel de la escuela a la transmisión del conocimiento científico y técnico"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La educación no solo debe proveer de competencias sólidas al mundo presente y futuro, sino contribuir a la educación de ciudadanos éticos, comprometidos con la construcción de la paz, la defensa de los derechos humanos y los valores de la democracia."
       },
@@ -381,7 +381,7 @@
           "Que el aprendizaje ubicuo queda restringido a los entornos universitarios, donde los estudiantes tienen la madurez y la autonomía necesarias para gestionar su propio proceso formativo sin supervisión presencial",
           "Que los escenarios de aprendizaje pueden ser síncronos y asíncronos, disponibles en cualquier momento y en cualquier lugar, en una gama de modelos que incluye desde clases magistrales hasta videoclases y grupos ad hoc"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La ubicuidad implica que los escenarios de aprendizaje pueden ser síncronos y asíncronos, disponibles en cualquier momento y en cualquier lugar, en toda una gama de modelos diferentes que incluyen cursos, talleres, compromisos a corto y largo plazo, grupos ad hoc y paneles internacionales, así como clases magistrales y videoclases."
       },
@@ -393,7 +393,7 @@
           "Las redes solo tienen valor educativo cuando están diseñadas específicamente para fines pedagógicos, siendo irrelevantes para el aprendizaje las redes sociales creadas con fines de entretenimiento o comunicación informal",
           "Por la estructura que les es inherente, las redes descentralizan la actuación y permiten compartir el proceso de toma de decisiones, proporcionando oportunidades para el trabajo cooperativo y colaborativo y ahondando en la interacción social como activadora del aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Las redes, por la estructura que les es inherente, descentralizan la actuación y permiten compartir el proceso de toma de decisiones. Asimismo, proporcionan oportunidades para el trabajo cooperativo y colaborativo y ahondan en la interacción social como activadora del aprendizaje."
       },
@@ -417,7 +417,7 @@
           "Sostiene que dentro de la Educación Superior las competencias se convierten en los logros del aprendizaje en lugar de la adquisición de conocimientos, afectando a los objetivos, al papel del profesorado, a las actividades de enseñanza y a la propia evaluación",
           "Defiende que las competencias son complementarias al conocimiento teórico pero en ningún caso pueden sustituirlo, siendo necesario mantener la primacía del saber disciplinar sobre el saber hacer profesional"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Bolívar (2008) plantea que dentro de la Educación Superior las competencias se convierten en los logros del aprendizaje, en lugar de la adquisición de conocimientos, afectando a los objetivos, al papel del profesorado, a las actividades de enseñanza y a la propia evaluación."
       },
@@ -441,7 +441,7 @@
           "Propone eliminar los itinerarios formativos presenciales y sustituirlos íntegramente por plataformas de aprendizaje en línea que permitan al estudiante gestionar completamente su formación de manera autónoma",
           "Propone mantener el modelo tradicional de instrucción complementándolo puntualmente con actividades digitales opcionales que los estudiantes puedan realizar fuera del horario lectivo oficial"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El aprendizaje se reorientará hacia paradigmas de colaboración, reflexión, interacción y difusión, como pueden ser aprendizajes en red mediante estructuras dinámicas y visuales basadas en herramientas de Análisis de Redes Sociales (ARS) que permitan valorar y analizar su incidencia para la práctica docente y discente."
       },
@@ -453,7 +453,7 @@
           "La reflexión e implicación de los ciudadanos en los procesos de aprendizaje a lo largo de su itinerario vital, experimentando con nuevos modelos relativos a dimensiones de lugar, espacio, tiempo y temas para fomentar el aprendizaje permanente",
           "La obligación de los sistemas educativos de ofrecer formación gratuita y certificada a todos los ciudadanos durante toda su vida, independientemente de su edad, nivel de estudios previo o situación laboral"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El Lifelong Learning implica la reflexión e implicación de los ciudadanos en los procesos de aprendizaje en su itinerario de aprendizaje a lo largo de la vida. Es necesario experimentar con nuevos modelos de actividad relativos a las dimensiones de lugar y espacio, tiempo y temas que vayan en la dirección de fomentar este aprendizaje permanente."
       },
@@ -465,7 +465,7 @@
           "El dominio técnico avanzado de todos los dispositivos y aplicaciones disponibles en el mercado, independientemente de su relevancia pedagógica para las asignaturas que imparte el docente",
           "La optimización autocrítica de la acción pedagógica profesional en condiciones continuamente cambiantes, entendiendo como tales las exigencias de una sociedad del conocimiento, la revolución digital y los procesos de modernización e individualización"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La profesionalización docente en el uso de recursos digitales debería entenderse como la optimización autocrítica de la acción pedagógica profesional en condiciones continuamente cambiantes, que incluyen las exigencias de la sociedad del conocimiento, los efectos de la revolución digital, los procesos de modernización e individualización y la libre elección personal del estilo de vida."
       },
@@ -477,7 +477,7 @@
           "La tecnología opera como un recurso que permite una socialización y apertura al mundo como nunca antes en la historia ha sido posible, cuyo valor dependerá de cómo y para qué se integre en la didáctica de las asignaturas",
           "La tecnología solo tiene valor educativo cuando es desarrollada por las propias instituciones académicas, siendo necesario prescindir de las herramientas comerciales que no han sido diseñadas específicamente para fines pedagógicos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La tecnología tiene mucho que decir en las esferas socioeducativas como un recurso que permita una socialización y apertura al mundo como nunca antes en la historia se ha podido realizar. Todo dependerá de cómo y para qué se integre esa tecnología en la didáctica de las asignaturas."
       }
@@ -503,7 +503,7 @@
           "El uso intensivo de la tecnología no afecta de ningún modo al rendimiento académico, siendo los factores socioeconómicos y familiares los únicos determinantes de los resultados escolares del alumnado",
           "La tecnología mejora el rendimiento exclusivamente cuando se usa menos de una hora diaria, siendo perjudicial cualquier uso que supere este umbral temporal independientemente de la finalidad con que se emplee"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Lo que sí parece demostrarse en investigaciones recientes es que un uso intensivo de la tecnología puede acarrear peores resultados académicos, aunque lo que está en cuestión es si estos resultados son derivados del uso de la tecnología o del tiempo que se priva de realizar otras tareas escolares o educativas."
       },
@@ -515,7 +515,7 @@
           "Los estudiantes pueden y deben convertirse no solo en consumidores de información en la red, sino en creadores y prosumidores de información y opinión, competencia clave en la sociedad de la información que incrementa su motivación y favorece los procesos creativos",
           "Los estudiantes deben delegar la creación de contenidos digitales en los docentes, centrándose únicamente en la recepción, análisis y evaluación de los materiales producidos por fuentes expertas y verificadas"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los estudiantes pueden y deben convertirse no solo en consumidores de información en la red, sino en los propios creadores y prosumidores de información y opinión, ya que esta es una de las competencias clave en la sociedad de la información que incrementa su motivación y favorece los procesos creativos e inferenciales."
       },
@@ -527,7 +527,7 @@
           "Únicamente el apoyo económico de la administración pública y de las empresas tecnológicas privadas, que deben costear la dotación de infraestructuras digitales en los centros educativos públicos",
           "Suficientes recursos tecnológicos, desarrollo efectivo del currículo, herramientas digitales para la evaluación, investigación y formación profesional, recursos para buenas prácticas, estrategias para la diversidad e inclusión, fomento del trabajo colaborativo y herramientas para la gestión escolar"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Para el verdadero desarrollo de las TIC en la escuela deben cumplirse preceptos fundamentales como suficientes recursos tecnológicos, desarrollo efectivo del currículo, herramientas digitales para la evaluación, investigación y formación profesional, recursos para la difusión de buenas prácticas, estrategias para la diversidad e inclusión, fomento del trabajo colaborativo y herramientas para la gestión y organización escolar."
       },
@@ -539,7 +539,7 @@
           "Se denomina «Bring Your Own Device» (Trae tu propio dispositivo) y el texto considera que no es educativo prohibir los mismos dispositivos que todos utilizamos en el día a día, siendo más adecuado enseñar a utilizarlos de forma productiva, educativa, segura y ética",
           "Se denomina «Mobile Learning» y el texto la desaconseja en educación primaria por considerar que los niños más pequeños carecen de la madurez necesaria para gestionar de forma responsable sus propios dispositivos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La tendencia se denomina «Bring your own device» (Trae tu propio dispositivo). El texto señala que no parece muy educativo prohibir los mismos dispositivos que todos utilizamos en el día a día, siendo más adecuado enseñar a utilizarlos de forma productiva, educativa, segura y ética para educar en el uso responsable de la tecnología."
       },
@@ -563,7 +563,7 @@
           "El profesorado empleará la tecnología solo si tiene garantía de que todos sus estudiantes disponen de conexión a Internet en sus domicilios, para poder asignar tareas digitales sin generar desigualdades de acceso",
           "El profesorado empleará la tecnología solo si percibe que aumenta la formación, repercute en nuevas experiencias, facilita su trabajo docente y no intuye problemas de protección de datos o seguridad en la red"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Los estudios han llegado a la conclusión de que el profesorado empleará la tecnología solo si percibe que esta aumenta la formación, repercute en nuevas experiencias, facilita su trabajo docente y no intuye que puede tener problemas de protección de datos o seguridad en la red. Si los docentes perciben la tecnología como algo que motiva a los estudiantes o desarrolla el aprendizaje, están más dispuestos a enseñar con ella."
       },
@@ -575,7 +575,7 @@
           "No establecer como principio de referencia la reproducción del conocimiento sino su construcción, fomentar prácticas reflexivas frente a la memorización, asumir la construcción colaborativa mediante negociación social y entender la tecnología como creadora de entornos diferenciados para el aprendizaje",
           "Limitar el uso de la tecnología a un máximo de dos horas semanales por asignatura, garantizando que no desplace a las metodologías presenciales tradicionales como eje central del proceso de enseñanza-aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Según Cabero y Román (2006), el docente debe: no establecer como principio la reproducción del conocimiento sino su construcción; fomentar prácticas reflexivas frente a la memorización; asumir la construcción colaborativa del conocimiento mediante negociación social; y entender que la tecnología no solo presenta y ejercita contenidos, sino que crea entornos diferenciados y específicos para el aprendizaje."
       },
@@ -599,7 +599,7 @@
           "Que el uso de herramientas de interacción social en Internet correlacionaba negativamente con el rendimiento académico en todas las etapas educativas, siendo los estudiantes de mayor rendimiento los que menos las utilizaban",
           "Que solo el 30% de los estudiantes con acceso a Internet era capaz de crear contenidos multimedia de forma autónoma, siendo la mayoría consumidores pasivos de información sin competencias de producción digital"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Un informe de la «National School Board Association» de los Estados Unidos en 2010 evidenció que el 96% de los estudiantes con acceso a Internet empleaba herramientas de interacción social con texto, imágenes y vídeo, y que muchos, incluso los niños de Educación Primaria, eran creadores de contenidos multimedia."
       },
@@ -611,7 +611,7 @@
           "Delimitar el propósito del proyecto, plantear objetivos claros, constituir grupos de trabajo, definir metodología y recursos, proporcionar variados procedimientos de evaluación, facilitar oportunidades de interacción y establecer un seguimiento constante de las actividades",
           "Únicamente la gestión administrativa de las plataformas digitales institucionales, reservando las tareas creativas y pedagógicas a los especialistas en tecnología educativa contratados por el centro educativo"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El docente como creador o difusor de contenido multimedia debe: delimitar el propósito del proyecto, plantear objetivos claros y asumibles, delimitar los grupos de trabajo, constituir la metodología y los recursos de forma concisa, proporcionar variados procedimientos de evaluación, facilitar oportunidades de interacción y establecer un seguimiento constante de las actividades."
       },
@@ -623,7 +623,7 @@
           "La distinción está en la cantidad de contenidos multimedia producidos por el alumnado, considerándose funcional el uso de la tecnología solo cuando genera al menos un producto digital por semana",
           "La funcionalidad de la tecnología no está en el «clic» sino en el «think»: pulsar iconos nunca puede considerarse sinónimo de uso interactivo ni crítico; visitar muchos sitios web no aumenta el conocimiento si no se reflexiona, debate o construye una respuesta personal"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La funcionalidad de la tecnología no está en el «clic» sino en el «think». Pulsar iconos nunca puede ser considerado sinónimo de uso interactivo. Por muchos lugares web que se visiten no va a aumentar el conocimiento del viajero si no se reflexiona, se debate o construye una respuesta personal."
       },
@@ -659,7 +659,7 @@
           "Explorar nuevos enfoques metodológicos con herramientas digitales utilizadas con fines didácticos como la realidad aumentada, la ludificación, la creación de vídeo, el trabajo compartido en red y el uso educativo de blogs, mapas y presentaciones",
           "La transformación completa de la infraestructura física de los centros educativos mediante la instalación de pizarras digitales, impresoras 3D y laboratorios de programación en todos los espacios de aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Crear «Escuela Digital» implica explorar nuevos enfoques metodológicos con nuevas herramientas digitales que se utilizan con fines didácticos: realidad aumentada, ludificación, creación de vídeo, presentaciones, trabajo compartido y colaborativo en red, uso educativo de blogs, vídeos, mapas, presentaciones, etc."
       },
@@ -683,7 +683,7 @@
           "La compartición de experiencias debe limitarse al ámbito del propio centro educativo para evitar la difusión de prácticas no validadas científicamente que puedan inducir a error a otros docentes sin la formación adecuada",
           "La compartición de recursos digitales entre docentes de diferentes centros solo es posible cuando se hace a través de plataformas institucionales oficiales autorizadas por la administración educativa competente"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "La compartición y visualización de otras experiencias educativas es fundamental en la didáctica actual. Si lo que hacemos lo compartimos y distribuimos, creamos una red de recursos cada vez mayor y, si lo catalogamos y subimos a repositorios especializados o creamos nuestro propio entorno virtual de aprendizaje, habremos dado un paso enorme hacia una enseñanza más colaborativa, personalizada y contextualizada."
       },
@@ -695,7 +695,7 @@
           "Permite que el trabajo se pueda compartir y redistribuir de forma legal, pudiendo realizar modificaciones y mejoras para su uso posterior, garantizando los derechos de la autoría y valorando el trabajo, esfuerzo y contribución del docente al desarrollo de la didáctica con base en TIC",
           "Obliga a todos los docentes que utilicen materiales con esta licencia a publicar sus propias adaptaciones en el mismo repositorio donde encontraron el recurso original, generando una red de intercambio bidireccional y obligatorio"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Las licencias Creative Commons permiten que el trabajo se pueda compartir y redistribuir de forma legal, pudiendo realizar modificaciones y mejoras para su uso posterior. Esto garantiza los derechos de la autoría, por lo que el profesorado o educador verá valorado su trabajo, esfuerzo y su contribución al desarrollo de la didáctica con base en TIC."
       },
@@ -707,7 +707,7 @@
           "La prohibición permitiría al profesorado recuperar la autoridad pedagógica en el aula, facilitando el desarrollo de metodologías más tradicionales que han demostrado ser eficaces durante décadas de práctica educativa",
           "Si los estudiantes son obligados a «desconectar» sus dispositivos, la escuela se verá como irrelevante, aburrida y descontextualizada, provocando el incremento de una escuela cada vez más alejada de la realidad digital en la que viven sus estudiantes"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Si los estudiantes son obligados a «desconectar» sus dispositivos móviles u ordenadores portátiles, la misma escuela se verá como irrelevante, aburrida y descontextualizada. Esto provocará, sin lugar a duda, el incremento de una escuela altamente desconectada de la realidad de sus estudiantes."
       },
@@ -719,7 +719,7 @@
           "La internalización definitiva se produce cuando el estudiante convierte la información en conocimiento, proceso que no puede llevarse a cabo sin interacción con otros individuos como docentes, tutores o iguales, tal como promueven las plataformas digitales y la compartición en red",
           "La internalización definitiva se alcanza cuando el estudiante es capaz de producir un artefacto digital propio que demuestre la adquisición de la competencia, siendo este producto el único indicador válido del aprendizaje real"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "En los procesos de adquisición de competencias y destrezas se produce la definitiva internalización cuando el estudiante es capaz de convertir la información en conocimiento, proceso que no se puede llevar a cabo si no se produce una interacción con otros individuos como docentes, tutores o iguales, tal como sucede en los contextos que promueven las plataformas digitales y la compartición en red."
       },
@@ -743,7 +743,7 @@
           "Los Exploradores son docentes con experiencia que utilizan las herramientas digitales de forma creativa y crítica, mientras que los Integradores son aquellos que lideran la innovación y sirven de modelo para otros profesores más jóvenes",
           "Los Exploradores trabajan exclusivamente con herramientas digitales de uso personal sin aplicación pedagógica, mientras que los Integradores ya han dado el paso de incorporarlas de forma sistemática en el diseño de sus programaciones didácticas"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Los Exploradores (A2) han comenzado a utilizar herramientas digitales, aunque sin seguir todavía estrategias comprensivas o consistentes, y necesitan inspiración para expandir sus competencias. Los Integradores (B1) experimentan con herramientas digitales para una variedad de propósitos, tratando de entender qué estrategias digitales funcionan mejor en función del contexto."
       },
@@ -755,7 +755,7 @@
           "Los Líderes se basan en un amplio repertorio de estrategias digitales flexibles y eficaces siendo fuente de inspiración para otros, mientras que los Pioneros cuestionan las prácticas digitales y pedagógicas contemporáneas, lideran la innovación y son un modelo para los profesores más jóvenes",
           "Los Líderes gestionan los recursos tecnológicos del centro educativo y los Pioneros diseñan las políticas digitales del sistema educativo de su comunidad autónoma o región en colaboración con la administración"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los Líderes (C1) se basan en un amplio repertorio de estrategias digitales flexibles, completas y eficaces y son una fuente de inspiración para otros. Los Pioneros (C2) cuestionan las prácticas digitales y pedagógicas contemporáneas, de las que ellos mismos son líderes, lideran la innovación y son un modelo a seguir para los profesores más jóvenes."
       },
@@ -767,7 +767,7 @@
           "Se dirige exclusivamente a los docentes de educación especial, con el propósito de diseñar recursos digitales adaptados para el alumnado con necesidades educativas especiales en centros de integración",
           "Se dirige a los educadores de todos los niveles educativos, desde la primera infancia hasta la educación superior y de adultos, y su objetivo es proporcionar un marco de referencia para los desarrolladores de modelos de competencia digital como gobiernos, organismos educativos y proveedores de formación"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El marco se dirige a los educadores de todos los niveles de la educación, desde la primera infancia hasta la educación superior y de adultos, incluida la formación general y profesional, la educación para las necesidades especiales y los contextos de aprendizaje no formal. Su objetivo es proporcionar un marco de referencia general para los desarrolladores de modelos de competencia digital."
       },
@@ -779,7 +779,7 @@
           "Implica tomar conciencia de los diferentes medios de comunicación digital y los procesos en redes sociales de forma síncrona y asíncrona, saber qué recursos pueden compartirse públicamente, conocer cómo las tecnologías permiten diferentes formas de participación y colaboración y comprender las cuestiones éticas como la identidad digital",
           "Supone principalmente la capacidad para transmitir información de forma clara y precisa a través de presentaciones digitales en el aula, priorizando la comunicación unidireccional del docente hacia sus estudiantes"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La dimensión de comunicación supone tomar conciencia de los diferentes medios de comunicación digital y de los procesos comunicativos en redes sociales de forma síncrona y asíncrona, saber qué recursos pueden compartirse públicamente, conocer de qué manera las tecnologías permiten diferentes formas de participación y colaboración, y el conocimiento de cuestiones éticas como la identidad digital y las normas de interacción digital."
       },
@@ -803,7 +803,7 @@
           "Implica solo la capacidad para detectar y denunciar contenidos digitales inapropiados o ilegales encontrados durante la navegación, contribuyendo así a la construcción de un entorno digital más seguro",
           "Supone conocer la composición de los dispositivos digitales y sus potenciales y limitaciones, saber dónde buscar ayuda para la resolución de problemas teóricos y técnicos, y combinar de forma heterogénea y equilibrada las tecnologías digitales y no digitales"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La dimensión de resolución de problemas supone conocer la composición de los dispositivos digitales, sus potenciales y limitaciones en relación con la consecución de metas personales, así como saber dónde buscar ayuda para la resolución de problemas teóricos y técnicos, lo que implica una combinación heterogénea y bien equilibrada de las tecnologías digitales y no digitales."
       },
@@ -815,7 +815,7 @@
           "El docente debe ser consciente de que las TIC no tienen efectos mágicos sobre el aprendizaje ni generan automáticamente innovación educativa, ya que el mero hecho de usar ordenadores no implica ser mejor docente ni que los alumnos incrementen su motivación o rendimiento",
           "Afirma que las TIC solo producen efectos negativos en el aprendizaje cuando se usan sin supervisión docente, siendo el control del tiempo de uso la principal medida para garantizar su impacto positivo"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El segundo principio del decálogo establece que un profesor debe ser consciente de que las TIC no tienen efectos mágicos sobre el aprendizaje ni generan automáticamente innovación educativa. El mero hecho de usar ordenadores en la enseñanza no implica ser mejor ni peor profesor ni que los alumnos incrementen su motivación, su rendimiento o su interés."
       },
@@ -839,7 +839,7 @@
           "Establece que las actividades con TIC deben planificarse de forma completamente independiente de las actividades curriculares habituales, en sesiones específicas dedicadas exclusivamente al aprendizaje de herramientas digitales",
           "Defiende que la planificación de actividades con TIC debe quedar a criterio exclusivo de cada docente, sin necesidad de consensuarlas con el departamento didáctico ni de integrarlas en los documentos programáticos del centro"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El octavo principio establece que cuando se planifica una lección, unidad didáctica, proyecto o actividad con TIC debe hacerse explícito no solo el objetivo y contenido de aprendizaje curricular, sino también el tipo de competencia o habilidad tecnológica e informacional que se promueve en el alumnado."
       },
@@ -851,7 +851,7 @@
           "Propone poner en marcha proyectos pedagógicos que cuestionen el carácter monolítico del saber y subrayen el valor de la actividad en el aula como fuente de prácticas y experiencias que promuevan una concepción del conocimiento como mosaico de objetivos móviles y fronteras difusas",
           "Propone que los proyectos pedagógicos con TIC sean evaluados exclusivamente mediante indicadores cuantitativos de rendimiento, para poder demostrar con datos objetivos su superioridad frente a las metodologías presenciales tradicionales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Martín (1996) señala que es necesario poner en marcha proyectos pedagógicos que cuestionen el carácter monolítico del saber y subrayen el valor de la actividad en el aula como fuente de las prácticas y experiencias que promuevan una concepción del conocimiento como mosaico de objetivos móviles y fronteras difusas."
       },
@@ -863,7 +863,7 @@
           "Los nuevos medios tecnológicos, aunque en sí mismos no lleven al cambio ni a la innovación en las aulas, deben reclamar una nueva configuración del proceso didáctico que habilite un contexto en el que el saber no recaiga solo en el profesorado y el alumnado no sea mero receptor",
           "Los nuevos medios tecnológicos son suficientes por sí mismos para transformar el modelo didáctico, sin necesidad de que el docente modifique sus estrategias de enseñanza ni su forma de planificar y evaluar los procesos de aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los nuevos medios tecnológicos, aunque en sí mismos no lleven al cambio o a la innovación en las aulas, al menos deberán reclamar una nueva configuración del proceso didáctico tradicional y habilitar un nuevo contexto en el que el saber no tenga por qué recaer en el profesorado y la función del alumnado no sea la de mero receptor de la información."
       },
@@ -899,7 +899,7 @@
           "El uso de una plataforma digital de formación en la que el estudiante utiliza el foro online para solicitar información, herramientas como el blog y la wiki para crear nuevas entradas, participa en simulaciones para resolver problemas matemáticos y debate en un chat con otros estudiantes",
           "La creación de un portafolio digital personal en el que el estudiante recopila todas las producciones realizadas durante el curso, añade reflexiones metacognitivas sobre su proceso de aprendizaje y lo comparte con el docente para su evaluación"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El escenario formativo del Área 5 muestra a un estudiante que usa una plataforma digital de formación para mejorar sus competencias; utiliza el foro para solicitar información concreta, herramientas como blog y wiki para crear nuevas entradas, participa activamente en ejercicios con simulaciones para practicar con problemas matemáticos y debate en un chat con otros estudiantes para enfocar los problemas desde diferentes perspectivas."
       },
@@ -923,7 +923,7 @@
           "Las tecnologías permiten eliminar completamente la figura del docente como fuente de conocimiento, delegando en los algoritmos de las plataformas digitales toda la responsabilidad de seleccionar y secuenciar los contenidos curriculares",
           "Las tecnologías permiten reproducir de forma digital el modelo unidireccional de enseñanza, haciendo más eficiente la transmisión de conocimientos del docente al alumnado mediante soportes audiovisuales de mayor atractivo y calidad técnica"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Las tecnologías pueden proporcionar nuevas perspectivas al proceso didáctico, permitiendo pasar del modelo unidireccional clásico de formación, en el que los saberes se encuentran en el docente o en su sustituto el libro de texto, a modelos más abiertos y flexibles en los que la información situada en la red o en diferentes bases de datos pueda ser compartida entre todos los estudiantes."
       },
@@ -935,7 +935,7 @@
           "Implica utilizarlas en su doble función de transmisoras y generadoras de información y conocimiento, siendo utilizadas en su función generadora cuando se emplean como herramienta en el uso de modelos de procesos matemáticos, físicos, sociales, económicos o artísticos",
           "Implica que las TIC pueden usarse tanto por el docente para preparar sus clases como por el alumnado para realizar sus tareas, compartiendo así la responsabilidad sobre el uso pedagógico de los recursos digitales disponibles"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Ser competente en la utilización de las TIC como instrumento de trabajo intelectual incluye utilizarlas en su doble función de transmisoras y generadoras de información y conocimiento. Se utilizarán en su función generadora al emplearlas, por ejemplo, como herramienta en el uso de modelos de procesos matemáticos, físicos, sociales, económicos o artísticos."
       },
@@ -947,7 +947,7 @@
           "La finalidad real es garantizar que todos los estudiantes alcancen el mismo nivel de competencia digital certificado por el marco DigComp antes de finalizar la enseñanza obligatoria, independientemente de su contexto socioeconómico",
           "El uso pedagógico de los medios digitales requiere algo más que buenos diseños y proyectos; la finalidad real es propiciar una enseñanza innovadora, siendo el uso de los medios consecuencia de decisiones tomadas a partir de una determinada manera de concebir y llevar a la práctica la enseñanza"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El uso pedagógico de los medios digitales en la educación requiere algo más que buenos diseños y proyectos; la finalidad real es propiciar una enseñanza innovadora. Los medios pueden contribuir a ese fin y, en todo caso, su uso no puede convertirse en finalidad por sí misma, sino consecuencia de decisiones tomadas a partir de una determinada manera de concebir y llevar a la práctica la enseñanza."
       },
@@ -959,7 +959,7 @@
           "El énfasis debe ponerse en la docencia, en los cambios de estrategias didácticas de los docentes, en la evaluación y atención a la equidad y la desigualdad y en los sistemas de comunicación y distribución de materiales, en lugar de enfatizar la disponibilidad y las potencialidades de las tecnologías",
           "El énfasis debe ponerse en la formación técnica avanzada del profesorado, siendo el dominio de las herramientas digitales el factor más determinante para garantizar una integración efectiva y pedagógicamente justificada de las tecnologías en los procesos de enseñanza"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El énfasis se debe poner en la docencia, en los cambios de estrategias didácticas de los docentes, en la evaluación y atención a la equidad y la desigualdad, y en los sistemas de comunicación y distribución de materiales de aprendizaje, en lugar de enfatizar la disponibilidad y las potencialidades de las tecnologías."
       }
@@ -997,7 +997,7 @@
           "El estudiante colabora con compañeros de otras escuelas valorando el trabajo ajeno",
           "El estudiante accede a materiales en red para complementar lo trabajado en el aula"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "A diferencia del Nivel 1, el Nivel 2 incorpora interactividad y ejercitación activa a través de apps y juegos, permitiendo al estudiante medir y afianzar su nivel de conocimiento sobre contenidos concretos."
       },
@@ -1009,7 +1009,7 @@
           "Participar activamente en el diseño, creación y publicación de actividades y proyectos mediante las herramientas del smartphone",
           "Consumir contenidos digitales de forma autónoma en cualquier lugar y momento"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El Nivel 3 da el salto del consumo a la producción: el estudiante deja de ser receptor para convertirse en creador y divulgador de contenidos, usando las herramientas del smartphone dentro y fuera del aula."
       },
@@ -1021,7 +1021,7 @@
           "En el Nivel 5 se incorpora la gamificación como estrategia para motivar el trabajo colaborativo",
           "En el Nivel 5 la colaboración se extiende obligatoriamente a estudiantes de otras escuelas mediante redes sociales y tecnologías móviles, implicando valorar el trabajo ajeno durante la construcción del propio"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Mientras el Nivel 4 trabaja en grupo dentro del entorno escolar propio, el Nivel 5 amplía la red de colaboración más allá del centro, conectando obligatoriamente con estudiantes externos y añadiendo la dimensión de evaluación entre pares."
       },
@@ -1045,7 +1045,7 @@
           "En diciembre de 2012, cuando el MoMA comenzó a adquirir videojuegos para su colección permanente",
           "En 2014, cuando la tesis doctoral de González Tardón validó científicamente su impacto social y educativo"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "En 2009 el gobierno español reconoció oficialmente los videojuegos como forma cultural equiparable al cine o el teatro, lo que les permitió beneficiarse de ayudas y subvenciones públicas para su desarrollo."
       },
@@ -1057,7 +1057,7 @@
           "El MoMA comenzó a adquirir los primeros 14 videojuegos de una lista de 40, reconociéndolos como forma artística y ejemplo de diseño",
           "Estableció un convenio internacional para incorporar videojuegos seleccionados como recurso obligatorio en museos educativos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El Museo de Arte Moderno de Nueva York legitimó los videojuegos como expresión artística al incorporar 14 títulos a su colección permanente, de una lista de 40 considerados ejemplos relevantes de diseño y arte."
       },
@@ -1069,7 +1069,7 @@
           "Videojuegos orientados al entrenamiento de habilidades que deben generalizarse posteriormente desde el plano virtual al mundo real",
           "Videojuegos cuyo objetivo es la transmisión de conceptos, ideas y conocimientos, históricamente vinculados a la educación formal y patrocinados desde el ámbito público"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El Edutainment es la categoría de videojuegos serios orientada específicamente a la transmisión de conocimientos y conceptos, con una fuerte vinculación a la educación formal y respaldo habitual de administraciones públicas."
       },
@@ -1081,7 +1081,7 @@
           "Su objetivo de entrenar habilidades que posteriormente deben generalizarse desde el entorno virtual al mundo real, con aplicaciones destacadas en el ámbito de la salud",
           "Su finalidad de transmitir conceptos e ideas vinculados a la educación formal con patrocinio mayoritariamente público"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los Training games se distinguen por su enfoque en el entrenamiento de habilidades transferibles a la realidad, siendo especialmente relevantes en ámbitos como la salud, donde buscan dotar de herramientas al entorno hospitalario y de prevención."
       },
@@ -1093,7 +1093,7 @@
           "Con la educación formal, transmitiendo conceptos e ideas curriculares de forma lúdica y participativa",
           "Con el entrenamiento de habilidades profesionales, especialmente en sectores como la medicina o la prevención de riesgos"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Los Newsgames se enmarcan en el periodismo interactivo y explotan la participación del usuario para lograr que el mensaje informativo tenga un impacto más profundo y significativo que el que ofrecen los medios tradicionales."
       },
@@ -1105,7 +1105,7 @@
           "Surge del entrenamiento virtual de los años noventa evolucionando hacia formatos más motivadores para el aprendizaje de habilidades",
           "Surge de proyectos de publicidad interactiva bajo la premisa de que la participación del usuario en una actividad publicitaria hace el mensaje más significativo, captando a generaciones alejadas de los medios tradicionales"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El Advergaming nace de la publicidad interactiva y se sustenta en la idea de que involucrar activamente al usuario en la experiencia publicitaria genera un impacto mayor que la publicidad pasiva, siendo especialmente eficaz con audiencias digitales."
       },
@@ -1117,7 +1117,7 @@
           "Mejora de diversos tipos de memoria, aumento de la velocidad de procesamiento y optimización de la habilidad de realizar multitarea",
           "Reducción de errores quirúrgicos, mejora de la motricidad fina y aumento de la capacidad de razonamiento deductivo en profesionales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La tesis de González Tardón recoge evidencias de impacto cognitivo positivo en tres dimensiones concretas: mejora de la memoria, mayor velocidad de procesamiento y mejor capacidad para realizar varias tareas simultáneamente."
       },
@@ -1141,7 +1141,7 @@
           "Que se combinen exclusivamente con metodologías activas y participativas que garanticen su integración curricular efectiva",
           "Que los docentes reciban formación específica en el uso pedagógico de videojuegos antes de incorporarlos al aula"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto advierte que el uso exclusivamente lúdico puede provocar absentismo, pérdida de atención o aislamiento social, por lo que su aplicación educativa debe estar justificada pedagógicamente y limitada en el tiempo."
       },
@@ -1165,7 +1165,7 @@
           "Las plataformas de videoconferencia sincrónica que replican el aula presencial en formato digital",
           "Los repositorios digitales de contenidos académicos accesibles desde dispositivos móviles en cualquier momento"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Los canales de YouTube, los hilos de Twitter (X) y los webinars son algunos ejemplos de recursos que, desde el enfoque del aprendizaje no situado, permiten debatir y reflexionar sobre contenidos desde cualquier lugar."
       },
@@ -1177,7 +1177,7 @@
           "El tiempo de clase se dedica a aprendizaje activo y resolución de problemas, mientras que el trabajo de contenidos se realiza fuera del aula mediante recursos digitales",
           "El estudiante decide autónomamente cuándo y cómo distribuye el tiempo entre actividades presenciales y virtuales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El Flipped Classroom invierte la lógica tradicional: el docente no usa el tiempo de clase para transmitir información, sino que ese trabajo lo realiza el estudiante fuera del aula mediante vídeos, podcasts o eBooks, liberando el tiempo presencial para actividades activas y colaborativas."
       },
@@ -1189,7 +1189,7 @@
           "En entornos con escasa infraestructura tecnológica que impide al estudiante acceder a los contenidos fuera del aula",
           "En estudios superiores de ingeniería, donde los metaanálisis han evidenciado que puede llegar a tener repercusión negativa"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Los metaanálisis de Cheng, Ritzhaupt y Antonenko (2018) evidencian que la clase invertida es más efectiva en el ámbito humanístico que en el científico-tecnológico, pudiendo tener incluso repercusión negativa en estudios superiores de ingeniería."
       },
@@ -1201,7 +1201,7 @@
           "Que el proyecto tenga sentido para los estudiantes, esté contextualizado en su realidad y tenga clara vinculación con el currículo y un plan de evaluación continua",
           "Que los resultados del proyecto sean evaluados por agentes externos al centro para garantizar su objetividad e imparcialidad"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El manual establece que el proyecto debe ser significativo para el estudiante, estar conectado a su realidad, vincularse al currículo y llevar asociado un plan de evaluación continua y formativa, no final ni resultadista."
       },
@@ -1213,7 +1213,7 @@
           "Evaluador externo que valora los resultados finales del proyecto sin intervenir durante su desarrollo para no condicionar al estudiante",
           "Supervisor técnico que gestiona las herramientas digitales y plataformas utilizadas durante el desarrollo del proyecto colaborativo"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Según la Association for Experiential Education (2015), el docente en el aprendizaje vivencial tiene entre sus funciones plantear el problema, establecer límites, facilitar el proceso, apoyar a los estudiantes y velar por su integridad física y emocional."
       },
@@ -1225,7 +1225,7 @@
           "\"Aprendizaje ubicuo con dispositivos móviles\", premiado por la Fundación Curalia como mejor proyecto de innovación educativa digital",
           "\"El sonido que habito\", proyecto colaborativo y multidisciplinar de Mobile Learning basado en el sonido como fuente de conocimiento"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto cita expresamente \"El sonido que habito\" como ejemplo destacado de Aprendizaje Basado en Retos, señalando que fue galardonado con el Premio Nacional de Educación 2016 al mejor proyecto de equipos docentes intercentros de educación secundaria."
       },
@@ -1237,7 +1237,7 @@
           "Diversidad en la tipología de estudiantes y aprendizajes, que demanda actividades adaptadas a diferentes formas de aprender en distintos contextos y dispositivos",
           "Evaluación continua y personalizada, que implica diseñar pruebas individualizadas que midan el progreso competencial de cada estudiante"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El tercer principio del aprendizaje adaptado reconoce que no todos aprenden igual ni en los mismos contextos, por lo que propone microactividades y nano-cápsulas accesibles desde el smartphone para situaciones informales, complementadas con actividades más extensas en dispositivos y lugares más propicios."
       },
@@ -1261,7 +1261,7 @@
           "La escasa formación digital de los docentes para diseñar entornos adaptativos que atiendan la diversidad del alumnado de forma efectiva",
           "La rigidez de los currículos oficiales que impide al docente adaptar los contenidos y competencias a las necesidades individuales de cada estudiante"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El manual señala explícitamente que realizar actuaciones de personalización de forma presencial es arduo porque generalmente no existe tiempo suficiente en las clases ordinarias para el seguimiento, refuerzo o ampliación que cada estudiante necesita, lo que hace imprescindible la ubicuidad tecnológica."
       },
@@ -1297,7 +1297,7 @@
           "Capacidades de curación de contenidos para seleccionar las aportaciones más valiosas del grupo",
           "Competencias técnicas avanzadas para gestionar plataformas de construcción colectiva de contenidos"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El Cambio 7 exige al docente ir más allá de la gestión técnica, desarrollando capacidades que faciliten comunidades inclusivas donde cada estudiante contribuya desde sus fortalezas a la inteligencia colectiva."
       },
@@ -1309,9 +1309,9 @@
           "La falta de formación del docente para gestionar dinámicas participativas en el aula",
           "La disciplina unidireccional que convierte al estudiante en receptor pasivo, bloqueando la comunicación lateral y la colaboración en el diseño del conocimiento"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
-        "explicacion": "El Cambio 2 identifica que la estructura disciplinar del aula tradicional —donde el saber fluye solo del docente al alumno— impide la colaboración y la co-construcción del conocimiento que demanda el aprendizaje ubicuo."
+        "explicacion": "El Cambio 2 identifica que la estructura disciplinar del aula tradicional -donde el saber fluye solo del docente al alumno- impide la colaboración y la co-construcción del conocimiento que demanda el aprendizaje ubicuo."
       },
       {
         "pregunta": "¿Qué herramienta digital menciona el manual como ejemplo de tablero virtual que permite al docente o estudiante documentar logros, incorporar recursos y disponer de evidencias de forma ubicua y móvil a lo largo de la vida?",
@@ -1321,7 +1321,7 @@
           "Basecamp, por ser una plataforma específicamente diseñada para el seguimiento y monitorización del trabajo compartido en red",
           "Symbaloo, como ejemplo de entorno en el que docentes y estudiantes pueden documentar sus logros, descartar o incorporar nuevos recursos y disponer de evidencias accesibles de forma ubicua y móvil"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto cita expresamente Symbaloo como ejemplo de tablero digital que permite documentar logros y recursos de forma dinámica, pudiendo ampliarse y mejorarse a lo largo de la vida académica y personal desde cualquier lugar y dispositivo."
       }
@@ -1347,7 +1347,7 @@
           "Se construyen a partir de la participación de los estudiantes en torno a una temática de forma rizomática",
           "Permiten al estudiante realizarlos sin límite temporal, adaptando el ritmo completamente a sus necesidades personales"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Los cMOOC (Connectivist Massive Open Online Course) se definen porque la interacción y el trabajo colaborativo son sus elementos clave, diferenciándose así de otras tipologías más centradas en la recepción pasiva de contenidos."
       },
@@ -1359,7 +1359,7 @@
           "El COOC, porque está diseñado para la formación corporativa del empleado en torno a temáticas profesionales concretas",
           "El rMOOC (Rhizomatic Massive Open Online Course), cuya principal característica es construirse a partir de la participación de los estudiantes en torno a una temática"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El rMOOC se define porque el propio curso se construye a partir de la participación activa de los estudiantes en torno a una temática, siguiendo una lógica rizomática donde el conocimiento emerge de la interacción colectiva."
       },
@@ -1371,7 +1371,7 @@
           "El conocimiento personal se construye en red, que alimenta a organizaciones e instituciones, que retroalimentan esa red facilitando nuevo aprendizaje al individuo",
           "La formación masiva se basa en la evaluación objetiva de contenidos mediante pruebas estandarizadas que garantizan la acreditación del aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El conectivismo de Siemens sostiene que el conocimiento personal se hace de una red que alimenta a organizaciones e instituciones, que a su vez retroalimentan esa misma red, facilitando finalmente nuevo aprendizaje al individuo en un ciclo continuo."
       },
@@ -1383,7 +1383,7 @@
           "Las videoconferencias en vivo mediante streaming, que quedan grabadas y accesibles posteriormente para todos los participantes",
           "Los comentarios en los artículos del curso, que permiten a los estudiantes dejar opiniones y contribuciones en cada contenido publicado"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto señala que los hashtags en Twitter (X) permiten que las actividades del grupo se hagan visibles públicamente en un mismo lugar, sin necesidad de más requisito que tener una cuenta de Twitter y participar en el hashtag generado."
       },
@@ -1395,7 +1395,7 @@
           "De 58.000 matriculados iniciales, menos del 5% completó el curso, evidenciando las dificultades del modelo para retener al estudiante",
           "De 155.000 matriculados, solo 2.300 completaron el curso y únicamente un adolescente de 15 años obtuvo la máxima puntuación en el examen final"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto detalla que en el curso del MIT se matricularon 155.000 estudiantes de más de 160 países, pero solo 23.000 realizaron el primer módulo, 9.000 llegaron a la mitad y 7.157 lo terminaron, siendo 340 quienes obtuvieron la máxima puntuación."
       },
@@ -1407,7 +1407,7 @@
           "Las ofertas de trabajo, donde las empresas pagan por ofertar un curso necesario para su desarrollo empresarial y captar a los mejores estudiantes",
           "La tutoría personalizada, donde el estudiante paga por recibir durante el curso una atención más individualizada"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El texto describe las \"ofertas de trabajo\" como la estrategia en la que las empresas financian un curso necesario para su desarrollo empresarial y posteriormente reclutan a los mejores estudiantes que lo han completado."
       },
@@ -1431,7 +1431,7 @@
           "El diploma de participación, que se libera automáticamente cuando se supera un promedio del 75% de todas las actividades obligatorias realizadas",
           "El badge institucional, que certifica la identidad del estudiante mediante pruebas biométricas de verificación vinculadas a la plataforma"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "medio",
         "explicacion": "El texto especifica que en Miriadax el diploma de participación se libera automáticamente cuando el estudiante supera un promedio del 75% de todas las actividades obligatorias, siendo el nivel básico de su sistema de acreditación."
       },
@@ -1443,7 +1443,7 @@
           "Fue impulsada por Andrew Ng desde Stanford para democratizar la formación universitaria en ciencias de la computación e inteligencia artificial",
           "Fue fundada por Sebastian Thrun, surgiendo de su experiencia impartiendo clases de inteligencia artificial en Stanford, con el objetivo de educar y capacitar a estudiantes de todo el mundo, especialmente en África e India"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto señala que Udacity nació del ingenio del profesor Sebastian Thrun, cuya idea de educación abierta, gratuita e interactiva surgió de impartir clases sobre inteligencia artificial en Stanford, con el objetivo declarado de educar especialmente a estudiantes de zonas como África e India."
       },
@@ -1467,7 +1467,7 @@
           "Que las plataformas MOOC carecen de herramientas suficientes para fomentar la participación activa del estudiante en foros y actividades colaborativas",
           "Que el alto coste de certificación desincentiva la participación de estudiantes de países en vías de desarrollo, limitando su carácter verdaderamente masivo y abierto"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto critica que metodológicamente los MOOC no pasan de ofrecer un curso basado en una clase tradicional segmentada en presentaciones audiovisuales de no más de 15 minutos, con un nivel competencial mermado por basarse casi exclusivamente en el aprendizaje memorístico-conceptual y una evaluación mecánica de ensayo-error."
       },
@@ -1491,7 +1491,7 @@
           "Garantiza que todos los estudiantes utilicen las mismas herramientas digitales, evitando la dispersión y asegurando una experiencia de aprendizaje homogénea",
           "Está diseñado exclusivamente para el aprendizaje en línea, eliminando la necesidad de espacios físicos o materiales impresos en el proceso formativo"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Entre los beneficios del PLE destacan que no tiene por qué coincidir con el EVA institucional, que mezcla aprendizaje formal, no formal e informal y que favorece competencias fundamentales como la metacognición o reflexión sobre el propio aprendizaje."
       },
@@ -1503,7 +1503,7 @@
           "El principio de conectividad, que exige que las tareas supongan buscar y conectar piezas de información dispersas por la red para elaborar nuevo contenido que se publica y comparte",
           "El principio de evolución, que implica que profesorado y alumnado actualicen progresivamente su repertorio de fuentes y herramientas en un proceso cíclico y de complejidad creciente"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El principio de conectividad en el diseño de un PLE establece específicamente que las tareas propuestas deben suponer buscar y conectar piezas de información dispersas por la red para elaborar nuevo contenido que posteriormente se publica y comparte con los demás."
       },
@@ -1515,7 +1515,7 @@
           "El aprendizaje cooperativo, sustentado en la premisa de que el conocimiento se construye mejor cuando los estudiantes trabajan en grupos heterogéneos con roles definidos",
           "La filosofía constructivista, fundamentada en la premisa de que los estudiantes adquieren nuevos conocimientos a través de su interpretación personal del proceso de aprendizaje, vinculándolo a sus anteriores conocimientos y creencias"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El manual señala que cuando el diseño didáctico de los EVA es el adecuado, se puede promover la filosofía constructivista, fundamentada en que los estudiantes adquieren nuevos conocimientos a través de su interpretación personal del proceso de aprendizaje, vinculándolo a sus conocimientos y creencias previas."
       },
@@ -1527,7 +1527,7 @@
           "Son materiales de enseñanza, aprendizaje e investigación en cualquier soporte que pertenecen al dominio público y se han liberado bajo una licencia abierta que permite su acceso, uso, reutilización y redistribución con ninguna o limitadas restricciones",
           "Son recursos multimedia desarrollados colaborativamente por docentes y estudiantes que pueden compartirse libremente dentro de las plataformas institucionales de e-learning"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Atkins, Brown y Hammond (2007) definen los OER como materiales de enseñanza, aprendizaje e investigación en cualquier soporte que pertenecen al dominio público y se han liberado bajo una licencia abierta que permite el acceso, uso, reutilización y redistribución por parte de otros con ninguna o limitadas restricciones."
       },
@@ -1539,7 +1539,7 @@
           "Los OER no son en sí mismos formas de aprendizaje online, e-learning o mobile learning, ya que un OER puede ser perfectamente un material impreso",
           "Se asocian equivocadamente con el concepto de open education, cuando en realidad se limitan exclusivamente a recursos digitales liberados bajo licencias abiertas verificadas"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Una aclaración esencial sobre los OER es que no son en sí mismos formas de aprendizaje online, e-learning o mobile learning, señalando que un OER puede ser perfectamente un material impreso, evitando así la confusión de identificarlos exclusivamente con formatos digitales."
       },
@@ -1551,7 +1551,7 @@
           "Google Classroom, que integra todas las funcionalidades de Google para la gestión del aprendizaje en entornos híbridos de forma colaborativa",
           "Netvibes, servicio web que actúa como escritorio virtual personalizado organizado en solapas con módulos y widgets que pueden incluir multibuscadores, webmails, vídeos y fotos"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto describe Netvibes como un servicio web que actúa a modo de escritorio virtual personalizado, organizado en solapas donde cada una es un agregador de módulos y widgets que pueden contener multibuscadores, webmails tipo Gmail, vídeos de YouTube o fotos de Flickr, entre otros."
       },
@@ -1563,7 +1563,7 @@
           "Onlywire, herramienta que conecta el blog a más de 50 redes sociales de forma simultánea facilitando la máxima difusión del contenido publicado",
           "Blubrry, herramienta ideal para gestionar y distribuir podcasts a directorios permitiendo gestionar texto e imagen desde el blog hasta iTunes"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El texto describe Onlywire como la herramienta que permite conectar el blog a más de 50 redes sociales simultáneamente, facilitando así la máxima difusión del contenido publicado."
       },
@@ -1587,7 +1587,7 @@
           "Facilitan la creación de comunidades de aprendizaje en red donde los estudiantes comparten y reelaboran los contenidos de forma colaborativa y gratuita",
           "Garantizan que los contenidos utilizados en la clase invertida cumplan con los estándares de calidad institucional al estar liberados bajo licencias abiertas verificadas"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto señala que los OER constituyen la base de metodologías como la clase invertida, en la que se proporciona diferente información y recursos al estudiante para que los visualice posteriormente desde el principio del aprendizaje ubicuo."
       },
@@ -1599,7 +1599,7 @@
           "El principio de evolución, que establece que la puesta en funcionamiento del PLE provoca que profesorado y alumnado actualicen su repertorio en un proceso cíclico, continuo y de complejidad creciente",
           "El principio de colaboración, que plantea que la creación colectiva de objetos evolucione progresivamente hacia formas más complejas de aprendizaje colaborativo en red"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El principio de evolución establece que la puesta en funcionamiento del PLE provocará que profesorado y alumnado actualicen su repertorio de fuentes y herramientas en un proceso cíclico, continuo y de complejidad creciente, pudiendo empezar con una o dos herramientas e ir incorporando más recursos en sucesivos ciclos."
       },
@@ -1611,7 +1611,7 @@
           "Asegurar el acceso a las TIC para todos los estudiantes y miembros de la institución como condición previa para el uso efectivo de los OER",
           "Comprometerse dando apoyo institucional para el desarrollo de capacidades y competencias mediante el establecimiento de foros y redes que permitan desarrollar y compartir una visión común sobre los OER"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto señala esta directriz como aquella que implica el compromiso institucional de apoyar el desarrollo de capacidades y competencias necesarias entre los académicos, por ejemplo mediante el establecimiento de foros y redes que permitan desarrollar y compartir una visión común en relación con los OER."
       },
@@ -1623,7 +1623,7 @@
           "Clicktotweet, que permite crear rápidamente links de texto que generan nuevos tuits con un texto y enlace determinado para difundir el contenido del blog",
           "Blubrry, plugin que permite gestionar y distribuir podcasts desde el blog hacia directorios como iTunes de forma sencilla e integrada"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto describe Chatroll (https://chatroll.com/) como la herramienta que permite crear un chat para el blog, insertando una ventana de chat que posibilita que los usuarios puedan comunicarse en tiempo real, añadiendo así una dimensión sincrónica e interactiva al blog educativo."
       },
@@ -1647,7 +1647,7 @@
           "Ofrece una base de datos de más de 50.000 medios europeos con posibilidad de filtrar resultados por región, fuentes temáticas y período de tiempo",
           "Permite gestionar proyectos colaborativos desde cualquier lugar con acceso a Internet, asignando tareas a personas concretas y compartiendo documentación"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Twingly se distingue por contar con un widget específico que incluye una barra que marca el valor del blog dentro del ranking de blogs analizados, valor que puede consultarse dentro de la información del perfil de cualquier blog, además de sus funciones de filtrado y alertas."
       },
@@ -1659,7 +1659,7 @@
           "La identificación de noticias falsas, en la que los estudiantes publican semanalmente por grupos una noticia que consideran falsa explicando por qué no es verdadera",
           "La recopilación diaria de noticias relevantes que los estudiantes publican por grupos en el grupo de clase para mantenerse informados sobre la actualidad"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Entre las actividades educativas con Facebook propuestas por Vicens Vives destaca la identificación de noticias falsas, en la que se sugiere a los estudiantes que, una vez por semana y por grupos, publiquen en el grupo de clase una noticia que consideren falsa explicando las razones por las que creen que no es verdadera."
       },
@@ -1671,7 +1671,7 @@
           "La competencia de pensamiento crítico y reflexivo mediante el análisis y contraste de informaciones publicadas por expertos y voces autorizadas en la red",
           "La competencia digital y de tratamiento de la información mediante el uso eficaz de herramientas y recursos propios de la Sociedad del Conocimiento"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto señala que cuando un estudiante emplea Twitter (X) de forma educativa desarrolla, entre otras, la competencia de gestión de los procesos de comunicación e información y, particularmente, la expresión y comunicación eficaces a través de distintos medios y con distinto tipo de interlocutores."
       },
@@ -1683,7 +1683,7 @@
           "Zotero y Mendeley, porque permiten crear comunidades para compartir referencias científicas ayudando a los participantes a profundizar en temas de interés",
           "Delicious y Diigo, como gestores de marcadores que permiten organizar los recursos educativos y acceder a ellos de forma más estructurada"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El manual identifica expresamente Delicious y Diigo como las herramientas recomendadas para organizar los recursos educativos mediante marcadores, señalando que permiten organizar la información y acceder a ella de forma más estructurada."
       },
@@ -1695,7 +1695,7 @@
           "Investigar lugares, cuyo buscador permite al alumnado buscar imágenes de lugares y espacios desde diferentes perspectivas, conceptos, fechas o épocas del año",
           "Conocer la actualidad, que facilita compartir imágenes en directo permitiendo al profesorado y alumnado trasladarse virtualmente al lugar de los hechos noticiosos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El manual describe la actividad \"Investigar lugares\" en Instagram como aquella que aprovecha las opciones del buscador para que el alumnado busque imágenes de lugares, sitios o espacios desde diferentes perspectivas, con conceptos distintos y en fechas o épocas del año diversas, siendo especialmente útil en ciencias y geografía."
       },
@@ -1707,7 +1707,7 @@
           "La falta de normativa específica que regule el uso educativo de redes sociales en centros escolares genera inseguridad jurídica tanto en docentes como en familias",
           "El acusado contenido informal de las redes sociales más utilizadas por los jóvenes dificulta su integración como herramienta pedagógica en entornos preuniversitarios"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El texto señala expresamente que el uso de redes sociales en la educación presenta limitaciones en las etapas educativas preuniversitarias, principalmente hasta que el estudiante no tiene 14 años, siendo su empleo mucho más extendido en la enseñanza superior."
       },
@@ -1719,7 +1719,7 @@
           "Grupos de alumnos o exalumnos a los que pueden adherirse los usuarios, perfiles con información básica de contacto y formación disponible e incluso ofertas de empleo",
           "Publicar información completa sobre la actividad del centro, calendario de exámenes, convocatorias de becas y responder ágilmente a las dudas de los estudiantes"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El texto describe que LinkedIn se utiliza principalmente mediante grupos de alumnos o exalumnos a los que pueden adherirse los usuarios, perfiles con información básica de contacto y sobre la formación disponible, aprovechando algunas universidades para publicar además ofertas de empleo."
       },
@@ -1731,7 +1731,7 @@
           "Khan Academy, que aprovecha TikTok para distribuir vídeos cortos sobre matemáticas, historia y ciencias adaptados al formato y lenguaje de los usuarios más jóvenes",
           "El Museo del Prado, que tiene una cuenta en TikTok donde muestra vídeos cortos sobre su actividad y las exposiciones como ejemplo pionero de uso institucional educativo"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El texto cita expresamente al Museo del Prado como ejemplo pionero de institución que utiliza TikTok, señalando que tiene una cuenta en esta red social donde muestra vídeos cortos sobre su actividad y las exposiciones, siendo un referente de uso institucional y educativo de esta plataforma."
       }
@@ -1757,7 +1757,7 @@
           "Sustituye completamente al docente en el proceso de enseñanza-aprendizaje, eliminando la necesidad de interacción presencial en el aula",
           "Solo resulta eficaz en la enseñanza de ciencias naturales, sin haberse demostrado su utilidad en otras áreas del currículo escolar"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Las investigaciones señalan que las aplicaciones basadas en TA favorecen el aprendizaje por descubrimiento, mejoran la información disponible y permiten estudiar objetos muy difíciles de conseguir en la realidad."
       },
@@ -1769,7 +1769,7 @@
           "Colorear láminas impresas obtenidas de la web para que, mediante la cámara del dispositivo móvil, los dibujos cobren vida en escenarios de Realidad Aumentada útiles para el aprendizaje",
           "Funcionar como plataforma de videoconferencia educativa enriquecida con elementos tridimensionales para conectar aulas de distintos países en tiempo real"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Quiver es una aplicación basada en RA y virtualidad que consiste en colorear láminas impresas obtenidas de la web y, posteriormente, mediante la cámara del móvil, hacer que adquieran vida creando escenarios de RA adecuados para el aprendizaje."
       },
@@ -1781,7 +1781,7 @@
           "Su aplicación resulta útil únicamente en asignaturas de ciencias experimentales, sin evidencia de beneficios en humanidades o ciencias sociales",
           "Deriva de su aplicación al desarrollo de competencias al permitir la visualización de elementos del mundo real combinados con elementos virtuales generados en dispositivos móviles, dando lugar a una realidad mixta"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El potencial educativo y estratégico de la RM deriva de su aplicación al desarrollo de la competencia, al permitir la visualización directa o indirecta de elementos del mundo real combinados con elementos virtuales generados en un dispositivo móvil."
       },
@@ -1793,7 +1793,7 @@
           "Permite añadir un amplio repertorio de animales de diversas especies en el entorno real, haciendo posible recrear su hábitat, características físicas, comportamiento y reacción ante distintas condiciones atmosféricas",
           "Es una plataforma web de cuestionarios interactivos sobre fauna mundial diseñada para que los docentes evalúen los conocimientos zoológicos de sus alumnos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "A través de Zookazam se puede añadir un amplio repertorio de animales de diversas especies en el entorno real, permitiendo recrear y representar su hábitat, estilo de vida, características físicas, comportamiento y reacción ante diferentes condiciones atmosféricas."
       },
@@ -1805,7 +1805,7 @@
           "Augment, que genera una capa de información tridimensional sobre las obras expuestas permitiendo ampliar detalles históricos de cada pieza desde el teléfono móvil",
           "HP Reveal, que superpone vídeos documentales sobre las salas del museo creando una visita guiada automática activada mediante marcadores físicos situados en las paredes"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "La aplicación «Streetmuseum» del Museo de Londres proporciona imágenes híbridas del presente y el pasado mientras se pasea por la ciudad, haciendo legible la ciudad y con la esperanza de democratizar el acceso a contenidos culturales."
       },
@@ -1817,7 +1817,7 @@
           "Para diseñar juegos de rol geográficos en los que los estudiantes gestionan territorios virtuales superpuestos al mapa físico de su municipio o comunidad autónoma",
           "Para que los estudiantes aprendieran los conceptos astronómicos de rotación y traslación, solsticio y equinoccio, y las variaciones de luz y temperatura"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La TA se aplicó con éxito en Geografía para que los estudiantes aprendieran los conceptos astronómicos de rotación/traslación y solsticio/equinoccio, además de las variaciones de luz y de temperatura."
       },
@@ -1829,7 +1829,7 @@
           "Es un programa multiplataforma de software libre dedicado al modelado, animación y creación de gráficos tridimensionales para representar objetos de ciencias como estructuras anatómicas, biológicas o elementos de laboratorio",
           "Es una herramienta de diseño exclusiva para dispositivos iPad que permite modelar objetos en tres dimensiones para su impresión con impresoras 3D escolares de bajo coste"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Blender es un programa multiplataforma dedicado al modelado, animación y creación de gráficos tridimensionales para la representación de objetos de estudio de ciencias; pasó a ser software libre y es compatible con Windows, Mac OS X, GNU/Linux, Solaris, FreeBSD e IRIX."
       },
@@ -1853,7 +1853,7 @@
           "Es un programa de diseño vectorial en dos dimensiones que permite crear infografías científicas interactivas para ser proyectadas en pizarras digitales durante las clases",
           "Es una herramienta de videoedición especializada en la creación de tutoriales científicos con superposición de gráficos animados para publicar en plataformas educativas en línea"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "JigSpace es una aplicación móvil para la visualización en Realidad Aumentada de modelos 3D relacionados con el área de ciencias, permitiendo explorar de forma interactiva objetos y conceptos complejos."
       },
@@ -1877,7 +1877,7 @@
           "Únicamente insignias digitales y sistemas de puntuación automatizados que el docente configura al inicio del curso para todo el año académico",
           "Tableros de clasificación, exámenes trimestrales gamificados y diplomas digitales entregados automáticamente al finalizar cada unidad didáctica"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "La gamificación participa de mecánicas/dinámicas de juego y de elementos como puntos, aventuras (quest), avatares, gráficos sociales, progreso, niveles, insignias y retos, entre otros."
       },
@@ -1889,7 +1889,7 @@
           "Surgieron en la década de los años 70 como tendencia orientada al uso y diseño de juegos digitales en entornos educativos para alcanzar objetivos más allá del mero entretenimiento",
           "Aparecieron en los años 80 de la mano de investigadores de neurociencia que buscaban aplicar los principios del condicionamiento operante al aprendizaje escolar"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "El término «serious games» ya surgió en la década de los años 70 y se refiere al uso general de juegos digitales y tecnologías con fines más allá del entretenimiento."
       },
@@ -1901,7 +1901,7 @@
           "Para entretener al alumnado durante los períodos de descanso entre clases y reducir así los niveles de estrés asociados a la presión académica en los centros escolares",
           "Con mecánicas basadas en el juego para pensar y para involucrar, motivar la acción, promover el aprendizaje y resolver problemas en distintos contextos"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Kapp (2012, p. 10) detalla que «la Gamificación se está utilizando con mecánicas basadas en el juego para pensar y para involucrar, motivar la acción, promover aprendizaje y resolver problemas»."
       },
@@ -1913,7 +1913,7 @@
           "El refuerzo de la comprensión lectora, el aprendizaje creativo y por descubrimiento, y el aumento de la atención y el interés del alumnado",
           "La sustitución efectiva del docente como guía del proceso de aprendizaje y la reducción de los costes asociados a los materiales didácticos físicos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Diversos estudios avalan las ventajas de los videojuegos para reforzar la comprensión lectora, el aprendizaje creativo y por descubrimiento y el aumento de la atención y el interés."
       },
@@ -1925,7 +1925,7 @@
           "El 63,4% los valora positivamente, pero los evita porque suponen una carga de trabajo adicional que no está contemplada en su jornada laboral ni en su programación anual",
           "El 30,9% confía en ellos como método estimulante, pero la mayoría no los aplica porque las familias muestran resistencia ante su uso en el contexto del aula"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "El 79,2% del profesorado cree que los juegos interactivos pueden funcionar como método estimulante, pero el 75,9% no los emplea debido a la falta de información, formación y orientación sobre sus posibilidades de aplicación didáctica."
       },
@@ -1937,7 +1937,7 @@
           "Gamificación basada en narrativa, gamificación por puntos y recompensas, y gamificación social a través de dinámicas colaborativas en redes educativas digitales",
           "El uso de títulos comerciales con fines educativos, los «serious games» especialmente desarrollados para educar e informar, y los juegos construidos por los propios estudiantes"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Van Eck (2006) establece tres tipologías: el uso de títulos comerciales motivadores, los «serious games» desarrollados para educar, y los juegos construidos por los propios estudiantes, que desarrollan habilidades de resolución de problemas, programación y diseño."
       },
@@ -1949,7 +1949,7 @@
           "Ofrece un valor añadido al centro por usar métodos novedosos y efectivos, y permite mostrar a las familias una fotografía realista del desempeño de su hijo o hija",
           "Garantiza la mejora automática de los resultados académicos del centro en las evaluaciones externas y en los rankings educativos nacionales e internacionales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Cortizo et al. (2011) señalan que, para la institución, la gamificación ofrece un valor añadido al centro por usar métodos novedosos y efectivos y permite mostrar a las familias una fotografía realista del desempeño de su hijo/a."
       },
@@ -1985,7 +1985,7 @@
           "La gamificación se alinea con el constructivismo y el aprendizaje competencial porque permite al jugador construir su propia comprensión del mundo y desarrollar actitudes positivas hacia los contenidos",
           "La gamificación supera al constructivismo al incorporar elementos tecnológicos que este último no contempla, haciendo innecesaria la reflexión pedagógica previa al diseño de actividades"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La gamificación se encuentra alineada con la filosofía del constructivismo y el aprendizaje competencial, ya que permite al jugador construir su propia comprensión del mundo y puede generar actitudes positivas hacia los contenidos."
       },
@@ -1997,7 +1997,7 @@
           "Señalan que el juego solo resulta beneficioso cuando se combina con técnicas de relajación previas que reduzcan el nivel de activación del sistema nervioso autónomo",
           "Muestran que la motivación generada por el juego, a través de activadores neuronales como el azar y la recompensa, es precursora de la activación de la memoria declarativa"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Las investigaciones en neurociencia muestran que la motivación que genera el juego por medio de activadores neuronales como el azar y la recompensa son precursores de la activación de la memoria declarativa."
       },
@@ -2021,7 +2021,7 @@
           "Es una herramienta exclusiva para dispositivos Apple que requiere que tanto docentes como estudiantes dispongan de iPad o iPhone para poder participar en las actividades propuestas",
           "Funciona como un sistema de votación anónima en línea donde los estudiantes responden desde sus propios dispositivos a preguntas que el docente proyecta en la pizarra digital"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Plickers consiste en preguntas interactivas que los estudiantes responden levantando tarjetas con códigos; el profesor escanea la clase con su dispositivo móvil y puede ver al instante qué ha respondido cada estudiante, sin que estos necesiten dispositivos propios."
       },
@@ -2033,7 +2033,7 @@
           "Es una aplicación para Android e iOS desarrollada por el IPHES y el proyecto ATAEVE de la Universidad de Barcelona, dirigida principalmente a estudiantes de Educación Secundaria, que sumerge al jugador en Atapuerca para entender la organización social del período a través del liderazgo de un clan",
           "Es un juego de mesa digitalizado para grupos de primaria que reproduce los principales hallazgos arqueológicos de Atapuerca mediante cartas y tableros descargables desde la web del CSIC"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "«Ancestors: historia de Atapuerca» es una aplicación para Android e iOS desarrollada por el Instituto Catalán de Paleoecología Humana y Evolución Social (IPHES) en colaboración con el proyecto ATAEVE de la Universidad de Barcelona. Está dirigida principalmente a estudiantes de Educación Secundaria y sumerge al jugador en Atapuerca para entender cómo se organizaba la sociedad a través del liderazgo de un clan."
       },
@@ -2057,7 +2057,7 @@
           "El uso del ordenador en el aula genera exclusivamente interacción entre el estudiante y la máquina, sin favorecer la comunicación ni la cooperación entre iguales",
           "Los estudiantes solo incrementan su comunicación verbal cuando trabajan con dispositivos móviles, no cuando utilizan ordenadores de sobremesa en contextos educativos"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Investigaciones ya demostraban que los estudiantes con ordenador hablan usando más del doble de palabras por minuto que en otras actividades, y es más probable que busquen la asistencia de sus compañeros, incluso si hay un adulto presente."
       },
@@ -2069,7 +2069,7 @@
           "Es un movimiento global que llega a decenas de millones de estudiantes en más de 180 países, con tutoriales de una hora disponibles en más de 30 idiomas, sin necesidad de experiencia previa ni límite de edad",
           "Es un programa de cursos intensivos de verano organizado por empresas tecnológicas privadas para jóvenes de entre 14 y 18 años con alta capacidad en ciencias computacionales"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La «Hora del Código» es un movimiento global que llega a decenas de millones de estudiantes en más de 180 países; cualquier persona puede organizar un evento, existen tutoriales en más de 30 idiomas y no se necesita experiencia ni la edad es un problema."
       },
@@ -2081,7 +2081,7 @@
           "Afirman que las herramientas de programación visual como Scratch generan una dependencia en el alumnado que luego les impide aprender lenguajes de programación textual profesionales",
           "Sostienen que se requiere un profesorado bien formado para conseguir aprendizajes significativos y útiles, evitando que la programación se convierta en un pasatiempo o una moda pasajera"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Hazzan, Gal-Ezer y Blum (2008) ponen de manifiesto que se requiere un profesorado bien formado para conseguir aprendizajes significativos y útiles, evitando que la programación se convierta más bien en un pasatiempo o una moda pasajera."
       },
@@ -2093,7 +2093,7 @@
           "Que el lenguaje de programación sea lúdico, significativo y social, facilitando el juego, la personalización de proyectos y la interacción y construcción colaborativa entre usuarios",
           "Automatización, creatividad y eficiencia, valores que permiten que los estudiantes creen proyectos complejos en el menor tiempo posible sin necesidad de supervisión docente directa"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los creadores de Scratch (Resnick et al., 2009) introdujeron tres principios básicos en el diseño del lenguaje: que sea lúdico, significativo y social, priorizando el juego, la diversidad y personalización de proyectos, y la interacción y construcción colaborativa."
       },
@@ -2105,7 +2105,7 @@
           "Funciona exclusivamente en línea sin posibilidad de descarga, está disponible solo en inglés y su uso está restringido a estudiantes menores de 12 años registrados en centros educativos oficiales",
           "Permite únicamente la creación de animaciones sin sonido, requiere un hardware específico para su ejecución y no admite la importación de imágenes o recursos externos al entorno"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Las características más importantes de Scratch incluyen estar basado en bloques gráficos con interfaz sencilla e intuitiva, contar con un entorno colaborativo para compartir proyectos, y que sus programas pueden ejecutarse directamente sobre el navegador de Internet."
       },
@@ -2117,7 +2117,7 @@
           "Exclusivamente competencias digitales básicas como el manejo del teclado, el ratón y el navegador web, sin evidencia de impacto en habilidades cognitivas de orden superior",
           "Análisis, síntesis, conceptualización, manejo de información, pensamiento sistémico, pensamiento crítico, investigación y metacognición, entre otras habilidades relacionadas con la adquisición de competencias clave"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Scratch puede contribuir al desarrollo de habilidades de orden superior como el análisis, la síntesis, la conceptualización, el manejo de información, el pensamiento sistémico y crítico, la investigación y la metacognición."
       },
@@ -2129,7 +2129,7 @@
           "El alumnado que aprende a programar en edades tempranas tiene menos estereotipos de género en relación con las carreras científicas y menos reticencias para continuar sus estudios en disciplinas STEM",
           "Solo las niñas que aprenden a programar antes de los 8 años muestran reducción de estereotipos de género, sin que se hayan observado efectos equivalentes en edades posteriores"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Existen evidencias científicas que demuestran que el alumnado que aprende a programar en edades tempranas tiene menos estereotipos de género en relación con las carreras científicas (STEM) y menos reticencias para continuar sus estudios y profesiones en estas disciplinas."
       },
@@ -2153,7 +2153,7 @@
           "La competencia en iniciativa y espíritu emprendedor, al permitir que los estudiantes diseñen y comercialicen sus propios proyectos digitales a través de la plataforma en línea",
           "La competencia en expresión cultural y artística, al centrar toda su actividad en la creación de animaciones y relatos visuales con finalidad exclusivamente estética y creativa"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Al ser una herramienta que permite compartir proyectos muy fácilmente, Scratch puede ser utilizada para incentivar el debate entre jóvenes de cuestiones con importancia social, no solo en el entorno educativo, sino llevándolo a un nivel de discusión internacional a través de la Comunidad Scratch."
       },
@@ -2165,7 +2165,7 @@
           "Francia desde el curso 2014/15, Reino Unido tanto en primaria como en secundaria, y Estonia, mientras que países como Finlandia, Israel, Corea del Sur, Nueva Zelanda o Grecia desarrollan programas piloto",
           "Exclusivamente los países de la Unión Europea, como consecuencia de una directiva comunitaria que obliga a todos los estados miembros a incluir la programación en el currículo de primaria"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Francia lleva desde el curso 2014/15 con iniciativas para programar en Educación Primaria, al igual que Reino Unido tanto para Primaria como Secundaria; Estonia lleva ya tiempo enseñando programación en primaria, y países como Finlandia, Israel, Corea del Sur, Nueva Zelanda o Grecia desarrollan programas piloto."
       },
@@ -2177,7 +2177,7 @@
           "Limitando las opciones de diseño disponibles para que el alumnado tome decisiones sencillas dentro de un margen acotado que reduce la posibilidad de error y favorece la autoconfianza",
           "Haciendo que los jóvenes descubran el razonamiento crítico y el pensamiento sistemático al coordinar el tiempo y las interacciones en sus proyectos, trabajando la detección de problemas, la crítica constructiva y el ensayo-error"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Aprendiendo a programar con Scratch, los jóvenes descubren el razonamiento crítico y el pensamiento sistemático. En sus proyectos necesitan coordinar el tiempo y las interacciones entre diferentes personajes, trabajando la detección de problemas, la crítica constructiva y el ensayo-error."
       },
@@ -2213,7 +2213,7 @@
           "Está basado en el lenguaje de programación LOGO, es gratuito y de software libre, está disponible para Windows, Mac, Linux y es multiplataforma, multilenguaje y permite compartir proyectos a través de Internet",
           "Está basado en HTML5 y su ventaja diferencial es que genera páginas web interactivas que los estudiantes pueden publicar directamente en sus propios dominios personales de forma autónoma"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Scratch está basado en el lenguaje de programación LOGO y sus ventajas más destacadas son que es un programa gratuito de software libre, está disponible para Windows, Mac y Linux, es multiplataforma, multilenguaje y permite compartir los proyectos a través de Internet para ser descargados y utilizados por otras personas."
       },
@@ -2237,7 +2237,7 @@
           "Facilitan únicamente la comparación del rendimiento entre diferentes grupos de estudiantes, sin ofrecer información individualizada ni posibilidades de personalización del aprendizaje",
           "Garantizan que todos los estudiantes alcancen los mismos resultados académicos al proporcionar una retroalimentación idéntica y estandarizada independientemente de su perfil de aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Verbert et al. (2013; 2014) evidenciaron que la muestra de resultados en forma de «dashboard» mejora en los estudiantes la reflexión sobre su desarrollo académico y permite a investigadores y diseñadores de cursos observar los patrones de comportamiento y la trayectoria de los estudiantes."
       },
@@ -2249,7 +2249,7 @@
           "Predicción, recomendación, visualización, diversión, evaluación comparativa, personalización, participación, comunicación y ahorro de costes, entre otros beneficios documentados",
           "Principalmente el ahorro económico en recursos humanos docentes y la automatización completa de la evaluación formativa sin necesidad de intervención del profesorado"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Entre los diferentes beneficios de la aplicación de las analíticas de aprendizaje a la enseñanza, Khalil, Taraghi y Ebner (2016) citan los siguientes: predicción, recomendación, visualización, diversión, evaluación comparativa, personalización, participación, comunicación y ahorro de costes."
       },
@@ -2261,7 +2261,7 @@
           "La complejidad técnica excesiva de los algoritmos de minería de datos, que impide su uso por parte de docentes sin formación informática especializada en programación",
           "La garantía de seguridad y privacidad en la obtención, tratamiento y protección de los datos; la transparencia en su uso cumpliendo las directrices europeas; y los posibles miedos o fobias hacia estas tecnologías"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La aplicación de las analíticas de aprendizaje debe superar retos como la garantía de seguridad y privacidad en la obtención y tratamiento de los datos, la transparencia en su uso cumpliendo las directrices europeas, así como los posibles miedos o fobias asociados."
       },
@@ -2273,7 +2273,7 @@
           "No son suficientes para mejorar la didáctica en la masividad ni el desempeño académico de los estudiantes; la analítica debe dar un paso más y arbitrar sistemas de análisis que reviertan en mejoras del proceso de enseñanza-aprendizaje",
           "Solo funcionan correctamente cuando los datos provienen de una única plataforma educativa, siendo incapaces de integrar información procedente de fuentes o herramientas tecnológicas diversas"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Aunque la minería de datos permite obtener enormes cantidades de información segmentada, no es suficiente para mejorar la didáctica en la masividad o el desempeño académico. La analítica debe dar un paso más y permitir arbitrar sistemas de análisis de esos datos que reviertan en mejoras del proceso de enseñanza-aprendizaje."
       },
@@ -2297,7 +2297,7 @@
           "Únicamente los algoritmos de árbol de decisión, ya que son los únicos capaces de procesar el volumen de datos generado por los estudiantes en entornos de aprendizaje masivos",
           "El análisis estadístico, las reglas de asociación, los algoritmos evolutivos, el «clustering», los patrones secuenciales y, más recientemente, el árbol de decisión y el clasificador «k-nearest neighbour»"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Las técnicas empleadas incluyen el análisis estadístico, las reglas de asociación, los algoritmos evolutivos, el «clustering» y los patrones secuenciales. Más recientemente se han adoptado árboles de decisión (C4.5, RepTree y J48) y la técnica «k-nearest neighbour classifier»."
       },
@@ -2309,7 +2309,7 @@
           "Solo permite el análisis en tiempo diferido, sin posibilidad de acceder a datos de actividad en tiempo real ni de configurar alertas automáticas vinculadas al comportamiento de los estudiantes",
           "Permite añadir métricas estadísticas, cronologías, geomapas, tablas, gráficos circulares, barras, contadores en tiempo real, alertas personalizadas por correo y seguimiento de documentos con código de analytics, entre otras funcionalidades"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Google Analytics ofrece widgets como métricas, cronologías, geomapas, tablas, circulares, barras, contadores en directo, alertas personalizadas por correo electrónico y seguimiento en tiempo real de documentos con código de analytics insertado. Nota: La respuesta correcta es la d, tal como establece el patrón de la pregunta 8."
       },
@@ -2333,7 +2333,7 @@
           "Es una herramienta de visualización que muestra en forma de diagrama ramificado las relaciones de amistad y colaboración que los estudiantes establecen entre sí en los foros del curso",
           "Es un algoritmo que analiza exclusivamente las calificaciones numéricas de los estudiantes para predecir cuáles aprobarán el curso sin necesidad de considerar otras variables del diseño instruccional"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Un árbol de decisión es un conjunto de condiciones organizadas en una estructura jerárquica, determinando la decisión final siguiendo las condiciones desde la raíz hasta sus hojas. En entornos a distancia su objetivo es crear un modelo que prediga el coeficiente de la variable para superar el curso conforme a las variables del diseño instruccional."
       },
@@ -2345,7 +2345,7 @@
           "Datos demográficos y del desempeño académico, organizados en archivos CSV que incluyen identificadores únicos anónimos y marcas horarias, recogidos tanto activamente como pasivamente durante la participación en el curso",
           "Exclusivamente información sobre el número de vídeos visualizados y el tiempo de conexión semanal, sin posibilidad de acceder a los comentarios en foros ni a los resultados de las actividades de evaluación"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "FutureLearn facilita diferentes analíticas a sus instituciones, incluyendo datos demográficos y del desempeño académico. Los datos se organizan en archivos CSV con identificadores únicos anónimos y marcas horarias, recogidos tanto activamente (rellenando cuestionarios) como pasivamente (interactuando con la plataforma)."
       },
@@ -2357,7 +2357,7 @@
           "Twitter Analytics, que analiza exclusivamente las interacciones en redes sociales externas vinculadas al curso mediante hashtags, sin posibilidad de rastrear los foros internos de la plataforma",
           "Cytoscape, que permite visualizar la actividad en redes sociales de forma gráfica en forma de redes, posibilitando tomar decisiones sobre el funcionamiento de las relaciones académicas en dichas redes"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "Cytoscape es mencionada como herramienta para el análisis de foros y chats desde el principio del análisis de redes sociales; permite visualizar la actividad en redes sociales de forma gráfica en forma de redes, lo que posibilita tomar decisiones sobre el funcionamiento de las relaciones académicas."
       },
@@ -2393,7 +2393,7 @@
           "edX dispone de un servicio denominado «Insights» que permite la visualización del desempeño en diferentes dimensiones, y FutureLearn facilita diferentes analíticas a sus instituciones asociadas incorporando datos demográficos y de desempeño académico",
           "Solo las plataformas de pago como LinkedIn Learning y Udemy ofrecen analíticas avanzadas del desempeño, mientras que las plataformas abiertas carecen de herramientas de seguimiento individualizado"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La plataforma edX dispone de un servicio denominado «Insights» que permite la visualización del desempeño del estudiante en diferentes dimensiones, mientras que FutureLearn facilita diferentes analíticas a sus instituciones asociadas, incorporando datos demográficos y del desempeño académico."
       },
@@ -2417,7 +2417,7 @@
           "La creación de entornos de realidad virtual para el aprendizaje inmersivo, el diseño de materiales didácticos digitales y la coordinación de los equipos docentes en los centros educativos",
           "El control de asistencia del alumnado, la gestión de los horarios del centro y la supervisión automática del cumplimiento del currículum por parte del profesorado en cada materia"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Inicialmente los chatbots en la enseñanza pueden tener tres grandes aplicaciones: como tutores que acompañan el proceso de aprendizaje de forma personalizada, como apoyo a asignaturas principalmente de idiomas en el desarrollo de la competencia comunicativa y para informar a estudiantes y familias de aspectos administrativos."
       },
@@ -2429,7 +2429,7 @@
           "Buscan simular conversaciones entre humanos, han proporcionado interacción por medio de mensajes escritos, son entes sin cuerpo («disembodied agents») y se diferencian de los avatares por no ser representaciones de un humano en un mundo virtual",
           "Inmediatez, anonimato, personalización y escalabilidad, ventajas que los hacen especialmente útiles para la educación en entornos con un elevado número de estudiantes simultáneos"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los cuatro elementos centrales de los chatbots son: (1) buscan simular las conversaciones humanas, (2) han proporcionado interacción mediante mensajes escritos, (3) son entes «sin cuerpo» (disembodied agents) y (4) se diferencian de los avatares pues no son representaciones de un humano en un mundo virtual."
       },
@@ -2441,7 +2441,7 @@
           "Los chatbots solo se utilizan en el microaprendizaje cuando el estudiante dispone de al menos 30 minutos de dedicación ininterrumpida, siendo ineficaces para sesiones más breves o fragmentadas",
           "El microaprendizaje con chatbots requiere siempre la supervisión directa del docente, ya que sin orientación profesional el estudiante no puede regular adecuadamente su ritmo de aprendizaje"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Los chatbots participan del microaprendizaje, permitiendo aprovechar pequeñas unidades de contenido para que el estudiante practique, aprenda o interaccione en un tiempo limitado. El tiempo estimado de interacción oscila entre uno y diez minutos y se puede realizar desde diferentes dispositivos digitales móviles."
       },
@@ -2453,7 +2453,7 @@
           "Ayudan a reducir la fatiga del estudiante, favorecen la retención de la información aproximadamente un 20% y en muchos casos mejoran los resultados académicos, además de promover el aprendizaje autorregulado",
           "Solo son eficaces para reducir el abandono escolar en entornos de educación a distancia, sin evidencia de beneficios en contextos de enseñanza presencial en educación primaria y secundaria"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los enfoques basados en microaprendizaje con chatbots ayudan a reducir la fatiga del estudiante, favorecen la retención de la información aproximadamente un 20% (Giurgiu, 2017) y en muchos casos mejoran los resultados. Además, el estudiante tiene mayor control del proceso, operando competencias de aprendizaje autorregulado."
       },
@@ -2465,7 +2465,7 @@
           "La gamificación superó a los chatbots en un 15% en la tasa de finalización de tareas, consolidándose como la metodología más efectiva para mantener el compromiso del estudiante",
           "Los chatbots redujeron la tasa de finalización de tareas en un 5% respecto a la gamificación, aunque mejoraron significativamente la calidad de las producciones entregadas por los estudiantes"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "La tasa de finalización de tareas fue hasta cinco puntos superior en estudiantes de la escuela de informática usando chatbots en lugar de otro tipo de recurso como la gamificación."
       },
@@ -2477,7 +2477,7 @@
           "Chatbots de evaluación sumativa que califican automáticamente los exámenes y chatbots de evaluación diagnóstica que identifican las necesidades del estudiante al inicio de cada unidad didáctica",
           "Tutores que ejercen como andamiaje en el proceso de aprendizaje, adaptando y secuenciando contenidos y favoreciendo la metacognición, y programas de ejercitación práctica que presentan un estímulo, evalúan automáticamente la respuesta del estudiante y dan retorno inmediato"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "El diseño didáctico de los chatbots se basa en dos tipos: (1) tutores que actúan como andamiaje, adaptando, seleccionando y secuenciando contenidos, facilitando procesos de reflexión y metacognición; y (2) programas de ejercitación práctica que presentan un estímulo, evalúan automáticamente la respuesta y dan un retorno inmediato."
       },
@@ -2489,7 +2489,7 @@
           "Los primeros chatbots empezaron en la década de los años 60 del siglo XX, aunque es a principios del siglo XXI cuando comenzaron a llamar la atención de investigadores y empresas; en 2018 ya se calculaban más de 300.000 chatbots funcionando en Facebook Messenger",
           "Los chatbots fueron desarrollados por primera vez en los años 80 como parte de los sistemas expertos utilizados en medicina y derecho, sin interés educativo hasta bien entrado el siglo XXI"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los primeros chatbots empezaron en la década de los años 60 del siglo XX (Weizenbaum, 1966), aunque es a principios del siglo XXI cuando han empezado a llamar la atención de investigadores y empresas. Ya en 2018 se calculaba que en Facebook Messenger podría haber más de 300.000 chatbots funcionando."
       },
@@ -2513,7 +2513,7 @@
           "Rebot.me, que es gratuita y permite crear un chatbot sencillo de forma rápida o consultar e interactuar con los más de 1.000 chatbots que tiene alojados en su plataforma",
           "Microsoft Bot Framework, que permite crear bots sencillos y asistentes virtuales más complejos usando herramientas y SDK de código abierto para conectar el bot con dispositivos y canales populares"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "basico",
         "explicacion": "Pandorabots permite crear bots complejos y algunas partes de esta plataforma tienen licencia GPL, lo que lo hace compatible con AIL, un dialecto XML para crear agentes software con lenguaje natural."
       },
@@ -2525,7 +2525,7 @@
           "Los chatbots de motivación, que contribuyen a ejercer un control de comportamiento aportando refuerzo positivo motivacional, aumentando la retención de los estudiantes, algo especialmente relevante en entornos de educación en línea",
           "Los chatbots de simulación, que simulan situaciones profesionales concretas y pueden dar apoyo a la reflexión o la terapia en ámbitos como la salud, la atención psicológica o la educación"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "La categoría de chatbots de motivación contribuye a ejercer un control de comportamiento, aportando un refuerzo positivo motivacional que aumenta la retención de los estudiantes, siendo especialmente relevante en entornos de educación en línea."
       },
@@ -2537,7 +2537,7 @@
           "El chatbot opera como sistema de calificación automática de todos los trabajos y exámenes del curso, liberando al docente de las tareas de evaluación para que pueda dedicarse íntegramente al diseño curricular",
           "El chatbot se integra como un complemento para dar respuesta a acciones más rutinarias; el docente sigue siendo quien diseña el entorno de aprendizaje y el chatbot se programa para informar de los procesos de evaluación, criterios de calificación y explicación de rúbricas, entre otros"
         ],
-        "correcta": 0,
+        "correcta": 3,
         "nivel": "basico",
         "explicacion": "La función de los chatbots no es sustituir al docente, sino integrarse como un complemento para responder a acciones más rutinarias. El docente se encarga de la tutorización y las tareas y el chatbot se programa para informar de todos los procesos de evaluación: criterios de calificación, explicación de la rúbrica y modelo de los trabajos."
       },
@@ -2573,7 +2573,7 @@
           "Es un agente que aprende a partir de la interacción con los estudiantes; propone problemas y los estudiantes discuten sobre su solución; en ocasiones el agente propone una solución y si los estudiantes no están de acuerdo deben argumentar el porqué, aumentando así la motivación y la participación",
           "Es un tipo de chatbot diseñado para que los propios estudiantes lo programen y enseñen durante el curso, invirtiendo los roles convencionales y convirtiendo el proceso de creación del bot en la actividad de aprendizaje principal"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "basico",
         "explicacion": "Los agentes enseñables aprenden a partir de la interacción de los estudiantes con el chatbot. El agente propone problemas y los estudiantes discuten sobre su solución; en ocasiones el agente propone una solución y si los estudiantes no están de acuerdo deben argumentar el porqué. Estos agentes pueden aumentar la motivación e incentivar la participación."
       }
@@ -2707,7 +2707,7 @@
           "16 años",
           "No existe límite"
         ],
-        "correcta": 1,
+        "correcta": 0,
         "nivel": "basico",
         "explicacion": "La normativa española establece los 14 años como edad mínima para prestar consentimiento válido en tratamiento de datos personales."
       },
@@ -2886,24 +2886,24 @@
       {
         "pregunta": "¿Cuántos niveles de competencia digital docente ha establecido el “DigCompEdu”?",
         "opciones": [
-          "",
-          "",
-          "",
-          ""
+          "8",
+          "7",
+          "6",
+          "5"
         ],
-        "correcta": 2,
+        "correcta": 0,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
       {
         "pregunta": "¿Cuántas áreas de competencia digital docente ha establecido el “DigCompEdu”?",
         "opciones": [
-          "",
-          "",
-          "",
-          ""
+          "4",
+          "5",
+          "6",
+          "7"
         ],
-        "correcta": 2,
+        "correcta": 0,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
@@ -2987,7 +2987,7 @@
           "Diseño y evaluación de contenidos multimedia educativos",
           "Producción exclusiva de contenidos audiovisuales"
         ],
-        "correcta": 0,
+        "correcta": 1,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
@@ -2999,7 +2999,7 @@
           "Objetivar el nivel de competencias de los docentes y promover una integración efectiva de las competencias digitales en las aulas",
           "Desarrollar habilidades manuales y artísticas en el ámbito educativo para su divulgación en el marco de la Competencia Digital Docente"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "examen",
         "explicacion": "Es correcta porque expresa la finalidad indicada en el temario; las otras opciones confunden medios con objetivos o introducen elementos no pertinentes."
       },
@@ -3011,7 +3011,7 @@
           "Con la enseñanza expositiva, las TIC refuerzan el aprendizaje por recepción; con la constructivista, facilitan el aprendizaje por descubrimiento",
           "Las TIC no influyen en ningún método de enseñanza"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
@@ -3095,7 +3095,7 @@
           "El estudio y la práctica ética de proporcionar y mejorar los aprendizajes creando, usando y aplicando los adecuados procesos y recursos tecnológicos",
           "La evaluación de métodos de enseñanza con base en la tecnología"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "examen",
         "explicacion": "Es correcta porque recoge la definición del concepto según el temario y evita reduccionismos instrumentales presentes en las alternativas."
       },
@@ -3167,7 +3167,7 @@
           "Servicios personalizados a los estudiantes basándose en su contexto",
           "Métodos tradicionales de enseñanza sin cambios"
         ],
-        "correcta": 0,
+        "correcta": 2,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
@@ -3203,7 +3203,7 @@
           "Civilization",
           "Babel"
         ],
-        "correcta": 2,
+        "correcta": 0,
         "nivel": "examen",
         "explicacion": "Es correcta porque responde directamente al criterio del temario para esta cuestión; las demás alternativas son incompletas, confunden conceptos o resultan inconsistentes."
       },
