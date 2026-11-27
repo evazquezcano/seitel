@@ -21,7 +21,7 @@ h3{font-size:17px}
 header{background:white;border-bottom:1px solid var(--line)}
 .masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:20px}
 .brand{display:flex;align-items:center;gap:16px}
-.brand h1{font-size:32px;letter-spacing:-.05em;line-height:1.1}
+.brand h1{font-size:43px;letter-spacing:-.045em;line-height:1.08}
 .kicker{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--green2)}
 .brand p{font-size:13px;color:var(--muted);margin-top:4px}
 .brand .registration{font-size:12px;font-weight:700;color:var(--green);margin-top:3px}
@@ -68,8 +68,12 @@ header{background:white;border-bottom:1px solid var(--line)}
 .project-section{margin:26px 0;display:grid;gap:10px;padding:20px 24px}
 .project-section h2{font-size:20px}
 .project-section .kicker{font-size:10px}
-.privacy p{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
-.original-site{border-top:1px solid var(--line);margin-top:15px;padding-top:12px;font-size:12px;font-weight:700}
+.technical-disclosure{margin:20px 0 0;padding:16px 24px}
+.technical-disclosure summary{cursor:pointer;font-weight:750;color:var(--green);font-size:14px}
+.technical-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.technical-grid h3{font-size:14px;color:var(--green);margin-bottom:8px}
+.technical-grid p{font-size:12px;color:var(--muted);margin:8px 0;line-height:1.6}
+@media(max-width:800px){.technical-grid{grid-template-columns:1fr;gap:12px}.technical-disclosure{padding:15px 19px}}
 .credits{border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;font-size:12px;color:var(--muted)}
 .credits a{font-weight:700}
 #back{min-height:54px;padding:14px 28px;font-size:16px;min-width:210px;background:var(--green);color:#fff;border-color:var(--green)}
@@ -139,7 +143,7 @@ footer{background:white;border-top:1px solid var(--line);margin-top:25px}
 .foot{flex-direction:column;align-items:flex-start}
 }
 @media(max-width:460px){.modes{grid-template-columns:1fr}
-.brand h1{font-size:25px}
+.brand h1{font-size:31px}
 .brand p{font-size:12px}
 .nav{grid-template-columns:repeat(5,1fr)}
 .actions>.btn{flex:1}
@@ -227,7 +231,7 @@ footer{background:white;border-top:1px solid var(--line);margin-top:25px}
 </div>
 </section>
 <aside class="panel aside">
-<span class="preview">Versión de pruebas · SEITEL 2.1</span>
+<span class="preview">Versión SEITEL 2.0</span>
 <h3>Tu espacio de práctica</h3>
 <p class="muted" id="asideText">Cada asignatura dispone de su propio banco de preguntas, modalidades y criterios de evaluación.</p>
 <div class="stats">
@@ -248,20 +252,29 @@ footer{background:white;border-top:1px solid var(--line);margin-top:25px}
 <summary>¿Cómo funciona?</summary>
 <p class="muted" style="margin-top:8px">Selecciona una asignatura y una modalidad. Las prácticas ofrecen corrección inmediata. En el simulacro de Evaluación de Centros y Profesores podrás revisar y cambiar tus respuestas antes de finalizar.</p>
 </details>
-<details class="privacy">
-<summary>Protección de datos</summary>
-<p>La herramienta opera en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento persistente de sus respuestas. La evaluación se realiza localmente y no genera perfiles individuales.</p>
-<p>La versión original integra Microsoft Clarity como proveedor externo de analítica web para métricas de uso y rendimiento por ítem, con identificadores técnicos seudonimizados. En esta versión de pruebas la analítica está desactivada. Se mantienen como referencia los principios de minimización y privacidad desde el diseño (arts. 5 y 25 del Reglamento (UE) 2016/679 y Ley Orgánica 3/2018).</p>
-<p>El acceso a la versión original para pretest y postest puede implicar el uso de códigos de participación y el envío de resultados mediante Microsoft Forms, según las instrucciones del equipo docente.</p>
-</details>
 <details id="innovation" hidden>
 <summary>Pretest y postest · Proyecto de innovación</summary>
-<p class="muted" style="margin:8px 0">Solo para estudiantes a quienes el equipo docente haya indicado expresamente participar. En esta versión de pruebas se conserva el acceso a la herramienta original.</p>
+<p class="muted" style="margin:8px 0">Solo para estudiantes a quienes el equipo docente haya indicado expresamente participar.</p>
 <a class="btn secondary" id="legacyLink" href="https://evazquezcano.github.io/seitel/" target="_blank" rel="noopener">Acceder a pretest y postest ↗</a>
 </details>
-<div class="original-site"><a id="originalLink" href="https://evazquezcano.github.io/seitel/" target="_blank" rel="noopener">Consultar la web original de SEITEL ↗</a></div>
 </aside>
 </div>
+<details class="panel technical-disclosure">
+<summary>Protección de datos y desarrollo técnico</summary>
+<div class="technical-grid">
+<section aria-labelledby="privacyHeading">
+<h3 id="privacyHeading">Protección de datos</h3>
+<p>La herramienta opera en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento persistente de sus respuestas. La evaluación se realiza localmente y no genera perfiles individuales. En SEITEL 2.0 no se ha activado la analítica web.</p>
+<p>El módulo anterior de pretest y postest conserva la integración de Microsoft Clarity como proveedor externo de analítica web, destinada a métricas de uso y rendimiento por ítem mediante identificadores técnicos seudonimizados. En estas modalidades pueden utilizarse códigos de participación y enviarse resultados mediante Microsoft Forms, según las instrucciones del equipo docente.</p>
+<p>Se mantienen como referencia los principios de minimización y privacidad desde el diseño (arts. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.</p>
+</section>
+<section aria-labelledby="technicalHeading">
+<h3 id="technicalHeading">Desarrollo técnico</h3>
+<p>Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend propio ni almacenamiento persistente de las respuestas. Los bancos de ítems se organizan por asignatura en estructuras de datos JSON y se procesan dinámicamente mediante lógica de evaluación formativa automatizada.</p>
+<p>La herramienta ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding). Su arquitectura modular permite incorporar asignaturas con bancos de preguntas, modalidades y criterios de evaluación independientes.</p>
+</section>
+</div>
+</details>
 <section class="panel project-section">
 <div class="kicker">Investigación e innovación docente</div>
 <h2>Proyectos de innovación docente</h2>
@@ -384,7 +397,7 @@ function home(){session=null;show('home',true);show('quiz',false);show('result',
 $('start').addEventListener('click',start);$('next').addEventListener('click',next);$('prev').addEventListener('click',()=>{if(session.i>0){session.i--;renderQuestion();$('question').focus()}});$('skip').addEventListener('click',()=>{session.answers[session.i]=null;session.visited[session.i]=true;renderQuestion()});$('finish').addEventListener('click',finish);$('quit').addEventListener('click',()=>{if(confirm('¿Salir de la sesión? Se perderán las respuestas.'))home()});$('again').addEventListener('click',start);$('back').addEventListener('click',home);$('print').addEventListener('click',()=>window.print());
 // Los recursos se mantienen en GitHub. En una instalación del repositorio se usan primero los archivos locales.
 document.querySelectorAll('[data-asset]').forEach(img=>{img.addEventListener('error',()=>{if(!img.dataset.remote){img.dataset.remote='1';img.src=OLD+img.dataset.asset}else img.hidden=true});img.src=img.dataset.asset});
-if(location.protocol!=='file:' && /github\.io$/.test(location.hostname)){ $('legacyLink').href='legacy.html'; $('originalLink').href='legacy.html'; }
+if(location.protocol!=='file:' && /github\.io$/.test(location.hostname)) $('legacyLink').href='legacy.html';
 validate(banks.ecp,CFG.ecp);
 </script>
 </body>
