@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEITEL</title>
+
+  <!-- Microsoft Clarity (Project ID ya integrado) -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vj9vufepwf");
+  </script>
+
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6f9; text-align:center; padding:40px; }
+    .contenedor { background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.1); max-width:920px; margin:auto; }
+
+    /* Cabecera */
+    .header {
+      display:grid;
+      grid-template-columns: 90px 1fr 90px;
+      align-items:center;
+      gap:16px;
+      margin-bottom: 10px;
+    }
+    .logo-uned { width: 90px; height: auto; justify-self:center; }
+    .logo-seitel { width: 104px; height: auto; justify-self:center; }
+    .header-text { text-align:center; }
+    .header-text .linea1 { font-size: 20px; font-weight: bold; margin: 0; }
+    .header-text .linea2 { font-size: 16px; margin: 6px 0 0; color:#333; }
+    .header-text .linea3 { font-size: 15px; margin: 4px 0 0; color:#333; }
+
+    @media (max-width: 600px) {
+      .header { grid-template-columns: 1fr; text-align:center; }
+      .logo-uned { width: 80px; }
+      .logo-seitel { width: 84px; }
+      .header-text { margin: 6px 0; }
+    }
+
+    h1 { margin: 12px 0 6px; font-size: 38px; color:#2c7be5; line-height: 1.1; }
+    .seitel-tagline { display:block; font-size: 17px; font-weight: 700; margin-top: 8px; color:#2c7be5; }
+    .subtitulo { margin: 14px 0 18px; color:#333; }
+
+    .fila { margin: 14px 0; }
+    select, button, input { padding: 10px 12px; font-size: 16px; border-radius: 6px; }
+    button { border:0; background:#2c7be5; color:#fff; cursor:pointer; }
+    button:hover { background:#1a5fc4; }
+
+    .btn-link{
+      display:inline-block;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background:#2c7be5;
+      color:#fff;
+      text-decoration:none;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .btn-link:hover{ background:#1a5fc4; }
+
+    .guia-center{ text-align:center; margin: 18px 0 6px; }
+
+    /* Estado */
+    .estado {
+      margin-top:12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #0B6E4F;
+    }
+    .estado .timer { color:#8a2be2; font-weight:800; }
+
+    .bloque { text-align:left; margin-top: 14px; }
+
+    .caja-pregunta{
+      max-width: 740px;
+      margin: 10px auto 16px;
+      background:#111;
+      color:#fff;
+      border-radius:10px;
+      padding:14px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    }
+    #enunciado{
+      margin:0;
+      text-align:center;
+      font-size: 20px;
+      line-height: 1.35;
+      color:#fff;
+    }
+
+    #opciones { max-width: 680px; margin: 0 auto; }
+    .opcion {
+      display:block;
+      width:100%;
+      margin:8px 0;
+      border:0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 16px;
+      color:#fff;
+      cursor:pointer;
+      background:#2c7be5;
+    }
+    .opcion:hover { background:#1a5fc4; }
+    .opcion:disabled { opacity: 0.75; cursor: not-allowed; }
+
+    .feedback {
+      margin: 12px auto 0;
+      padding: 12px;
+      border-radius: 8px;
+      display:none;
+      text-align:left;
+      max-width: 680px;
+    }
+    .ok { background:#e8f7ee; border:1px solid #bde5c8; }
+    .ko { background:#fdeaea; border:1px solid #f5bcbc; }
+
+    /* Insignias */
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:800; }
+    .badge-enproceso { background:#fff3cd; border:1px solid #ffe69c; color:#7a4b00; }
+    .badge-adecuado  { background:#d1ecf1; border:1px solid #bee5eb; color:#0b4f6c; }
+    .badge-avanzado  { background:#d4edda; border:1px solid #c3e6cb; color:#1b5e20; }
+
+    .resumen {
+      text-align:left;
+      margin-top: 16px;
+      max-width: 820px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .resumen h3 { margin: 18px 0 8px; }
+    .item {
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:12px;
+      margin:10px 0;
+      background:#fff;
+    }
+    .item .q { font-weight:700; margin-bottom:8px; }
+    .item.ok { border-color:#bde5c8; background:#f1fbf5; }
+    .item.ko { border-color:#f5bcbc; background:#fff3f3; }
+    .item small { color:#555; display:block; margin-top:8px; }
+
+    /* ✅ NUEVO: sello de fecha/hora robusto en móvil */
+    .summary-datetime{
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px dashed #c7d2fe;
+      border-radius: 10px;
+      background: #eef2ff;
+      font-size: 14px;
+      line-height: 1.35;
+      word-break: break-word;
+      text-align:left;
+      max-width: 740px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .footer {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 2px solid #9ec5fe;
+      text-align: left;
+      font-size: 13px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .footer strong { color:#222; }
+
+    .grupos-bottom{
+      margin-top: 14px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end;
+      gap: 18px;
+      text-align:center;
+    }
+    .grupo { width: 86px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
+    .grupo img { width: 44px; height: 44px; object-fit: contain; display: block; margin: 0 auto 6px; }
+    .grupo .caption { font-size: 10px; color: #444; line-height: 1.1; white-space: nowrap; }
+    .grupo .caption a{ color:#444; text-decoration: none; font-weight: 700; }
+    .grupo .caption a:hover{ text-decoration: underline; }
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .grupo { width: 96px; }
+      .grupo img { width: 48px; height: 48px; }
+      .grupo .caption { font-size: 11px; }
+      .grupos-bottom{ gap: 14px; }
+    }
+
+    /* Modal / checklist PRE/POST */
+    .modal-backdrop{
+      position:fixed; inset:0;
+      background:rgba(0,0,0,.45);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+      z-index:9999;
+    }
+    .modal{
+      width:min(760px, 100%);
+      background:#fff;
+      border-radius:14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      padding:18px 18px 14px;
+      text-align:left;
+    }
+    .modal h2{ margin:0 0 10px; color:#2c7be5; font-size:20px; }
+    .modal p{ margin:8px 0; color:#333; line-height:1.5; }
+    .modal .row{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px; }
+    .modal label{ font-weight:700; }
+    .modal input[type="text"]{ flex:1; min-width:240px; border:1px solid #d0d7de; }
+    .checklist{ margin:10px 0 8px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px; background:#f8fafc; }
+    .checklist .itemc{ display:flex; gap:10px; align-items:flex-start; margin:8px 0; }
+    .checklist input{ margin-top:3px; }
+    .modal .actions{ display:flex; justify-content:flex-end; gap:10px; margin-top:12px; }
+    .btn-sec{ background:#6c757d; }
+    .btn-sec:hover{ background:#545b62; }
+    .hint{ font-size:12px; color:#555; margin-top:6px; }
+    .warn{ font-size:12px; color:#7a4b00; margin-top:6px; }
+
+    /* Resumen envío Forms */
+    .envio-box{
+      max-width: 740px;
+      margin: 12px auto 0;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:14px 14px;
+      background:#f8fafc;
+      text-align:left;
+    }
+    .envio-box code{ background:#eef2ff; padding:2px 6px; border-radius:8px; }
+    .envio-actions{ margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; }
+
+    /* Aviso visible si falla la carga del JSON */
+    .alerta-json{
+      max-width: 740px;
+      margin: 12px auto 0;
+      border:1px solid #f5bcbc;
+      border-radius:12px;
+      padding:12px 14px;
+      background:#fff3f3;
+      text-align:left;
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <div class="header">
+      <!-- LOGO UNED (como en tu código anterior) -->
+      <img class="logo-uned" src="logo-uned.png" alt="Logo UNED" />
+      <div class="header-text">
+        <p class="linea1">UNED — Grado en Pedagogía</p>
+        <p class="linea2">Asignatura: <strong>Medios, Recursos Didácticos y Tecnología Educativa</strong></p>
+        <p class="linea3">Herramienta abierta de autoevaluación tipo test</p>
+      </div>
+      <img class="logo-seitel" src="logo-SEITEL.png" alt="Logo SEITEL" />
+    </div>
+
+    <h1>
+      SEITEL-UNED
+      <span class="seitel-tagline">Smart Evaluation &amp; Innovation in Technology-Enhanced Learning</span>
+    </h1>
+
+    <p class="subtitulo">
+      Prácticas de <strong>10 preguntas</strong>, simulacro de <strong>20</strong>, y modo <strong>PRETEST/POSTTEST</strong>
+    </p>
+
+    <div class="fila">
+      <label for="seleccion"><strong>Elige modalidad:</strong></label>
+      <select id="seleccion">
+        <option>Cargando modalidades…</option>
+      </select>
+      <button onclick="iniciarPractica()">Comenzar</button>
+    </div>
+
+    <div class="alerta-json" id="alertaJson"></div>
+
+    <div id="panelJuego" style="display:none;">
+      <div class="estado" id="estado"></div>
+      <div class="bloque">
+        <div class="caja-pregunta">
+          <h3 id="enunciado"></h3>
+        </div>
+        <div id="opciones"></div>
+        <div id="feedback" class="feedback"></div>
+      </div>
+    </div>
+
+    <div id="panelFinal" style="display:none; margin-top:18px;"></div>
+
+    <div class="footer">
+      <p>
+        <strong>Proyecto de Innovación Docente de la UNED:</strong>
+        “Arquitectura Small Language Model en chatbots educativos: desarrollo de una herramienta curricular automatizada y su efecto en el desempeño académico del estudiante Universitario”.
+        (Resolución del Vicerrectorado de Digitalización e Innovación (UNED). BICI. Nº 1. 30 de septiembre de 2025).
+      </p>
+      <p>
+        <strong>IP:</strong> Esteban Vázquez-Cano. Catedrático de Universidad. Facultad de Educación (UNED).<br>
+        Desarrollador de esta herramienta mediante Vibe Coding.
+      </p>
+      <p>
+        <strong>Desarrollo técnico:</strong> Aplicación web estática desarrollada bajo arquitectura cliente (client-side) mediante HTML5, CSS3 y JavaScript vanilla, sin backend ni almacenamiento persistente. El banco de ítems se estructura en formato JSON y es procesado dinámicamente mediante lógica de evaluación formativa automatizada y competencial. La herramienta integra un script externo de analítica agregada (Microsoft Clarity) y ha sido desarrollada mediante metodología de codiseño asistido por IA (Vibe Coding).
+      </p>
+      <p>
+        <strong>Protección de datos:</strong> La herramienta opera íntegramente en el lado del cliente (navegador), sin registro de usuarios ni almacenamiento de datos personales identificables. La evaluación se realiza localmente y no genera perfiles individuales. La analítica implementada se limita a métricas agregadas de uso y rendimiento por ítem mediante identificadores técnicos pseudonimizados y hash no reversibles, sin identificación directa del usuario. El sistema integra Microsoft Clarity como proveedor externo de analítica web, bajo tratamiento agregado y conforme a los principios de minimización y privacidad desde el diseño (art. 5 y 25 del Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018.
+      </p>
+      <p>
+        <strong>Nota:</strong> Recurso abierto y gratuito para la práctica formativa (no sustituye la evaluación oficial de la asignatura).
+      </p>
+
+      <div class="guia-center">
+        <a class="btn-link" href="guia_web.png" target="_blank" rel="noopener noreferrer">Guía de funcionamiento</a>
+      </div>
+
+      <div class="grupos-bottom" aria-label="Grupos de investigación e innovación docente">
+        <div class="grupo">
+          <img src="logo-radte.png" alt="Logo RADTE" />
+          <div class="caption">
+            <a href="https://www.uned.es/universidad/inicio/investigacion/Institutos-centros-grupos-investigacion/grupos-investigacion/estrategias-metodologicas-para-la-construccion-de-una-red-a-distancia-de-tecnologia-educativa.html?idContenido=1" target="_blank" rel="noopener noreferrer">RADTE</a>
+          </div>
+        </div>
+        <div class="grupo">
+          <img src="logo-mape-tic.png" alt="Logo MAPE-TIC" />
+          <div class="caption">
+            <a href="https://www.uned.es/universidad/inicio/unidad/IUED/innovacion/grupos-innovacion/grupo-22.html" target="_blank" rel="noopener noreferrer">MAPE-TIC</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal checklist PRE/POST -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Antes de iniciar</h2>
+      <p id="modalIntro"></p>
+
+      <div class="row">
+        <label for="codigoParticipante">Código de participación</label>
+        <input id="codigoParticipante" type="text" placeholder="Ejemplo: SEITEL_0001" autocomplete="off" />
+      </div>
+      <div class="hint">Necesitas el código proporcionado por el profesor para poder enviar resultados.</div>
+
+      <div class="checklist" id="checklistBox">
+        <div class="itemc"><input type="checkbox" id="c1"><label for="c1">Dispongo de 15 minutos sin interrupciones</label></div>
+        <div class="itemc"><input type="checkbox" id="c2"><label for="c2">Entiendo que no hay feedback y no podré retroceder</label></div>
+        <div class="itemc"><input type="checkbox" id="c3"><label for="c3">Al finalizar haré una captura de pantalla del resultado</label></div>
+        <div class="itemc"><input type="checkbox" id="c4"><label for="c4">Tras finalizar, abriré el formulario y adjuntaré la captura</label></div>
+      </div>
+      <div class="warn">Importante: el enlace para enviar resultados aparecerá al finalizar el test.</div>
+
+      <div class="actions">
+        <button class="btn-sec" onclick="cerrarModal()">Cancelar</button>
+        <button id="btnContinuarModal" onclick="confirmarModal()" disabled>Iniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---- Microsoft Forms prefill (IDs internos) ----
+    const FORMS_BASE = "https://forms.office.com/Pages/ResponsePage.aspx?id=SHBYtXCgrUO2VCCjHpstmYwnW_4oYD1LtgDlQkpWB19UOUVOQ0tRSDdaSllCWDI0VzdYNDNZSkdUNC4u";
+    const FORMS_FIELD_CODE = "r2342c3db78274ba7a5326c8584aa6f80";
+    const FORMS_FIELD_TYPE = "r5eed09c2fa204c8c974d933ef0f99c4c";
+    const FORMS_FIELD_SCORE_PRE = "rba5cd72f98b948d3af4a74ed100675c0";
+    const FORMS_FIELD_SCORE_POST = "r9d09974cd55f479883f20d4de67ee407";
+
+    // ---- Modos ----
+    const MODE_PRETEST = "__PRETEST__";
+    const MODE_POSTTEST = "__POSTTEST__";
+    const MODE_SIMULACRO = "__SIMULACRO_EXAMEN__";
+
+    // Tiempo PRE/POST: 15 minutos
+    const TEST_DURATION_SEC = 15 * 60;
+
+    let numPreguntasPractica = 10;
+    let bancoTemas = {};
+    let bancoExamenes = {};
+    let bancoPretest = [];
+    let bancoPosttest = [];
+
+    let seleccionActual = "";
+    let practica = [];
+    let indice = 0;
+    let aciertos = 0;
+
+    let historial = [];
+    let practiceCompletedSent = false;
+
+    // PRE/POST session
+    let participantCode = "";
+    let testStartTs = null;
+    let testTimer = null;
+    let remainingSec = 0;
+    let testModeActive = null;
+
+    function mostrarAlertaJson(msg){
+      const box = document.getElementById("alertaJson");
+      box.style.display = "block";
+      box.innerHTML = msg;
+    }
+
+    function barajar(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function unirTodasLasPreguntas(obj) {
+      let pool = [];
+      Object.values(obj || {}).forEach(arr => { pool = pool.concat(arr); });
+      return pool;
+    }
+
+    function hashQuestion(str) {
+      let h = 0x811c9dc5;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = (h * 0x01000193) >>> 0;
+      }
+      return h.toString(16).substring(0, 12);
+    }
+
+    function pad2(n){ return String(n).padStart(2, "0"); }
+    function formatDateEU(d){
+      return `${pad2(d.getDate())}-${pad2(d.getMonth()+1)}-${d.getFullYear()}`;
+    }
+    function formatTime24(d){
+      return `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+    }
+    function formatMMSS(sec){
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${pad2(m)}:${pad2(s)}`;
+    }
+
+    // ==========================================================
+    // Formato largo en español para el sello de finalización
+    // ==========================================================
+    function formatDateLongES(d){
+      const meses = [
+        "enero","febrero","marzo","abril","mayo","junio",
+        "julio","agosto","septiembre","octubre","noviembre","diciembre"
+      ];
+      return `${d.getDate()} de ${meses[d.getMonth()]} de ${d.getFullYear()}`;
+    }
+
+    window.onload = function() {
+      const url = "questions.json?ts=" + Date.now();
+
+      fetch(url)
+        .then(r => {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(data => {
+          bancoTemas = data.temas || {};
+          bancoExamenes = data.examenes || {};
+          bancoPretest = Array.isArray(data.pretest) ? data.pretest : [];
+          bancoPosttest = Array.isArray(data.posttest) ? data.posttest : [];
+
+          cargarSelector(bancoTemas, bancoExamenes);
+          prepararModal();
+        })
+        .catch((e) => {
+          mostrarAlertaJson(
+            `<strong>No se pudo cargar <code>questions.json</code>.</strong><br>` +
+            `Causa probable: el archivo no está en la raíz, el nombre no coincide, o el JSON tiene un error de sintaxis.<br>` +
+            `<small>Detalle técnico: ${String(e)}</small>`
+          );
+          const sel = document.getElementById("seleccion");
+          sel.innerHTML = `<option>ERROR: no se cargó questions.json</option>`;
+        });
+    };
+
+    function cargarSelector(temasObj, examenesObj) {
+      const sel = document.getElementById("seleccion");
+      sel.innerHTML = "";
+
+      const optPre = document.createElement("option");
+      optPre.value = MODE_PRETEST;
+      optPre.textContent = "PRETEST (20 preguntas)";
+      sel.appendChild(optPre);
+
+      const optPost = document.createElement("option");
+      optPost.value = MODE_POSTTEST;
+      optPost.textContent = "POSTTEST (20 preguntas)";
+      sel.appendChild(optPost);
+
+      const sep0 = document.createElement("option");
+      sep0.disabled = true;
+      sep0.textContent = "──────────";
+      sel.appendChild(sep0);
+
+      const opt0 = document.createElement("option");
+      opt0.value = "__MIX_TEMAS__";
+      opt0.textContent = "Mezcla de temas (aleatorio)";
+      sel.appendChild(opt0);
+
+      const opt1 = document.createElement("option");
+      opt1.value = "__MIX_EXAMENES__";
+      opt1.textContent = "Exámenes pasados";
+      sel.appendChild(opt1);
+
+      const opt2 = document.createElement("option");
+      opt2.value = "__MIX_TODO__";
+      opt2.textContent = "Mezcla total (temas + exámenes)";
+      sel.appendChild(opt2);
+
+      const opt3 = document.createElement("option");
+      opt3.value = MODE_SIMULACRO;
+      opt3.textContent = "Simulacro de examen (20 preguntas)";
+      sel.appendChild(opt3);
+
+      const sep = document.createElement("option");
+      sep.disabled = true;
+      sep.textContent = "──────────";
+      sel.appendChild(sep);
+
+      const ogTemas = document.createElement("optgroup");
+      ogTemas.label = "Temas";
+      Object.keys(temasObj || {}).forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = "tema::" + t;
+        opt.textContent = t;
+        ogTemas.appendChild(opt);
+      });
+      sel.appendChild(ogTemas);
+
+      const ogExam = document.createElement("optgroup");
+      ogExam.label = "Exámenes pasadas convocatorias";
+
+      const optAllExam = document.createElement("option");
+      optAllExam.value = "__EXAMENES_PASADOS__";
+      optAllExam.textContent = "Exámenes pasadas convocatorias";
+      ogExam.appendChild(optAllExam);
+
+      sel.appendChild(ogExam);
+    }
+
+    function prepararModal(){
+      const code = document.getElementById("codigoParticipante");
+      const cbs = ["c1","c2","c3","c4"].map(id => document.getElementById(id));
+      const btn = document.getElementById("btnContinuarModal");
+
+      function validate(){
+        const okCode = (code.value || "").trim().length >= 4;
+        const okChecks = cbs.every(cb => cb.checked);
+        btn.disabled = !(okCode && okChecks);
+      }
+      code.addEventListener("input", validate);
+      cbs.forEach(cb => cb.addEventListener("change", validate));
+    }
+
+    function abrirModal(tipo){
+      testModeActive = tipo;
+      document.getElementById("modalBackdrop").style.display = "flex";
+      document.getElementById("modalBackdrop").setAttribute("aria-hidden", "false");
+
+      const t = (tipo === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      document.getElementById("modalTitle").textContent = `Vas a iniciar el ${t}`;
+      document.getElementById("modalIntro").innerHTML =
+        `Duración máxima <strong>15 minutos</strong>. <strong>Sin feedback</strong> y <strong>sin retroceso</strong>. ` +
+        `Al finalizar, realiza una <strong>captura de pantalla del resultado</strong> y usa el botón <strong>Enviar resultados</strong> para abrir el formulario oficial.`;
+
+      document.getElementById("codigoParticipante").value = "";
+      ["c1","c2","c3","c4"].forEach(id => document.getElementById(id).checked = false);
+      document.getElementById("btnContinuarModal").disabled = true;
+      setTimeout(()=>document.getElementById("codigoParticipante").focus(), 50);
+    }
+
+    function cerrarModal(){
+      document.getElementById("modalBackdrop").style.display = "none";
+      document.getElementById("modalBackdrop").setAttribute("aria-hidden", "true");
+      testModeActive = null;
+    }
+
+    function confirmarModal(){
+      participantCode = (document.getElementById("codigoParticipante").value || "").trim();
+      if (!participantCode) return;
+
+      // ✅ FIX: capturar el modo ANTES de cerrar el modal (cerrarModal pone testModeActive = null)
+      const tipo = testModeActive;
+
+      cerrarModal();
+      iniciarPrePost(tipo);
+    }
+
+    function iniciarPractica() {
+      const sel = document.getElementById("seleccion");
+      seleccionActual = sel.value;
+
+      if (seleccionActual === MODE_PRETEST || seleccionActual === MODE_POSTTEST) {
+        if (seleccionActual === MODE_PRETEST && (!Array.isArray(bancoPretest) || bancoPretest.length < 20)) {
+          alert("No hay suficientes preguntas de PRETEST en questions.json (se esperan 20).");
+          return;
+        }
+        if (seleccionActual === MODE_POSTTEST && (!Array.isArray(bancoPosttest) || bancoPosttest.length < 20)) {
+          alert("No hay suficientes preguntas de POSTTEST en questions.json (se esperan 20).");
+          return;
+        }
+        abrirModal(seleccionActual);
+        return;
+      }
+
+      let pool = [];
+      let poolExamenes = unirTodasLasPreguntas(bancoExamenes);
+      numPreguntasPractica = 10;
+
+      if (seleccionActual === MODE_SIMULACRO) {
+        numPreguntasPractica = 20;
+
+        const temasNombres = Object.keys(bancoTemas || {});
+        const temasShuffle = barajar([...temasNombres]);
+
+        let seleccionTemas = [];
+        const maxDeTemas = Math.min(12, numPreguntasPractica - 8);
+
+        for (let i = 0; i < temasShuffle.length; i++) {
+          const t = temasShuffle[i];
+          const arr = (bancoTemas[t] || []);
+          if (arr.length === 0) continue;
+
+          const copia = barajar([...arr]);
+          const take = Math.min(2, copia.length);
+          for (let k = 0; k < take; k++) seleccionTemas.push(copia[k]);
+
+          if (seleccionTemas.length >= maxDeTemas) break;
+        }
+
+        if (seleccionTemas.length < maxDeTemas) {
+          const todasTemas = unirTodasLasPreguntas(bancoTemas);
+          const faltan = maxDeTemas - seleccionTemas.length;
+          const extra = barajar([...todasTemas]).slice(0, faltan);
+          seleccionTemas = seleccionTemas.concat(extra);
+        }
+
+        const restantes = numPreguntasPractica - seleccionTemas.length;
+        const seleccionExam = barajar([...poolExamenes]).slice(0, Math.max(0, restantes));
+
+        practica = barajar(seleccionTemas.concat(seleccionExam)).slice(0, numPreguntasPractica);
+      } else {
+        if (seleccionActual === "__MIX_TEMAS__") {
+          pool = unirTodasLasPreguntas(bancoTemas);
+        } else if (seleccionActual === "__MIX_EXAMENES__") {
+          pool = unirTodasLasPreguntas(bancoExamenes);
+        } else if (seleccionActual === "__MIX_TODO__") {
+          pool = unirTodasLasPreguntas(bancoTemas).concat(unirTodasLasPreguntas(bancoExamenes));
+        } else if (seleccionActual === "__EXAMENES_PASADOS__") {
+          pool = unirTodasLasPreguntas(bancoExamenes);
+        } else if (seleccionActual.startsWith("tema::")) {
+          const nombreTema = seleccionActual.split("tema::")[1];
+          pool = (bancoTemas[nombreTema] || []);
+        }
+
+        if (pool.length < numPreguntasPractica) {
+          alert("No hay suficientes preguntas en la opción elegida. Necesitas al menos " + numPreguntasPractica + ".");
+          return;
+        }
+        practica = barajar([...pool]).slice(0, numPreguntasPractica);
+      }
+
+      indice = 0;
+      aciertos = 0;
+      historial = [];
+      practiceCompletedSent = false;
+
+      detenerTimer();
+
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "block";
+
+      mostrarPregunta();
+    }
+
+    function iniciarPrePost(tipo){
+      // ✅ NUEVO: fijar modo de forma determinista (evita inconsistencias en móvil)
+      seleccionActual = tipo;
+
+      numPreguntasPractica = 20;
+      indice = 0;
+      aciertos = 0;
+      historial = [];
+      practiceCompletedSent = false;
+
+      practica = (tipo === MODE_PRETEST)
+        ? barajar([...bancoPretest]).slice(0, 20)
+        : barajar([...bancoPosttest]).slice(0, 20);
+
+      testStartTs = new Date();
+      remainingSec = TEST_DURATION_SEC;
+      iniciarTimer();
+
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "block";
+
+      mostrarPreguntaPrePost();
+    }
+
+    function iniciarTimer(){
+      detenerTimer();
+      actualizarEstadoPrePost();
+      testTimer = setInterval(() => {
+        remainingSec--;
+        if (remainingSec <= 0) {
+          remainingSec = 0;
+          detenerTimer();
+          mostrarFinalPrePost(true);
+          return;
+        }
+        actualizarEstadoPrePost();
+      }, 1000);
+    }
+    function detenerTimer(){
+      if (testTimer) {
+        clearInterval(testTimer);
+        testTimer = null;
+      }
+    }
+
+    function actualizarEstadoPrePost(){
+      const t = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      document.getElementById("estado").innerHTML =
+        `Modo: ${t} | Pregunta ${indice + 1}/${numPreguntasPractica} | Aciertos: ${aciertos} | Tiempo restante: <span class="timer">${formatMMSS(remainingSec)}</span>`;
+    }
+
+    function mostrarPreguntaPrePost() {
+      if (indice >= numPreguntasPractica) {
+        mostrarFinalPrePost(false);
+        return;
+      }
+
+      actualizarEstadoPrePost();
+
+      const p = practica[indice];
+      document.getElementById("enunciado").textContent = p.pregunta;
+
+      const fb = document.getElementById("feedback");
+      fb.style.display = "none";
+      fb.className = "feedback";
+      fb.innerHTML = "";
+
+      const contOpc = document.getElementById("opciones");
+      contOpc.innerHTML = "";
+
+      p.opciones.forEach((texto, idx) => {
+        const b = document.createElement("button");
+        b.className = "opcion";
+        b.textContent = texto;
+        b.onclick = () => responderPrePost(idx);
+        contOpc.appendChild(b);
+      });
+    }
+
+    function responderPrePost(idxElegido){
+      if (remainingSec <= 0) return;
+
+      const p = practica[indice];
+      const correcta = p.correcta;
+
+      historial.push({ pregunta: p.pregunta, correcta, elegida: idxElegido });
+
+      const botones = document.querySelectorAll("#opciones button");
+      botones.forEach(b => b.disabled = true);
+
+      if (idxElegido === correcta) aciertos++;
+
+      setTimeout(() => {
+        indice++;
+        mostrarPreguntaPrePost();
+      }, 120);
+    }
+
+    function construirFormsUrl(tipo, codigo, score){
+      const enc = encodeURIComponent;
+      let url = FORMS_BASE
+        + `&${FORMS_FIELD_CODE}=${enc(codigo)}`
+        + `&${FORMS_FIELD_TYPE}=${enc(tipo)}`;
+
+      if (tipo === "PRETEST") {
+        url += `&${FORMS_FIELD_SCORE_PRE}=${enc(String(score))}`;
+      } else {
+        url += `&${FORMS_FIELD_SCORE_POST}=${enc(String(score))}`;
+      }
+      return url;
+    }
+
+    function mostrarFinalPrePost(forzadoPorTiempo){
+      detenerTimer();
+      document.getElementById("panelJuego").style.display = "none";
+
+      const panel = document.getElementById("panelFinal");
+      panel.style.display = "block";
+
+      const fin = new Date();
+      const inicio = testStartTs || new Date();
+      const tipo = (seleccionActual === MODE_PRETEST) ? "PRETEST" : "POSTTEST";
+      const score = aciertos;
+
+      const durSec = Math.max(0, Math.round((fin.getTime() - inicio.getTime()) / 1000));
+
+      if (window.clarity) {
+        window.clarity("event", tipo === "PRETEST" ? "pretest_completed" : "posttest_completed");
+      }
+
+      const urlForms = construirFormsUrl(tipo, participantCode, score);
+
+      panel.innerHTML = `
+        <h2>${tipo} finalizado</h2>
+        ${forzadoPorTiempo ? `<p><strong>Tiempo agotado.</strong> Se ha cerrado el test automáticamente.</p>` : ``}
+
+        <div class="envio-box">
+          <p><strong>Resumen (obligatorio para la actividad voluntaria)</strong></p>
+          <p><strong>Código:</strong> <code>${participantCode}</code></p>
+          <p><strong>Modo:</strong> <code>${tipo}</code></p>
+          <p><strong>Resultado:</strong> <code>${score}/20</code></p>
+
+          <!-- ✅ NUEVO: sello robusto en móvil -->
+          <div class="summary-datetime">
+            <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+          </div>
+
+          <p><strong>Duración estimada:</strong> <code>${formatMMSS(durSec)}</code></p>
+
+          <p class="warn"><strong>Instrucción:</strong> realiza una <strong>captura de pantalla</strong> de esta pantalla y adjúntala en el formulario.</p>
+
+          <div class="envio-actions">
+            <a class="btn-link" href="${urlForms}" target="_blank" rel="noopener noreferrer">Enviar resultados (Microsoft Forms)</a>
+            <button onclick="reiniciarHome()">Volver</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function reiniciarHome(){
+      document.getElementById("panelFinal").style.display = "none";
+      document.getElementById("panelJuego").style.display = "none";
+      detenerTimer();
+      participantCode = "";
+      testStartTs = null;
+      remainingSec = 0;
+    }
+
+    function etiquetaSeleccion() {
+      if (seleccionActual === MODE_PRETEST) return "PRETEST";
+      if (seleccionActual === MODE_POSTTEST) return "POSTTEST";
+      if (seleccionActual === "__MIX_TEMAS__") return "Mezcla de temas";
+      if (seleccionActual === "__MIX_EXAMENES__") return "Exámenes pasadas convocatorias";
+      if (seleccionActual === "__MIX_TODO__") return "Mezcla total";
+      if (seleccionActual === "__EXAMENES_PASADOS__") return "Exámenes pasadas convocatorias";
+      if (seleccionActual === MODE_SIMULACRO) return "Simulacro de examen";
+      if (seleccionActual.startsWith("tema::")) return seleccionActual.split("tema::")[1];
+      return "Selección";
+    }
+
+    function mostrarPregunta() {
+      if (indice >= numPreguntasPractica) {
+        mostrarFinal();
+        return;
+      }
+
+      const p = practica[indice];
+      document.getElementById("estado").textContent =
+        "Modo: " + etiquetaSeleccion() + " | Pregunta " + (indice + 1) + "/" + numPreguntasPractica + " | Aciertos: " + aciertos;
+
+      document.getElementById("enunciado").textContent = "Pregunta: " + p.pregunta;
+
+      const fb = document.getElementById("feedback");
+      fb.style.display = "none";
+      fb.className = "feedback";
+      fb.innerHTML = "";
+
+      const contOpc = document.getElementById("opciones");
+      contOpc.innerHTML = "";
+
+      p.opciones.forEach((texto, idx) => {
+        const b = document.createElement("button");
+        b.className = "opcion";
+        b.textContent = texto;
+        b.onclick = () => responder(idx);
+        contOpc.appendChild(b);
+      });
+    }
+
+    function responder(idxElegido) {
+      const p = practica[indice];
+      const correcta = p.correcta;
+
+      historial.push({
+        pregunta: p.pregunta,
+        opciones: p.opciones,
+        correcta: correcta,
+        elegida: idxElegido,
+        explicacion: p.explicacion || ""
+      });
+
+      const botones = document.querySelectorAll("#opciones button");
+      botones.forEach(b => b.disabled = true);
+
+      const fb = document.getElementById("feedback");
+      let esperaMs = 2000;
+
+      if (idxElegido === correcta) {
+        aciertos++;
+        fb.className = "feedback ok";
+        fb.innerHTML = "<strong>✅ Respuesta correcta.</strong>";
+      } else {
+        const qid = hashQuestion(p.pregunta || "");
+        if (window.clarity) {
+          window.clarity("set", "question_id", qid);
+          window.clarity("event", "question_wrong");
+        }
+
+        fb.className = "feedback ko";
+        const textoCorrecto = p.opciones[correcta];
+        const exp = (p.explicacion && p.explicacion.trim() !== "")
+          ? ("<br><br><em>Explicación:</em> " + p.explicacion)
+          : "";
+
+        esperaMs = 10000;
+
+        fb.innerHTML =
+          "<strong>❌ Respuesta incorrecta.</strong><br>" +
+          "La correcta es: <strong>" + textoCorrecto + "</strong>." +
+          exp +
+          "<br><br><small><em>Esta explicación se cerrará después de 10 segundos.</em></small>";
+      }
+
+      fb.style.display = "block";
+
+      setTimeout(() => {
+        indice++;
+        mostrarPregunta();
+      }, esperaMs);
+    }
+
+    function mostrarFinal() {
+      document.getElementById("panelJuego").style.display = "none";
+
+      const panel = document.getElementById("panelFinal");
+      panel.style.display = "block";
+
+      const fin = new Date(); // sello temporal para cualquier práctica
+      const resultado = aciertos;
+
+      if (!practiceCompletedSent && window.clarity) {
+        window.clarity("event", "practice_completed");
+        practiceCompletedSent = true;
+      }
+
+      let badgeTexto = "";
+      let badgeClase = "";
+
+      if (numPreguntasPractica === 10) {
+        if (resultado >= 1 && resultado <= 4) {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        } else if (resultado >= 5 && resultado <= 7) {
+          badgeTexto = "Adecuado";
+          badgeClase = "badge badge-adecuado";
+        } else if (resultado >= 8 && resultado <= 10) {
+          badgeTexto = "Avanzado";
+          badgeClase = "badge badge-avanzado";
+        } else {
+          badgeTexto = "En proceso";
+          badgeClase = "badge badge-enproceso";
+        }
+
+        panel.innerHTML = `
+          <h2>Práctica finalizada</h2>
+          <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
+          <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
+          <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+
+          <!-- ✅ NUEVO: sello robusto en móvil -->
+          <div class="summary-datetime">
+            <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+          </div>
+        `;
+        return renderResumen(panel);
+      }
+
+      const nota10 = (numPreguntasPractica > 0) ? (resultado * 10 / numPreguntasPractica) : 0;
+      const notaTxt = nota10.toFixed(1).replace(".", ",");
+
+      if (resultado >= 1 && resultado <= 8) {
+        badgeTexto = "En proceso";
+        badgeClase = "badge badge-enproceso";
+      } else if (resultado >= 9 && resultado <= 14) {
+        badgeTexto = "Adecuado";
+        badgeClase = "badge badge-adecuado";
+      } else if (resultado >= 15 && resultado <= 20) {
+        badgeTexto = "Avanzado";
+        badgeClase = "badge badge-avanzado";
+      } else {
+        badgeTexto = "En proceso";
+        badgeClase = "badge badge-enproceso";
+      }
+
+      panel.innerHTML = `
+        <h2>Práctica finalizada</h2>
+        <p><strong>Modo:</strong> ${etiquetaSeleccion()}</p>
+        <p><strong>Resultado:</strong> ${resultado}/${numPreguntasPractica} aciertos</p>
+        <p><strong>Tu nota en el examen sería:</strong> ${notaTxt}/10</p>
+        <p><strong>Insignia:</strong> <span class="${badgeClase}">${badgeTexto}</span></p>
+
+        <!-- ✅ NUEVO: sello robusto en móvil -->
+        <div class="summary-datetime">
+          <strong>Práctica realizada:</strong> ${formatDateLongES(fin)} a las ${formatTime24(fin)}
+        </div>
+      `;
+      return renderResumen(panel);
+    }
+
+    function renderResumen(panel){
+      const correctas = historial.filter(h => h.elegida === h.correcta);
+      const incorrectas = historial.filter(h => h.elegida !== h.correcta);
+
+      function renderItem(h, tipo) {
+        const correctaTxt = h.opciones[h.correcta];
+        const elegidaTxt = h.opciones[h.elegida];
+        const exp = (h.explicacion && h.explicacion.trim() !== "") ? h.explicacion : "Sin explicación registrada.";
+
+        if (tipo === "ok") {
+          return `
+            <div class="item ok">
+              <div class="q">${h.pregunta}</div>
+              <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="item ko">
+            <div class="q">${h.pregunta}</div>
+            <div><strong>Tu respuesta:</strong> ${elegidaTxt}</div>
+            <div><strong>Respuesta correcta:</strong> ${correctaTxt}</div>
+            <small><em>Explicación:</em> ${exp}</small>
+          </div>
+        `;
+      }
+
+      const bloqueCorrectas = correctas.length
+        ? correctas.map(h => renderItem(h, "ok")).join("")
+        : "<p>No hay respuestas correctas en esta práctica.</p>";
+
+      const bloqueIncorrectas = incorrectas.length
+        ? incorrectas.map(h => renderItem(h, "ko")).join("")
+        : "<p>No hay respuestas incorrectas en esta práctica.</p>";
+
+      panel.innerHTML += `
+        <div class="resumen">
+          <h3>Resumen de respuestas correctas</h3>
+          ${bloqueCorrectas}
+
+          <h3>Resumen de respuestas incorrectas (con explicación)</h3>
+          ${bloqueIncorrectas}
+        </div>
+
+        <div class="fila" style="margin-top:16px;">
+          <button onclick="iniciarPractica()">Hacer otra práctica (${numPreguntasPractica} preguntas)</button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
