@@ -1,0 +1,4490 @@
+window.SEITEL_BANKS=window.SEITEL_BANKS||{};
+window.SEITEL_BANKS.ecp={
+ "temas": {
+  "Tema 1": [
+   {
+    "id": "ecp-1-1",
+    "pregunta": "La evaluación educativa se configura actualmente como un campo que integra tres dimensiones principales:",
+    "opciones": [
+     "Científica, política y profesional.",
+     "Técnica, administrativa y curricular.",
+     "Económica, psicológica y sociológica."
+    ],
+    "feedback": [
+     "",
+     "porque responde a ámbitos o funciones parciales de la evaluación, no a las tres dimensiones que configuran actualmente el campo evaluativo: científica, política y profesional.",
+     "porque la economía, la psicología y la sociología son ámbitos disciplinares relacionados con la educación, pero no constituyen las tres dimensiones definitorias del campo evaluativo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque responde a ámbitos o funciones parciales de la evaluación, no a las tres dimensiones que configuran actualmente el campo evaluativo: científica, política y profesional. porque la economía, la psicología y la sociología son ámbitos disciplinares relacionados con la educación, pero no constituyen las tres dimensiones definitorias del campo evaluativo."
+   },
+   {
+    "id": "ecp-1-2",
+    "pregunta": "Las escalas Binet-Simon, representativas de los primeros enfoques de evaluación, se utilizaban principalmente para:",
+    "opciones": [
+     "Clasificar al alumnado según su nivel de capacidad intelectual.",
+     "Clasificar al alumnado según su nivel socioeconómico.",
+     "Clasificar al alumnado según su rendimiento académico."
+    ],
+    "feedback": [
+     "",
+     "porque las escalas Binet-Simon no fueron diseñadas para clasificar al alumnado según su nivel socioeconómico, sino para medir capacidades intelectuales.",
+     "porque no evaluaban prioritariamente el rendimiento académico adquirido, sino aptitudes y capacidad intelectual."
+    ],
+    "correcta": 0,
+    "explicacion": "porque las escalas Binet-Simon no fueron diseñadas para clasificar al alumnado según su nivel socioeconómico, sino para medir capacidades intelectuales. porque no evaluaban prioritariamente el rendimiento académico adquirido, sino aptitudes y capacidad intelectual."
+   },
+   {
+    "id": "ecp-1-3",
+    "pregunta": "Los primeros enfoques científicos de evaluación concedían especial importancia a:",
+    "opciones": [
+     "La objetividad, la fiabilidad y la comparación.",
+     "La participación de la comunidad educativa.",
+     "La reflexión profesional del profesorado."
+    ],
+    "feedback": [
+     "",
+     "porque la participación de la comunidad educativa adquiere importancia en concepciones posteriores, más participativas y contextualizadas.",
+     "porque la reflexión profesional del profesorado tampoco constituía un eje de los primeros enfoques positivistas y psicométricos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la participación de la comunidad educativa adquiere importancia en concepciones posteriores, más participativas y contextualizadas. porque la reflexión profesional del profesorado tampoco constituía un eje de los primeros enfoques positivistas y psicométricos."
+   },
+   {
+    "id": "ecp-1-4",
+    "pregunta": "El modelo de Ralph Tyler concibe fundamentalmente la evaluación como un proceso destinado a:",
+    "opciones": [
+     "Analizar las percepciones de los agentes educativos.",
+     "Promover la autoevaluación institucional.",
+     "Comprobar el grado de consecución de los objetivos educativos."
+    ],
+    "feedback": [
+     "porque el modelo de Tyler no se centra en las percepciones de los distintos agentes, sino en objetivos previamente definidos y resultados alcanzados.",
+     "porque la autoevaluación institucional responde a desarrollos posteriores de la evaluación de centros, no al modelo de evaluación por objetivos de Tyler.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque el modelo de Tyler no se centra en las percepciones de los distintos agentes, sino en objetivos previamente definidos y resultados alcanzados. porque la autoevaluación institucional responde a desarrollos posteriores de la evaluación de centros, no al modelo de evaluación por objetivos de Tyler."
+   },
+   {
+    "id": "ecp-1-5",
+    "pregunta": "Una aportación fundamental de Scriven consiste en señalar que evaluar implica:",
+    "opciones": [
+     "Fundamentalmente describir resultados.",
+     "Formular juicios de valor fundamentados.",
+     "Evitar cualquier valoración."
+    ],
+    "feedback": [
+     "porque para Scriven la evaluación no se limita a describir los resultados obtenidos; debe ir más allá de la descripción y emitir un juicio fundamentado sobre su valor.",
+     "",
+     "porque Scriven rechaza la idea de una evaluación puramente neutral o descriptiva: la formulación de juicios de valor forma parte necesariamente del proceso evaluativo."
+    ],
+    "correcta": 1,
+    "explicacion": "porque para Scriven la evaluación no se limita a describir los resultados obtenidos; debe ir más allá de la descripción y emitir un juicio fundamentado sobre su valor. porque Scriven rechaza la idea de una evaluación puramente neutral o descriptiva: la formulación de juicios de valor forma parte necesariamente del proceso evaluativo."
+   },
+   {
+    "id": "ecp-1-6",
+    "pregunta": "En relación con el uso de la evidencia en la evaluación educativa, los datos empíricos:",
+    "opciones": [
+     "Determinan automáticamente las decisiones educativas que deben adoptarse.",
+     "Deben interpretarse considerando fines, valores y contextos educativos.",
+     "Permiten eliminar los juicios de valor en la evaluación."
+    ],
+    "feedback": [
+     "porque la información empírica aporta evidencias, pero no determina por sí misma qué decisión educativa es deseable.",
+     "",
+     "porque disponer de datos no elimina los juicios de valor; estos están presentes al interpretar la información y decidir qué resulta educativamente relevante."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la información empírica aporta evidencias, pero no determina por sí misma qué decisión educativa es deseable. porque disponer de datos no elimina los juicios de valor; estos están presentes al interpretar la información y decidir qué resulta educativamente relevante."
+   },
+   {
+    "id": "ecp-1-7",
+    "pregunta": "La consideración de la evaluación como práctica política implica reconocer que:",
+    "opciones": [
+     "La selección de qué se evalúa, cómo se interpreta y para qué se utilizan los resultados está vinculada a decisiones y prioridades institucionales.",
+     "La dimensión política aparece únicamente cuando los resultados de la evaluación se publican.",
+     "La evaluación deja de ser política cuando se aplican instrumentos estandarizados y criterios técnicos."
+    ],
+    "feedback": [
+     "",
+     "porque la dimensión política no aparece únicamente cuando se publican resultados; está presente desde la selección de qué evaluar hasta la interpretación y utilización de la información.",
+     "porque el uso de instrumentos estandarizados no convierte la evaluación en neutral: también implica decisiones acerca de qué medir, cómo hacerlo y para qué utilizar los resultados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la dimensión política no aparece únicamente cuando se publican resultados; está presente desde la selección de qué evaluar hasta la interpretación y utilización de la información. porque el uso de instrumentos estandarizados no convierte la evaluación en neutral: también implica decisiones acerca de qué medir, cómo hacerlo y para qué utilizar los resultados."
+   },
+   {
+    "id": "ecp-1-8",
+    "pregunta": "Una de las limitaciones atribuidas a las primeras pruebas psicométricas era que:",
+    "opciones": [
+     "Prestaban escasa atención a los contextos educativos, sociales y culturales.",
+     "Incorporaban demasiadas técnicas cualitativas.",
+     "Se centraban principalmente en la participación del alumnado."
+    ],
+    "feedback": [
+     "",
+     "porque las primeras pruebas psicométricas se caracterizaban precisamente por el predominio de la medición cuantitativa, no por un exceso de técnicas cualitativas.",
+     "porque eran enfoques centrados en medición y clasificación, no en fomentar la participación del alumnado."
+    ],
+    "correcta": 0,
+    "explicacion": "porque las primeras pruebas psicométricas se caracterizaban precisamente por el predominio de la medición cuantitativa, no por un exceso de técnicas cualitativas. porque eran enfoques centrados en medición y clasificación, no en fomentar la participación del alumnado."
+   },
+   {
+    "id": "ecp-1-9",
+    "pregunta": "Una de las críticas a los sistemas de evaluación orientados al control y la comparación es que pueden fomentar:",
+    "opciones": [
+     "Competitividad y estandarización.",
+     "Exclusivamente procesos de autoevaluación.",
+     "Una menor utilización de resultados educativos."
+    ],
+    "feedback": [
+     "",
+     "porque los sistemas orientados al control y comparación se vinculan principalmente con evaluación externa, indicadores y rendición de cuentas, no exclusivamente con autoevaluación.",
+     "porque estos sistemas suelen incrementar, y no reducir, el uso de resultados para comparar, controlar o tomar decisiones."
+    ],
+    "correcta": 0,
+    "explicacion": "porque los sistemas orientados al control y comparación se vinculan principalmente con evaluación externa, indicadores y rendición de cuentas, no exclusivamente con autoevaluación. porque estos sistemas suelen incrementar, y no reducir, el uso de resultados para comparar, controlar o tomar decisiones."
+   },
+   {
+    "id": "ecp-1-10",
+    "pregunta": "La consolidación de la evaluación educativa como práctica profesional supone que:",
+    "opciones": [
+     "El evaluador debe limitarse a aplicar instrumentos estandarizados para garantizar la objetividad del proceso.",
+     "La evaluación requiere perfiles especializados capaces de diseñar procesos, interpretar evidencias y formular juicios fundamentados.",
+     "La profesionalización de la evaluación implica separar el análisis técnico de cualquier consideración ética o contextual."
+    ],
+    "feedback": [
+     "porque la profesionalización amplía el papel del evaluador más allá de la mera aplicación de instrumentos estandarizados.",
+     "",
+     "porque la dimensión ética y la consideración del contexto forman parte de las competencias profesionales necesarias en evaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la profesionalización amplía el papel del evaluador más allá de la mera aplicación de instrumentos estandarizados. porque la dimensión ética y la consideración del contexto forman parte de las competencias profesionales necesarias en evaluación."
+   },
+   {
+    "id": "ecp-1-11",
+    "pregunta": "La profesionalización de la evaluación comenzó a demandar evaluadores especializados especialmente a partir de:",
+    "opciones": [
+     "La década de 1930.",
+     "Las décadas de 1960 y 1970.",
+     "El comienzo del siglo XXI."
+    ],
+    "feedback": [
+     "porque en los años treinta todavía predominaban concepciones técnicas y psicométricas y no se había consolidado la evaluación como profesión especializada.",
+     "",
+     "porque la demanda de evaluadores con formación específica ya se había consolidado a partir de las décadas de 1960 y 1970."
+    ],
+    "correcta": 1,
+    "explicacion": "porque en los años treinta todavía predominaban concepciones técnicas y psicométricas y no se había consolidado la evaluación como profesión especializada. porque la demanda de evaluadores con formación específica ya se había consolidado a partir de las décadas de 1960 y 1970."
+   },
+   {
+    "id": "ecp-1-12",
+    "pregunta": "Entre las competencias del profesional de la evaluación se encuentran:",
+    "opciones": [
+     "Competencias técnicas y metodológicas, centradas en el diseño de instrumentos y el análisis de datos.",
+     "Competencias técnicas, comunicativas y de gestión, orientadas al desarrollo y difusión de los procesos evaluativos.",
+     "Competencias técnicas, comunicativas, reflexivas y éticas."
+    ],
+    "feedback": [
+     "aunque las competencias técnicas y metodológicas son necesarias, resultan insuficientes para definir el perfil profesional del evaluador, que también requiere competencias comunicativas, reflexivas y éticas.",
+     "porque incorpora dimensiones relevantes como la comunicación y la gestión del proceso, pero deja fuera las competencias reflexivas y éticas, que son esenciales en la práctica profesional de la evaluación.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "aunque las competencias técnicas y metodológicas son necesarias, resultan insuficientes para definir el perfil profesional del evaluador, que también requiere competencias comunicativas, reflexivas y éticas. porque incorpora dimensiones relevantes como la comunicación y la gestión del proceso, pero deja fuera las competencias reflexivas y éticas, que son esenciales en la práctica profesional de la evaluación."
+   },
+   {
+    "id": "ecp-1-13",
+    "pregunta": "En relación con la profesionalización de la evaluación educativa, los estándares de calidad cumplen principalmente la función de:",
+    "opciones": [
+     "Homogeneizar los procedimientos de evaluación para garantizar que todos los contextos educativos sean analizados del mismo modo.",
+     "Establecer referentes que orienten la utilidad, viabilidad, precisión y adecuación ética de los procesos evaluativos.",
+     "Sustituir el juicio profesional del evaluador por criterios previamente definidos y objetivables."
+    ],
+    "feedback": [
+     "porque los estándares no pretenden que todos los contextos se evalúen exactamente de la misma manera, sino ofrecer criterios de calidad aplicables de forma contextualizada.",
+     "",
+     "porque los estándares orientan el trabajo profesional, pero no sustituyen el juicio fundamentado del evaluador."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los estándares no pretenden que todos los contextos se evalúen exactamente de la misma manera, sino ofrecer criterios de calidad aplicables de forma contextualizada. porque los estándares orientan el trabajo profesional, pero no sustituyen el juicio fundamentado del evaluador."
+   },
+   {
+    "id": "ecp-1-14",
+    "pregunta": "Los orígenes de la evaluación de centros y profesorado están estrechamente relacionados con:",
+    "opciones": [
+     "La expansión de la evaluación de programas educativos y sociales tras la Segunda Guerra Mundial.",
+     "El desarrollo de modelos de autoevaluación institucional surgidos en la década de 1980.",
+     "La generalización de las evaluaciones internacionales comparadas a finales del siglo XX."
+    ],
+    "feedback": [
+     "",
+     "porque la autoevaluación institucional corresponde a una evolución posterior hacia enfoques más participativos y orientados a los procesos y a la mejora de los centros, no al origen de la evaluación de centros y profesorado.",
+     "porque las evaluaciones internacionales comparadas se consolidan posteriormente y forman parte de la expansión internacional de la evaluación."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la autoevaluación institucional corresponde a una evolución posterior hacia enfoques más participativos y orientados a los procesos y a la mejora de los centros, no al origen de la evaluación de centros y profesorado. porque las evaluaciones internacionales comparadas se consolidan posteriormente y forman parte de la expansión internacional de la evaluación."
+   },
+   {
+    "id": "ecp-1-15",
+    "pregunta": "En el contexto de posguerra, el incremento del gasto público en programas educativos y sociales reforzó la evaluación principalmente como medio para:",
+    "opciones": [
+     "Justificar los recursos invertidos y comprobar la eficacia de las intervenciones desarrolladas.",
+     "Determinar qué programas debían mantenerse atendiendo prioritariamente a su grado de aceptación social.",
+     "Comparar el funcionamiento de las instituciones mediante indicadores comunes de rendimiento."
+    ],
+    "feedback": [
+     "",
+     "porque la aceptación social podía ser relevante, pero la expansión de la evaluación estuvo vinculada fundamentalmente a justificar el gasto público y valorar la eficacia de los programas.",
+     "porque, en el contexto de posguerra, la evaluación se orientó principalmente a justificar los recursos invertidos y comprobar la eficacia de los programas; la comparación sistemática entre instituciones mediante indicadores comunes adquiriría mayor protagonismo posteriormente."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la aceptación social podía ser relevante, pero la expansión de la evaluación estuvo vinculada fundamentalmente a justificar el gasto público y valorar la eficacia de los programas. porque, en el contexto de posguerra, la evaluación se orientó principalmente a justificar los recursos invertidos y comprobar la eficacia de los programas; la comparación sistemática entre instituciones mediante indicadores comunes adquiriría mayor protagonismo posteriormente."
+   },
+   {
+    "id": "ecp-1-16",
+    "pregunta": "En los primeros enfoques de evaluación educativa, la incorporación del criterio de eficiencia supuso valorar:",
+    "opciones": [
+     "Si los resultados obtenidos justificaban los recursos empleados para alcanzarlos.",
+     "Si los objetivos educativos se formulaban con suficiente precisión antes de iniciar la evaluación.",
+     "Si los resultados del alumnado podían compararse mediante pruebas estandarizadas."
+    ],
+    "feedback": [
+     "",
+     "porque formular adecuadamente los objetivos pertenece al enfoque de evaluación por objetivos, pero no define el criterio de eficiencia.",
+     "porque la comparación mediante pruebas estandarizadas se refiere a medición y comparación de resultados, no a la relación entre resultados obtenidos y recursos empleados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque formular adecuadamente los objetivos pertenece al enfoque de evaluación por objetivos, pero no define el criterio de eficiencia. porque la comparación mediante pruebas estandarizadas se refiere a medición y comparación de resultados, no a la relación entre resultados obtenidos y recursos empleados."
+   },
+   {
+    "id": "ecp-1-17",
+    "pregunta": "Según el capítulo, el interés por la evaluación de los centros educativos aumentó especialmente:",
+    "opciones": [
+     "Durante la primera mitad del siglo XIX.",
+     "Después del año 2010.",
+     "A partir de la década de 1980."
+    ],
+    "feedback": [
+     "porque la evaluación sistemática de los centros educativos se desarrolla mucho más tarde, especialmente a lo largo del siglo XX, y adquiere un mayor impulso a partir de la década de 1980.",
+     "porque el interés por la evaluación de los centros educativos comenzó a intensificarse a partir de la década de 1980, por lo que situar este desarrollo después de 2010 resulta demasiado tardío.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la evaluación sistemática de los centros educativos se desarrolla mucho más tarde, especialmente a lo largo del siglo XX, y adquiere un mayor impulso a partir de la década de 1980. porque el interés por la evaluación de los centros educativos comenzó a intensificarse a partir de la década de 1980, por lo que situar este desarrollo después de 2010 resulta demasiado tardío."
+   },
+   {
+    "id": "ecp-1-18",
+    "pregunta": "El modelo CIPP de Stufflebeam contempla las dimensiones:",
+    "opciones": [
+     "Calidad, innovación, planificación y producto.",
+     "Contexto, input, proceso y producto.",
+     "Contexto, intervención, participación y proceso."
+    ],
+    "feedback": [
+     "porque «calidad, innovación, planificación y producto» no corresponden a las cuatro dimensiones del acrónimo CIPP.",
+     "",
+     "porque «intervención» y «participación» tampoco son las dimensiones que componen el modelo CIPP."
+    ],
+    "correcta": 1,
+    "explicacion": "porque «calidad, innovación, planificación y producto» no corresponden a las cuatro dimensiones del acrónimo CIPP. porque «intervención» y «participación» tampoco son las dimensiones que componen el modelo CIPP."
+   },
+   {
+    "id": "ecp-1-19",
+    "pregunta": "Una aportación relevante del modelo CIPP fue considerar que la evaluación debía orientarse a:",
+    "opciones": [
+     "La toma de decisiones.",
+     "La clasificación de los estudiantes.",
+     "La elaboración de rankings."
+    ],
+    "feedback": [
+     "",
+     "porque el modelo CIPP no fue diseñado para clasificar estudiantes.",
+     "porque el modelo CIPP no tiene como finalidad elaborar rankings; amplía la evaluación para proporcionar información útil para la toma de decisiones."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el modelo CIPP no fue diseñado para clasificar estudiantes. porque el modelo CIPP no tiene como finalidad elaborar rankings; amplía la evaluación para proporcionar información útil para la toma de decisiones."
+   },
+   {
+    "id": "ecp-1-20",
+    "pregunta": "Las críticas a los enfoques positivistas favorecieron una transición desde la evaluación de resultados hacia:",
+    "opciones": [
+     "La eliminación de los métodos cualitativos.",
+     "La evaluación de procesos y contextos.",
+     "Una evaluación centrada en la eficacia y la eficiencia mediante indicadores de rendimiento."
+    ],
+    "feedback": [
+     "porque las críticas al positivismo favorecieron precisamente la incorporación de aproximaciones cualitativas y comprensivas.",
+     "",
+     "porque las críticas a los enfoques positivistas cuestionaron precisamente una evaluación centrada en la eficacia, la eficiencia y los resultados, y favorecieron la incorporación del análisis de los procesos y los contextos educativos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque las críticas al positivismo favorecieron precisamente la incorporación de aproximaciones cualitativas y comprensivas. porque las críticas a los enfoques positivistas cuestionaron precisamente una evaluación centrada en la eficacia, la eficiencia y los resultados, y favorecieron la incorporación del análisis de los procesos y los contextos educativos."
+   },
+   {
+    "id": "ecp-1-21",
+    "pregunta": "El paso de una evaluación centrada en resultados a otra orientada a los procesos supone asumir que:",
+    "opciones": [
+     "Los resultados pierden relevancia cuando se incorporan al análisis factores organizativos y contextuales.",
+     "La evaluación de procesos debe sustituir a la evaluación de resultados para evitar interpretaciones reduccionistas.",
+     "La calidad educativa no puede explicarse únicamente a partir de los resultados finales, sino que exige atender a cómo se desarrollan las prácticas y al contexto en el que tienen lugar."
+    ],
+    "feedback": [
+     "porque incorporar procesos y contextos no significa que los resultados dejen de ser relevantes; significa que ya no se interpretan de manera aislada.",
+     "porque la evaluación de procesos complementa la evaluación de resultados, no tiene necesariamente que sustituirla.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque incorporar procesos y contextos no significa que los resultados dejen de ser relevantes; significa que ya no se interpretan de manera aislada. porque la evaluación de procesos complementa la evaluación de resultados, no tiene necesariamente que sustituirla."
+   },
+   {
+    "id": "ecp-1-22",
+    "pregunta": "El desplazamiento hacia una evaluación centrada en procesos supuso entender los centros educativos como:",
+    "opciones": [
+     "Organizaciones cuyo funcionamiento puede comprenderse principalmente a partir de sus resultados y estructuras formales.",
+     "Organizaciones con cultura, dinámicas y procesos propios que deben analizarse en relación con su contexto.",
+     "Organizaciones cuya evaluación debe centrarse prioritariamente en los procedimientos internos de gestión."
+    ],
+    "feedback": [
+     "porque reducir el funcionamiento de los centros a resultados y estructuras formales reproduce una visión limitada que los enfoques centrados en procesos intentan superar.",
+     "",
+     "porque la evaluación centrada en procesos no se limita a los procedimientos internos de gestión, sino que considera también la cultura, las dinámicas, las prácticas y el contexto en el que funciona el centro."
+    ],
+    "correcta": 1,
+    "explicacion": "porque reducir el funcionamiento de los centros a resultados y estructuras formales reproduce una visión limitada que los enfoques centrados en procesos intentan superar. porque la evaluación centrada en procesos no se limita a los procedimientos internos de gestión, sino que considera también la cultura, las dinámicas, las prácticas y el contexto en el que funciona el centro."
+   },
+   {
+    "id": "ecp-1-23",
+    "pregunta": "En la evolución de la evaluación del profesorado, ¿qué cambio caracteriza mejor el paso hacia enfoques más comprensivos?",
+    "opciones": [
+     "La incorporación de procesos de reflexión y desarrollo profesional, sin reducir la evaluación al rendimiento del alumnado.",
+     "El refuerzo de indicadores estandarizados para comparar el desempeño docente entre centros.",
+     "La sustitución de la evaluación externa por procedimientos exclusivamente internos de autoevaluación."
+    ],
+    "feedback": [
+     "",
+     "porque los enfoques comprensivos no se caracterizan por reforzar la comparación estandarizada del desempeño docente, sino por ampliar la atención hacia la práctica y el desarrollo profesional.",
+     "porque esta evolución no supone eliminar la evaluación externa ni sustituirla exclusivamente por autoevaluación."
+    ],
+    "correcta": 0,
+    "explicacion": "porque los enfoques comprensivos no se caracterizan por reforzar la comparación estandarizada del desempeño docente, sino por ampliar la atención hacia la práctica y el desarrollo profesional. porque esta evolución no supone eliminar la evaluación externa ni sustituirla exclusivamente por autoevaluación."
+   },
+   {
+    "id": "ecp-1-24",
+    "pregunta": "La consolidación de la accountability se relaciona especialmente con:",
+    "opciones": [
+     "El auge de enfoques comprensivos y participativos.",
+     "La crisis fiscal de las décadas de 1970 y 1980 y la creciente exigencia de justificar el gasto público.",
+     "El desarrollo de la autoevaluación institucional orientada a la mejora."
+    ],
+    "feedback": [
+     "porque los enfoques comprensivos y participativos surgieron para ampliar la evaluación hacia los procesos y los contextos educativos, mientras que la accountability se consolidó vinculada al control de resultados y a la necesidad de justificar el uso de los recursos públicos.",
+     "",
+     "porque la autoevaluación institucional se vincula sobre todo a la mejora interna de los centros, mientras que la accountability se consolida ligada a la exigencia de justificar recursos y resultados."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los enfoques comprensivos y participativos surgieron para ampliar la evaluación hacia los procesos y los contextos educativos, mientras que la accountability se consolidó vinculada al control de resultados y a la necesidad de justificar el uso de los recursos públicos. porque la autoevaluación institucional se vincula sobre todo a la mejora interna de los centros, mientras que la accountability se consolida ligada a la exigencia de justificar recursos y resultados."
+   },
+   {
+    "id": "ecp-1-25",
+    "pregunta": "La influencia de la Nueva Gestión Pública en la evaluación educativa se tradujo especialmente en:",
+    "opciones": [
+     "Un mayor peso de los procesos internos y de la participación de los agentes educativos.",
+     "La incorporación de criterios de eficiencia, productividad, objetivos medibles e indicadores de rendimiento.",
+     "La sustitución de la evaluación de resultados por modelos centrados prioritariamente en los procesos."
+    ],
+    "feedback": [
+     "porque la Nueva Gestión Pública se asoció a criterios de eficiencia, productividad, resultados medibles e indicadores de rendimiento, no por situar en el centro los procesos internos y la participación de los agentes educativos.",
+     "",
+     "porque no sustituyó la evaluación de resultados; al contrario, reforzó su importancia mediante objetivos medibles e indicadores de rendimiento."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la Nueva Gestión Pública se asoció a criterios de eficiencia, productividad, resultados medibles e indicadores de rendimiento, no por situar en el centro los procesos internos y la participación de los agentes educativos. porque no sustituyó la evaluación de resultados; al contrario, reforzó su importancia mediante objetivos medibles e indicadores de rendimiento."
+   },
+   {
+    "id": "ecp-1-26",
+    "pregunta": "En el ámbito educativo, la accountability hace referencia a:",
+    "opciones": [
+     "La sustitución de la evaluación externa por autoevaluación.",
+     "La obligación de dar cuenta del desempeño y los resultados.",
+     "La eliminación de los indicadores de rendimiento."
+    ],
+    "feedback": [
+     "porque la accountability se asocia al refuerzo de mecanismos de evaluación externa, seguimiento del desempeño e indicadores de resultados, no a su sustitución por procesos de autoevaluación.",
+     "",
+     "porque los indicadores de desempeño constituyen precisamente uno de los instrumentos asociados a las políticas de rendición de cuentas."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la accountability se asocia al refuerzo de mecanismos de evaluación externa, seguimiento del desempeño e indicadores de resultados, no a su sustitución por procesos de autoevaluación. porque los indicadores de desempeño constituyen precisamente uno de los instrumentos asociados a las políticas de rendición de cuentas."
+   },
+   {
+    "id": "ecp-1-27",
+    "pregunta": "La Education Reform Act británica de 1988 contribuyó al desarrollo de:",
+    "opciones": [
+     "Modelos basados exclusivamente en la autoevaluación docente.",
+     "La eliminación de los indicadores de rendimiento.",
+     "Sistemas de evaluación externa y comparaciones públicas entre centros."
+    ],
+    "feedback": [
+     "porque la reforma británica de 1988 no se orientó a modelos basados exclusivamente en la autoevaluación docente, sino al desarrollo de sistemas de evaluación externa y comparación pública entre centros.",
+     "porque la reforma no eliminó los indicadores de rendimiento; por el contrario, reforzó el uso de resultados comparables como mecanismo de regulación y rendición de cuentas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la reforma británica de 1988 no se orientó a modelos basados exclusivamente en la autoevaluación docente, sino al desarrollo de sistemas de evaluación externa y comparación pública entre centros. porque la reforma no eliminó los indicadores de rendimiento; por el contrario, reforzó el uso de resultados comparables como mecanismo de regulación y rendición de cuentas."
+   },
+   {
+    "id": "ecp-1-28",
+    "pregunta": "Las evaluaciones estandarizadas internacionales permiten principalmente:",
+    "opciones": [
+     "Establecer un currículo idéntico en todos los países.",
+     "Sustituir las evaluaciones nacionales.",
+     "Comparar información entre países y analizar tendencias."
+    ],
+    "feedback": [
+     "porque las evaluaciones internacionales utilizan marcos comunes para hacer comparables los resultados, pero no establecen un currículo único para todos los países.",
+     "porque estas evaluaciones aportan información complementaria sobre el rendimiento y la evolución de los sistemas educativos, pero no reemplazan las evaluaciones propias de cada país.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque las evaluaciones internacionales utilizan marcos comunes para hacer comparables los resultados, pero no establecen un currículo único para todos los países. porque estas evaluaciones aportan información complementaria sobre el rendimiento y la evolución de los sistemas educativos, pero no reemplazan las evaluaciones propias de cada país."
+   },
+   {
+    "id": "ecp-1-29",
+    "pregunta": "PISA es una evaluación promovida por:",
+    "opciones": [
+     "La OCDE.",
+     "La IEA.",
+     "Eurydice."
+    ],
+    "feedback": [
+     "",
+     "porque la IEA promueve otros estudios internacionales, como TIMSS, PIRLS o ICCS, pero no PISA.",
+     "porque Eurydice es una red europea de información y análisis de los sistemas educativos, no la entidad promotora de PISA."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la IEA promueve otros estudios internacionales, como TIMSS, PIRLS o ICCS, pero no PISA. porque Eurydice es una red europea de información y análisis de los sistemas educativos, no la entidad promotora de PISA."
+   },
+   {
+    "id": "ecp-1-30",
+    "pregunta": "El estudio ICCS se centra principalmente en:",
+    "opciones": [
+     "La educación cívica y la ciudadanía.",
+     "La comprensión lectora.",
+     "El rendimiento en matemáticas y ciencias."
+    ],
+    "feedback": [
+     "",
+     "porque la comprensión lectora es el ámbito específico de PIRLS.",
+     "porque las matemáticas y las ciencias se asocian especialmente a TIMSS."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la comprensión lectora es el ámbito específico de PIRLS. porque las matemáticas y las ciencias se asocian especialmente a TIMSS."
+   },
+   {
+    "id": "ecp-1-31",
+    "pregunta": "PIRLS se centra fundamentalmente en:",
+    "opciones": [
+     "Las competencias matemáticas del profesorado.",
+     "La gestión de los centros educativos.",
+     "La comprensión lectora."
+    ],
+    "feedback": [
+     "porque PIRLS no evalúa competencias matemáticas ni tiene al profesorado como población principal; se centra en la comprensión lectora del alumnado de 4.º de Educación Primaria.",
+     "porque PIRLS evalúa la comprensión lectora del alumnado, no aspectos relacionados con la organización o la gestión de los centros educativos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque PIRLS no evalúa competencias matemáticas ni tiene al profesorado como población principal; se centra en la comprensión lectora del alumnado de 4.º de Educación Primaria. porque PIRLS evalúa la comprensión lectora del alumnado, no aspectos relacionados con la organización o la gestión de los centros educativos."
+   },
+   {
+    "id": "ecp-1-32",
+    "pregunta": "TALIS tiene como población principal:",
+    "opciones": [
+     "Alumnado de 15 años.",
+     "Alumnado de 4.º de Primaria exclusivamente.",
+     "Profesorado y equipos directivos."
+    ],
+    "feedback": [
+     "porque el alumnado de 15 años constituye la población característica de PISA.",
+     "porque TALIS no se dirige al alumnado de 4.º de Primaria sino que analiza principalmente las condiciones de enseñanza y aprendizaje desde la perspectiva del profesorado y la dirección.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque el alumnado de 15 años constituye la población característica de PISA. porque TALIS no se dirige al alumnado de 4.º de Primaria sino que analiza principalmente las condiciones de enseñanza y aprendizaje desde la perspectiva del profesorado y la dirección."
+   },
+   {
+    "id": "ecp-1-33",
+    "pregunta": "Uno de los riesgos asociados a las evaluaciones estandarizadas es:",
+    "opciones": [
+     "Reducir la educación a dimensiones fácilmente cuantificables, desplazando otros fines educativos relevantes.",
+     "Conceder un peso excesivo a las particularidades de cada contexto, dificultando la comparación entre sistemas educativos.",
+     "Limitar la utilización de indicadores comunes al priorizar interpretaciones exclusivamente cualitativas de los resultados."
+    ],
+    "feedback": [
+     "",
+     "Incorrecta porque la estandarización puede producir precisamente el efecto contrario: favorecer la comparabilidad a costa de prestar una atención insuficiente a los contextos locales, sociales y culturales.",
+     "porque las evaluaciones estandarizadas se apoyan en indicadores y resultados comparables; el riesgo señalado no es que estos se sustituyan por interpretaciones cualitativas, sino que adquieran un peso excesivo en la valoración de la educación."
+    ],
+    "correcta": 0,
+    "explicacion": "Incorrecta porque la estandarización puede producir precisamente el efecto contrario: favorecer la comparabilidad a costa de prestar una atención insuficiente a los contextos locales, sociales y culturales. porque las evaluaciones estandarizadas se apoyan en indicadores y resultados comparables; el riesgo señalado no es que estos se sustituyan por interpretaciones cualitativas, sino que adquieran un peso excesivo en la valoración de la educación."
+   },
+   {
+    "id": "ecp-1-34",
+    "pregunta": "¿Qué caracteriza mejor a los rankings educativos?",
+    "opciones": [
+     "Ordenan centros o instituciones a partir de indicadores seleccionados, ofreciendo una visión comparativa y parcial de la realidad evaluada.",
+     "Integran información contextual y cualitativa para evitar comparaciones jerárquicas entre instituciones.",
+     "Sustituyen los indicadores cuantitativos por valoraciones globales orientadas a la mejora interna."
+    ],
+    "feedback": [
+     "",
+     "porque la incorporación de información contextual o cualitativa puede enriquecer la interpretación de una evaluación, pero no constituye la lógica propia de los rankings, que sintetizan determinados indicadores para establecer posiciones comparables entre instituciones.",
+     "porque la orientación a la mejora interna corresponde más propiamente a procesos de autoevaluación institucional; los rankings cumplen fundamentalmente una función de comparación externa y pública a partir de indicadores seleccionados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la incorporación de información contextual o cualitativa puede enriquecer la interpretación de una evaluación, pero no constituye la lógica propia de los rankings, que sintetizan determinados indicadores para establecer posiciones comparables entre instituciones. porque la orientación a la mejora interna corresponde más propiamente a procesos de autoevaluación institucional; los rankings cumplen fundamentalmente una función de comparación externa y pública a partir de indicadores seleccionados."
+   },
+   {
+    "id": "ecp-1-35",
+    "pregunta": "Los indicadores educativos permiten:",
+    "opciones": [
+     "Describir, monitorizar y comparar aspectos de los sistemas educativos.",
+     "Evitar cualquier interpretación de los datos.",
+     "Determinar de manera automática qué políticas deben aplicarse."
+    ],
+    "feedback": [
+     "",
+     "porque los indicadores requieren interpretación; no permiten prescindir de ella.",
+     "porque aportan información para la toma de decisiones, pero no determinan automáticamente qué política debe aplicarse."
+    ],
+    "correcta": 0,
+    "explicacion": "porque los indicadores requieren interpretación; no permiten prescindir de ella. porque aportan información para la toma de decisiones, pero no determinan automáticamente qué política debe aplicarse."
+   },
+   {
+    "id": "ecp-1-36",
+    "pregunta": "En relación con la construcción y el uso de los indicadores educativos, puede afirmarse que:",
+    "opciones": [
+     "Son completamente neutrales.",
+     "Incorporan decisiones sobre qué aspectos se consideran relevantes y cómo medirlos.",
+     "Únicamente pueden ser cuantitativos."
+    ],
+    "feedback": [
+     "porque los indicadores no son neutrales: su selección implica decidir qué aspectos de la educación se consideran relevantes.",
+     "",
+     "porque los indicadores educativos pueden ser tanto cuantitativos como cualitativos y permiten sintetizar información sobre recursos, resultados y condiciones de aprendizaje."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los indicadores no son neutrales: su selección implica decidir qué aspectos de la educación se consideran relevantes. porque los indicadores educativos pueden ser tanto cuantitativos como cualitativos y permiten sintetizar información sobre recursos, resultados y condiciones de aprendizaje."
+   },
+   {
+    "id": "ecp-1-37",
+    "pregunta": "En España, durante la dictadura franquista, la Inspección educativa fue utilizada principalmente como:",
+    "opciones": [
+     "Instrumento de autoevaluación de los centros.",
+     "Mecanismo de control ideológico y del profesorado.",
+     "Agencia independiente de evaluación."
+    ],
+    "feedback": [
+     "porque durante la dictadura la Inspección desempeñó una función de control ideológico y del profesorado, no de autoevaluación de los centros.",
+     "",
+     "porque la Inspección no actuaba como una agencia independiente de evaluación, sino como un instrumento de control vinculado al régimen."
+    ],
+    "correcta": 1,
+    "explicacion": "porque durante la dictadura la Inspección desempeñó una función de control ideológico y del profesorado, no de autoevaluación de los centros. porque la Inspección no actuaba como una agencia independiente de evaluación, sino como un instrumento de control vinculado al régimen."
+   },
+   {
+    "id": "ecp-1-38",
+    "pregunta": "El Libro Blanco de 1989 tuvo especial relevancia porque:",
+    "opciones": [
+     "Impulsó una concepción de la evaluación centrada en el rendimiento académico del alumnado.",
+     "Sentó las bases de una política general de evaluación del sistema educativo, vinculando la evaluación con la mejora de la calidad.",
+     "Consolidó un modelo basado en la evaluación externa de los centros."
+    ],
+    "feedback": [
+     "porque el Libro Blanco de 1989 propuso superar el análisis exclusivo de los resultados del alumnado e incorporar también el estudio de los contextos, recursos, objetivos, estructuras y procesos de los centros.",
+     "",
+     "porque el Libro Blanco de 1989 no planteó una evaluación exclusivamente externa, sino la combinación de la autoevaluación escolar, entendida como mecanismo de autorregulación y mejora, con procesos de evaluación externa."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el Libro Blanco de 1989 propuso superar el análisis exclusivo de los resultados del alumnado e incorporar también el estudio de los contextos, recursos, objetivos, estructuras y procesos de los centros. porque el Libro Blanco de 1989 no planteó una evaluación exclusivamente externa, sino la combinación de la autoevaluación escolar, entendida como mecanismo de autorregulación y mejora, con procesos de evaluación externa."
+   },
+   {
+    "id": "ecp-1-39",
+    "pregunta": "Tras la Constitución española de 1978, la Inspección educativa recuperó principalmente:",
+    "opciones": [
+     "Un carácter técnico y pedagógico más vinculado a la mejora educativa.",
+     "Su papel como mecanismo de control ideológico.",
+     "Una función centrada en la clasificación pública de los centros."
+    ],
+    "feedback": [
+     "",
+     "porque el control ideológico corresponde al papel que había desempeñado la Inspección durante la dictadura franquista.",
+     "porque, tras la Constitución de 1978, la Inspección recuperó un carácter técnico y pedagógico, más vinculado a la mejora de la calidad educativa y al acompañamiento pedagógico."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el control ideológico corresponde al papel que había desempeñado la Inspección durante la dictadura franquista. porque, tras la Constitución de 1978, la Inspección recuperó un carácter técnico y pedagógico, más vinculado a la mejora de la calidad educativa y al acompañamiento pedagógico."
+   },
+   {
+    "id": "ecp-1-40",
+    "pregunta": "El Plan EVA se caracterizó principalmente por ser:",
+    "opciones": [
+     "Una evaluación externa, formativa y participativa orientada a la mejora.",
+     "Un ranking nacional de centros basado en resultados académicos.",
+     "Una evaluación interna realizada únicamente por los equipos directivos."
+    ],
+    "feedback": [
+     "",
+     "porque el Plan EVA tenía una orientación fundamentalmente formativa, centrada en promover planes de mejora, y analizaba de forma global el contexto, la organización, los procesos de enseñanza y los resultados del centro.",
+     "porque se trataba de una evaluación externa realizada por inspectores y con participación de la comunidad educativa, aunque se desarrolló en un contexto en el que también se impulsaba la autoevaluación interna de los centros."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el Plan EVA tenía una orientación fundamentalmente formativa, centrada en promover planes de mejora, y analizaba de forma global el contexto, la organización, los procesos de enseñanza y los resultados del centro. porque se trataba de una evaluación externa realizada por inspectores y con participación de la comunidad educativa, aunque se desarrolló en un contexto en el que también se impulsaba la autoevaluación interna de los centros."
+   }
+  ],
+  "Tema 2": [
+   {
+    "id": "ecp-2-1",
+    "pregunta": "¿Qué rasgo distingue especialmente a la cuarta generación de la evaluación identificada por Guba y sus colaboradores?",
+    "opciones": [
+     "La ampliación de la medición mediante una descripción más sistemática del objeto evaluado.",
+     "La incorporación del juicio de valor como elemento central para determinar el mérito del objeto evaluado.",
+     "La atención a las necesidades e intereses de los distintos agentes implicados para determinar la información relevante del proceso evaluativo."
+    ],
+    "feedback": [
+     "porque la descripción corresponde a una generación anterior de la evaluación.",
+     "porque la incorporación del juicio caracteriza a la tercera generación, mientras que la cuarta introduce un enfoque constructivista y participativo.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la descripción corresponde a una generación anterior de la evaluación. porque la incorporación del juicio caracteriza a la tercera generación, mientras que la cuarta introduce un enfoque constructivista y participativo."
+   },
+   {
+    "id": "ecp-2-2",
+    "pregunta": "Durante la denominada época del testing, la evaluación educativa se caracterizó principalmente por:",
+    "opciones": [
+     "La medición y comparación de las diferencias individuales mediante pruebas y test estandarizados.",
+     "La comprobación del grado de consecución de objetivos educativos previamente establecidos.",
+     "La interpretación de los procesos educativos a partir de los significados de los participantes."
+    ],
+    "feedback": [
+     "",
+     "porque la comprobación del logro de objetivos caracteriza especialmente al modelo desarrollado posteriormente por Tyler.",
+     "porque la atención a los significados de los participantes corresponde a los enfoques interpretativos desarrollados posteriormente."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la comprobación del logro de objetivos caracteriza especialmente al modelo desarrollado posteriormente por Tyler. porque la atención a los significados de los participantes corresponde a los enfoques interpretativos desarrollados posteriormente."
+   },
+   {
+    "id": "ecp-2-3",
+    "pregunta": "¿Qué rasgo caracteriza especialmente el modelo de evaluación propuesto por Tyler?",
+    "opciones": [
+     "La comparación de los resultados entre grupos experimentales y de control para determinar la eficacia de una intervención.",
+     "La comparación entre los resultados obtenidos y los objetivos educativos previamente establecidos.",
+     "La valoración de los recursos y las condiciones del contexto como referentes principales para interpretar el rendimiento."
+    ],
+    "feedback": [
+     "porque la propuesta de Tyler se basaba en comparaciones internas entre resultados y objetivos, evitando recurrir necesariamente a grupos experimentales y de control.",
+     "",
+     "porque su modelo no otorgaba un papel central a factores contextuales como los recursos o la calidad de la enseñanza."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la propuesta de Tyler se basaba en comparaciones internas entre resultados y objetivos, evitando recurrir necesariamente a grupos experimentales y de control. porque su modelo no otorgaba un papel central a factores contextuales como los recursos o la calidad de la enseñanza."
+   },
+   {
+    "id": "ecp-2-4",
+    "pregunta": "¿Cuál de las siguientes limitaciones fue señalada en la revisión crítica del modelo tyleriano?",
+    "opciones": [
+     "La dificultad para establecer objetivos suficientemente precisos antes de iniciar la evaluación.",
+     "La excesiva dependencia de factores contextuales para interpretar los resultados obtenidos.",
+     "La tendencia a priorizar el rendimiento observable y los objetivos más fácilmente medibles."
+    ],
+    "feedback": [
+     "porque la formulación precisa de objetivos constituía precisamente una característica central del modelo.",
+     "porque una de sus limitaciones fue la escasa atención a los factores contextuales, no su peso excesivo.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la formulación precisa de objetivos constituía precisamente una característica central del modelo. porque una de sus limitaciones fue la escasa atención a los factores contextuales, no su peso excesivo."
+   },
+   {
+    "id": "ecp-2-5",
+    "pregunta": "En la concepción de Stake sobre la evaluación como juicio:",
+    "opciones": [
+     "La descripción y el juicio constituyen actos fundamentales del proceso evaluativo.",
+     "La evaluación consiste principalmente en proporcionar información para facilitar decisiones posteriores.",
+     "El juicio adquiere validez cuando sus criterios son negociados previamente con todas las audiencias."
+    ],
+    "feedback": [
+     "",
+     "porque Stake incorpora explícitamente el juicio de valor como elemento fundamental y no reduce la evaluación a la provisión de información.",
+     "porque la concepción de Stake sobre el juicio se centra en considerar la descripción y el juicio como actos fundamentales de la evaluación; la negociación de los criterios caracteriza otros enfoques en los que participan también los promotores o las distintas audiencias."
+    ],
+    "correcta": 0,
+    "explicacion": "porque Stake incorpora explícitamente el juicio de valor como elemento fundamental y no reduce la evaluación a la provisión de información. porque la concepción de Stake sobre el juicio se centra en considerar la descripción y el juicio como actos fundamentales de la evaluación; la negociación de los criterios caracteriza otros enfoques en los que participan también los promotores o las distintas audiencias."
+   },
+   {
+    "id": "ecp-2-6",
+    "pregunta": "La evaluación formativa asociada a Scriven se caracteriza por:",
+    "opciones": [
+     "Valorar al término de una intervención si los resultados justifican su continuidad.",
+     "Utilizar la información obtenida durante el proceso para introducir mejoras en el objeto evaluado.",
+     "Comprobar el grado de logro alcanzado tomando como referencia objetivos previamente establecidos."
+    ],
+    "feedback": [
+     "porque esta formulación remite a una valoración realizada al finalizar el proceso, mientras que la evaluación formativa interviene durante su desarrollo.",
+     "",
+     "porque la comprobación de objetivos caracteriza especialmente al enfoque tyleriano."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta formulación remite a una valoración realizada al finalizar el proceso, mientras que la evaluación formativa interviene durante su desarrollo. porque la comprobación de objetivos caracteriza especialmente al enfoque tyleriano."
+   },
+   {
+    "id": "ecp-2-7",
+    "pregunta": "¿Qué caracteriza principalmente a la evaluación respondente desarrollada por Stake?",
+    "opciones": [
+     "La selección de información a partir de los objetivos inicialmente formulados por los responsables del programa.",
+     "La formulación de juicios sobre el mérito y el valor del objeto evaluado a partir de criterios concretos.",
+     "La atención a las preocupaciones y perspectivas de los participantes y a la comprensión contextual de los procesos educativos."
+    ],
+    "feedback": [
+     "porque la evaluación respondente desplaza el foco desde los objetivos prefijados hacia las preocupaciones relevantes para los participantes.",
+     "porque esta formulación se aproxima a la concepción de Scriven, mientras que la evaluación respondente de Stake se centra en las preocupaciones y perspectivas de los participantes y en la comprensión contextual de los procesos educativos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la evaluación respondente desplaza el foco desde los objetivos prefijados hacia las preocupaciones relevantes para los participantes. porque esta formulación se aproxima a la concepción de Scriven, mientras que la evaluación respondente de Stake se centra en las preocupaciones y perspectivas de los participantes y en la comprensión contextual de los procesos educativos."
+   },
+   {
+    "id": "ecp-2-8",
+    "pregunta": "¿Cómo conciben Guba y Lincoln el proceso de evaluación?",
+    "opciones": [
+     "Como un proceso hermenéutico y dialéctico basado en el diálogo, el contraste y la negociación entre distintas perspectivas.",
+     "Como un procedimiento en el que el evaluador interpreta la información y emite un juicio a partir de criterios previamente establecidos.",
+     "Como un proceso orientado a comparar los resultados obtenidos con referentes normativos externos."
+    ],
+    "feedback": [
+     "",
+     "porque en este enfoque el evaluador no construye el conocimiento de manera unilateral, sino que actúa como intérprete y mediador entre las distintas perspectivas presentes en el contexto.",
+     "porque Guba y Lincoln no sitúan la comparación normativa en el centro de la evaluación, sino la comprensión compartida y contextualizada."
+    ],
+    "correcta": 0,
+    "explicacion": "porque en este enfoque el evaluador no construye el conocimiento de manera unilateral, sino que actúa como intérprete y mediador entre las distintas perspectivas presentes en el contexto. porque Guba y Lincoln no sitúan la comparación normativa en el centro de la evaluación, sino la comprensión compartida y contextualizada."
+   },
+   {
+    "id": "ecp-2-9",
+    "pregunta": "¿Qué rasgo caracteriza mejor la visión contemporánea de la evaluación de centros y profesorado?",
+    "opciones": [
+     "El uso de procesos de rendición de cuentas para comprobar periódicamente la consecución de objetivos institucionales.",
+     "Su concepción como un proceso social, colaborativo y contextualizado orientado al aprendizaje institucional y a la mejora sostenible.",
+     "La intervención de especialistas externos encargados de identificar fortalezas y necesidades de mejora."
+    ],
+    "feedback": [
+     "porque la visión contemporánea no se reduce a la rendición de cuentas y concede un papel central al aprendizaje, la colaboración y la mejora.",
+     "",
+     "porque implica activamente a los agentes educativos y no reserva el proceso a especialistas externos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la visión contemporánea no se reduce a la rendición de cuentas y concede un papel central al aprendizaje, la colaboración y la mejora. porque implica activamente a los agentes educativos y no reserva el proceso a especialistas externos."
+   },
+   {
+    "id": "ecp-2-10",
+    "pregunta": "Nevo clasifica las definiciones de evaluación educativa en tres grupos:",
+    "opciones": [
+     "Diagnósticas, formativas y sumativas.",
+     "Internas, externas y combinadas.",
+     "Basadas en metas, descriptivas no enjuiciables y enjuiciables."
+    ],
+    "feedback": [
+     "porque estas categorías se relacionan con diferentes funciones de la evaluación.",
+     "porque estas categorías distinguen modalidades en función de quién desarrolla el proceso evaluativo.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque estas categorías se relacionan con diferentes funciones de la evaluación. porque estas categorías distinguen modalidades en función de quién desarrolla el proceso evaluativo."
+   },
+   {
+    "id": "ecp-2-11",
+    "pregunta": "Las definiciones descriptivas no enjuiciables entienden la evaluación fundamentalmente como:",
+    "opciones": [
+     "Un proceso de obtención y provisión de información destinado a apoyar la toma de decisiones.",
+     "Una valoración del mérito y la calidad de una actuación educativa mediante criterios explícitos.",
+     "Una comparación entre los resultados alcanzados y los objetivos establecidos previamente."
+    ],
+    "feedback": [
+     "",
+     "porque la formulación explícita de juicios de valor caracteriza a las definiciones enjuiciables.",
+     "porque la correspondencia entre objetivos y resultados caracteriza a las definiciones basadas en metas."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la formulación explícita de juicios de valor caracteriza a las definiciones enjuiciables. porque la correspondencia entre objetivos y resultados caracteriza a las definiciones basadas en metas."
+   },
+   {
+    "id": "ecp-2-12",
+    "pregunta": "En el ámbito anglosajón, el término assessment se vincula principalmente con:",
+    "opciones": [
+     "La valoración global de programas, centros, profesorado o políticas educativas.",
+     "La medición del aprendizaje y del rendimiento del alumnado mediante pruebas e indicadores.",
+     "La interpretación de los significados que los distintos participantes atribuyen a una realidad educativa."
+    ],
+    "feedback": [
+     "porque esta valoración global y sistemática corresponde al concepto de evaluation.",
+     "",
+     "porque esta formulación se relaciona con enfoques interpretativos de evaluación, mientras que el assessment se orienta principalmente a la medición del aprendizaje y del rendimiento."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta valoración global y sistemática corresponde al concepto de evaluation. porque esta formulación se relaciona con enfoques interpretativos de evaluación, mientras que el assessment se orienta principalmente a la medición del aprendizaje y del rendimiento."
+   },
+   {
+    "id": "ecp-2-13",
+    "pregunta": "Desde una perspectiva procesual, ¿cómo se establece la relación entre assessment y evaluation?",
+    "opciones": [
+     "La evaluation analiza globalmente el servicio educativo y el assessment su impacto sobre los receptores.",
+     "Ambos constituyen procesos independientes que pueden aplicarse alternativamente según la finalidad de la evaluación.",
+     "El assessment obtiene y analiza la información que permite fundamentar los juicios propios de la evaluation."
+    ],
+    "feedback": [
+     "porque esta distinción corresponde a la perspectiva estructural, que diferencia ambos conceptos por el alcance del objeto analizado.",
+     "porque, desde una perspectiva procesual, el assessment se considera un proceso instrumental al servicio de la evaluation, al aportar la información necesaria para formular juicios de valor.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta distinción corresponde a la perspectiva estructural, que diferencia ambos conceptos por el alcance del objeto analizado. porque, desde una perspectiva procesual, el assessment se considera un proceso instrumental al servicio de la evaluation, al aportar la información necesaria para formular juicios de valor."
+   },
+   {
+    "id": "ecp-2-14",
+    "pregunta": "Desde una perspectiva estructural, ¿qué diferencia la evaluation del assessment?",
+    "opciones": [
+     "El término Evaluation se orienta al servicio educativo en su conjunto, mientras que el assessment analiza principalmente su impacto sobre los receptores.",
+     "El término Evaluation formula juicios de valor, mientras que el assessment obtiene y procesa la información necesaria para realizarlos.",
+     "El término Evaluation integra principalmente información cualitativa, mientras que assessment utiliza fundamentalmente datos cuantitativos."
+    ],
+    "feedback": [
+     "",
+     "porque esta formulación corresponde a la perspectiva procesual: la evaluation implica formular juicios de valor, mientras que el assessment aporta la información necesaria para fundamentarlos.",
+     "porque la perspectiva estructural no distingue ambos conceptos por el tipo de información utilizada, sino por su alcance: la evaluation considera el servicio educativo en su conjunto y el assessment se centra fundamentalmente en su impacto sobre los receptores."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta formulación corresponde a la perspectiva procesual: la evaluation implica formular juicios de valor, mientras que el assessment aporta la información necesaria para fundamentarlos. porque la perspectiva estructural no distingue ambos conceptos por el tipo de información utilizada, sino por su alcance: la evaluation considera el servicio educativo en su conjunto y el assessment se centra fundamentalmente en su impacto sobre los receptores."
+   },
+   {
+    "id": "ecp-2-15",
+    "pregunta": "¿Qué diferencia fundamental se establece entre investigación y evaluación educativa?",
+    "opciones": [
+     "La investigación explica fenómenos educativos, mientras que la evaluación se limita a describirlos para facilitar decisiones.",
+     "La investigación busca generar conocimiento generalizable, mientras que la evaluación valora realidades concretas con una finalidad fundamentalmente práctica.",
+     "La investigación utiliza procedimientos sistemáticos, mientras que la evaluación adapta sus procedimientos a las características de cada situación."
+    ],
+    "feedback": [
+     "porque la evaluación no se limita a describir la realidad, sino que incorpora una dimensión valorativa.",
+     "",
+     "porque la evaluación también utiliza procedimientos sistemáticos y comparte métodos y técnicas con la investigación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la evaluación no se limita a describir la realidad, sino que incorpora una dimensión valorativa. porque la evaluación también utiliza procedimientos sistemáticos y comparte métodos y técnicas con la investigación."
+   },
+   {
+    "id": "ecp-2-16",
+    "pregunta": "¿Qué caracteriza mejor a la investigación evaluativa?",
+    "opciones": [
+     "La producción de explicaciones sobre una realidad educativa que puedan ser posteriormente utilizadas en procesos de intervención.",
+     "Una modalidad de investigación destinada específicamente al análisis de programas educativos y sociales.",
+     "La integración del rigor metodológico de la investigación con una orientación aplicada y valorativa dirigida a la toma de decisiones y la mejora."
+    ],
+    "feedback": [
+     "porque su finalidad no se limita a producir conocimiento, sino que este se orienta explícitamente a fundamentar decisiones y promover mejoras.",
+     "porque, aunque la investigación evaluativa estuvo históricamente muy vinculada al análisis y valoración de programas educativos y sociales, la evaluación de programas constituye únicamente una de sus áreas específicas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque su finalidad no se limita a producir conocimiento, sino que este se orienta explícitamente a fundamentar decisiones y promover mejoras. porque, aunque la investigación evaluativa estuvo históricamente muy vinculada al análisis y valoración de programas educativos y sociales, la evaluación de programas constituye únicamente una de sus áreas específicas."
+   },
+   {
+    "id": "ecp-2-17",
+    "pregunta": "¿Qué caracteriza mejor a una escuela eficaz?",
+    "opciones": [
+     "Favorecer un progreso del alumnado superior al esperable según sus condiciones iniciales y su rendimiento previo.",
+     "Mantener resultados académicos elevados y estables en comparación con centros de características similares.",
+     "Desarrollar una capacidad continuada para introducir cambios en su organización y en sus prácticas educativas."
+    ],
+    "feedback": [
+     "",
+     "porque la eficacia no se define únicamente por obtener resultados elevados, sino por el progreso conseguido teniendo en cuenta sus condiciones iniciales y su rendimiento previo.",
+     "porque esta formulación se vincula más con la capacidad de cambio y mejora institucional propia del movimiento de Mejora de la Escuela que con la definición de escuela eficaz."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la eficacia no se define únicamente por obtener resultados elevados, sino por el progreso conseguido teniendo en cuenta sus condiciones iniciales y su rendimiento previo. porque esta formulación se vincula más con la capacidad de cambio y mejora institucional propia del movimiento de Mejora de la Escuela que con la definición de escuela eficaz."
+   },
+   {
+    "id": "ecp-2-18",
+    "pregunta": "En el modelo integral de eficacia escolar de Scheerens, ¿qué elementos forman parte de los procesos desarrollados en el centro y en el aula?",
+    "opciones": [
+     "Experiencia del profesorado, gasto por alumno y apoyo de las familias.",
+     "Liderazgo educativo, planificación cooperativa, clima escolar, tiempo dedicado a la tarea y seguimiento del progreso.",
+     "Rendimiento previo, inteligencia y nivel socioeconómico y cultural del alumnado."
+    ],
+    "feedback": [
+     "porque estos elementos aparecen fundamentalmente entre las entradas del modelo.",
+     "",
+     "porque estas variables se emplean para ajustar el rendimiento del alumnado, no forman parte de los procesos desarrollados en el centro o en el aula."
+    ],
+    "correcta": 1,
+    "explicacion": "porque estos elementos aparecen fundamentalmente entre las entradas del modelo. porque estas variables se emplean para ajustar el rendimiento del alumnado, no forman parte de los procesos desarrollados en el centro o en el aula."
+   },
+   {
+    "id": "ecp-2-19",
+    "pregunta": "¿Qué caracteriza al modelo de eficacia docente desarrollado por Creemers?",
+    "opciones": [
+     "Organiza la explicación de la eficacia mediante contexto, entradas, procesos y productos.",
+     "Centra el análisis especialmente en la organización escolar y en su relación con las políticas del sistema educativo.",
+     "Sitúa especialmente el foco en el aula, aunque considera de forma interrelacionada los niveles de alumno, aula, escuela y contexto."
+    ],
+    "feedback": [
+     "porque esta estructura corresponde al modelo CIPP de Stufflebeam.",
+     "porque el modelo de Creemers no se centra únicamente en la organización escolar ni en su relación con el contexto, sino que distingue cuatro niveles interrelacionados (alumno, aula, escuela y contexto) y sitúa especialmente el foco de atención en el aula, por su influencia directa sobre los resultados del alumnado.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta estructura corresponde al modelo CIPP de Stufflebeam. porque el modelo de Creemers no se centra únicamente en la organización escolar ni en su relación con el contexto, sino que distingue cuatro niveles interrelacionados (alumno, aula, escuela y contexto) y sitúa especialmente el foco de atención en el aula, por su influencia directa sobre los resultados del alumnado."
+   },
+   {
+    "id": "ecp-2-20",
+    "pregunta": "¿Cuál de las siguientes críticas se ha formulado al movimiento de Eficacia Escolar?",
+    "opciones": [
+     "Su tradicional énfasis en el rendimiento académico frente a otras dimensiones educativas.",
+     "La escasa elaboración de modelos teóricos sistemáticos sobre los procesos de cambio escolar.",
+     "Su atención prioritaria a la organización y la cultura escolar más que a los resultados académicos."
+    ],
+    "feedback": [
+     "",
+     "porque esta crítica se atribuye al movimiento de Mejora de la Escuela, no al de Eficacia Escolar.",
+     "porque el estudio prioritario de los procesos internos de transformación caracteriza más al movimiento de Mejora de la Escuela."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta crítica se atribuye al movimiento de Mejora de la Escuela, no al de Eficacia Escolar. porque el estudio prioritario de los procesos internos de transformación caracteriza más al movimiento de Mejora de la Escuela."
+   },
+   {
+    "id": "ecp-2-21",
+    "pregunta": "¿Qué planteamiento caracteriza al movimiento de Mejora de la Escuela?",
+    "opciones": [
+     "Identificar los factores que explican por qué unos centros obtienen mejores resultados que otros.",
+     "Situar al propio centro como núcleo de los procesos de cambio y transformación institucional.",
+     "Adaptar a las características de cada centro las reformas organizativas diseñadas por las administraciones educativas."
+    ],
+    "feedback": [
+     "porque esta cuestión constituye el foco principal de la investigación sobre Eficacia Escolar.",
+     "",
+     "porque el movimiento surgió precisamente como reacción frente a modelos de cambio impulsados externamente y defendió procesos promovidos desde los propios centros."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta cuestión constituye el foco principal de la investigación sobre Eficacia Escolar. porque el movimiento surgió precisamente como reacción frente a modelos de cambio impulsados externamente y defendió procesos promovidos desde los propios centros."
+   },
+   {
+    "id": "ecp-2-22",
+    "pregunta": "¿Qué actuaciones corresponden principalmente a la fase de iniciación de un proceso de mejora escolar?",
+    "opciones": [
+     "Desarrollar las acciones previstas, realizar el seguimiento del progreso y resolver las dificultades encontradas.",
+     "Incorporar las innovaciones a las estructuras y dinámicas habituales para garantizar su continuidad.",
+     "Diagnosticar la situación, identificar necesidades, seleccionar áreas de mejora y planificar el proceso."
+    ],
+    "feedback": [
+     "porque estas actuaciones corresponden a la fase de desarrollo o implementación.",
+     "porque estas actuaciones caracterizan la fase de institucionalización.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque estas actuaciones corresponden a la fase de desarrollo o implementación. porque estas actuaciones caracterizan la fase de institucionalización."
+   },
+   {
+    "id": "ecp-2-23",
+    "pregunta": "En un proceso de mejora escolar, ¿qué caracteriza principalmente a la fase de desarrollo o implementación?",
+    "opciones": [
+     "La puesta en práctica de las acciones de mejora, el seguimiento del progreso y la resolución de dificultades.",
+     "La identificación de necesidades y la generación inicial de compromiso hacia el cambio.",
+     "La incorporación de las innovaciones al funcionamiento habitual y a las estructuras del centro."
+    ],
+    "feedback": [
+     "",
+     "porque estas actuaciones forman parte de la fase de iniciación.",
+     "porque la consolidación del cambio corresponde a la fase de institucionalización."
+    ],
+    "correcta": 0,
+    "explicacion": "porque estas actuaciones forman parte de la fase de iniciación. porque la consolidación del cambio corresponde a la fase de institucionalización."
+   },
+   {
+    "id": "ecp-2-24",
+    "pregunta": "¿Cuándo puede considerarse que un proceso de mejora ha alcanzado la fase de institucionalización?",
+    "opciones": [
+     "Cuando se han puesto en marcha las acciones previstas y existe un seguimiento sistemático de su desarrollo.",
+     "Cuando el cambio deja de percibirse como algo novedoso y se integra en el funcionamiento habitual del centro.",
+     "Cuando se ha alcanzado un diagnóstico compartido y se han seleccionado las áreas prioritarias de mejora."
+    ],
+    "feedback": [
+     "porque esta situación corresponde a la fase de desarrollo o implementación.",
+     "",
+     "porque el diagnóstico y la selección de áreas de mejora corresponden a la fase de iniciación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta situación corresponde a la fase de desarrollo o implementación. porque el diagnóstico y la selección de áreas de mejora corresponden a la fase de iniciación."
+   },
+   {
+    "id": "ecp-2-25",
+    "pregunta": "¿Cómo se complementan la Eficacia Escolar y la Mejora de la Escuela en el enfoque de Mejora de la Eficacia Escolar?",
+    "opciones": [
+     "La Eficacia Escolar permite realizar el diagnóstico inicial y la Mejora de la Escuela desarrolla posteriormente las actuaciones de cambio.",
+     "Ambos movimientos mantienen objetos diferentes, pero pueden combinar sus técnicas para evaluar el funcionamiento de los centros.",
+     "La Eficacia Escolar aporta conocimiento sobre qué factores conviene modificar y la Mejora de la Escuela sobre cómo desarrollar los procesos de cambio."
+    ],
+    "feedback": [
+     "porque la relación entre ambos movimientos no se plantea como una simple sucesión de dos etapas.",
+     "porque su integración no consiste únicamente en combinar técnicas, sino en articular sus respectivas aportaciones conceptuales.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la relación entre ambos movimientos no se plantea como una simple sucesión de dos etapas. porque su integración no consiste únicamente en combinar técnicas, sino en articular sus respectivas aportaciones conceptuales."
+   },
+   {
+    "id": "ecp-2-26",
+    "pregunta": "¿Qué caracteriza a un programa de Mejora de la Eficacia Escolar?",
+    "opciones": [
+     "Un proceso de cambio sostenido, sistemático y organizado que actúa sobre distintos elementos del centro e implica a diferentes agentes educativos.",
+     "Una intervención centrada especialmente en los resultados del alumnado y coordinada por agentes externos especializados.",
+     "Un proceso dirigido prioritariamente a modificar la organización escolar antes de intervenir sobre los procesos de enseñanza-aprendizaje."
+    ],
+    "feedback": [
+     "",
+     "porque el impulso y la coordinación del proceso parten fundamentalmente del propio centro, aunque puede contar con la colaboración de agentes externos en tareas de formación, seguimiento y evaluación.",
+     "porque estos programas intervienen tanto en la organización y las relaciones escolares como en los procesos de enseñanza-aprendizaje."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el impulso y la coordinación del proceso parten fundamentalmente del propio centro, aunque puede contar con la colaboración de agentes externos en tareas de formación, seguimiento y evaluación. porque estos programas intervienen tanto en la organización y las relaciones escolares como en los procesos de enseñanza-aprendizaje."
+   },
+   {
+    "id": "ecp-2-27",
+    "pregunta": "¿Qué exigencias recogen los estándares de Propriety aplicados a la evaluación educativa?",
+    "opciones": [
+     "Garantizar la independencia de los evaluadores reservándoles las decisiones fundamentales sobre el diseño y la utilización de la información.",
+     "Desarrollar evaluaciones inclusivas, establecer acuerdos claros y proteger los derechos, la dignidad y la privacidad de los participantes.",
+     "Regular los posibles conflictos de interés mediante acuerdos entre los evaluadores y quienes encargan o financian la evaluación."
+    ],
+    "feedback": [
+     "porque estos estándares destacan también la sensibilidad hacia las necesidades de los grupos implicados y la existencia de acuerdos con los participantes.",
+     "",
+     "porque la gestión de los conflictos de interés debe realizarse de manera honesta y no limitarse a acuerdos con quienes financian la evaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque estos estándares destacan también la sensibilidad hacia las necesidades de los grupos implicados y la existencia de acuerdos con los participantes. porque la gestión de los conflictos de interés debe realizarse de manera honesta y no limitarse a acuerdos con quienes financian la evaluación."
+   },
+   {
+    "id": "ecp-2-28",
+    "pregunta": "En los principios de evaluación democrática formulados por Simons, ¿qué implica específicamente la negociación?",
+    "opciones": [
+     "Garantizar que los participantes mantengan el control sobre sus datos y preservar el carácter confidencial de la información.",
+     "Promover la participación y la autorreflexión de los miembros de la institución en un clima de confianza.",
+     "Acordar con los participantes los límites del estudio, el contenido, la audiencia y el alcance de la difusión de los informes."
+    ],
+    "feedback": [
+     "porque esta formulación corresponde al principio de confidencialidad y control de la información.",
+     "porque esta formulación corresponde al principio de colaboración.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta formulación corresponde al principio de confidencialidad y control de la información. porque esta formulación corresponde al principio de colaboración."
+   },
+   {
+    "id": "ecp-2-29",
+    "pregunta": "¿Qué supone la democratización de la evaluación?",
+    "opciones": [
+     "Ampliar el proceso desde una relación centrada en evaluadores y patrocinadores hacia las distintas audiencias implicadas.",
+     "Otorgar al evaluador la función de mediar de forma neutral entre grupos con intereses y posiciones diferentes.",
+     "Garantizar que todas las audiencias tengan acceso a los resultados para participar en la valoración pública de las decisiones."
+    ],
+    "feedback": [
+     "",
+     "porque esta formulación corresponde específicamente al modelo de evaluación democrática desarrollado por MacDonald.",
+     "porque la democratización no se limita al acceso a los resultados, sino que amplía la participación de las audiencias en el propio proceso evaluativo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta formulación corresponde específicamente al modelo de evaluación democrática desarrollado por MacDonald. porque la democratización no se limita al acceso a los resultados, sino que amplía la participación de las audiencias en el propio proceso evaluativo."
+   },
+   {
+    "id": "ecp-2-30",
+    "pregunta": "¿Qué principios constituyen la base de la evaluación democrática deliberativa de House y Howe?",
+    "opciones": [
+     "Imparcialidad, confidencialidad y negociación.",
+     "Inclusión, diálogo y deliberación.",
+     "Participación, rendición de cuentas y control de la información."
+    ],
+    "feedback": [
+     "porque estos elementos forman parte de los principios de evaluación democrática formulados por Simons.",
+     "",
+     "porque estos elementos también aparecen en el marco de la evaluación democrática, pero House y Howe articulan específicamente su propuesta en torno a la inclusión, el diálogo y la deliberación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque estos elementos forman parte de los principios de evaluación democrática formulados por Simons. porque estos elementos también aparecen en el marco de la evaluación democrática, pero House y Howe articulan específicamente su propuesta en torno a la inclusión, el diálogo y la deliberación."
+   }
+  ],
+  "Tema 3": [
+   {
+    "id": "ecp-3-1",
+    "pregunta": "¿Cuál es la finalidad principal de la evaluación de centros en su concepción actual?",
+    "opciones": [
+     "Comprobar el cumplimiento de las normas y calificar el funcionamiento de la institución.",
+     "Favorecer la toma de decisiones y la mejora continua de la organización educativa.",
+     "Determinar el rendimiento del alumnado para comparar los resultados entre centros."
+    ],
+    "feedback": [
+     "porque esta opción responde a una concepción de la evaluación más vinculada al control y la comprobación de resultados.",
+     "",
+     "porque la evaluación de centros no se reduce al rendimiento académico, sino que considera el conjunto de factores que influyen en su funcionamiento y calidad."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta opción responde a una concepción de la evaluación más vinculada al control y la comprobación de resultados. porque la evaluación de centros no se reduce al rendimiento académico, sino que considera el conjunto de factores que influyen en su funcionamiento y calidad."
+   },
+   {
+    "id": "ecp-3-2",
+    "pregunta": "¿Qué aspecto destaca la definición de evaluación de centros de la Comisión Europea?",
+    "opciones": [
+     "La valoración individual del desempeño del profesorado como base para mejorar la institución.",
+     "La aplicación de procedimientos estandarizados destinados fundamentalmente a comparar centros.",
+     "La supervisión y mejora de la calidad del centro y/o de los resultados del alumnado sin incluir valoraciones individuales del profesorado."
+    ],
+    "feedback": [
+     "porque la definición de la Comisión Europea se refiere a la evaluación global del centro y señala que sus resultados se recogen en informes generales que no incluyen valoraciones individuales del profesorado. El foco se sitúa en la mejora de la institución, no en la evaluación individual docente.",
+     "porque, aunque en determinados procesos de evaluación pueden utilizarse criterios comunes que permitan comparar centros, la definición de la Comisión Europea destaca como finalidad la supervisión y mejora de la calidad del centro y/o de los resultados del alumnado, no la comparación entre instituciones.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la definición de la Comisión Europea se refiere a la evaluación global del centro y señala que sus resultados se recogen en informes generales que no incluyen valoraciones individuales del profesorado. El foco se sitúa en la mejora de la institución, no en la evaluación individual docente. porque, aunque en determinados procesos de evaluación pueden utilizarse criterios comunes que permitan comparar centros, la definición de la Comisión Europea destaca como finalidad la supervisión y mejora de la calidad del centro y/o de los resultados del alumnado, no la comparación entre instituciones."
+   },
+   {
+    "id": "ecp-3-3",
+    "pregunta": "¿Cómo se concibe la evaluación de centros en relación con la mejora institucional?",
+    "opciones": [
+     "Como un medio para obtener información, identificar fortalezas y necesidades y orientar decisiones de mejora.",
+     "Como una fase final destinada a comprobar si las actuaciones previstas han alcanzado sus objetivos.",
+     "Como un procedimiento externo que permite determinar el grado de eficacia alcanzado por la institución."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación se concibe como un proceso dinámico y continuo, orientado a identificar fortalezas y áreas de mejora y a fundamentar decisiones, no únicamente como una actuación final para comprobar resultados.",
+     "porque la evaluación de centros puede adoptar distintas modalidades y no está necesariamente vinculada a agentes externos; además, su finalidad es orientar la mejora del funcionamiento institucional."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación se concibe como un proceso dinámico y continuo, orientado a identificar fortalezas y áreas de mejora y a fundamentar decisiones, no únicamente como una actuación final para comprobar resultados. porque la evaluación de centros puede adoptar distintas modalidades y no está necesariamente vinculada a agentes externos; además, su finalidad es orientar la mejora del funcionamiento institucional."
+   },
+   {
+    "id": "ecp-3-4",
+    "pregunta": "¿Qué implica que la evaluación de centros tenga un carácter global e integral?",
+    "opciones": [
+     "Que todos los ámbitos del centro deben evaluarse con el mismo grado de profundidad en cada proceso.",
+     "Que debe utilizar simultáneamente métodos cuantitativos y cualitativos en todas las evaluaciones.",
+     "Que debe considerar conjuntamente la organización, los procesos educativos, los recursos, el clima institucional y los resultados."
+    ],
+    "feedback": [
+     "porque el carácter global e integral exige considerar de forma conjunta los distintos componentes del centro, pero no implica analizarlos todos con el mismo nivel de profundidad en cada evaluación.",
+     "porque el carácter global e integral se refiere al alcance de la evaluación sobre la realidad institucional, no a la obligación de utilizar determinadas metodologías.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque el carácter global e integral exige considerar de forma conjunta los distintos componentes del centro, pero no implica analizarlos todos con el mismo nivel de profundidad en cada evaluación. porque el carácter global e integral se refiere al alcance de la evaluación sobre la realidad institucional, no a la obligación de utilizar determinadas metodologías."
+   },
+   {
+    "id": "ecp-3-5",
+    "pregunta": "¿Cuál de las siguientes actuaciones refleja mejor una evaluación de centros contextualizada?",
+    "opciones": [
+     "Aplicar los mismos referentes de valoración a todos los centros con independencia de sus características y entorno.",
+     "Interpretar la información considerando las características del centro, sus componentes y el contexto educativo en el que se desarrolla.",
+     "Garantizar que la información recogida sea válida, fiable y analizada mediante procedimientos rigurosos."
+    ],
+    "feedback": [
+     "porque una evaluación contextualizada debe tener en cuenta las condiciones y características particulares en las que funciona cada centro.",
+     "",
+     "porque esta actuación se relaciona con la exigencia de basar la evaluación en evidencias válidas y fiables, no específicamente con su contextualización."
+    ],
+    "correcta": 1,
+    "explicacion": "porque una evaluación contextualizada debe tener en cuenta las condiciones y características particulares en las que funciona cada centro. porque esta actuación se relaciona con la exigencia de basar la evaluación en evidencias válidas y fiables, no específicamente con su contextualización."
+   },
+   {
+    "id": "ecp-3-6",
+    "pregunta": "¿Qué supone que la evaluación se base en criterios claros, transparentes y rigurosos?",
+    "opciones": [
+     "Que los juicios y las decisiones puedan fundamentarse de forma comprensible, consensuada y legítima.",
+     "Que los mismos criterios deban aplicarse sin modificaciones a todos los centros para garantizar la objetividad.",
+     "Que los criterios se definan después de analizar los datos para ajustarlos a las características de cada institución."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación debe estar contextualizada y los criterios no implican una aplicación idéntica y descontextualizada en todos los centros.",
+     "porque los criterios forman parte de la planificación del proceso y orientan posteriormente el análisis y la valoración."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación debe estar contextualizada y los criterios no implican una aplicación idéntica y descontextualizada en todos los centros. porque los criterios forman parte de la planificación del proceso y orientan posteriormente el análisis y la valoración."
+   },
+   {
+    "id": "ecp-3-7",
+    "pregunta": "¿Qué caracteriza a una evaluación mixta de un centro educativo?",
+    "opciones": [
+     "La utilización conjunta de información cuantitativa y cualitativa durante el proceso.",
+     "La combinación de la participación del propio centro con la aportación de agentes externos.",
+     "La realización sucesiva de una evaluación diagnóstica y otra sumativa."
+    ],
+    "feedback": [
+     "porque la combinación de metodologías no determina que una evaluación sea mixta; esta clasificación depende de quién realiza la evaluación.",
+     "",
+     "porque las funciones diagnóstica y sumativa responden a la finalidad de la evaluación, no a los agentes que intervienen."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la combinación de metodologías no determina que una evaluación sea mixta; esta clasificación depende de quién realiza la evaluación. porque las funciones diagnóstica y sumativa responden a la finalidad de la evaluación, no a los agentes que intervienen."
+   },
+   {
+    "id": "ecp-3-8",
+    "pregunta": "¿Qué dificultad puede afectar especialmente a una evaluación interna o autoevaluación?",
+    "opciones": [
+     "La aparición de sesgos o la atención excesiva a aspectos parciales si faltan formación, tiempo o compromiso.",
+     "Ser percibida como poco participativa o alejada de la realidad cotidiana del centro.",
+     "La necesidad de articular la participación del centro con la aportación de agentes externos."
+    ],
+    "feedback": [
+     "",
+     "porque esta dificultad se atribuye a la evaluación externa cuando no se articula adecuadamente con los procesos internos del centro.",
+     "porque la combinación de la participación del centro con la aportación de agentes externos caracteriza a la evaluación mixta, no a la autoevaluación."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta dificultad se atribuye a la evaluación externa cuando no se articula adecuadamente con los procesos internos del centro. porque la combinación de la participación del centro con la aportación de agentes externos caracteriza a la evaluación mixta, no a la autoevaluación."
+   },
+   {
+    "id": "ecp-3-9",
+    "pregunta": "¿Por qué es relevante definir la perspectiva u orientación desde la que se evalúa un centro educativo?",
+    "opciones": [
+     "Porque determina qué agentes deben participar necesariamente en el proceso evaluativo.",
+     "Porque establece el momento concreto en el que debe realizarse la evaluación.",
+     "Porque condiciona qué se evalúa, cómo se recoge la información y para qué se utilizan los resultados."
+    ],
+    "feedback": [
+     "porque la perspectiva u orientación define la lógica desde la que se concibe la evaluación, pero no determina por sí sola quién realiza el proceso evaluativo; este aspecto corresponde a otro criterio de clasificación.",
+     "porque el momento en que se realiza la evaluación constituye un criterio de clasificación diferente de la perspectiva u orientación.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la perspectiva u orientación define la lógica desde la que se concibe la evaluación, pero no determina por sí sola quién realiza el proceso evaluativo; este aspecto corresponde a otro criterio de clasificación. porque el momento en que se realiza la evaluación constituye un criterio de clasificación diferente de la perspectiva u orientación."
+   },
+   {
+    "id": "ecp-3-10",
+    "pregunta": "¿Cuál es la finalidad principal de una evaluación inicial o previa?",
+    "opciones": [
+     "Conocer la situación de partida para orientar la planificación y la toma de decisiones.",
+     "Valorar el impacto de las actuaciones desarrolladas durante un periodo determinado.",
+     "Realizar un seguimiento periódico que permita introducir ajustes durante la intervención."
+    ],
+    "feedback": [
+     "",
+     "porque la valoración de los resultados y del impacto corresponde fundamentalmente a la evaluación final o posterior.",
+     "porque el seguimiento y los ajustes durante la implementación caracterizan a la evaluación procesual o continua."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la valoración de los resultados y del impacto corresponde fundamentalmente a la evaluación final o posterior. porque el seguimiento y los ajustes durante la implementación caracterizan a la evaluación procesual o continua."
+   },
+   {
+    "id": "ecp-3-11",
+    "pregunta": "¿Qué caracteriza a una evaluación procesual o continua de un centro?",
+    "opciones": [
+     "La identificación de las condiciones iniciales antes de poner en marcha las actuaciones previstas.",
+     "La emisión de un juicio global una vez concluido el periodo objeto de evaluación.",
+     "El seguimiento del desarrollo de las actuaciones para detectar dificultades y realizar ajustes cuando sea necesario."
+    ],
+    "feedback": [
+     "porque esta función corresponde fundamentalmente a la evaluación inicial o previa.",
+     "porque la valoración global tras finalizar un periodo caracteriza a la evaluación final.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta función corresponde fundamentalmente a la evaluación inicial o previa. porque la valoración global tras finalizar un periodo caracteriza a la evaluación final."
+   },
+   {
+    "id": "ecp-3-12",
+    "pregunta": "¿Qué caracteriza a la evaluación final o posterior?",
+    "opciones": [
+     "Se orienta prioritariamente a detectar dificultades mientras las actuaciones todavía están en marcha.",
+     "Analiza los resultados alcanzados y el impacto de las decisiones adoptadas una vez finalizado un periodo o ciclo.",
+     "Se centra en valorar los resultados alcanzados, mientras que la planificación de nuevas actuaciones corresponde a un proceso evaluativo posterior."
+    ],
+    "feedback": [
+     "porque el seguimiento durante el desarrollo de las actuaciones corresponde a la evaluación procesual.",
+     "",
+     "porque la evaluación final no se limita a valorar los resultados alcanzados; sus conclusiones pueden utilizarse para redefinir prioridades y planificar nuevas actuaciones, convirtiéndose así en punto de partida de un nuevo ciclo evaluativo."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el seguimiento durante el desarrollo de las actuaciones corresponde a la evaluación procesual. porque la evaluación final no se limita a valorar los resultados alcanzados; sus conclusiones pueden utilizarse para redefinir prioridades y planificar nuevas actuaciones, convirtiéndose así en punto de partida de un nuevo ciclo evaluativo."
+   },
+   {
+    "id": "ecp-3-13",
+    "pregunta": "¿Qué relación existe entre el momento en que se realiza una evaluación y la función que cumple?",
+    "opciones": [
+     "Son criterios diferentes: una misma evaluación puede adoptar distintas finalidades independientemente del momento en que se realice.",
+     "La evaluación inicial es necesariamente diagnóstica, la procesual formativa y la final sumativa.",
+     "La finalidad de la evaluación determina automáticamente en qué momento debe llevarse a cabo."
+    ],
+    "feedback": [
+     "",
+     "porque, aunque es frecuente que la evaluación inicial sea diagnóstica, la procesual formativa y la final sumativa, estas asociaciones no son obligatorias y pueden variar según el uso que se haga de la información obtenida.",
+     "porque el momento en que se realiza la evaluación y la finalidad que cumple son criterios diferentes: una misma evaluación puede desarrollarse en un momento determinado y cumplir funciones distintas según cómo se utilicen sus resultados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque, aunque es frecuente que la evaluación inicial sea diagnóstica, la procesual formativa y la final sumativa, estas asociaciones no son obligatorias y pueden variar según el uso que se haga de la información obtenida. porque el momento en que se realiza la evaluación y la finalidad que cumple son criterios diferentes: una misma evaluación puede desarrollarse en un momento determinado y cumplir funciones distintas según cómo se utilicen sus resultados."
+   },
+   {
+    "id": "ecp-3-14",
+    "pregunta": "¿Cuál es la finalidad principal de la evaluación diagnóstica de un centro educativo?",
+    "opciones": [
+     "Comprobar el grado de cumplimiento de los objetivos una vez concluido un plan o programa.",
+     "Identificar necesidades, problemas, fortalezas y condiciones del contexto para fundamentar decisiones iniciales.",
+     "Proporcionar información periódica que permita ajustar las actuaciones durante su desarrollo."
+    ],
+    "feedback": [
+     "porque esta finalidad se aproxima a la evaluación sumativa de los resultados alcanzados.",
+     "",
+     "porque esta función de seguimiento y ajuste caracteriza especialmente a la evaluación formativa."
+    ],
+    "correcta": 1,
+    "explicacion": "porque esta finalidad se aproxima a la evaluación sumativa de los resultados alcanzados. porque esta función de seguimiento y ajuste caracteriza especialmente a la evaluación formativa."
+   },
+   {
+    "id": "ecp-3-15",
+    "pregunta": "¿Qué caracteriza a la evaluación formativa retroactiva?",
+    "opciones": [
+     "Anticipar posibles dificultades mediante información previa antes de iniciar una nueva actuación.",
+     "Utilizar información obtenida durante el funcionamiento cotidiano para introducir ajustes inmediatos.",
+     "Analizar actuaciones ya realizadas para extraer conclusiones que orienten decisiones futuras."
+    ],
+    "feedback": [
+     "porque esta orientación corresponde a la evaluación formativa proactiva.",
+     "porque esta utilización continua de la información caracteriza a la evaluación formativa interactiva.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta orientación corresponde a la evaluación formativa proactiva. porque esta utilización continua de la información caracteriza a la evaluación formativa interactiva."
+   },
+   {
+    "id": "ecp-3-16",
+    "pregunta": "¿En qué situación resulta especialmente adecuada una evaluación parcial o focalizada?",
+    "opciones": [
+     "Cuando se pretende obtener una visión general del estado del centro y de la relación entre sus distintos componentes.",
+     "Cuando se necesita elaborar un diagnóstico institucional que sirva de base para un plan estratégico global.",
+     "Cuando se quiere analizar en profundidad un programa, un problema o una dimensión concreta del centro."
+    ],
+    "feedback": [
+     "porque esta finalidad corresponde a una evaluación global, que adopta una visión holística de la institución.",
+     "porque el diagnóstico institucional amplio y la planificación estratégica son usos especialmente asociados a la evaluación global.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque esta finalidad corresponde a una evaluación global, que adopta una visión holística de la institución. porque el diagnóstico institucional amplio y la planificación estratégica son usos especialmente asociados a la evaluación global."
+   },
+   {
+    "id": "ecp-3-17",
+    "pregunta": "¿Cómo deben entenderse los distintos criterios de clasificación de la evaluación de centros?",
+    "opciones": [
+     "Como criterios compatibles que permiten caracterizar una misma evaluación desde diferentes perspectivas.",
+     "Como categorías excluyentes entre las que debe seleccionarse una antes de iniciar el proceso.",
+     "Como etapas sucesivas que determinan el orden en el que debe desarrollarse una evaluación institucional."
+    ],
+    "feedback": [
+     "",
+     "porque una misma evaluación puede clasificarse simultáneamente, por ejemplo, como externa, final, sumativa y global.",
+     "porque estos criterios clasifican la evaluación desde distintas perspectivas; no constituyen fases del proceso."
+    ],
+    "correcta": 0,
+    "explicacion": "porque una misma evaluación puede clasificarse simultáneamente, por ejemplo, como externa, final, sumativa y global. porque estos criterios clasifican la evaluación desde distintas perspectivas; no constituyen fases del proceso."
+   },
+   {
+    "id": "ecp-3-18",
+    "pregunta": "¿Cómo deben entenderse las fases de un proceso de evaluación institucional?",
+    "opciones": [
+     "Como etapas independientes cuya conexión se establece únicamente al elaborar el informe final.",
+     "Como momentos interrelacionados dentro de un proceso continuo y cíclico orientado a la toma de decisiones y la mejora.",
+     "Como una secuencia flexible en la que el orden de las fases puede modificarse libremente según las necesidades del centro."
+    ],
+    "feedback": [
+     "porque las fases no funcionan como actuaciones aisladas, sino que mantienen una relación continua a lo largo de todo el proceso evaluativo.",
+     "",
+     "porque, aunque las fases están conectadas y el proceso tiene carácter cíclico, cada una cumple una función específica dentro de una secuencia coherente de planificación, recogida, análisis, valoración y utilización de los resultados."
+    ],
+    "correcta": 1,
+    "explicacion": "porque las fases no funcionan como actuaciones aisladas, sino que mantienen una relación continua a lo largo de todo el proceso evaluativo. porque, aunque las fases están conectadas y el proceso tiene carácter cíclico, cada una cumple una función específica dentro de una secuencia coherente de planificación, recogida, análisis, valoración y utilización de los resultados."
+   },
+   {
+    "id": "ecp-3-19",
+    "pregunta": "¿Qué actuación corresponde a la fase de recogida de información?",
+    "opciones": [
+     "Contrastar los resultados obtenidos con los criterios definidos durante la planificación.",
+     "Seleccionar y aplicar técnicas e instrumentos para obtener datos relevantes sobre el funcionamiento del centro.",
+     "Definir los ámbitos, criterios, indicadores, agentes y objetivos que orientarán el proceso evaluativo."
+    ],
+    "feedback": [
+     "porque el contraste de la información con los criterios corresponde a la fase de valoración y elaboración de juicios.",
+     "",
+     "porque estos elementos se definen en la fase de planificación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el contraste de la información con los criterios corresponde a la fase de valoración y elaboración de juicios. porque estos elementos se definen en la fase de planificación."
+   },
+   {
+    "id": "ecp-3-20",
+    "pregunta": "Durante la fase de análisis e interpretación de los datos:",
+    "opciones": [
+     "Se establecen los criterios e indicadores que posteriormente permitirán valorar la calidad del centro.",
+     "Se elaboran los informes destinados a las diferentes audiencias y se definen nuevas actuaciones.",
+     "La información se organiza y analiza a la luz de los objetivos y criterios, atendiendo también al contexto del centro."
+    ],
+    "feedback": [
+     "porque la definición de criterios e indicadores corresponde a la planificación.",
+     "porque la elaboración y difusión de informes pertenece a la fase de comunicación y utilización de resultados.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la definición de criterios e indicadores corresponde a la planificación. porque la elaboración y difusión de informes pertenece a la fase de comunicación y utilización de resultados."
+   },
+   {
+    "id": "ecp-3-21",
+    "pregunta": "¿Qué caracteriza a la fase de valoración y elaboración de juicios evaluativos?",
+    "opciones": [
+     "Contrastar la información obtenida con los criterios de referencia para valorar la adecuación, eficacia o calidad del funcionamiento del centro.",
+     "Sistematizar los datos recogidos para identificar relaciones y describir la situación evaluada.",
+     "Seleccionar instrumentos que permitan obtener información válida, fiable y pertinente."
+    ],
+    "feedback": [
+     "",
+     "porque la organización, sistematización e interpretación de la información corresponden a la fase de análisis.",
+     "porque la selección y aplicación de instrumentos forma parte de la recogida de información."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la organización, sistematización e interpretación de la información corresponden a la fase de análisis. porque la selección y aplicación de instrumentos forma parte de la recogida de información."
+   },
+   {
+    "id": "ecp-3-22",
+    "pregunta": "¿Cuándo adquiere pleno sentido la comunicación de los resultados de una evaluación institucional?",
+    "opciones": [
+     "Cuando el informe recoge de manera exhaustiva todos los datos recopilados durante el proceso.",
+     "Cuando se elaboran y comunican los informes a los distintos destinatarios, aunque los resultados no se traduzcan en decisiones de mejora.",
+     "Cuando los resultados se utilizan para tomar decisiones, introducir mejoras y planificar nuevas actuaciones."
+    ],
+    "feedback": [
+     "porque la utilidad de esta fase no depende de la cantidad de información incluida en el informe, sino del uso que se haga de los resultados.",
+     "porque la elaboración y comunicación de los informes no es suficiente; los resultados deben utilizarse para orientar decisiones, introducir mejoras y planificar nuevas actuaciones.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la utilidad de esta fase no depende de la cantidad de información incluida en el informe, sino del uso que se haga de los resultados. porque la elaboración y comunicación de los informes no es suficiente; los resultados deben utilizarse para orientar decisiones, introducir mejoras y planificar nuevas actuaciones."
+   },
+   {
+    "id": "ecp-3-23",
+    "pregunta": "¿En qué consiste la metaevaluación?",
+    "opciones": [
+     "En realizar una segunda valoración de los resultados antes de comunicarlos a la comunidad educativa.",
+     "En evaluar el propio proceso de evaluación con el propósito de mejorar el plan evaluativo.",
+     "En comparar los resultados de distintos ciclos de evaluación para determinar la evolución del centro."
+    ],
+    "feedback": [
+     "porque la metaevaluación no supone repetir la valoración de los resultados.",
+     "",
+     "porque la metaevaluación tiene como objeto valorar el propio proceso de evaluación para mejorarlo, no comparar los resultados obtenidos en distintos ciclos evaluativos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la metaevaluación no supone repetir la valoración de los resultados. porque la metaevaluación tiene como objeto valorar el propio proceso de evaluación para mejorarlo, no comparar los resultados obtenidos en distintos ciclos evaluativos."
+   },
+   {
+    "id": "ecp-3-24",
+    "pregunta": "¿Qué relación existe entre ámbitos, criterios e indicadores en la evaluación de un centro?",
+    "opciones": [
+     "Los ámbitos delimitan qué se evalúa, los criterios permiten juzgar su calidad y los indicadores aportan evidencias observables sobre su grado de logro.",
+     "Los ámbitos establecen los estándares de calidad, los criterios determinan qué partes del centro analizar y los indicadores fijan los objetivos institucionales.",
+     "Los ámbitos recogen los resultados, los criterios establecen las técnicas de análisis y los indicadores determinan las decisiones de mejora."
+    ],
+    "feedback": [
+     "",
+     "porque invierte las funciones de ámbitos y criterios: el ámbito delimita el objeto de evaluación y el criterio actúa como referente de calidad.",
+     "porque los ámbitos delimitan qué aspectos del centro se evalúan, los criterios sirven como referentes para valorar su calidad y los indicadores aportan evidencias observables y verificables sobre su grado de logro."
+    ],
+    "correcta": 0,
+    "explicacion": "porque invierte las funciones de ámbitos y criterios: el ámbito delimita el objeto de evaluación y el criterio actúa como referente de calidad. porque los ámbitos delimitan qué aspectos del centro se evalúan, los criterios sirven como referentes para valorar su calidad y los indicadores aportan evidencias observables y verificables sobre su grado de logro."
+   },
+   {
+    "id": "ecp-3-25",
+    "pregunta": "¿Cuál de los siguientes aspectos pertenece al ámbito de orientación, tutoría y éxito escolar?",
+    "opciones": [
+     "La estabilidad de la plantilla, la accesibilidad de los espacios y la disponibilidad de equipamiento.",
+     "La acción tutorial, los planes de apoyo, la prevención del absentismo y la transición educativa.",
+     "La colaboración con las familias, la comunicación institucional y la relación con agentes del entorno."
+    ],
+    "feedback": [
+     "porque estos elementos pertenecen fundamentalmente al ámbito de recursos e infraestructura.",
+     "",
+     "porque estos aspectos se encuadran en el ámbito de participación y relación con la comunidad."
+    ],
+    "correcta": 1,
+    "explicacion": "porque estos elementos pertenecen fundamentalmente al ámbito de recursos e infraestructura. porque estos aspectos se encuadran en el ámbito de participación y relación con la comunidad."
+   },
+   {
+    "id": "ecp-3-26",
+    "pregunta": "¿Qué función cumplen los criterios de calidad en la evaluación de centros?",
+    "opciones": [
+     "Actuar como referentes para juzgar el grado de calidad o adecuación de un ámbito y orientar las decisiones de mejora.",
+     "Proporcionar datos observables que permitan cuantificar directamente los resultados obtenidos.",
+     "Delimitar las partes de la institución que serán objeto de análisis en el proceso evaluativo."
+    ],
+    "feedback": [
+     "",
+     "porque esta función corresponde a los indicadores, que aportan evidencias observables y verificables.",
+     "porque delimitar qué partes del centro se evalúan corresponde a los ámbitos de evaluación."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta función corresponde a los indicadores, que aportan evidencias observables y verificables. porque delimitar qué partes del centro se evalúan corresponde a los ámbitos de evaluación."
+   },
+   {
+    "id": "ecp-3-27",
+    "pregunta": "¿Qué características debe reunir un indicador utilizado en la evaluación de centros?",
+    "opciones": [
+     "Ser cuantitativo, comparable entre centros y estable a lo largo del tiempo.",
+     "Estar vinculado exclusivamente a los resultados para evitar interpretaciones subjetivas.",
+     "Ser observable y verificable, además de válido, fiable, sensible al cambio y contextualizado."
+    ],
+    "feedback": [
+     "porque un indicador puede ser cuantitativo o cualitativo y debe ser sensible a los cambios que se produzcan.",
+     "porque los indicadores pueden referirse a múltiples ámbitos y no únicamente a resultados.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque un indicador puede ser cuantitativo o cualitativo y debe ser sensible a los cambios que se produzcan. porque los indicadores pueden referirse a múltiples ámbitos y no únicamente a resultados."
+   },
+   {
+    "id": "ecp-3-28",
+    "pregunta": "¿Por qué se recomienda combinar indicadores cuantitativos y cualitativos en la evaluación de centros?",
+    "opciones": [
+     "Porque los indicadores cualitativos permiten sustituir los datos numéricos cuando estos no son suficientemente concluyentes.",
+     "Porque los datos cuantitativos muestran los resultados y los cualitativos ayudan a comprender las razones que pueden explicarlos.",
+     "Porque la combinación de ambos garantiza que todos los ámbitos del centro tengan el mismo peso en la evaluación."
+    ],
+    "feedback": [
+     "porque ambos tipos de información se consideran complementarios, no sustitutivos.",
+     "",
+     "porque la combinación de indicadores no implica asignar el mismo peso a todos los ámbitos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque ambos tipos de información se consideran complementarios, no sustitutivos. porque la combinación de indicadores no implica asignar el mismo peso a todos los ámbitos."
+   },
+   {
+    "id": "ecp-3-29",
+    "pregunta": "Si en la evaluación de un centro se analiza la alineación entre los objetivos establecidos, las prácticas desarrolladas, su seguimiento y los resultados obtenidos, ¿qué criterio de calidad se está considerando?",
+    "opciones": [
+     "Pertinencia y ajuste al contexto.",
+     "Eficacia pedagógica.",
+     "Coherencia interna."
+    ],
+    "feedback": [
+     "porque la pertinencia y el ajuste al contexto valoran si las actuaciones responden a las necesidades y condiciones reales del alumnado, las familias y el entorno.",
+     "porque la eficacia pedagógica se centra en las evidencias de aprendizaje derivadas de prácticas docentes efectivas y en su comprobación mediante indicadores de proceso y de resultado.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la pertinencia y el ajuste al contexto valoran si las actuaciones responden a las necesidades y condiciones reales del alumnado, las familias y el entorno. porque la eficacia pedagógica se centra en las evidencias de aprendizaje derivadas de prácticas docentes efectivas y en su comprobación mediante indicadores de proceso y de resultado."
+   },
+   {
+    "id": "ecp-3-30",
+    "pregunta": "Más allá de emitir juicios, ¿qué función se atribuye al profesional de la Pedagogía en los procesos de evaluación de centros?",
+    "opciones": [
+     "Facilitar la interpretación de los resultados y transformarlos en acciones concretas de mejora, promoviendo una cultura evaluativa participativa y formativa.",
+     "Garantizar que los resultados se ajusten a los estándares establecidos por las administraciones educativas.",
+     "Seleccionar las decisiones que deben adoptar los equipos directivos una vez finalizada la evaluación."
+    ],
+    "feedback": [
+     "",
+     "porque la función profesional no se limita a comprobar la adecuación a estándares externos, sino que se orienta a la comprensión y mejora de la institución.",
+     "porque el profesional de la Pedagogía acompaña y asesora los procesos de reflexión y toma de decisiones, no sustituye a los órganos responsables de adoptarlas."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la función profesional no se limita a comprobar la adecuación a estándares externos, sino que se orienta a la comprensión y mejora de la institución. porque el profesional de la Pedagogía acompaña y asesora los procesos de reflexión y toma de decisiones, no sustituye a los órganos responsables de adoptarlas."
+   }
+  ],
+  "Tema 4": [
+   {
+    "id": "ecp-4-1",
+    "pregunta": "¿Qué significa, según Santos Guerra (1990), entender la evaluación como un proceso de diálogo, comprensión y mejora?",
+    "opciones": [
+     "Favorecer que la comunidad educativa reflexione sobre sus prácticas cotidianas para transformarlas.",
+     "Analizar el funcionamiento del centro para comprobar su adecuación a las normas y estándares establecidos.",
+     "Recoger información sobre los resultados del centro para facilitar la rendición de cuentas ante la Administración."
+    ],
+    "feedback": [
+     "",
+     "porque esta opción se centra en la función de control, mientras que Santos Guerra destaca la reflexión y la comprensión de las prácticas educativas para promover su transformación.",
+     "porque, aunque la rendición de cuentas es una función de la evaluación, no expresa la concepción de diálogo, comprensión y mejora defendida por el autor."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta opción se centra en la función de control, mientras que Santos Guerra destaca la reflexión y la comprensión de las prácticas educativas para promover su transformación. porque, aunque la rendición de cuentas es una función de la evaluación, no expresa la concepción de diálogo, comprensión y mejora defendida por el autor."
+   },
+   {
+    "id": "ecp-4-2",
+    "pregunta": "¿En qué tres premisas se fundamenta la función evaluadora del Estado en el sistema educativo?",
+    "opciones": [
+     "La supervisión de la gestión de los centros, la rendición de cuentas ante las administraciones educativas y la valoración de los resultados de las políticas educativas.",
+     "La supervisión de la gestión de los centros, la rendición de cuentas ante la sociedad y las administraciones, y la orientación de las políticas e intervenciones educativas.",
+     "La supervisión de la gestión de los centros, la rendición de cuentas sobre sus resultados y la identificación de necesidades para orientar las actuaciones de mejora de cada centro."
+    ],
+    "feedback": [
+     "porque la rendición de cuentas también se dirige a la sociedad y la evaluación permite orientar las políticas educativas y ajustar las intervenciones del sistema, no solo valorar sus resultados.",
+     "",
+     "porque la rendición de cuentas incluye tanto los resultados como los procesos, y la función evaluadora también permite orientar las políticas educativas y optimizar los recursos del sistema."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la rendición de cuentas también se dirige a la sociedad y la evaluación permite orientar las políticas educativas y ajustar las intervenciones del sistema, no solo valorar sus resultados. porque la rendición de cuentas incluye tanto los resultados como los procesos, y la función evaluadora también permite orientar las políticas educativas y optimizar los recursos del sistema."
+   },
+   {
+    "id": "ecp-4-3",
+    "pregunta": "¿Qué establece la LOMLOE respecto a la responsabilidad de las administraciones educativas en la evaluación de centros?",
+    "opciones": [
+     "Que las administraciones deben desarrollar evaluaciones externas, mientras que el apoyo a la autoevaluación de los centros queda fuera de sus responsabilidades.",
+     "Que los centros deben asumir la responsabilidad principal de la evaluación institucional, reservando a las administraciones la elaboración de indicadores.",
+     "Que el Estado y las comunidades autónomas tienen responsabilidades evaluadoras y deben promover procesos de evaluación y planes de mejora."
+    ],
+    "feedback": [
+     "porque el marco normativo también reconoce la responsabilidad de las administraciones de apoyar la autoevaluación interna de los centros.",
+     "porque la evaluación del sistema educativo es responsabilidad del Estado y las comunidades autónomas, y sus funciones no se reducen a elaborar indicadores.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque el marco normativo también reconoce la responsabilidad de las administraciones de apoyar la autoevaluación interna de los centros. porque la evaluación del sistema educativo es responsabilidad del Estado y las comunidades autónomas, y sus funciones no se reducen a elaborar indicadores."
+   },
+   {
+    "id": "ecp-4-4",
+    "pregunta": "¿Para qué utilizan las administraciones educativas la información sobre los contextos sociodemográficos en la evaluación de centros?",
+    "opciones": [
+     "Para establecer criterios de rendimiento diferenciados que sustituyan los objetivos generales del sistema educativo.",
+     "Para detectar desigualdades, analizar los resultados según los contextos y planificar acciones compensatorias.",
+     "Para determinar qué centros deben someterse a evaluación externa en función de las características de su alumnado."
+    ],
+    "feedback": [
+     "porque la evaluación busca identificar desigualdades a partir del análisis de los resultados en sus contextos sociodemográficos y orientar acciones compensatorias, no sustituir los objetivos educativos.",
+     "",
+     "porque la información sociodemográfica se utiliza para detectar desigualdades y orientar actuaciones compensatorias, no para determinar qué centros deben ser evaluados."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la evaluación busca identificar desigualdades a partir del análisis de los resultados en sus contextos sociodemográficos y orientar acciones compensatorias, no sustituir los objetivos educativos. porque la información sociodemográfica se utiliza para detectar desigualdades y orientar actuaciones compensatorias, no para determinar qué centros deben ser evaluados."
+   },
+   {
+    "id": "ecp-4-5",
+    "pregunta": "¿Qué caracteriza al modelo tradicional de gobernanza educativa en relación con la evaluación de centros?",
+    "opciones": [
+     "Una evaluación externa, jerárquica y centrada en verificar el cumplimiento de la normativa y los procedimientos administrativos.",
+     "Una evaluación centrada en informar a la sociedad mediante indicadores de resultados y evaluaciones externas de diagnóstico.",
+     "Una evaluación continua en la que los centros analizan su funcionamiento y diseñan estrategias de mejora contextualizadas."
+    ],
+    "feedback": [
+     "",
+     "porque esta descripción corresponde al modelo de gobernanza orientado a la rendición de cuentas (accountability).",
+     "porque estas características corresponden al modelo de gobernanza basado en la autonomía y la mejora institucional."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta descripción corresponde al modelo de gobernanza orientado a la rendición de cuentas (accountability). porque estas características corresponden al modelo de gobernanza basado en la autonomía y la mejora institucional."
+   },
+   {
+    "id": "ecp-4-6",
+    "pregunta": "¿Qué riesgo se asocia a un modelo de gobernanza educativa excesivamente orientado a la rendición de cuentas?",
+    "opciones": [
+     "Que los centros prioricen la reflexión interna sobre sus prácticas en detrimento de los mecanismos de evaluación externa.",
+     "Que las administraciones reduzcan la utilización de indicadores cuantitativos para valorar el funcionamiento de los centros.",
+     "Que se conceda un peso excesivo a los resultados cuantitativos, simplificando la realidad educativa y favoreciendo la enseñanza orientada al examen."
+    ],
+    "feedback": [
+     "porque la reflexión institucional y la autoevaluación son características del modelo basado en la autonomía y la mejora, no el riesgo señalado para la rendición de cuentas.",
+     "porque el riesgo identificado es precisamente el peso excesivo de los resultados cuantitativos, no la reducción de su utilización.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la reflexión institucional y la autoevaluación son características del modelo basado en la autonomía y la mejora, no el riesgo señalado para la rendición de cuentas. porque el riesgo identificado es precisamente el peso excesivo de los resultados cuantitativos, no la reducción de su utilización."
+   },
+   {
+    "id": "ecp-4-7",
+    "pregunta": "¿Cómo se concibe la evaluación en el modelo de gobernanza basado en la autonomía y la mejora institucional?",
+    "opciones": [
+     "Como un mecanismo de supervisión periódica en el que la Administración establece las actuaciones de mejora de los centros.",
+     "Como un proceso continuo de reflexión institucional, con un papel central de la autoevaluación y el acompañamiento de la Administración.",
+     "Como un proceso de autorregulación en el que los centros asumen todas las funciones evaluadoras sin supervisión administrativa."
+    ],
+    "feedback": [
+     "porque este modelo supera la evaluación entendida como una actuación puntual de control y reconoce la capacidad de los centros para diseñar sus propias estrategias de mejora.",
+     "",
+     "porque la Administración mantiene sus funciones de supervisión, aunque adopta también un papel de orientación, acompañamiento y apoyo."
+    ],
+    "correcta": 1,
+    "explicacion": "porque este modelo supera la evaluación entendida como una actuación puntual de control y reconoce la capacidad de los centros para diseñar sus propias estrategias de mejora. porque la Administración mantiene sus funciones de supervisión, aunque adopta también un papel de orientación, acompañamiento y apoyo."
+   },
+   {
+    "id": "ecp-4-8",
+    "pregunta": "¿Qué papel desempeñan los equipos directivos en los procesos de evaluación institucional?",
+    "opciones": [
+     "Coordinar la autoevaluación, interpretar los resultados externos y favorecer su traducción en decisiones institucionales.",
+     "Diseñar las políticas evaluativas, establecer criterios e indicadores de calidad y regular los procedimientos de evaluación del centro.",
+     "Participar en la recogida y análisis de información, aportar una mirada profesional contextualizada y desarrollar competencias reflexivas."
+    ],
+    "feedback": [
+     "",
+     "porque estas funciones corresponden a las administraciones educativas, que diseñan y regulan las políticas evaluativas mediante marcos normativos, criterios, indicadores y procedimientos.",
+     "porque estas funciones se atribuyen principalmente al profesorado, que participa activamente en la recogida y análisis de información y aporta una perspectiva profesional y contextualizada."
+    ],
+    "correcta": 0,
+    "explicacion": "porque estas funciones corresponden a las administraciones educativas, que diseñan y regulan las políticas evaluativas mediante marcos normativos, criterios, indicadores y procedimientos. porque estas funciones se atribuyen principalmente al profesorado, que participa activamente en la recogida y análisis de información y aporta una perspectiva profesional y contextualizada."
+   },
+   {
+    "id": "ecp-4-9",
+    "pregunta": "¿Qué aportan las familias y el alumnado a los procesos de evaluación institucional?",
+    "opciones": [
+     "Participar en la valoración del clima escolar y la convivencia, además de coordinar los procesos internos de autoevaluación.",
+     "Contribuir al análisis de la satisfacción con el centro y establecer los criterios de calidad que orientan la evaluación institucional.",
+     "Aportar información sobre el clima escolar, la convivencia y la satisfacción con el centro mediante distintos mecanismos de participación."
+    ],
+    "feedback": [
+     "porque, aunque las familias y el alumnado contribuyen a valorar el clima escolar y la convivencia, la coordinación de los procesos de autoevaluación corresponde a los equipos directivos.",
+     "porque las familias y el alumnado aportan información sobre su satisfacción con el centro, pero el establecimiento de criterios de calidad corresponde a las administraciones educativas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque, aunque las familias y el alumnado contribuyen a valorar el clima escolar y la convivencia, la coordinación de los procesos de autoevaluación corresponde a los equipos directivos. porque las familias y el alumnado aportan información sobre su satisfacción con el centro, pero el establecimiento de criterios de calidad corresponde a las administraciones educativas."
+   },
+   {
+    "id": "ecp-4-10",
+    "pregunta": "¿Qué caracteriza a los modelos de gobernanza evaluativa en el sistema educativo español?",
+    "opciones": [
+     "Por la convivencia de modelos de control normativo, rendición de cuentas y mejora institucional, con distinta intensidad según el contexto.",
+     "Por la sustitución progresiva de los modelos de control y rendición de cuentas por un único modelo basado en la autoevaluación.",
+     "Por la aplicación de un modelo común de evaluación institucional, con procedimientos equivalentes en todas las comunidades autónomas."
+    ],
+    "feedback": [
+     "",
+     "porque en el sistema educativo español siguen coexistiendo los tres modelos de gobernanza evaluativa, con distinta intensidad según la comunidad autónoma, el nivel educativo y el instrumento utilizado.",
+     "porque existe diversidad de modelos y enfoques entre las comunidades autónomas, derivada de la distribución de competencias educativas."
+    ],
+    "correcta": 0,
+    "explicacion": "porque en el sistema educativo español siguen coexistiendo los tres modelos de gobernanza evaluativa, con distinta intensidad según la comunidad autónoma, el nivel educativo y el instrumento utilizado. porque existe diversidad de modelos y enfoques entre las comunidades autónomas, derivada de la distribución de competencias educativas."
+   },
+   {
+    "id": "ecp-4-11",
+    "pregunta": "¿Qué caracteriza fundamentalmente a la evaluación externa de los centros educativos?",
+    "opciones": [
+     "El análisis del funcionamiento institucional realizado por los propios miembros del centro mediante procedimientos de evaluación definidos por la Administración.",
+     "La valoración de los resultados educativos mediante indicadores homogéneos, con independencia de quién realice la evaluación.",
+     "La intervención de un agente independiente del centro que analiza su funcionamiento, procesos y resultados para emitir un juicio fundamentado."
+    ],
+    "feedback": [
+     "porque la evaluación realizada por los propios miembros del centro corresponde a la evaluación interna.",
+     "porque la utilización de indicadores homogéneos es una característica de la evaluación externa, pero debe ser realizada por agentes ajenos al centro.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la evaluación realizada por los propios miembros del centro corresponde a la evaluación interna. porque la utilización de indicadores homogéneos es una característica de la evaluación externa, pero debe ser realizada por agentes ajenos al centro."
+   },
+   {
+    "id": "ecp-4-12",
+    "pregunta": "¿Para qué se utilizan criterios, indicadores y procedimientos homogéneos en la evaluación externa?",
+    "opciones": [
+     "Para garantizar la imparcialidad del evaluador y evitar posibles conflictos de interés.",
+     "Para comparar los datos entre distintos centros educativos y a lo largo del tiempo.",
+     "Para registrar los resultados en informes oficiales y facilitar la rendición de cuentas."
+    ],
+    "feedback": [
+     "porque la imparcialidad y la prevención de conflictos de interés se vinculan a que el evaluador externo no forma parte del centro, no a la utilización de criterios homogéneos.",
+     "",
+     "porque la rendición de cuentas se facilita mediante el registro de los resultados en informes oficiales, no específicamente por la utilización de criterios homogéneos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la imparcialidad y la prevención de conflictos de interés se vinculan a que el evaluador externo no forma parte del centro, no a la utilización de criterios homogéneos. porque la rendición de cuentas se facilita mediante el registro de los resultados en informes oficiales, no específicamente por la utilización de criterios homogéneos."
+   },
+   {
+    "id": "ecp-4-13",
+    "pregunta": "¿Cuál de las siguientes actuaciones corresponde a las funciones de la Inspección Educativa recogidas en el Real Decreto 68/2026?",
+    "opciones": [
+     "Supervisar el funcionamiento de los centros, evaluar la práctica docente y la función directiva, y asesorar a la comunidad educativa.",
+     "Supervisar el cumplimiento de la normativa y evaluar los resultados académicos, dejando el asesoramiento a los órganos internos del centro.",
+     "Realizar la evaluación externa y asumir directamente la planificación y ejecución de las actuaciones de mejora institucional."
+    ],
+    "feedback": [
+     "",
+     "porque la Inspección también tiene atribuidas funciones de asesoramiento, orientación e información a la comunidad educativa.",
+     "porque la Inspección desempeña funciones de supervisión, evaluación y asesoramiento, pero la planificación y ejecución de las actuaciones de mejora corresponde a los propios centros."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la Inspección también tiene atribuidas funciones de asesoramiento, orientación e información a la comunidad educativa. porque la Inspección desempeña funciones de supervisión, evaluación y asesoramiento, pero la planificación y ejecución de las actuaciones de mejora corresponde a los propios centros."
+   },
+   {
+    "id": "ecp-4-14",
+    "pregunta": "¿Qué principios deben guiar la actuación de la Inspección Educativa según el artículo 4 del Real Decreto 68/2026?",
+    "opciones": [
+     "La supervisión del cumplimiento normativo, el asesoramiento a la comunidad educativa y la emisión de informes.",
+     "La independencia del evaluador, la homogeneidad de criterios y la transparencia en la rendición de cuentas.",
+     "El respeto a los derechos fundamentales, la profesionalidad e independencia técnica, la imparcialidad, la eficiencia y la transparencia."
+    ],
+    "feedback": [
+     "porque recoge funciones de la Inspección Educativa, no los principios de actuación establecidos en el artículo 4.",
+     "porque recoge características generales de la evaluación externa, pero no los principios específicos de actuación de la Inspección.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque recoge funciones de la Inspección Educativa, no los principios de actuación establecidos en el artículo 4. porque recoge características generales de la evaluación externa, pero no los principios específicos de actuación de la Inspección."
+   },
+   {
+    "id": "ecp-4-15",
+    "pregunta": "¿Qué combinación de técnicas utiliza la Inspección Educativa para evaluar el funcionamiento de los centros?",
+    "opciones": [
+     "Principalmente el análisis de resultados académicos e indicadores proporcionados por la Administración, sin necesidad de observar las prácticas del centro.",
+     "La observación, las entrevistas, el análisis documental y la revisión de indicadores educativos mediante métodos cualitativos y cuantitativos.",
+     "La revisión de documentos institucionales y la realización de entrevistas, prescindiendo de los indicadores externos para mantener una evaluación contextualizada."
+    ],
+    "feedback": [
+     "porque la Inspección también utiliza visitas de observación y otras técnicas cualitativas que permiten analizar directamente las prácticas educativas.",
+     "",
+     "porque la Inspección Educativa también utiliza indicadores proporcionados por las administraciones, como los resultados de pruebas externas, las tasas de absentismo, las ratios y los recursos disponibles."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la Inspección también utiliza visitas de observación y otras técnicas cualitativas que permiten analizar directamente las prácticas educativas. porque la Inspección Educativa también utiliza indicadores proporcionados por las administraciones, como los resultados de pruebas externas, las tasas de absentismo, las ratios y los recursos disponibles."
+   },
+   {
+    "id": "ecp-4-16",
+    "pregunta": "¿Qué requisitos debe cumplir la visita de inspección según el Real Decreto 68/2026?",
+    "opciones": [
+     "Realizarse con planificación, coordinación, seguimiento y registro.",
+     "Desarrollarse a partir de los resultados de las evaluaciones externas, priorizando los centros que presentan mayores dificultades.",
+     "Centrarse en la observación de la práctica docente, utilizando los informes institucionales como información complementaria."
+    ],
+    "feedback": [
+     "",
+     "porque el capítulo no establece esa priorización como requisito de la visita de inspección; señala expresamente la planificación, coordinación, seguimiento y registro.",
+     "porque las visitas de inspección no se limitan a la observación docente. La Inspección utiliza diversas técnicas para supervisar y evaluar el funcionamiento de los centros."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el capítulo no establece esa priorización como requisito de la visita de inspección; señala expresamente la planificación, coordinación, seguimiento y registro. porque las visitas de inspección no se limitan a la observación docente. La Inspección utiliza diversas técnicas para supervisar y evaluar el funcionamiento de los centros."
+   },
+   {
+    "id": "ecp-4-17",
+    "pregunta": "¿Qué diferencia existe entre la Evaluación General del Sistema (EGS) y las Evaluaciones de Diagnóstico (ED)?",
+    "opciones": [
+     "La EGS se realiza de forma censal en 4.º de Primaria y 2.º de ESO, mientras que las ED son muestrales al finalizar las etapas.",
+     "Ambas son evaluaciones censales, aunque se aplican en distintos cursos y tienen objetivos de evaluación diferentes.",
+     "La EGS es muestral y se realiza al final de 6.º de Primaria y 4.º de ESO, mientras que las ED son censales en 4.º de Primaria y 2.º de ESO."
+    ],
+    "feedback": [
+     "porque invierte los cursos y las características de ambas evaluaciones.",
+     "porque la Evaluación General del Sistema tiene carácter muestral, mientras que las Evaluaciones de Diagnóstico son censales.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque invierte los cursos y las características de ambas evaluaciones. porque la Evaluación General del Sistema tiene carácter muestral, mientras que las Evaluaciones de Diagnóstico son censales."
+   },
+   {
+    "id": "ecp-4-18",
+    "pregunta": "¿Qué permite analizar la tasa neta de escolarización en Educación Infantil incluida en el Sistema Estatal de Indicadores de la Educación?",
+    "opciones": [
+     "El rendimiento académico del alumnado que ha cursado Educación Infantil al incorporarse a la Educación Primaria.",
+     "El grado de cobertura y acceso a la Educación Infantil, así como las políticas de escolarización temprana y la equidad territorial.",
+     "La proporción de alumnado que finaliza cada ciclo de Educación Infantil y continúa escolarizado en la etapa siguiente."
+    ],
+    "feedback": [
+     "porque este indicador mide la escolarización en relación con la población de las edades correspondientes, no el rendimiento académico posterior.",
+     "",
+     "porque el indicador no mide la continuidad entre etapas, sino el porcentaje de niños y niñas matriculados respecto a la población total de esas edades."
+    ],
+    "correcta": 1,
+    "explicacion": "porque este indicador mide la escolarización en relación con la población de las edades correspondientes, no el rendimiento académico posterior. porque el indicador no mide la continuidad entre etapas, sino el porcentaje de niños y niñas matriculados respecto a la población total de esas edades."
+   },
+   {
+    "id": "ecp-4-19",
+    "pregunta": "¿Cómo influye la distribución de competencias educativas en los modelos de evaluación externa de las comunidades autónomas?",
+    "opciones": [
+     "Permite que las comunidades desarrollen programas y marcos propios de evaluación externa, además de aplicar las evaluaciones estatales.",
+     "Establece un modelo de evaluación externa común, en el que las comunidades autónomas pueden adaptar únicamente los instrumentos de recogida de información.",
+     "Atribuye a las comunidades autónomas la responsabilidad de desarrollar las evaluaciones externas, mientras que las estatales se limitan a elaborar indicadores educativos."
+    ],
+    "feedback": [
+     "",
+     "porque las comunidades autónomas pueden desarrollar sus propios programas y marcos de evaluación externa, no únicamente adaptar los instrumentos de un modelo común.",
+     "porque existen evaluaciones de carácter estatal, coordinadas por el INEE, que se desarrollan junto con los programas autonómicos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque las comunidades autónomas pueden desarrollar sus propios programas y marcos de evaluación externa, no únicamente adaptar los instrumentos de un modelo común. porque existen evaluaciones de carácter estatal, coordinadas por el INEE, que se desarrollan junto con los programas autonómicos."
+   },
+   {
+    "id": "ecp-4-20",
+    "pregunta": "¿Por qué se considera necesaria la combinación de metodologías cuantitativas y cualitativas en la evaluación externa?",
+    "opciones": [
+     "Porque los datos cuantitativos proporcionan un primer diagnóstico y los métodos cualitativos se utilizan cuando los resultados no son suficientemente concluyentes.",
+     "Porque los métodos cualitativos permiten conocer los procesos educativos, mientras que los cuantitativos deben reservarse para comparar centros.",
+     "Porque la complejidad de los procesos educativos requiere integrar diferentes fuentes y métodos para obtener diagnósticos rigurosos y contextualizados."
+    ],
+    "feedback": [
+     "porque ambas metodologías se consideran complementarias y su combinación permite obtener una visión más rigurosa y contextualizada de los procesos educativos.",
+     "porque los métodos cuantitativos no se limitan a comparar centros; también aportan información relevante para el diagnóstico y la mejora institucional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque ambas metodologías se consideran complementarias y su combinación permite obtener una visión más rigurosa y contextualizada de los procesos educativos. porque los métodos cuantitativos no se limitan a comparar centros; también aportan información relevante para el diagnóstico y la mejora institucional."
+   },
+   {
+    "id": "ecp-4-21",
+    "pregunta": "¿Qué riesgo supone conceder un peso excesivo a los resultados de las pruebas estandarizadas en la evaluación externa?",
+    "opciones": [
+     "Que los centros aumenten la utilización de técnicas cualitativas para compensar la información obtenida mediante las pruebas.",
+     "Que los centros orienten sus prácticas hacia la mejora de los indicadores evaluados, favoreciendo la enseñanza para el examen y la reducción del currículo.",
+     "Que los resultados de las evaluaciones pierdan su capacidad para establecer comparaciones entre centros y territorios."
+    ],
+    "feedback": [
+     "porque los riesgos asociados al uso excesivo de pruebas estandarizadas son la simplificación de los procesos educativos, la enseñanza orientada al examen y la reducción del currículo, no el aumento de la utilización de técnicas cualitativas.",
+     "",
+     "porque las pruebas estandarizadas facilitan la comparación; el problema surge cuando esta posibilidad conduce a simplificar la complejidad educativa y a orientar la enseñanza hacia los resultados de las pruebas."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los riesgos asociados al uso excesivo de pruebas estandarizadas son la simplificación de los procesos educativos, la enseñanza orientada al examen y la reducción del currículo, no el aumento de la utilización de técnicas cualitativas. porque las pruebas estandarizadas facilitan la comparación; el problema surge cuando esta posibilidad conduce a simplificar la complejidad educativa y a orientar la enseñanza hacia los resultados de las pruebas."
+   },
+   {
+    "id": "ecp-4-22",
+    "pregunta": "¿Qué puede suceder cuando los resultados de la evaluación externa se utilizan principalmente para elaborar rankings, asignar recompensas o aplicar sanciones?",
+    "opciones": [
+     "Que aparezcan actitudes defensivas y resistencias, al percibirse la evaluación como una amenaza en lugar de una oportunidad de mejora.",
+     "Que aumente la carga administrativa de los centros, debido a la acumulación de informes y procedimientos de evaluación.",
+     "Que los centros orienten la enseñanza hacia los contenidos de las pruebas, reduciendo la amplitud del currículo."
+    ],
+    "feedback": [
+     "",
+     "porque la sobrecarga administrativa se relaciona con la recopilación de datos, la cumplimentación de informes y la preparación de auditorías, no específicamente con los usos sancionadores de los resultados.",
+     "porque la enseñanza orientada al examen es un riesgo asociado al predominio de pruebas e indicadores estandarizados, mientras que la pregunta se refiere a las consecuencias de los usos clasificatorios y sancionadores."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la sobrecarga administrativa se relaciona con la recopilación de datos, la cumplimentación de informes y la preparación de auditorías, no específicamente con los usos sancionadores de los resultados. porque la enseñanza orientada al examen es un riesgo asociado al predominio de pruebas e indicadores estandarizados, mientras que la pregunta se refiere a las consecuencias de los usos clasificatorios y sancionadores."
+   },
+   {
+    "id": "ecp-4-23",
+    "pregunta": "¿Cómo se articulan la evaluación interna y la externa en los modelos mixtos de evaluación de centros?",
+    "opciones": [
+     "La evaluación externa establece el diagnóstico institucional y la evaluación interna se encarga de comprobar su aplicación en el centro.",
+     "La evaluación interna y la externa se desarrollan como procesos diferenciados, cuyos resultados se integran al finalizar la evaluación.",
+     "La autoevaluación del centro se articula con la supervisión, el contraste y el acompañamiento de la evaluación externa."
+    ],
+    "feedback": [
+     "porque en los modelos mixtos la evaluación interna actúa como punto de partida, mientras que la externa desempeña una función complementaria de contraste y acompañamiento.",
+     "porque el modelo mixto no consiste en yuxtaponer dos procesos independientes, sino en articularlos de forma coherente para favorecer la mejora institucional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque en los modelos mixtos la evaluación interna actúa como punto de partida, mientras que la externa desempeña una función complementaria de contraste y acompañamiento. porque el modelo mixto no consiste en yuxtaponer dos procesos independientes, sino en articularlos de forma coherente para favorecer la mejora institucional."
+   },
+   {
+    "id": "ecp-4-24",
+    "pregunta": "¿Qué papel desempeña la evaluación interna en los modelos mixtos de evaluación?",
+    "opciones": [
+     "Contrastar los resultados de la evaluación externa con las percepciones de los miembros del centro para determinar las actuaciones de mejora.",
+     "Analizar el funcionamiento del centro, identificar fortalezas y debilidades y elaborar un diagnóstico contextualizado que oriente los planes de actuación.",
+     "Comprobar el grado de cumplimiento de las recomendaciones de la Inspección Educativa mediante el seguimiento de indicadores institucionales."
+    ],
+    "feedback": [
+     "porque la función de contraste del diagnóstico corresponde principalmente a la evaluación externa, mientras que la interna constituye el punto de partida del proceso evaluador.",
+     "",
+     "porque la evaluación interna parte del análisis del funcionamiento del propio centro, identificando fortalezas y debilidades para elaborar un diagnóstico contextualizado, y no del seguimiento de las recomendaciones de la Inspección."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la función de contraste del diagnóstico corresponde principalmente a la evaluación externa, mientras que la interna constituye el punto de partida del proceso evaluador. porque la evaluación interna parte del análisis del funcionamiento del propio centro, identificando fortalezas y debilidades para elaborar un diagnóstico contextualizado, y no del seguimiento de las recomendaciones de la Inspección."
+   },
+   {
+    "id": "ecp-4-25",
+    "pregunta": "¿Qué función cumple la evaluación externa respecto al diagnóstico elaborado por el centro en un modelo mixto?",
+    "opciones": [
+     "Contrastar y validar el diagnóstico interno mediante el análisis de indicadores y evidencias recogidas a través de diferentes técnicas.",
+     "Revisar el diagnóstico interno a partir de los resultados académicos y los indicadores de equidad, dando prioridad a estos datos frente a otras evidencias.",
+     "Analizar el funcionamiento del centro mediante visitas, entrevistas y documentos, elaborando un diagnóstico independiente del realizado en la autoevaluación."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación externa analiza la coherencia entre el diagnóstico interno, los indicadores disponibles y las evidencias recogidas, sin establecer una prioridad de unos datos sobre otros.",
+     "porque la evaluación externa no desarrolla un diagnóstico desvinculado de la autoevaluación, sino que complementa y enriquece el análisis realizado por el propio centro."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación externa analiza la coherencia entre el diagnóstico interno, los indicadores disponibles y las evidencias recogidas, sin establecer una prioridad de unos datos sobre otros. porque la evaluación externa no desarrolla un diagnóstico desvinculado de la autoevaluación, sino que complementa y enriquece el análisis realizado por el propio centro."
+   },
+   {
+    "id": "ecp-4-26",
+    "pregunta": "¿Qué beneficios se atribuyen a la integración de evaluación interna y externa?",
+    "opciones": [
+     "Una mayor homogeneidad de los procedimientos evaluativos y una reducción de la necesidad de participación de la comunidad educativa.",
+     "Una delimitación de las responsabilidades evaluadoras que permite separar la supervisión administrativa de los procesos internos de mejora.",
+     "Una mayor legitimidad del proceso, más rigor y objetividad en la evaluación y el fortalecimiento de la confianza y la corresponsabilidad."
+    ],
+    "feedback": [
+     "porque los modelos mixtos reconocen y valoran la participación y el trabajo reflexivo de los centros, en lugar de reducirlos.",
+     "porque el modelo mixto busca articular la supervisión y los procesos internos de mejora, no mantenerlos separados.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque los modelos mixtos reconocen y valoran la participación y el trabajo reflexivo de los centros, en lugar de reducirlos. porque el modelo mixto busca articular la supervisión y los procesos internos de mejora, no mantenerlos separados."
+   },
+   {
+    "id": "ecp-4-27",
+    "pregunta": "¿Qué principios fundamentan el modelo de evaluación de centros desarrollado por la Inspección de Educación de Aragón?",
+    "opciones": [
+     "La consideración del ámbito relacional, los recursos, la organización y funcionamiento del centro y la planificación del proceso de enseñanza-aprendizaje.",
+     "El respeto a la autonomía de los centros, la participación de la comunidad educativa, la adecuación al contexto y la orientación a la mejora.",
+     "La independencia del evaluador, la homogeneidad de criterios, la transparencia y rendición de cuentas y el enfoque de mejora."
+    ],
+    "feedback": [
+     "porque recoge algunos de los ámbitos de la realidad escolar que se analizan en el modelo de Aragón, pero no los principios que lo fundamentan.",
+     "",
+     "porque recoge características generales de la evaluación externa, no los principios específicos del modelo de Aragón."
+    ],
+    "correcta": 1,
+    "explicacion": "porque recoge algunos de los ámbitos de la realidad escolar que se analizan en el modelo de Aragón, pero no los principios que lo fundamentan. porque recoge características generales de la evaluación externa, no los principios específicos del modelo de Aragón."
+   },
+   {
+    "id": "ecp-4-28",
+    "pregunta": "¿Qué características debe reunir un plan de mejora eficaz?",
+    "opciones": [
+     "Pocos objetivos y realistas, acciones concretas con responsables asignados, una temporalización adecuada e indicadores para valorar su impacto.",
+     "Objetivos amplios que abarquen todos los ámbitos del centro, actuaciones comunes para el profesorado y una evaluación final de resultados.",
+     "Acciones derivadas de los resultados de la evaluación externa, con una planificación temporal y un seguimiento a cargo de la Inspección Educativa."
+    ],
+    "feedback": [
+     "",
+     "porque un plan de mejora eficaz debe establecer pocos objetivos, bien definidos y realistas, vinculados a acciones concretas y acompañados de indicadores de seguimiento y evaluación.",
+     "porque los planes de mejora parten del diagnóstico del centro, mientras que la Inspección Educativa desempeña funciones de seguimiento y asesoramiento."
+    ],
+    "correcta": 0,
+    "explicacion": "porque un plan de mejora eficaz debe establecer pocos objetivos, bien definidos y realistas, vinculados a acciones concretas y acompañados de indicadores de seguimiento y evaluación. porque los planes de mejora parten del diagnóstico del centro, mientras que la Inspección Educativa desempeña funciones de seguimiento y asesoramiento."
+   },
+   {
+    "id": "ecp-4-29",
+    "pregunta": "¿Qué puede ocurrir cuando la Inspección Educativa no reconoce o valora el análisis realizado por el centro en su autoevaluación?",
+    "opciones": [
+     "Que aumente la carga de trabajo de los equipos docentes y directivos por la necesidad de recopilar nuevas evidencias.",
+     "Que el profesorado muestre resistencias al cambio al tener que revisar y cuestionar sus prácticas habituales.",
+     "Que se produzca una desalineación entre evaluación interna y externa, generando desconfianza y desmotivación."
+    ],
+    "feedback": [
+     "porque la sobrecarga de trabajo se relaciona con la falta de tiempo y recursos para desarrollar procesos rigurosos de autoevaluación, no con la falta de reconocimiento del análisis realizado por el centro.",
+     "porque las resistencias al cambio se relacionan con la revisión de prácticas y rutinas profesionales, mientras que la situación descrita corresponde a la desalineación entre evaluación interna y externa.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la sobrecarga de trabajo se relaciona con la falta de tiempo y recursos para desarrollar procesos rigurosos de autoevaluación, no con la falta de reconocimiento del análisis realizado por el centro. porque las resistencias al cambio se relacionan con la revisión de prácticas y rutinas profesionales, mientras que la situación descrita corresponde a la desalineación entre evaluación interna y externa."
+   },
+   {
+    "id": "ecp-4-30",
+    "pregunta": "¿Qué oportunidades ofrecen los modelos combinados de evaluación interna y externa para la mejora de los centros?",
+    "opciones": [
+     "Fortalecer la capacidad de supervisión de la Administración, reduciendo la responsabilidad de los centros en el desarrollo de la evaluación.",
+     "Reforzar la autonomía escolar, favorecer la profesionalización docente y promover una relación de confianza y corresponsabilidad con la Administración.",
+     "Aumentar la sistematicidad en la recogida de información, priorizando la elaboración de diagnósticos institucionales sobre la implementación de actuaciones."
+    ],
+    "feedback": [
+     "porque los modelos combinados reconocen al centro como sujeto activo de su evaluación, fortaleciendo su autonomía y responsabilidad institucional.",
+     "",
+     "porque estos modelos buscan que los diagnósticos se traduzcan en actuaciones concretas de mejora, no que la evaluación se limite a recopilar información."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los modelos combinados reconocen al centro como sujeto activo de su evaluación, fortaleciendo su autonomía y responsabilidad institucional. porque estos modelos buscan que los diagnósticos se traduzcan en actuaciones concretas de mejora, no que la evaluación se limite a recopilar información."
+   }
+  ],
+  "Tema 5": [
+   {
+    "id": "ecp-5-1",
+    "pregunta": "¿Qué distingue a la autoevaluación institucional de otras formas de evaluación interna?",
+    "opciones": [
+     "Que analiza el funcionamiento del centro a partir de evaluaciones específicas de sus distintos ámbitos, cuyos resultados se consideran de manera individual.",
+     "Que aborda el funcionamiento del centro de manera integrada, mediante criterios explícitos y compartidos.",
+     "Que utiliza procedimientos de recogida de información desarrollados por los miembros del centro."
+    ],
+    "feedback": [
+     "porque la autoevaluación institucional adopta una perspectiva holística e integradora, considerando las interrelaciones entre las distintas dimensiones del centro.",
+     "",
+     "porque la participación de los miembros del centro también caracteriza a otras prácticas de evaluación interna y no constituye, por sí sola, el elemento diferenciador."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la autoevaluación institucional adopta una perspectiva holística e integradora, considerando las interrelaciones entre las distintas dimensiones del centro. porque la participación de los miembros del centro también caracteriza a otras prácticas de evaluación interna y no constituye, por sí sola, el elemento diferenciador."
+   },
+   {
+    "id": "ecp-5-2",
+    "pregunta": "¿Qué implica adoptar una perspectiva holística en la autoevaluación institucional?",
+    "opciones": [
+     "Analizar el funcionamiento global del centro a partir de la suma de los resultados obtenidos en sus distintos ámbitos.",
+     "Examinar prioritariamente los procesos pedagógicos y organizativos que determinan los resultados educativos.",
+     "Comprender el centro como una organización compleja cuyas dimensiones y actores están interrelacionados."
+    ],
+    "feedback": [
+     "porque la perspectiva holística considera las interrelaciones entre las distintas dimensiones y actores del centro, cuyos resultados no pueden interpretarse aisladamente.",
+     "porque la autoevaluación institucional también contempla los ámbitos relacional, cultural y contextual, sin limitarse a los procesos pedagógicos y organizativos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la perspectiva holística considera las interrelaciones entre las distintas dimensiones y actores del centro, cuyos resultados no pueden interpretarse aisladamente. porque la autoevaluación institucional también contempla los ámbitos relacional, cultural y contextual, sin limitarse a los procesos pedagógicos y organizativos."
+   },
+   {
+    "id": "ecp-5-3",
+    "pregunta": "¿Cuál es la finalidad principal de la autoevaluación institucional?",
+    "opciones": [
+     "Generar conocimiento organizativo que permita establecer prioridades, tomar decisiones y diseñar planes de mejora sostenidos.",
+     "Recoger información sistemática sobre el funcionamiento del centro para documentar los resultados de su evaluación.",
+     "Analizar las prácticas educativas para determinar su adecuación a los criterios establecidos en el proyecto educativo."
+    ],
+    "feedback": [
+     "",
+     "porque la documentación sistemática forma parte del proceso, pero su finalidad es orientar la toma de decisiones y la mejora institucional.",
+     "porque la autoevaluación no se limita a comprobar la adecuación a unos criterios, sino que busca comprender el funcionamiento del centro y promover su mejora."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la documentación sistemática forma parte del proceso, pero su finalidad es orientar la toma de decisiones y la mejora institucional. porque la autoevaluación no se limita a comprobar la adecuación a unos criterios, sino que busca comprender el funcionamiento del centro y promover su mejora."
+   },
+   {
+    "id": "ecp-5-4",
+    "pregunta": "¿Dónde reside principalmente el valor formativo de la autoevaluación institucional?",
+    "opciones": [
+     "En la elaboración sistemática de diagnósticos que permitan conocer la evolución del funcionamiento del centro.",
+     "En su capacidad para generar reflexión profesional, diálogo pedagógico y aprendizaje organizativo.",
+     "En la integración de los resultados de la evaluación en los documentos de planificación institucional."
+    ],
+    "feedback": [
+     "porque el valor formativo no reside únicamente en los diagnósticos, sino también en los procesos de reflexión y aprendizaje que estos generan.",
+     "",
+     "porque la integración de los resultados en la planificación es importante, pero no expresa por sí misma la dimensión formativa de la autoevaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el valor formativo no reside únicamente en los diagnósticos, sino también en los procesos de reflexión y aprendizaje que estos generan. porque la integración de los resultados en la planificación es importante, pero no expresa por sí misma la dimensión formativa de la autoevaluación."
+   },
+   {
+    "id": "ecp-5-5",
+    "pregunta": "¿Qué diferencia existe entre la autoevaluación global y la parcial según su alcance?",
+    "opciones": [
+     "La global utiliza instrumentos estructurados y procedimientos sistemáticos, mientras que la parcial se apoya en intercambios y reflexiones compartidas.",
+     "La global se integra en la planificación anual, mientras que la parcial se vincula principalmente a procesos estratégicos plurianuales.",
+     "La global analiza el centro de forma integrada, mientras que la parcial se centra en ámbitos específicos considerados prioritarios."
+    ],
+    "feedback": [
+     "porque estas características corresponden al grado de formalización de la autoevaluación, no a su alcance.",
+     "porque la autoevaluación global se vincula a procesos estratégicos plurianuales, mientras que la parcial facilita su integración en la Programación General Anual.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque estas características corresponden al grado de formalización de la autoevaluación, no a su alcance. porque la autoevaluación global se vincula a procesos estratégicos plurianuales, mientras que la parcial facilita su integración en la Programación General Anual."
+   },
+   {
+    "id": "ecp-5-6",
+    "pregunta": "¿Qué distingue la autoevaluación formal de la informal?",
+    "opciones": [
+     "La formal utiliza instrumentos estructurados y procedimientos sistemáticos, mientras que la informal se apoya en intercambios y reflexiones compartidas.",
+     "La formal se orienta principalmente al cumplimiento administrativo, mientras que la informal se dirige al desarrollo profesional del profesorado.",
+     "La formal se desarrolla mediante evaluaciones globales del centro, mientras que la informal se centra en ámbitos específicos de mejora."
+    ],
+    "feedback": [
+     "",
+     "porque la distinción entre orientación al control y orientación a la mejora constituye otro criterio de clasificación, diferente del grado de formalización.",
+     "porque la evaluación global y la parcial se diferencian por su alcance, no por el carácter formal o informal de sus procedimientos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la distinción entre orientación al control y orientación a la mejora constituye otro criterio de clasificación, diferente del grado de formalización. porque la evaluación global y la parcial se diferencian por su alcance, no por el carácter formal o informal de sus procedimientos."
+   },
+   {
+    "id": "ecp-5-7",
+    "pregunta": "¿Qué diferencia existe entre la autoevaluación dirigida y la participativa?",
+    "opciones": [
+     "La dirigida se apoya principalmente en la participación del profesorado, mientras que la participativa concede mayor protagonismo al alumnado y las familias.",
+     "La dirigida está liderada principalmente por el equipo directivo, mientras que la participativa implica activamente a profesorado, alumnado y familias.",
+     "La dirigida utiliza instrumentos estructurados, mientras que la participativa se basa principalmente en debates y reflexiones compartidas."
+    ],
+    "feedback": [
+     "porque la autoevaluación dirigida se caracteriza por el liderazgo del equipo directivo, mientras que la participativa implica activamente al profesorado, alumnado y familias, sin establecer esa prioridad.",
+     "",
+     "porque la utilización de instrumentos estructurados o de intercambios profesionales responde al criterio de formalización, no al de participación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la autoevaluación dirigida se caracteriza por el liderazgo del equipo directivo, mientras que la participativa implica activamente al profesorado, alumnado y familias, sin establecer esa prioridad. porque la utilización de instrumentos estructurados o de intercambios profesionales responde al criterio de formalización, no al de participación."
+   },
+   {
+    "id": "ecp-5-8",
+    "pregunta": "¿Qué diferencia existe entre una autoevaluación centrada en el control y otra orientada a la mejora?",
+    "opciones": [
+     "La primera utiliza criterios establecidos por la Administración, mientras que la segunda se desarrolla sin procedimientos previamente definidos.",
+     "La primera se centra en comprobar el funcionamiento organizativo del centro, mientras que la segunda prioriza la evaluación de las prácticas docentes.",
+     "La primera responde a exigencias administrativas de rendición de cuentas, mientras que la segunda se concibe como una herramienta de aprendizaje institucional."
+    ],
+    "feedback": [
+     "porque la autoevaluación orientada a la mejora también puede utilizar criterios explícitos y procedimientos sistemáticos. La diferencia reside en la finalidad de la evaluación.",
+     "porque la distinción entre ambas orientaciones no depende de los ámbitos evaluados, sino de si la evaluación responde a exigencias de control o se utiliza para promover la mejora institucional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la autoevaluación orientada a la mejora también puede utilizar criterios explícitos y procedimientos sistemáticos. La diferencia reside en la finalidad de la evaluación. porque la distinción entre ambas orientaciones no depende de los ámbitos evaluados, sino de si la evaluación responde a exigencias de control o se utiliza para promover la mejora institucional."
+   },
+   {
+    "id": "ecp-5-9",
+    "pregunta": "¿Qué tres aspectos debe explicitar la planificación compartida de la autoevaluación institucional?",
+    "opciones": [
+     "La definición de qué se va a evaluar, con qué finalidad y quiénes participarán en el proceso.",
+     "La selección de los instrumentos de evaluación, los indicadores de resultados y las medidas que se aplicarán.",
+     "La identificación de los problemas del centro, la distribución de responsabilidades y la valoración de los resultados obtenidos."
+    ],
+    "feedback": [
+     "",
+     "porque la planificación compartida exige explicitar previamente el objeto, la finalidad y los participantes, sin reducirse a la selección de instrumentos e indicadores.",
+     "porque la planificación compartida debe definir el objeto, la finalidad y los participantes desde el inicio del proceso, no centrarse en la identificación de problemas y la valoración de resultados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la planificación compartida exige explicitar previamente el objeto, la finalidad y los participantes, sin reducirse a la selección de instrumentos e indicadores. porque la planificación compartida debe definir el objeto, la finalidad y los participantes desde el inicio del proceso, no centrarse en la identificación de problemas y la valoración de resultados."
+   },
+   {
+    "id": "ecp-5-10",
+    "pregunta": "¿Por qué es importante focalizar y priorizar determinados ámbitos en la autoevaluación institucional?",
+    "opciones": [
+     "Porque permite centrar la evaluación en los resultados académicos y organizativos que pueden medirse mediante indicadores.",
+     "Porque evita diagnósticos superficiales y permite concentrar el análisis en los ámbitos clave del funcionamiento del centro.",
+     "Porque facilita la aplicación de procedimientos homogéneos que permitan comparar los resultados obtenidos entre centros."
+    ],
+    "feedback": [
+     "porque la priorización no supone limitar la evaluación a resultados cuantificables, sino seleccionar ámbitos relevantes para analizarlos con mayor profundidad.",
+     "",
+     "porque la focalización responde a la necesidad de evitar diagnósticos superficiales, no a establecer comparaciones homogéneas entre instituciones."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la priorización no supone limitar la evaluación a resultados cuantificables, sino seleccionar ámbitos relevantes para analizarlos con mayor profundidad. porque la focalización responde a la necesidad de evitar diagnósticos superficiales, no a establecer comparaciones homogéneas entre instituciones."
+   },
+   {
+    "id": "ecp-5-11",
+    "pregunta": "¿Qué aporta la triangulación metodológica a los procesos de autoevaluación institucional?",
+    "opciones": [
+     "Facilita la aplicación de procedimientos comunes para obtener resultados comparables entre diferentes centros educativos.",
+     "Permite dar prioridad a los indicadores cuantitativos y recurrir a otras fuentes cuando los resultados no son concluyentes.",
+     "Reduce los sesgos interpretativos mediante la combinación de diferentes fuentes, métodos y perspectivas."
+    ],
+    "feedback": [
+     "porque la triangulación se orienta al contraste de información desde diferentes fuentes y perspectivas, no a homogeneizar los procedimientos entre centros.",
+     "porque la triangulación no establece una jerarquía entre los métodos, sino que propone combinar diferentes fuentes y procedimientos de análisis.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la triangulación se orienta al contraste de información desde diferentes fuentes y perspectivas, no a homogeneizar los procedimientos entre centros. porque la triangulación no establece una jerarquía entre los métodos, sino que propone combinar diferentes fuentes y procedimientos de análisis."
+   },
+   {
+    "id": "ecp-5-12",
+    "pregunta": "¿Qué factor se considera más determinante para la continuidad de los procesos de autoevaluación institucional?",
+    "opciones": [
+     "La utilización real y visible de los resultados, de modo que el profesorado compruebe su traducción en decisiones concretas.",
+     "La incorporación de los procedimientos de autoevaluación a los documentos oficiales de planificación y organización del centro.",
+     "La implicación del equipo directivo en la coordinación del proceso y en la distribución de las tareas de evaluación."
+    ],
+    "feedback": [
+     "",
+     "porque la institucionalización del proceso favorece su sostenibilidad, pero la utilización real y visible de los resultados es el factor que más influye en su continuidad.",
+     "porque el liderazgo distribuido favorece la sostenibilidad del proceso, pero la utilización real y visible de los resultados es el factor que más influye en su continuidad."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la institucionalización del proceso favorece su sostenibilidad, pero la utilización real y visible de los resultados es el factor que más influye en su continuidad. porque el liderazgo distribuido favorece la sostenibilidad del proceso, pero la utilización real y visible de los resultados es el factor que más influye en su continuidad."
+   },
+   {
+    "id": "ecp-5-13",
+    "pregunta": "¿Por qué es importante el liderazgo distribuido en la autoevaluación institucional?",
+    "opciones": [
+     "Porque facilita que el equipo directivo distribuya las tareas de evaluación entre el profesorado, manteniendo la toma de decisiones sobre el proceso.",
+     "Porque favorece el reparto de responsabilidades y evita que la continuidad del proceso dependa de iniciativas individuales.",
+     "Porque facilita la aplicación de procedimientos comunes de evaluación en los diferentes equipos y ámbitos del centro."
+    ],
+    "feedback": [
+     "porque el liderazgo distribuido implica compartir responsabilidades, no limitar la participación del profesorado a ejecutar tareas decididas por el equipo directivo.",
+     "",
+     "porque su finalidad principal es repartir responsabilidades y evitar la fragilidad del proceso, no uniformar los procedimientos de evaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el liderazgo distribuido implica compartir responsabilidades, no limitar la participación del profesorado a ejecutar tareas decididas por el equipo directivo. porque su finalidad principal es repartir responsabilidades y evitar la fragilidad del proceso, no uniformar los procedimientos de evaluación."
+   },
+   {
+    "id": "ecp-5-14",
+    "pregunta": "¿Qué diferencia establecen Carvalho y Folgado (2024) entre participación genuina y mera colaboración?",
+    "opciones": [
+     "La participación genuina consiste en intervenir en el análisis de información, mientras que la colaboración se centra en compartir experiencias profesionales.",
+     "La participación genuina se basa en el intercambio de opiniones, mientras que la mera colaboración consiste en asumir tareas concretas del proceso evaluador.",
+     "La participación genuina implica intervenir en la toma de decisiones, mientras que la mera colaboración se limita a ejecutar decisiones ajenas."
+    ],
+    "feedback": [
+     "porque la distinción no se establece entre analizar información y compartir experiencias, sino entre participar en las decisiones y ejecutar las adoptadas por otros.",
+     "porque la diferencia fundamental no reside en el intercambio de opiniones o la realización de tareas, sino en la participación efectiva en la toma de decisiones.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la distinción no se establece entre analizar información y compartir experiencias, sino entre participar en las decisiones y ejecutar las adoptadas por otros. porque la diferencia fundamental no reside en el intercambio de opiniones o la realización de tareas, sino en la participación efectiva en la toma de decisiones."
+   },
+   {
+    "id": "ecp-5-15",
+    "pregunta": "¿Qué planteamiento defiende MacBeath (1999) respecto a la autoevaluación de los centros educativos?",
+    "opciones": [
+     "Que las escuelas deben analizar su propia realidad y desarrollar procesos democráticos de autoevaluación útiles para la mejora.",
+     "Que la autoevaluación debe apoyarse en sistemas integrados de indicadores que permitan comparar los resultados con las medias nacionales.",
+     "Que los centros deben organizar su autoevaluación mediante un sistema de áreas e indicadores flexibles adaptados a su contexto escolar."
+    ],
+    "feedback": [
+     "",
+     "porque el uso de instrumentos integrados e informes comparativos con medias nacionales caracteriza al proyecto ZEBO desarrollado en Países Bajos.",
+     "porque estas características corresponden al modelo italiano ISSEMod, que utiliza áreas e indicadores flexibles adaptados al contexto escolar."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el uso de instrumentos integrados e informes comparativos con medias nacionales caracteriza al proyecto ZEBO desarrollado en Países Bajos. porque estas características corresponden al modelo italiano ISSEMod, que utiliza áreas e indicadores flexibles adaptados al contexto escolar."
+   },
+   {
+    "id": "ecp-5-16",
+    "pregunta": "¿Qué caracteriza al proyecto ZEBO-Instrumentation desarrollado en Países Bajos?",
+    "opciones": [
+     "La utilización de áreas e indicadores flexibles organizados en torno al contexto, los resultados y los procesos educativos.",
+     "La integración de sistemas de seguimiento del alumnado, análisis curricular e indicadores de proceso, con informes comparativos.",
+     "La aplicación de un marco de autoevaluación que analiza el liderazgo, la enseñanza, la inclusión y la convivencia escolar."
+    ],
+    "feedback": [
+     "porque estos elementos caracterizan al modelo ISSEMod desarrollado en la región italiana de Toscana.",
+     "",
+     "porque estos ámbitos se recogen en el marco escocés How Good Is Our School?"
+    ],
+    "correcta": 1,
+    "explicacion": "porque estos elementos caracterizan al modelo ISSEMod desarrollado en la región italiana de Toscana. porque estos ámbitos se recogen en el marco escocés How Good Is Our School?"
+   },
+   {
+    "id": "ecp-5-17",
+    "pregunta": "¿Qué caracteriza al modelo ISSEMod desarrollado en la región italiana de Toscana?",
+    "opciones": [
+     "La utilización de informes comparativos con medias nacionales para orientar la reflexión y preparar las visitas de inspección.",
+     "La integración de la autoevaluación en la planificación escolar mediante un marco centrado en el liderazgo y la calidad educativa.",
+     "La utilización de áreas e indicadores flexibles sobre contexto, resultados y procesos, adaptables a las características de los centros."
+    ],
+    "feedback": [
+     "porque los informes comparativos con medias nacionales son una característica del proyecto ZEBO-Instrumentation de Países Bajos.",
+     "porque la integración continua de la autoevaluación en la planificación escolar es característica del enfoque School Self-Evaluation.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque los informes comparativos con medias nacionales son una característica del proyecto ZEBO-Instrumentation de Países Bajos. porque la integración continua de la autoevaluación en la planificación escolar es característica del enfoque School Self-Evaluation."
+   },
+   {
+    "id": "ecp-5-18",
+    "pregunta": "¿Qué ámbitos permite analizar el marco escocés How Good Is Our School?",
+    "opciones": [
+     "El liderazgo, la calidad de la enseñanza, la inclusión, la convivencia y los resultados del alumnado.",
+     "El contexto, los resultados y los procesos mediante un sistema flexible de áreas e indicadores de evaluación.",
+     "El seguimiento del alumnado, el desarrollo curricular y los indicadores de proceso mediante instrumentos integrados."
+    ],
+    "feedback": [
+     "",
+     "porque esta estructura corresponde al modelo ISSEMod de Toscana.",
+     "porque estos elementos forman parte del proyecto ZEBO-Instrumentation de Países Bajos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta estructura corresponde al modelo ISSEMod de Toscana. porque estos elementos forman parte del proyecto ZEBO-Instrumentation de Países Bajos."
+   },
+   {
+    "id": "ecp-5-19",
+    "pregunta": "¿Qué consideración debe tenerse en cuenta al trasladar modelos de autoevaluación entre diferentes contextos educativos?",
+    "opciones": [
+     "Que los modelos con resultados favorables pueden aplicarse en otros centros manteniendo sus criterios y procedimientos originales.",
+     "Que no es posible trasladarlos directamente, sino que deben seleccionarse y adaptarse a las características de cada realidad educativa.",
+     "Que las diferencias entre contextos impiden utilizar experiencias de otros sistemas como referencia para la mejora institucional."
+    ],
+    "feedback": [
+     "porque las diferencias entre realidades educativas requieren adaptar los modelos, en lugar de reproducirlos directamente.",
+     "",
+     "porque las experiencias de otros sistemas pueden servir como referencia, siempre que se busque el modelo más adecuado para cada contexto."
+    ],
+    "correcta": 1,
+    "explicacion": "porque las diferencias entre realidades educativas requieren adaptar los modelos, en lugar de reproducirlos directamente. porque las experiencias de otros sistemas pueden servir como referencia, siempre que se busque el modelo más adecuado para cada contexto."
+   },
+   {
+    "id": "ecp-5-20",
+    "pregunta": "¿Qué rasgo distingue el desarrollo de la autoevaluación institucional en el sistema educativo español?",
+    "opciones": [
+     "La aplicación de un marco estatal común que establece los procedimientos de autoevaluación utilizados por las comunidades autónomas.",
+     "El desarrollo de un modelo de autoevaluación institucional basado principalmente en las iniciativas de los propios centros y sus necesidades de mejora.",
+     "La existencia de una pluralidad de enfoques autonómicos, condicionados por la descentralización educativa y las distintas culturas profesionales."
+    ],
+    "feedback": [
+     "porque no existe un único marco estatal de autoevaluación, sino diferentes modelos desarrollados en el ámbito autonómico.",
+     "porque la autoevaluación institucional en España también se desarrolla a través de modelos y políticas impulsados por las administraciones educativas autonómicas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque no existe un único marco estatal de autoevaluación, sino diferentes modelos desarrollados en el ámbito autonómico. porque la autoevaluación institucional en España también se desarrolla a través de modelos y políticas impulsados por las administraciones educativas autonómicas."
+   },
+   {
+    "id": "ecp-5-21",
+    "pregunta": "¿Qué caracteriza al modelo de evaluación interna desarrollado en Castilla-La Mancha tras la Orden 134/2023?",
+    "opciones": [
+     "La posibilidad de que los centros seleccionen los aspectos que desean evaluar mediante una guía orientativa que respeta su autonomía.",
+     "La utilización de rúbricas con cuatro niveles de desarrollo, organizadas en ámbitos relacionados con la pedagogía y el liderazgo.",
+     "La combinación de procesos de autoevaluación interna con indicadores contextuales y acompañamiento externo de los centros."
+    ],
+    "feedback": [
+     "",
+     "porque esta descripción corresponde al Instrumento de Autoevaluación de Centros desarrollado en Islas Baleares.",
+     "porque estas características se atribuyen al modelo del ISEI-IVEI desarrollado en el País Vasco."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta descripción corresponde al Instrumento de Autoevaluación de Centros desarrollado en Islas Baleares. porque estas características se atribuyen al modelo del ISEI-IVEI desarrollado en el País Vasco."
+   },
+   {
+    "id": "ecp-5-22",
+    "pregunta": "¿Qué caracteriza al modelo de autoevaluación institucional desarrollado en Islas Baleares?",
+    "opciones": [
+     "La selección autónoma de los aspectos que se desean evaluar mediante una guía orientativa que respeta las características de cada centro.",
+     "La utilización de un instrumento estructurado en ámbitos, dimensiones y rúbricas, combinado con la participación de la comunidad educativa y la validación externa.",
+     "La aplicación de un sistema flexible de áreas e indicadores sobre contexto, resultados y procesos, acompañado de preguntas orientadoras."
+    ],
+    "feedback": [
+     "porque la selección de aspectos mediante una guía orientativa caracteriza al modelo de Castilla-La Mancha.",
+     "",
+     "porque el sistema flexible de áreas e indicadores y las preguntas orientadoras son características del modelo italiano ISSEMod."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la selección de aspectos mediante una guía orientativa caracteriza al modelo de Castilla-La Mancha. porque el sistema flexible de áreas e indicadores y las preguntas orientadoras son características del modelo italiano ISSEMod."
+   },
+   {
+    "id": "ecp-5-23",
+    "pregunta": "¿Cuál es la finalidad del instrumento ACADI en la autoevaluación de los centros educativos?",
+    "opciones": [
+     "Analizar las prácticas docentes mediante la observación entre iguales y la revisión compartida de los criterios de evaluación.",
+     "Valorar el funcionamiento de los centros mediante indicadores de resultados académicos y procedimientos de seguimiento del alumnado.",
+     "Evaluar la respuesta educativa a la diversidad desde una perspectiva inclusiva, identificando fortalezas y debilidades para orientar planes de mejora."
+    ],
+    "feedback": [
+     "porque la observación entre iguales y la revisión compartida de criterios son estrategias de mejora de la práctica docente, pero no definen la finalidad específica del ACADI.",
+     "porque el ACADI contempla cuatro ámbitos —contexto escolar, recursos, proceso educativo y resultados— desde una perspectiva inclusiva, sin reducirse al rendimiento académico.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la observación entre iguales y la revisión compartida de criterios son estrategias de mejora de la práctica docente, pero no definen la finalidad específica del ACADI. porque el ACADI contempla cuatro ámbitos —contexto escolar, recursos, proceso educativo y resultados— desde una perspectiva inclusiva, sin reducirse al rendimiento académico."
+   },
+   {
+    "id": "ecp-5-24",
+    "pregunta": "¿Qué supone disponer de una autonomía real para desarrollar procesos de autoevaluación institucional?",
+    "opciones": [
+     "Tener capacidad efectiva para priorizar ámbitos de mejora, introducir cambios metodológicos y reorganizar tiempos y espacios.",
+     "Incorporar los resultados de la autoevaluación a los documentos institucionales, manteniendo las decisiones organizativas previamente establecidas.",
+     "Desarrollar los procedimientos de evaluación con independencia de los mecanismos de supervisión y asesoramiento de la Administración."
+    ],
+    "feedback": [
+     "",
+     "porque la autonomía real requiere capacidad efectiva para tomar decisiones sobre aspectos sustantivos del funcionamiento del centro, no únicamente documentar los resultados.",
+     "porque la autonomía institucional es compatible con el acompañamiento y la supervisión externa, siempre que se respete la capacidad de decisión del centro."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la autonomía real requiere capacidad efectiva para tomar decisiones sobre aspectos sustantivos del funcionamiento del centro, no únicamente documentar los resultados. porque la autonomía institucional es compatible con el acompañamiento y la supervisión externa, siempre que se respete la capacidad de decisión del centro."
+   },
+   {
+    "id": "ecp-5-25",
+    "pregunta": "¿Por qué es importante generar una cultura de confianza y seguridad psicológica en los procesos de autoevaluación?",
+    "opciones": [
+     "Porque permite establecer procedimientos compartidos que garantizan una interpretación uniforme de los resultados de la evaluación.",
+     "Porque favorece que el profesorado analice sus prácticas y entienda los errores como oportunidades de aprendizaje y mejora.",
+     "Porque facilita que cada docente valore individualmente su práctica, evitando las tensiones que pueden surgir en el trabajo colectivo."
+    ],
+    "feedback": [
+     "porque la confianza y la seguridad psicológica buscan favorecer una reflexión honesta y formativa, no garantizar interpretaciones uniformes.",
+     "",
+     "porque la autoevaluación requiere superar el individualismo profesional y promover culturas colaborativas basadas en la reflexión compartida."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la confianza y la seguridad psicológica buscan favorecer una reflexión honesta y formativa, no garantizar interpretaciones uniformes. porque la autoevaluación requiere superar el individualismo profesional y promover culturas colaborativas basadas en la reflexión compartida."
+   },
+   {
+    "id": "ecp-5-26",
+    "pregunta": "Según Gairín e Ion (2021), ¿qué debe fundamentar las prácticas de autoevaluación institucional?",
+    "opciones": [
+     "La experiencia acumulada por el profesorado, utilizada como principal referencia para valorar el funcionamiento del centro.",
+     "La aplicación de criterios e indicadores comunes que permitan obtener valoraciones homogéneas del funcionamiento del centro.",
+     "La reflexión y el análisis de evidencias que permitan superar las valoraciones basadas en la intuición."
+    ],
+    "feedback": [
+     "porque la autoevaluación debe superar las valoraciones basadas principalmente en la experiencia o la intuición, apoyándose en la reflexión y en evidencias.",
+     "porque el uso de criterios e indicadores no garantiza por sí solo una autoevaluación fundamentada en la reflexión y las evidencias.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la autoevaluación debe superar las valoraciones basadas principalmente en la experiencia o la intuición, apoyándose en la reflexión y en evidencias. porque el uso de criterios e indicadores no garantiza por sí solo una autoevaluación fundamentada en la reflexión y las evidencias."
+   },
+   {
+    "id": "ecp-5-27",
+    "pregunta": "¿Qué relación debe establecerse entre la Administración Educativa y los centros para favorecer una autoevaluación institucional significativa?",
+    "opciones": [
+     "Una relación de acompañamiento y apoyo que genere confianza y evite utilizar los resultados internos como instrumentos de control directo.",
+     "Una relación basada en la supervisión de los resultados internos para garantizar que las decisiones de mejora respondan a los criterios administrativos.",
+     "Una relación en la que la Administración establezca los procedimientos de evaluación y los centros asuman su desarrollo de manera autónoma."
+    ],
+    "feedback": [
+     "",
+     "porque la utilización de los resultados internos como mecanismos de control puede generar estrategias defensivas y debilitar la confianza necesaria para la reflexión.",
+     "porque el acompañamiento de la Administración debe respetar la autonomía de los centros y favorecer procesos contextualizados de evaluación y mejora."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la utilización de los resultados internos como mecanismos de control puede generar estrategias defensivas y debilitar la confianza necesaria para la reflexión. porque el acompañamiento de la Administración debe respetar la autonomía de los centros y favorecer procesos contextualizados de evaluación y mejora."
+   },
+   {
+    "id": "ecp-5-28",
+    "pregunta": "¿Qué limitación se ha identificado respecto al impacto de la autoevaluación institucional en las prácticas de aula?",
+    "opciones": [
+     "Que los procesos de autoevaluación se concentran en las prácticas docentes, dejando en segundo plano la planificación institucional del centro.",
+     "Que los diagnósticos y planes de mejora permanecen con frecuencia en el ámbito organizativo, sin generar cambios significativos en la enseñanza.",
+     "Que las actuaciones derivadas de la autoevaluación se centran en la atención a la diversidad, sin abordar suficientemente los aspectos organizativos."
+    ],
+    "feedback": [
+     "porque una de las dificultades identificadas es precisamente la escasa repercusión de los planes de mejora en las prácticas de aula.",
+     "",
+     "porque la atención a la diversidad es uno de los ámbitos en los que los planes de mejora no siempre llegan a producir cambios significativos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque una de las dificultades identificadas es precisamente la escasa repercusión de los planes de mejora en las prácticas de aula. porque la atención a la diversidad es uno de los ámbitos en los que los planes de mejora no siempre llegan a producir cambios significativos."
+   },
+   {
+    "id": "ecp-5-29",
+    "pregunta": "¿Qué riesgo plantea la capacidad desigual de los centros para desarrollar procesos de autoevaluación institucional?",
+    "opciones": [
+     "Que los centros con mayor autonomía desarrollen procedimientos diferentes, dificultando la aplicación de modelos comunes de evaluación.",
+     "Que las diferencias de recursos y liderazgo entre centros dificulten la comparación de los resultados obtenidos en sus procesos de autoevaluación.",
+     "Que la autoevaluación amplíe las brechas entre centros si aquellos que presentan mayores dificultades no reciben apoyos diferenciados."
+    ],
+    "feedback": [
+     "porque la desigualdad señalada se relaciona con las capacidades, recursos y condiciones de los centros para desarrollar procesos de mejora, no con la diversidad de procedimientos en sí misma.",
+     "porque el riesgo identificado es que las desigualdades entre centros se amplíen si no existen apoyos diferenciados, no la dificultad para comparar resultados.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la desigualdad señalada se relaciona con las capacidades, recursos y condiciones de los centros para desarrollar procesos de mejora, no con la diversidad de procedimientos en sí misma. porque el riesgo identificado es que las desigualdades entre centros se amplíen si no existen apoyos diferenciados, no la dificultad para comparar resultados."
+   },
+   {
+    "id": "ecp-5-30",
+    "pregunta": "¿Cómo se complementan la autoevaluación institucional y la evaluación externa en los modelos más equilibrados?",
+    "opciones": [
+     "La autoevaluación aporta conocimiento contextualizado del centro, mientras que la evaluación externa introduce contraste y garantiza estándares comunes.",
+     "La autoevaluación identifica las necesidades de mejora, mientras que la evaluación externa determina las actuaciones que deben desarrollar los centros.",
+     "La autoevaluación analiza los procesos internos de funcionamiento, mientras que la evaluación externa se centra en los resultados académicos."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación externa cumple funciones de contraste, supervisión y acompañamiento, sin sustituir la capacidad del centro para tomar decisiones de mejora.",
+     "porque la evaluación externa no se limita a analizar resultados académicos, sino que complementa el conocimiento generado por la autoevaluación institucional."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación externa cumple funciones de contraste, supervisión y acompañamiento, sin sustituir la capacidad del centro para tomar decisiones de mejora. porque la evaluación externa no se limita a analizar resultados académicos, sino que complementa el conocimiento generado por la autoevaluación institucional."
+   }
+  ],
+  "Tema 6": [
+   {
+    "id": "ecp-6-1",
+    "pregunta": "¿Cuál es la finalidad del programa MONITOR?",
+    "opciones": [
+     "Es la evaluación del profesorado y su práctica pedagógica",
+     "Trata de hacer un seguimiento de una titulación universitaria.",
+     "Determinar la valoración de una titulación a los 6 años, pudiendo extinguir la titulación si no se supera."
+    ],
+    "feedback": [
+     "porque lo que se detalla se refiere al programa DOCENTIA",
+     "",
+     "porque se detallan características del programa Acredita"
+    ],
+    "correcta": 1,
+    "explicacion": "porque lo que se detalla se refiere al programa DOCENTIA porque se detallan características del programa Acredita"
+   },
+   {
+    "id": "ecp-6-2",
+    "pregunta": "¿En qué consiste el programa DOCENTIA?",
+    "opciones": [
+     "En la acreditación institucional de un centro educativo.",
+     "Trata de hacer un seguimiento de una titulación universitaria.",
+     "Se refiere a la evaluación del profesorado desde sus indicadores y práctica."
+    ],
+    "feedback": [
+     "lo detallado se refiere al programa AUDIT.",
+     "porque esta respuesta se refiere al programa MONITOR.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "lo detallado se refiere al programa AUDIT. porque esta respuesta se refiere al programa MONITOR."
+   },
+   {
+    "id": "ecp-6-4",
+    "pregunta": "¿Cuál de estos programas se aplica para crear un título nuevo?",
+    "opciones": [
+     "VERIFICA",
+     "AUDIT",
+     "ACREDITA"
+    ],
+    "feedback": [
+     "",
+     "el AUDIT valora todo el sistema de un centro, no se aplica esa situación",
+     "En ACREDITA se renueva la acreditación de un título existente."
+    ],
+    "correcta": 0,
+    "explicacion": "el AUDIT valora todo el sistema de un centro, no se aplica esa situación En ACREDITA se renueva la acreditación de un título existente."
+   },
+   {
+    "id": "ecp-6-5",
+    "pregunta": "¿Cuándo se crea la Agencia Nacional de Evaluación de la Calidad y Acreditación (ANECA), que asume el papel principal en el aseguramiento de la calidad del sistema universitario español?",
+    "opciones": [
+     "En 2005",
+     "En 2002",
+     "En 2000"
+    ],
+    "feedback": [
+     "se ajustan y son adoptados los Estándares y Directrices para el Aseguramiento de la Calidad en el Espacio Europeo de Educación Superior (ESG).",
+     "",
+     "es el informe Bricall."
+    ],
+    "correcta": 1,
+    "explicacion": "se ajustan y son adoptados los Estándares y Directrices para el Aseguramiento de la Calidad en el Espacio Europeo de Educación Superior (ESG). es el informe Bricall."
+   },
+   {
+    "id": "ecp-6-6",
+    "pregunta": "¿Cuándo se ajustan y son adoptados los Estándares y Directrices para el Aseguramiento de la Calidad en el Espacio Europeo de Educación Superior (ESG)?",
+    "opciones": [
+     "En 2005",
+     "En 2002",
+     "En 2000"
+    ],
+    "feedback": [
+     "",
+     "Se crea la Agencia Nacional de Evaluación de la Calidad y Acreditación (ANECA)",
+     "Es el informe Bricall."
+    ],
+    "correcta": 0,
+    "explicacion": "Se crea la Agencia Nacional de Evaluación de la Calidad y Acreditación (ANECA) Es el informe Bricall."
+   },
+   {
+    "id": "ecp-6-7",
+    "pregunta": "¿Qué aspectos examina ANECA durante la evaluación de los títulos universitarios a través del programa VERIFICA?",
+    "opciones": [
+     "El plan de estudios, las metodologías docentes, los sistemas de evaluación, el profesorado y los resultados de aprendizaje previstos.",
+     "La acreditación previa de las titulaciones del centro y la certificación de su sistema interno de garantía de calidad.",
+     "La evaluación de la actividad docente del profesorado, considerando la planificación, el desarrollo y los resultados de la enseñanza."
+    ],
+    "feedback": [
+     "",
+     "porque estos aspectos se relacionan con la acreditación institucional de centros universitarios, no con la verificación de un título concreto.",
+     "porque la evaluación de la actividad docente del profesorado corresponde al programa DOCENTIA."
+    ],
+    "correcta": 0,
+    "explicacion": "porque estos aspectos se relacionan con la acreditación institucional de centros universitarios, no con la verificación de un título concreto. porque la evaluación de la actividad docente del profesorado corresponde al programa DOCENTIA."
+   },
+   {
+    "id": "ecp-6-8",
+    "pregunta": "¿En qué programa de ANECA se utilizan autoinformes del profesorado, encuestas del estudiantado e informes de responsables académicos para evaluar la actividad docente?",
+    "opciones": [
+     "ACREDITA",
+     "DOCENTIA",
+     "MONITOR"
+    ],
+    "feedback": [
+     "porque ACREDITA se centra en la renovación de la acreditación de los títulos universitarios oficiales, no en la evaluación individual de la actividad docente.",
+     "",
+     "porque MONITOR se centra en el seguimiento de la implantación y desarrollo de los títulos universitarios, no en la evaluación individual de la actividad docente."
+    ],
+    "correcta": 1,
+    "explicacion": "porque ACREDITA se centra en la renovación de la acreditación de los títulos universitarios oficiales, no en la evaluación individual de la actividad docente. porque MONITOR se centra en el seguimiento de la implantación y desarrollo de los títulos universitarios, no en la evaluación individual de la actividad docente."
+   },
+   {
+    "id": "ecp-6-9",
+    "pregunta": "Comprobar el grado de cumplimiento de las reformas y recomendaciones recibidas en VERIFICA y MONITOR, corresponde el programa:",
+    "opciones": [
+     "ACREDITA",
+     "DOCENTIA",
+     "AUDIT"
+    ],
+    "feedback": [
+     "",
+     "Se valora a los docentes.",
+     "Se valora un centro en particular (Facultad o Escuela)."
+    ],
+    "correcta": 0,
+    "explicacion": "Se valora a los docentes. Se valora un centro en particular (Facultad o Escuela)."
+   },
+   {
+    "id": "ecp-6-10",
+    "pregunta": "¿Qué programa de ANECA realiza el seguimiento de la implantación de un título universitario, comprobando su adecuación a los compromisos establecidos en VERIFICA?",
+    "opciones": [
+     "ACREDITA",
+     "DOCENTIA",
+     "MONITOR"
+    ],
+    "feedback": [
+     "porque ACREDITA se ocupa de la renovación de la acreditación de los títulos universitarios, mientras que MONITOR realiza el seguimiento de su implantación.",
+     "porque DOCENTIA se centra en la evaluación de la actividad docente del profesorado universitario, no en el seguimiento de los títulos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque ACREDITA se ocupa de la renovación de la acreditación de los títulos universitarios, mientras que MONITOR realiza el seguimiento de su implantación. porque DOCENTIA se centra en la evaluación de la actividad docente del profesorado universitario, no en el seguimiento de los títulos."
+   },
+   {
+    "id": "ecp-6-11",
+    "pregunta": "¿Cuál es la función principal del programa VERIFICA?",
+    "opciones": [
+     "Evaluar la actividad docente del profesorado universitario.",
+     "Realizar el seguimiento de las titulaciones que ya están implantadas.",
+     "Evaluar previamente el diseño y la viabilidad de nuevos títulos universitarios oficiales."
+    ],
+    "feedback": [
+     "La evaluación de la actividad docente del profesorado corresponde al programa DOCENTIA.",
+     "El seguimiento de las titulaciones ya implantadas corresponde a MONITOR.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "La evaluación de la actividad docente del profesorado corresponde al programa DOCENTIA. El seguimiento de las titulaciones ya implantadas corresponde a MONITOR."
+   },
+   {
+    "id": "ecp-6-12",
+    "pregunta": "¿Qué caracteriza principalmente al programa MONITOR?",
+    "opciones": [
+     "Evalúa el diseño académico de los títulos antes de su puesta en marcha.",
+     "Comprueba que las titulaciones se desarrollan conforme a lo aprobado inicialmente.",
+     "Evalúa los méritos investigadores de los profesores universitarios."
+    ],
+    "feedback": [
+     "Esta función corresponde a VERIFICA.",
+     "",
+     "La evaluación de los méritos del profesorado corresponde a PEP y ACADEMIA."
+    ],
+    "correcta": 1,
+    "explicacion": "Esta función corresponde a VERIFICA. La evaluación de los méritos del profesorado corresponde a PEP y ACADEMIA."
+   },
+   {
+    "id": "ecp-6-13",
+    "pregunta": "¿Cuál es el objetivo principal del programa ACREDITA?",
+    "opciones": [
+     "Renovar la acreditación de los títulos universitarios oficiales.",
+     "Diseñar los sistemas internos de garantía de calidad de los centros.",
+     "Evaluar la satisfacción del alumnado con sus profesores."
+    ],
+    "feedback": [
+     "",
+     "Esta función se relaciona principalmente con AUDIT.",
+     "ACREDITA analiza globalmente la calidad de las titulaciones y no exclusivamente la satisfacción con el profesorado."
+    ],
+    "correcta": 0,
+    "explicacion": "Esta función se relaciona principalmente con AUDIT. ACREDITA analiza globalmente la calidad de las titulaciones y no exclusivamente la satisfacción con el profesorado."
+   },
+   {
+    "id": "ecp-6-14",
+    "pregunta": "¿Qué programa se centra específicamente en evaluar la actividad docente del profesorado universitario?",
+    "opciones": [
+     "AUDIT.",
+     "DOCENTIA.",
+     "MONITOR."
+    ],
+    "feedback": [
+     "AUDIT se centra en los sistemas internos de garantía de calidad de los centros.",
+     "",
+     "MONITOR realiza el seguimiento de las titulaciones universitarias."
+    ],
+    "correcta": 1,
+    "explicacion": "AUDIT se centra en los sistemas internos de garantía de calidad de los centros. MONITOR realiza el seguimiento de las titulaciones universitarias."
+   },
+   {
+    "id": "ecp-6-15",
+    "pregunta": "¿Cuál es la finalidad principal del programa AUDIT?",
+    "opciones": [
+     "Evaluar individualmente los méritos investigadores de los docentes.",
+     "Renovar la acreditación de cada título universitario.",
+     "Diseñar, implementar y certificar los Sistemas Internos de Garantía de Calidad de los centros."
+    ],
+    "feedback": [
+     "Esta evaluación se relaciona con los programas PEP y ACADEMIA.",
+     "La renovación de la acreditación de los títulos corresponde a ACREDITA.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "Esta evaluación se relaciona con los programas PEP y ACADEMIA. La renovación de la acreditación de los títulos corresponde a ACREDITA."
+   },
+   {
+    "id": "ecp-6-16",
+    "pregunta": "¿Qué diferencia fundamental existe entre VERIFICA y MONITOR?",
+    "opciones": [
+     "VERIFICA evalúa el diseño previo del título y MONITOR su desarrollo real.",
+     "VERIFICA evalúa al profesorado y MONITOR evalúa a los estudiantes.",
+     "VERIFICA certifica los centros y MONITOR acredita a los profesores."
+    ],
+    "feedback": [
+     "",
+     "Ninguno de los dos programas tiene como finalidad principal evaluar individualmente al profesorado o al alumnado.",
+     "La certificación de los sistemas de calidad de los centros se relaciona con AUDIT, mientras que la evaluación del profesorado corresponde a otros programas."
+    ],
+    "correcta": 0,
+    "explicacion": "Ninguno de los dos programas tiene como finalidad principal evaluar individualmente al profesorado o al alumnado. La certificación de los sistemas de calidad de los centros se relaciona con AUDIT, mientras que la evaluación del profesorado corresponde a otros programas."
+   },
+   {
+    "id": "ecp-6-17",
+    "pregunta": "¿Qué programas de ANECA están destinados a evaluar al profesorado universitario para su acceso o promoción profesional?",
+    "opciones": [
+     "VERIFICA y MONITOR.",
+     "PEP y ACADEMIA.",
+     "AUDIT y ACREDITA."
+    ],
+    "feedback": [
+     "Estos programas se ocupan del diseño y seguimiento de titulaciones.",
+     "",
+     "AUDIT evalúa sistemas internos de calidad y ACREDITA renueva la acreditación de títulos."
+    ],
+    "correcta": 1,
+    "explicacion": "Estos programas se ocupan del diseño y seguimiento de titulaciones. AUDIT evalúa sistemas internos de calidad y ACREDITA renueva la acreditación de títulos."
+   },
+   {
+    "id": "ecp-6-18",
+    "pregunta": "¿Qué diferencia existe entre PEP y ACADEMIA?",
+    "opciones": [
+     "PEP evalúa centros universitarios y ACADEMIA evalúa titulaciones.",
+     "PEP evalúa los méritos investigadores del profesorado y ACADEMIA sus méritos docentes y de gestión.",
+     "PEP evalúa determinadas figuras de profesorado contratado y ACADEMIA el acceso a los cuerpos docentes universitarios."
+    ],
+    "feedback": [
+     "porque ninguno de estos programas está destinado a evaluar centros o titulaciones universitarias.",
+     "porque ambos programas valoran diferentes méritos del profesorado y no se diferencian por evaluar actividades investigadoras o docentes.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque ninguno de estos programas está destinado a evaluar centros o titulaciones universitarias. porque ambos programas valoran diferentes méritos del profesorado y no se diferencian por evaluar actividades investigadoras o docentes."
+   },
+   {
+    "id": "ecp-6-19",
+    "pregunta": "¿Cuáles son las tres dimensiones principales del programa DOCENTIA?",
+    "opciones": [
+     "Planificación de la docencia, desarrollo de la enseñanza y resultados obtenidos.",
+     "Investigación, gestión administrativa y financiación universitaria.",
+     "Acceso del alumnado, organización de centros y acreditación de titulaciones."
+    ],
+    "feedback": [
+     "",
+     "porque DOCENTIA evalúa la actividad docente a través de la planificación, el desarrollo de la enseñanza y los resultados obtenidos, no mediante la investigación, la gestión administrativa y la financiación universitaria.",
+     "Son aspectos relacionados con la organización universitaria, pero no constituyen las dimensiones del programa."
+    ],
+    "correcta": 0,
+    "explicacion": "porque DOCENTIA evalúa la actividad docente a través de la planificación, el desarrollo de la enseñanza y los resultados obtenidos, no mediante la investigación, la gestión administrativa y la financiación universitaria. Son aspectos relacionados con la organización universitaria, pero no constituyen las dimensiones del programa."
+   },
+   {
+    "id": "ecp-6-20",
+    "pregunta": "¿Qué caracteriza al enfoque de evaluación del programa DOCENTIA?",
+    "opciones": [
+     "Considera las encuestas de satisfacción del alumnado como la principal referencia para valorar la calidad docente.",
+     "Utiliza múltiples evidencias y fuentes de información para evaluar la actividad docente.",
+     "Combina la valoración de la actividad docente con los resultados de investigación del profesorado."
+    ],
+    "feedback": [
+     "porque DOCENTIA utiliza diferentes fuentes de información, sin establecer las encuestas del alumnado como referencia principal con carácter general.",
+     "",
+     "porque DOCENTIA se centra en la evaluación de la actividad docente, no en los méritos investigadores del profesorado."
+    ],
+    "correcta": 1,
+    "explicacion": "porque DOCENTIA utiliza diferentes fuentes de información, sin establecer las encuestas del alumnado como referencia principal con carácter general. porque DOCENTIA se centra en la evaluación de la actividad docente, no en los méritos investigadores del profesorado."
+   },
+   {
+    "id": "ecp-6-21",
+    "pregunta": "¿Cuál es el principal objetivo de la autoevaluación institucional en los centros universitarios?",
+    "opciones": [
+     "Cumplir las exigencias de evaluación institucional y facilitar la rendición de cuentas.",
+     "Valorar los resultados del centro y verificar el cumplimiento de sus objetivos.",
+     "Promover el aprendizaje organizativo y el compromiso con la mejora continua."
+    ],
+    "feedback": [
+     "porque la autoevaluación institucional no se limita al cumplimiento de exigencias administrativas, sino que se orienta al aprendizaje organizativo y la mejora continua.",
+     "porque la autoevaluación no se centra únicamente en valorar resultados y comprobar objetivos, sino también en promover la reflexión y la mejora institucional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la autoevaluación institucional no se limita al cumplimiento de exigencias administrativas, sino que se orienta al aprendizaje organizativo y la mejora continua. porque la autoevaluación no se centra únicamente en valorar resultados y comprobar objetivos, sino también en promover la reflexión y la mejora institucional."
+   },
+   {
+    "id": "ecp-6-22",
+    "pregunta": "¿Qué función desempeña principalmente la evaluación externa en las universidades?",
+    "opciones": [
+     "Aportar una revisión independiente, contrastar los procesos internos y favorecer la rendición de cuentas.",
+     "Revisar los indicadores académicos y coordinar la aplicación de las mejoras en las titulaciones universitarias.",
+     "Analizar las prácticas docentes del profesorado e identificar las necesidades de formación de los distintos departamentos."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación externa puede identificar deficiencias y exigir mejoras, pero su implementación corresponde a las universidades.",
+     "porque la evaluación externa institucional tiene un alcance más amplio que la valoración de las prácticas docentes y las necesidades formativas del profesorado."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación externa puede identificar deficiencias y exigir mejoras, pero su implementación corresponde a las universidades. porque la evaluación externa institucional tiene un alcance más amplio que la valoración de las prácticas docentes y las necesidades formativas del profesorado."
+   },
+   {
+    "id": "ecp-6-23",
+    "pregunta": "¿Qué dimensión de DOCENTIA resulta especialmente relevante para la evaluación del profesorado desde la perspectiva del alumnado?",
+    "opciones": [
+     "La planificación de la docencia.",
+     "Los resultados obtenidos.",
+     "La gestión administrativa de la universidad."
+    ],
+    "feedback": [
+     "Es una dimensión importante, pero la más relacionada con los efectos de la actividad docente sobre el alumnado es la de resultados obtenidos.",
+     "",
+     "La gestión administrativa no constituye una de las tres dimensiones de DOCENTIA."
+    ],
+    "correcta": 1,
+    "explicacion": "Es una dimensión importante, pero la más relacionada con los efectos de la actividad docente sobre el alumnado es la de resultados obtenidos. La gestión administrativa no constituye una de las tres dimensiones de DOCENTIA."
+   },
+   {
+    "id": "ecp-6-24",
+    "pregunta": "¿Qué aspectos valoran principalmente los cuestionarios de satisfacción del alumnado sobre la docencia universitaria?",
+    "opciones": [
+     "La percepción del alumnado sobre los recursos institucionales, los servicios universitarios y el clima del centro.",
+     "La percepción del alumnado sobre las competencias adquiridas, la preparación profesional y las oportunidades de inserción laboral.",
+     "La percepción del alumnado sobre la organización de las asignaturas, la claridad expositiva, las metodologías y los sistemas de evaluación."
+    ],
+    "feedback": [
+     "porque recoge aspectos de satisfacción institucional general, no los elementos específicos de la actividad docente que se preguntan.",
+     "porque se centra en la formación recibida y sus perspectivas profesionales, no en la organización y el desarrollo de la enseñanza.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque recoge aspectos de satisfacción institucional general, no los elementos específicos de la actividad docente que se preguntan. porque se centra en la formación recibida y sus perspectivas profesionales, no en la organización y el desarrollo de la enseñanza."
+   },
+   {
+    "id": "ecp-6-25",
+    "pregunta": "¿Cuál es uno de los principales riesgos de utilizar la tasa de satisfacción del alumnado como único indicador de calidad?",
+    "opciones": [
+     "Puede simplificar excesivamente la evaluación e invisibilizar dimensiones importantes del aprendizaje.",
+     "Puede dar mayor peso a los resultados académicos que a las percepciones del alumnado sobre la enseñanza.",
+     "Puede hacer que la valoración docente dependa principalmente de los informes elaborados por los responsables académicos."
+    ],
+    "feedback": [
+     "",
+     "porque las tasas de rendimiento y éxito son indicadores académicos distintos de la satisfacción del alumnado.",
+     "porque los informes de responsables académicos constituyen otra fuente de información, no la tasa de satisfacción estudiantil."
+    ],
+    "correcta": 0,
+    "explicacion": "porque las tasas de rendimiento y éxito son indicadores académicos distintos de la satisfacción del alumnado. porque los informes de responsables académicos constituyen otra fuente de información, no la tasa de satisfacción estudiantil."
+   },
+   {
+    "id": "ecp-6-26",
+    "pregunta": "¿Qué se entiende por sesgo relacionado con la reputación del docente?",
+    "opciones": [
+     "Que los estudiantes valoran siempre negativamente a los profesores con experiencia.",
+     "Que la reputación positiva o el carisma del profesor pueden elevar las puntuaciones independientemente del aprendizaje real.",
+     "Que las encuestas solo pueden realizarse cuando el profesor tiene una acreditación positiva."
+    ],
+    "feedback": [
+     "porque la experiencia docente no implica necesariamente que el profesorado reciba valoraciones negativas del alumnado.",
+     "",
+     "la acreditación positiva no es un requisito para realizar las encuestas de satisfacción."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la experiencia docente no implica necesariamente que el profesorado reciba valoraciones negativas del alumnado. la acreditación positiva no es un requisito para realizar las encuestas de satisfacción."
+   },
+   {
+    "id": "ecp-6-27",
+    "pregunta": "¿Cómo se define la tasa de rendimiento?",
+    "opciones": [
+     "Como la proporción de créditos presentados a evaluación respecto a los créditos matriculados.",
+     "Como el porcentaje de estudiantes que abandonan una titulación.",
+     "Como la proporción de créditos superados sobre los créditos matriculados."
+    ],
+    "feedback": [
+     "Esta definición se corresponde con la tasa de evaluación.",
+     "Esta definición corresponde a la tasa de abandono.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "Esta definición se corresponde con la tasa de evaluación. Esta definición corresponde a la tasa de abandono."
+   },
+   {
+    "id": "ecp-6-28",
+    "pregunta": "¿Cómo se calcula la tasa de éxito?",
+    "opciones": [
+     "Dividiendo los créditos superados entre los créditos presentados a evaluación.",
+     "Dividiendo los créditos superados entre los créditos matriculados.",
+     "Calculando el porcentaje de estudiantes que no continúan sus estudios."
+    ],
+    "feedback": [
+     "",
+     "Esta es la definición de tasa de rendimiento.",
+     "Esta descripción corresponde a la tasa de abandono."
+    ],
+    "correcta": 0,
+    "explicacion": "Esta es la definición de tasa de rendimiento. Esta descripción corresponde a la tasa de abandono."
+   },
+   {
+    "id": "ecp-6-29",
+    "pregunta": "¿Qué mide la tasa de evaluación?",
+    "opciones": [
+     "La proporción de créditos superados sobre los créditos presentados.",
+     "El porcentaje de estudiantes que se presentan a las pruebas respecto al total de matriculados.",
+     "El porcentaje de estudiantes que abandonan sus estudios."
+    ],
+    "feedback": [
+     "Se refiere a la tasa de éxito.",
+     "",
+     "Se refiere a la tasa de abandono."
+    ],
+    "correcta": 1,
+    "explicacion": "Se refiere a la tasa de éxito. Se refiere a la tasa de abandono."
+   },
+   {
+    "id": "ecp-6-30",
+    "pregunta": "¿Cuál es la recomendación principal para utilizar correctamente las encuestas de satisfacción en la evaluación docente?",
+    "opciones": [
+     "Comparar las puntuaciones de satisfacción entre asignaturas para establecer una valoración general de la calidad docente.",
+     "Combinar las encuestas con las tasas de rendimiento y éxito, dando mayor importancia a los resultados académicos.",
+     "Integrarlas con otros indicadores y fuentes de información para conseguir una evaluación multidimensional."
+    ],
+    "feedback": [
+     "porque las comparaciones entre puntuaciones no permiten, por sí solas, valorar adecuadamente la calidad docente, ya que pueden intervenir diferentes factores contextuales.",
+     "porque los resultados académicos complementan las encuestas de satisfacción, pero no deben considerarse necesariamente más importantes que otras evidencias.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque las comparaciones entre puntuaciones no permiten, por sí solas, valorar adecuadamente la calidad docente, ya que pueden intervenir diferentes factores contextuales. porque los resultados académicos complementan las encuestas de satisfacción, pero no deben considerarse necesariamente más importantes que otras evidencias."
+   }
+  ],
+  "Tema 7": [
+   {
+    "id": "ecp-7-1",
+    "pregunta": "¿Cómo se define principalmente la evaluación del profesorado?",
+    "opciones": [
+     "Como un mecanismo de vigilancia y control administrativo.",
+     "Como un proceso sistemático y continuo de recogida y análisis de información sobre la práctica docente.",
+     "Como una prueba puntual destinada a clasificar al profesorado."
+    ],
+    "feedback": [
+     "la evaluación no debe entenderse como un mecanismo de vigilancia o control, sino como un proceso formativo y orientado a la mejora.",
+     "",
+     "no es una prueba puntual, sino un proceso sistemático y continuo."
+    ],
+    "correcta": 1,
+    "explicacion": "la evaluación no debe entenderse como un mecanismo de vigilancia o control, sino como un proceso formativo y orientado a la mejora. no es una prueba puntual, sino un proceso sistemático y continuo."
+   },
+   {
+    "id": "ecp-7-2",
+    "pregunta": "¿Cuál es la finalidad principal de la evaluación docente?",
+    "opciones": [
+     "Mejorar la práctica profesional y la calidad educativa.",
+     "Valorar el desempeño del profesorado para fundamentar decisiones de promoción profesional.",
+     "Comprobar el cumplimiento de las responsabilidades docentes y los criterios establecidos por la institución."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación docente puede aportar información para decisiones de promoción, pero su finalidad principal es favorecer la mejora de la práctica profesional.",
+     "porque comprobar el cumplimiento de las responsabilidades docentes puede formar parte de la evaluación, pero esta tiene una finalidad más amplia, orientada al desarrollo profesional y la mejora educativa."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación docente puede aportar información para decisiones de promoción, pero su finalidad principal es favorecer la mejora de la práctica profesional. porque comprobar el cumplimiento de las responsabilidades docentes puede formar parte de la evaluación, pero esta tiene una finalidad más amplia, orientada al desarrollo profesional y la mejora educativa."
+   },
+   {
+    "id": "ecp-7-3",
+    "pregunta": "¿Qué ley se identifica como marco normativo vigente para la evaluación de la función docente en el ámbito no universitario?",
+    "opciones": [
+     "La Ley Orgánica 8/1985 (LODE).",
+     "La Ley Orgánica 2/2006 (LOE), sin modificaciones posteriores.",
+     "La Ley Orgánica 3/2020 (LOMLOE)."
+    ],
+    "feedback": [
+     "porque la LODE no es la norma identificada como marco vigente para esta cuestión.",
+     "porque la LOE fue modificada posteriormente por la LOMLOE.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la LODE no es la norma identificada como marco vigente para esta cuestión. porque la LOE fue modificada posteriormente por la LOMLOE."
+   },
+   {
+    "id": "ecp-7-4",
+    "pregunta": "¿Qué establece el artículo 106 de la LOMLOE respecto a los planes de valoración de la función docente?",
+    "opciones": [
+     "Que los equipos directivos deben elaborar los planes y determinar los criterios de valoración del profesorado.",
+     "Que deben ser públicos e incluir fines, criterios y formas de participación.",
+     "Que deben establecer como criterios de valoración los resultados académicos del alumnado y los informes de la Inspección Educativa."
+    ],
+    "feedback": [
+     "porque corresponde a las Administraciones educativas elaborar los planes de evaluación, contando con la participación del profesorado.",
+     "",
+     "porque el artículo 106 no establece esos indicadores como criterios obligatorios de valoración, sino que exige definir los fines, criterios y formas de participación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque corresponde a las Administraciones educativas elaborar los planes de evaluación, contando con la participación del profesorado. porque el artículo 106 no establece esos indicadores como criterios obligatorios de valoración, sino que exige definir los fines, criterios y formas de participación."
+   },
+   {
+    "id": "ecp-7-5",
+    "pregunta": "¿Qué organismo realiza evaluaciones generales del sistema educativo según el artículo 143 de la LOMLOE?",
+    "opciones": [
+     "El Instituto Nacional de Evaluación Educativa, en colaboración con las Administraciones educativas.",
+     "La Inspección Educativa, en coordinación con las Administraciones educativas.",
+     "Los equipos directivos de los centros, bajo la supervisión de la Inspección Educativa."
+    ],
+    "feedback": [
+     "",
+     "porque la Inspección Educativa desempeña funciones de supervisión y evaluación, pero no es el organismo al que el artículo 143 atribuye estas evaluaciones generales.",
+     "porque los equipos directivos intervienen en la evaluación de sus centros, pero no son responsables de las evaluaciones generales del sistema educativo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la Inspección Educativa desempeña funciones de supervisión y evaluación, pero no es el organismo al que el artículo 143 atribuye estas evaluaciones generales. porque los equipos directivos intervienen en la evaluación de sus centros, pero no son responsables de las evaluaciones generales del sistema educativo."
+   },
+   {
+    "id": "ecp-7-6",
+    "pregunta": "¿Cuál de las siguientes es una finalidad formativa de la evaluación docente?",
+    "opciones": [
+     "Reforzar la credibilidad del centro y la coherencia de la docencia con su proyecto educativo.",
+     "Reconocer el desempeño profesional e incentivar los méritos docentes.",
+     "Mejorar la práctica docente mediante la reflexión, la indagación y la colaboración."
+    ],
+    "feedback": [
+     "porque corresponde a la finalidad institucional de la evaluación docente.",
+     "porque corresponde a la finalidad de reconocimiento profesional, orientada a valorar el desempeño y los méritos docentes.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque corresponde a la finalidad institucional de la evaluación docente. porque corresponde a la finalidad de reconocimiento profesional, orientada a valorar el desempeño y los méritos docentes."
+   },
+   {
+    "id": "ecp-7-7",
+    "pregunta": "¿Qué pretende la evaluación docente cuando busca detectar necesidades?",
+    "opciones": [
+     "Identificar fortalezas, dificultades y necesidades formativas para proporcionar apoyo.",
+     "Valorar la coherencia entre la práctica docente y el proyecto educativo del centro.",
+     "Reconocer las buenas prácticas docentes e incentivar el desarrollo profesional mediante méritos."
+    ],
+    "feedback": [
+     "",
+     "porque corresponde a la finalidad institucional de la evaluación docente.",
+     "porque corresponde a la finalidad de reconocimiento profesional, centrada en valorar el desempeño y los méritos docentes."
+    ],
+    "correcta": 0,
+    "explicacion": "porque corresponde a la finalidad institucional de la evaluación docente. porque corresponde a la finalidad de reconocimiento profesional, centrada en valorar el desempeño y los méritos docentes."
+   },
+   {
+    "id": "ecp-7-8",
+    "pregunta": "¿Cuáles son los cuatro ámbitos principales de evaluación docente?",
+    "opciones": [
+     "Selección y contratación, formación permanente, promoción profesional y reconocimiento de méritos.",
+     "Planificación de la enseñanza, desarrollo de la práctica docente, evaluación del alumnado y participación en el centro.",
+     "Observación en el aula, análisis de programaciones, cuestionarios e informes de Inspección."
+    ],
+    "feedback": [
+     "porque recoge aspectos relacionados con la trayectoria y el desarrollo profesional, pero no los cuatro ámbitos principales de evaluación docente.",
+     "",
+     "porque recoge técnicas e instrumentos de evaluación docente, no los ámbitos que se evalúan."
+    ],
+    "correcta": 1,
+    "explicacion": "porque recoge aspectos relacionados con la trayectoria y el desarrollo profesional, pero no los cuatro ámbitos principales de evaluación docente. porque recoge técnicas e instrumentos de evaluación docente, no los ámbitos que se evalúan."
+   },
+   {
+    "id": "ecp-7-9",
+    "pregunta": "¿Qué se valora en la planificación de la enseñanza?",
+    "opciones": [
+     "La aplicación de metodologías, actividades y recursos durante el desarrollo de las clases.",
+     "El seguimiento del progreso del alumnado y la retroalimentación proporcionada sobre sus aprendizajes.",
+     "La adecuación de las programaciones, su coherencia curricular y su adaptación al alumnado y al contexto."
+    ],
+    "feedback": [
+     "porque se refiere al desarrollo de la práctica docente, es decir, a cómo se lleva a cabo la enseñanza en el aula.",
+     "porque corresponde al ámbito de evaluación del alumnado, centrado en el seguimiento de su progreso y la retroalimentación.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se refiere al desarrollo de la práctica docente, es decir, a cómo se lleva a cabo la enseñanza en el aula. porque corresponde al ámbito de evaluación del alumnado, centrado en el seguimiento de su progreso y la retroalimentación."
+   },
+   {
+    "id": "ecp-7-10",
+    "pregunta": "¿Qué elementos deben estar relacionados en una programación didáctica?",
+    "opciones": [
+     "Competencias, objetivos, contenidos o saberes básicos, metodología y criterios de evaluación.",
+     "Objetivos del centro, proyectos de innovación, actividades complementarias y resultados académicos.",
+     "Metodología, recursos didácticos, organización del aula y actividades de formación del profesorado."
+    ],
+    "feedback": [
+     "",
+     "porque recoge aspectos relacionados con la organización y el funcionamiento del centro, pero no los elementos curriculares fundamentales de una programación didáctica.",
+     "porque combina aspectos de la práctica docente y del desarrollo profesional, sin recoger el conjunto de elementos curriculares que deben estar relacionados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque recoge aspectos relacionados con la organización y el funcionamiento del centro, pero no los elementos curriculares fundamentales de una programación didáctica. porque combina aspectos de la práctica docente y del desarrollo profesional, sin recoger el conjunto de elementos curriculares que deben estar relacionados."
+   },
+   {
+    "id": "ecp-7-11",
+    "pregunta": "¿Qué caracteriza a las metodologías activas?",
+    "opciones": [
+     "Priorizan la explicación de contenidos por parte del profesorado y la realización de actividades dirigidas.",
+     "Otorgan protagonismo al alumnado y fomentan su participación.",
+     "Se centran en la incorporación de recursos digitales y herramientas tecnológicas para dinamizar la enseñanza."
+    ],
+    "feedback": [
+     "porque las metodologías activas promueven un papel participativo del alumnado, más allá de la recepción de explicaciones y la realización de actividades dirigidas.",
+     "",
+     "porque la utilización de recursos digitales puede apoyar la enseñanza, pero no es lo que define a las metodologías activas."
+    ],
+    "correcta": 1,
+    "explicacion": "porque las metodologías activas promueven un papel participativo del alumnado, más allá de la recepción de explicaciones y la realización de actividades dirigidas. porque la utilización de recursos digitales puede apoyar la enseñanza, pero no es lo que define a las metodologías activas."
+   },
+   {
+    "id": "ecp-7-12",
+    "pregunta": "¿Cómo deben entenderse las tecnologías de la información y la comunicación (TIC) en la práctica docente?",
+    "opciones": [
+     "Como un fin en sí mismas, independientemente de su utilidad educativa.",
+     "Como sustitutas obligatorias de cualquier otro recurso didáctico.",
+     "Como herramientas al servicio del aprendizaje."
+    ],
+    "feedback": [
+     "el capítulo señala expresamente que las tecnologías no son un fin en sí mismas.",
+     "no se plantea que deban sustituir obligatoriamente todos los demás recursos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "el capítulo señala expresamente que las tecnologías no son un fin en sí mismas. no se plantea que deban sustituir obligatoriamente todos los demás recursos."
+   },
+   {
+    "id": "ecp-7-13",
+    "pregunta": "¿Qué implica la atención a la diversidad en la práctica docente?",
+    "opciones": [
+     "Adaptar el diseño curricular, la metodología y los apoyos a las necesidades del alumnado.",
+     "Adaptar las actividades y los recursos didácticos a las características generales del grupo, priorizando las necesidades comunes del alumnado.",
+     "Centrar las adaptaciones educativas en el alumnado que presenta necesidades educativas especiales."
+    ],
+    "feedback": [
+     "",
+     "porque la atención a la diversidad requiere considerar también las necesidades individuales del alumnado y ofrecer una respuesta educativa personalizada.",
+     "porque las medidas de atención individualizada y personalizada deben dirigirse a todo el alumnado, aunque se preste especial atención a quienes presentan necesidades específicas de apoyo educativo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la atención a la diversidad requiere considerar también las necesidades individuales del alumnado y ofrecer una respuesta educativa personalizada. porque las medidas de atención individualizada y personalizada deben dirigirse a todo el alumnado, aunque se preste especial atención a quienes presentan necesidades específicas de apoyo educativo."
+   },
+   {
+    "id": "ecp-7-14",
+    "pregunta": "¿Qué debe existir entre competencias, objetivos, criterios e instrumentos de evaluación?",
+    "opciones": [
+     "Una correspondencia entre competencias y objetivos, seleccionando los instrumentos en función de las actividades realizadas.",
+     "Una coherencia interna entre todos esos elementos curriculares.",
+     "Una relación entre los criterios de evaluación y los resultados académicos que permita valorar el rendimiento del alumnado."
+    ],
+    "feedback": [
+     "porque los instrumentos también deben guardar coherencia con las competencias, los objetivos y los criterios de evaluación.",
+     "",
+     "porque la evaluación no debe centrarse solo en los resultados académicos, sino garantizar la coherencia entre todos los elementos curriculares."
+    ],
+    "correcta": 1,
+    "explicacion": "porque los instrumentos también deben guardar coherencia con las competencias, los objetivos y los criterios de evaluación. porque la evaluación no debe centrarse solo en los resultados académicos, sino garantizar la coherencia entre todos los elementos curriculares."
+   },
+   {
+    "id": "ecp-7-15",
+    "pregunta": "¿Qué debe hacer el profesorado para realizar un seguimiento adecuado del progreso del alumnado?",
+    "opciones": [
+     "Limitarse a comunicar las calificaciones al final del curso.",
+     "Evitar modificar la enseñanza una vez iniciada la programación.",
+     "Realizar un seguimiento sistemático y proporcionar retroalimentación, ajustando la enseñanza cuando sea necesario."
+    ],
+    "feedback": [
+     "el seguimiento debe ser continuado y no limitarse a las calificaciones finales.",
+     "el docente debe poder ajustar la enseñanza según los resultados y las necesidades detectadas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "el seguimiento debe ser continuado y no limitarse a las calificaciones finales. el docente debe poder ajustar la enseñanza según los resultados y las necesidades detectadas."
+   },
+   {
+    "id": "ecp-7-16",
+    "pregunta": "¿Por qué es importante la participación del profesorado en el centro?",
+    "opciones": [
+     "Porque la enseñanza es una actividad colectiva que requiere coordinación y colaboración.",
+     "Porque facilita la identificación de necesidades formativas y la planificación del desarrollo profesional del profesorado.",
+     "Porque facilita la valoración de la práctica docente a partir de los resultados generales del centro."
+    ],
+    "feedback": [
+     "",
+     "porque se refiere a otra finalidad de la evaluación docente, mientras que la participación en el centro se vincula principalmente con el trabajo en equipo, la coordinación y la colaboración entre docentes.",
+     "porque la participación en el centro se relaciona con el trabajo en equipo, los proyectos compartidos y la colaboración con la comunidad educativa, no principalmente con la valoración de resultados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque se refiere a otra finalidad de la evaluación docente, mientras que la participación en el centro se vincula principalmente con el trabajo en equipo, la coordinación y la colaboración entre docentes. porque la participación en el centro se relaciona con el trabajo en equipo, los proyectos compartidos y la colaboración con la comunidad educativa, no principalmente con la valoración de resultados."
+   },
+   {
+    "id": "ecp-7-17",
+    "pregunta": "¿Qué es la coordinación horizontal entre docentes?",
+    "opciones": [
+     "La coordinación entre docentes de diferentes etapas educativas.",
+     "La coordinación entre docentes del mismo nivel, por ejemplo, en equipos de ciclo.",
+     "La coordinación entre los equipos docentes y el equipo directivo para establecer criterios pedagógicos comunes."
+    ],
+    "feedback": [
+     "la coordinación entre diferentes cursos o etapas diferentes corresponde a la coordinación vertical.",
+     "",
+     "porque se refiere a la coordinación entre distintos órganos del centro, no específicamente entre docentes del mismo nivel educativo."
+    ],
+    "correcta": 1,
+    "explicacion": "la coordinación entre diferentes cursos o etapas diferentes corresponde a la coordinación vertical. porque se refiere a la coordinación entre distintos órganos del centro, no específicamente entre docentes del mismo nivel educativo."
+   },
+   {
+    "id": "ecp-7-18",
+    "pregunta": "¿Cuál es una función fundamental de la Inspección Educativa en la evaluación del profesorado?",
+    "opciones": [
+     "Coordinar los procesos de autoevaluación del profesorado y establecer sus objetivos individuales de desarrollo profesional.",
+     "Impulsar la evaluación interna del centro a través de los órganos de coordinación docente y la elaboración de la Memoria Anual.",
+     "Supervisar el cumplimiento de la normativa y asesorar sobre el funcionamiento y la calidad educativa."
+    ],
+    "feedback": [
+     "porque la autoevaluación sitúa al profesorado como protagonista de la reflexión sobre su propia práctica y de la definición de sus objetivos de mejora.",
+     "porque corresponde principalmente a los equipos directivos impulsar los procesos de evaluación interna del centro.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la autoevaluación sitúa al profesorado como protagonista de la reflexión sobre su propia práctica y de la definición de sus objetivos de mejora. porque corresponde principalmente a los equipos directivos impulsar los procesos de evaluación interna del centro."
+   },
+   {
+    "id": "ecp-7-19",
+    "pregunta": "¿En qué modalidad de evaluación docente intervienen principalmente los equipos directivos?",
+    "opciones": [
+     "En la evaluación interna del centro, orientada a la reflexión y a la mejora continua.",
+     "En la evaluación externa del profesorado, mediante informes de supervisión y asesoramiento pedagógico.",
+     "En la autoevaluación individual del profesorado, mediante la identificación de fortalezas y la definición de objetivos de desarrollo profesional."
+    ],
+    "feedback": [
+     "",
+     "porque estas funciones corresponden principalmente a la Inspección Educativa, como agente de evaluación externa.",
+     "porque la autoevaluación individual sitúa al propio docente como protagonista de la valoración de su práctica y de la definición de sus objetivos de mejora."
+    ],
+    "correcta": 0,
+    "explicacion": "porque estas funciones corresponden principalmente a la Inspección Educativa, como agente de evaluación externa. porque la autoevaluación individual sitúa al propio docente como protagonista de la valoración de su práctica y de la definición de sus objetivos de mejora."
+   },
+   {
+    "id": "ecp-7-20",
+    "pregunta": "¿Cuál es la finalidad principal de la autoevaluación docente?",
+    "opciones": [
+     "Comprobar la adecuación de la práctica docente a la normativa y a los criterios establecidos por la Administración.",
+     "Reflexionar sobre la propia práctica, identificar fortalezas y debilidades y establecer objetivos de mejora.",
+     "Identificar las necesidades de formación del conjunto del profesorado y definir actuaciones de mejora para el centro."
+    ],
+    "feedback": [
+     "porque se relaciona principalmente con las funciones de supervisión de la Inspección Educativa.",
+     "",
+     "porque se refiere a procesos de evaluación interna del centro, mientras que la autoevaluación docente se centra en la reflexión individual sobre la propia práctica."
+    ],
+    "correcta": 1,
+    "explicacion": "porque se relaciona principalmente con las funciones de supervisión de la Inspección Educativa. porque se refiere a procesos de evaluación interna del centro, mientras que la autoevaluación docente se centra en la reflexión individual sobre la propia práctica."
+   },
+   {
+    "id": "ecp-7-21",
+    "pregunta": "¿Qué caracteriza a la evaluación entre iguales?",
+    "opciones": [
+     "Se basa en la observación de la práctica entre docentes del mismo nivel educativo para establecer valoraciones comparativas de su desempeño profesional.",
+     "Se centra en la revisión conjunta de las programaciones didácticas entre docentes del mismo nivel educativo para comprobar su adecuación al currículo.",
+     "Se fundamenta en la observación y el análisis de la práctica docente entre profesores, desde el respeto y la colaboración."
+    ],
+    "feedback": [
+     "porque la evaluación entre iguales tiene una finalidad formativa y colaborativa, orientada al intercambio de experiencias y la mejora de la práctica docente, no a establecer comparaciones entre profesores.",
+     "porque la evaluación entre iguales se centra en la observación y el análisis de la práctica docente, desde un enfoque formativo y colaborativo, no principalmente en la revisión de programaciones.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la evaluación entre iguales tiene una finalidad formativa y colaborativa, orientada al intercambio de experiencias y la mejora de la práctica docente, no a establecer comparaciones entre profesores. porque la evaluación entre iguales se centra en la observación y el análisis de la práctica docente, desde un enfoque formativo y colaborativo, no principalmente en la revisión de programaciones."
+   },
+   {
+    "id": "ecp-7-22",
+    "pregunta": "¿Qué papel desempeñan las opiniones del alumnado y las familias en la evaluación docente?",
+    "opciones": [
+     "Aportan información complementaria sobre el funcionamiento organizativo, la comunicación, el clima del aula y el proceso de enseñanza-aprendizaje.",
+     "Permiten realizar una valoración técnica de las metodologías docentes y determinar las adaptaciones curriculares necesarias.",
+     "Constituyen la principal fuente de información para valorar el desempeño del profesorado en los procesos de evaluación interna."
+    ],
+    "feedback": [
+     "",
+     "porque las opiniones del alumnado y las familias aportan información sobre su experiencia educativa, pero no permiten realizar por sí mismas una valoración pedagógica especializada.",
+     "porque constituyen una fuente complementaria que debe integrarse con la información aportada por otros agentes evaluadores."
+    ],
+    "correcta": 0,
+    "explicacion": "porque las opiniones del alumnado y las familias aportan información sobre su experiencia educativa, pero no permiten realizar por sí mismas una valoración pedagógica especializada. porque constituyen una fuente complementaria que debe integrarse con la información aportada por otros agentes evaluadores."
+   },
+   {
+    "id": "ecp-7-23",
+    "pregunta": "¿Dónde se desarrolla principalmente la evaluación interna?",
+    "opciones": [
+     "En los servicios de Inspección Educativa, a partir de la información recogida sobre el funcionamiento de los centros.",
+     "En el propio centro educativo, con participación de distintos agentes de la comunidad educativa.",
+     "En los organismos especializados de evaluación, mediante el análisis de informes elaborados por los centros."
+    ],
+    "feedback": [
+     "porque la Inspección Educativa interviene principalmente en procesos de evaluación externa.",
+     "",
+     "porque la evaluación realizada por organismos especializados ajenos al centro corresponde a la modalidad externa."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la Inspección Educativa interviene principalmente en procesos de evaluación externa. porque la evaluación realizada por organismos especializados ajenos al centro corresponde a la modalidad externa."
+   },
+   {
+    "id": "ecp-7-24",
+    "pregunta": "¿Cuál es una característica de la evaluación externa?",
+    "opciones": [
+     "Se desarrolla principalmente bajo la coordinación de los equipos directivos, mediante los órganos de coordinación docente.",
+     "Se centra en la reflexión individual del profesorado para identificar fortalezas y establecer objetivos de desarrollo profesional.",
+     "Es realizada fundamentalmente por la Inspección Educativa y otros organismos especializados."
+    ],
+    "feedback": [
+     "porque describe la organización de la evaluación interna del centro, impulsada principalmente por los equipos directivos.",
+     "porque corresponde a la autoevaluación docente, centrada en el análisis reflexivo de la propia práctica profesional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque describe la organización de la evaluación interna del centro, impulsada principalmente por los equipos directivos. porque corresponde a la autoevaluación docente, centrada en el análisis reflexivo de la propia práctica profesional."
+   },
+   {
+    "id": "ecp-7-25",
+    "pregunta": "¿Qué instrumento permite recoger información directa y contextualizada sobre lo que sucede en el aula?",
+    "opciones": [
+     "La observación sistemática en el aula.",
+     "El análisis de programaciones y materiales didácticos.",
+     "El análisis de los registros de aula y de las actividades realizadas por el alumnado."
+    ],
+    "feedback": [
+     "",
+     "porque permite valorar la coherencia y adecuación de la planificación educativa, pero no observar directamente lo que sucede en el aula.",
+     "porque estos registros permiten analizar información sobre la actividad educativa, pero no proporcionan una observación directa de las interacciones y dinámicas que se producen durante la clase."
+    ],
+    "correcta": 0,
+    "explicacion": "porque permite valorar la coherencia y adecuación de la planificación educativa, pero no observar directamente lo que sucede en el aula. porque estos registros permiten analizar información sobre la actividad educativa, pero no proporcionan una observación directa de las interacciones y dinámicas que se producen durante la clase."
+   },
+   {
+    "id": "ecp-7-26",
+    "pregunta": "¿Qué diferencia existe entre una observación estructurada y una no estructurada?",
+    "opciones": [
+     "La estructurada se centra en las conductas del alumnado, mientras que la no estructurada analiza las interacciones del docente.",
+     "La estructurada utiliza instrumentos previamente diseñados; la no estructurada se basa en anotaciones descriptivas y abiertas.",
+     "La estructurada se orienta a valorar las metodologías didácticas, mientras que la no estructurada permite analizar el clima del aula."
+    ],
+    "feedback": [
+     "porque ambas modalidades pueden recoger información sobre el comportamiento del alumnado y las interacciones del docente.",
+     "",
+     "porque ambas modalidades pueden analizar las metodologías y el clima del aula; la diferencia está en cómo se registra la información."
+    ],
+    "correcta": 1,
+    "explicacion": "porque ambas modalidades pueden recoger información sobre el comportamiento del alumnado y las interacciones del docente. porque ambas modalidades pueden analizar las metodologías y el clima del aula; la diferencia está en cómo se registra la información."
+   },
+   {
+    "id": "ecp-7-27",
+    "pregunta": "¿Qué permite comprobar el análisis de programaciones y materiales didácticos?",
+    "opciones": [
+     "La aplicación efectiva de las estrategias previstas en la programación y su impacto en la dinámica del aula.",
+     "La eficacia de los materiales didácticos a partir de los resultados académicos obtenidos por el alumnado.",
+     "La coherencia entre competencias, objetivos, contenidos, metodología, criterios de evaluación y características del alumnado."
+    ],
+    "feedback": [
+     "porque comprobar cómo se desarrollan las estrategias previstas durante las clases requiere observar directamente la práctica docente.",
+     "porque los resultados académicos pueden aportar información complementaria, pero no permiten determinar por sí mismos la adecuación pedagógica y curricular de los materiales didácticos.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque comprobar cómo se desarrollan las estrategias previstas durante las clases requiere observar directamente la práctica docente. porque los resultados académicos pueden aportar información complementaria, pero no permiten determinar por sí mismos la adecuación pedagógica y curricular de los materiales didácticos."
+   },
+   {
+    "id": "ecp-7-28",
+    "pregunta": "¿Qué tipo de información pueden recoger los cuestionarios y las encuestas en la evaluación docente?",
+    "opciones": [
+     "Valoraciones, percepciones, opiniones, actitudes y niveles de satisfacción.",
+     "Información sobre las interacciones entre el profesorado y el alumnado obtenida mediante la observación directa en el aula.",
+     "Valoraciones técnicas sobre la coherencia entre las programaciones didácticas, los materiales y el currículo."
+    ],
+    "feedback": [
+     "",
+     "porque la información obtenida mediante la observación directa corresponde a otra técnica de evaluación docente.",
+     "porque la valoración de la coherencia curricular corresponde al análisis de programaciones y materiales didácticos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la información obtenida mediante la observación directa corresponde a otra técnica de evaluación docente. porque la valoración de la coherencia curricular corresponde al análisis de programaciones y materiales didácticos."
+   },
+   {
+    "id": "ecp-7-29",
+    "pregunta": "¿Cuál es la finalidad principal de las memorias docentes?",
+    "opciones": [
+     "Comprobar la adecuación de las programaciones didácticas al currículo y a las características del alumnado.",
+     "Reflexionar sobre el desarrollo de la programación, los resultados obtenidos, las dificultades y las propuestas de mejora.",
+     "Recoger información sobre la práctica docente mediante la observación sistemática de las actividades desarrolladas en el aula."
+    ],
+    "feedback": [
+     "porque se refiere principalmente al análisis de programaciones y materiales didácticos, mientras que las memorias docentes permiten reflexionar sobre su desarrollo y los resultados obtenidos.",
+     "",
+     "porque corresponde a la observación en el aula, una técnica de evaluación que permite recoger información directa sobre la práctica docente."
+    ],
+    "correcta": 1,
+    "explicacion": "porque se refiere principalmente al análisis de programaciones y materiales didácticos, mientras que las memorias docentes permiten reflexionar sobre su desarrollo y los resultados obtenidos. porque corresponde a la observación en el aula, una técnica de evaluación que permite recoger información directa sobre la práctica docente."
+   },
+   {
+    "id": "ecp-7-30",
+    "pregunta": "¿Cuál es uno de los principales riesgos de una evaluación docente excesivamente burocrática?",
+    "opciones": [
+     "Que la evaluación dependa de valoraciones subjetivas, dificultando la objetividad de los resultados.",
+     "Que la evaluación se centre en el análisis de las metodologías docentes, dejando en segundo plano otros ámbitos de la práctica profesional.",
+     "Que el profesorado la perciba como un mecanismo de control y sanción, generando resistencia y desconfianza."
+    ],
+    "feedback": [
+     "porque se refiere a las dificultades para valorar objetivamente aspectos subjetivos de la docencia, no específicamente al exceso de burocratización.",
+     "porque plantea una evaluación centrada en un ámbito concreto de la práctica docente, mientras que el riesgo de burocratización está relacionado con su carácter administrativo y de control.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se refiere a las dificultades para valorar objetivamente aspectos subjetivos de la docencia, no específicamente al exceso de burocratización. porque plantea una evaluación centrada en un ámbito concreto de la práctica docente, mientras que el riesgo de burocratización está relacionado con su carácter administrativo y de control."
+   }
+  ],
+  "Tema 8": [
+   {
+    "id": "ecp-8-1",
+    "pregunta": "¿Qué dos preguntas fundamentales deben plantearse antes de diseñar un proceso de evaluación docente?",
+    "opciones": [
+     "¿Qué fuentes de información se consultarán y qué documentos se elaborarán?",
+     "¿Para qué se evalúa al profesorado y qué aspectos de su desempeño se van a valorar?",
+     "¿Qué indicadores se compararán y qué informes se publicarán?"
+    ],
+    "feedback": [
+     "porque la selección de fuentes y documentos debe responder a una finalidad y un objeto de evaluación previamente definidos.",
+     "",
+     "porque los indicadores y los informes son elementos del proceso evaluativo, pero no sustituyen la definición de sus objetivos."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la selección de fuentes y documentos debe responder a una finalidad y un objeto de evaluación previamente definidos. porque los indicadores y los informes son elementos del proceso evaluativo, pero no sustituyen la definición de sus objetivos."
+   },
+   {
+    "id": "ecp-8-2",
+    "pregunta": "¿Qué principios deben regir la evaluación del desempeño según el Estatuto Básico del Empleado Público?",
+    "opciones": [
+     "Transparencia, objetividad, imparcialidad y no discriminación.",
+     "Participación, formación permanente, innovación y reconocimiento profesional.",
+     "Contextualización, colaboración, retroalimentación y desarrollo profesional."
+    ],
+    "feedback": [
+     "",
+     "porque reúne aspectos vinculados al desarrollo profesional docente, pero no los principios establecidos para la evaluación del desempeño en esta norma.",
+     "porque recoge características de una evaluación orientada a la mejora, pero no los principios normativos señalados."
+    ],
+    "correcta": 0,
+    "explicacion": "porque reúne aspectos vinculados al desarrollo profesional docente, pero no los principios establecidos para la evaluación del desempeño en esta norma. porque recoge características de una evaluación orientada a la mejora, pero no los principios normativos señalados."
+   },
+   {
+    "id": "ecp-8-3",
+    "pregunta": "¿En qué aspectos puede repercutir la evaluación del desempeño según el Estatuto Básico del Empleado Público?",
+    "opciones": [
+     "En la asignación de tutorías, la distribución de la carga lectiva y la organización de los horarios docentes.",
+     "En la formación inicial, la selección, la inducción y el desarrollo profesional continuado del profesorado.",
+     "En la carrera profesional horizontal, la formación, la provisión de puestos y las retribuciones complementarias."
+    ],
+    "feedback": [
+     "porque recoge decisiones relacionadas con la organización del trabajo docente en los centros, no los efectos establecidos en esta normativa.",
+     "porque recoge ámbitos de las políticas del profesorado cuya coherencia puede favorecerse mediante los marcos de competencias docentes.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque recoge decisiones relacionadas con la organización del trabajo docente en los centros, no los efectos establecidos en esta normativa. porque recoge ámbitos de las políticas del profesorado cuya coherencia puede favorecerse mediante los marcos de competencias docentes."
+   },
+   {
+    "id": "ecp-8-4",
+    "pregunta": "¿Por qué es importante definir claramente la finalidad de la evaluación docente?",
+    "opciones": [
+     "Porque permite determinar las competencias profesionales que deben compartir todos los centros educativos.",
+     "Porque orienta la selección de criterios, instrumentos y actuaciones derivadas del proceso evaluativo.",
+     "Porque facilita la identificación de los atributos personales del profesorado que explican su desempeño."
+    ],
+    "feedback": [
+     "porque la finalidad de la evaluación debe establecerse antes de decidir cómo se concretan los referentes competenciales.",
+     "",
+     "porque se refiere a una perspectiva teórica sobre las competencias docentes, no a la función de definir los objetivos de la evaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la finalidad de la evaluación debe establecerse antes de decidir cómo se concretan los referentes competenciales. porque se refiere a una perspectiva teórica sobre las competencias docentes, no a la función de definir los objetivos de la evaluación."
+   },
+   {
+    "id": "ecp-8-5",
+    "pregunta": "Según Zorrilla y Martínez (2024), ¿qué elementos debe articular la evaluación docente para superar una concepción meramente técnica?",
+    "opciones": [
+     "El conocimiento, el juicio profesional y los criterios institucionales.",
+     "Los conocimientos, las habilidades y las actitudes del profesorado.",
+     "La observación de la práctica, los resultados de aprendizaje y la autoevaluación."
+    ],
+    "feedback": [
+     "",
+     "porque recoge componentes de las competencias docentes, no los elementos que se señalan para concebir la evaluación como un proceso integral.",
+     "porque recoge distintas evidencias que pueden utilizarse en la evaluación docente, pero no los elementos a los que se refiere esta concepción integral."
+    ],
+    "correcta": 0,
+    "explicacion": "porque recoge componentes de las competencias docentes, no los elementos que se señalan para concebir la evaluación como un proceso integral. porque recoge distintas evidencias que pueden utilizarse en la evaluación docente, pero no los elementos a los que se refiere esta concepción integral."
+   },
+   {
+    "id": "ecp-8-6",
+    "pregunta": "¿Qué implica la capacidad de escucha en los procesos de evaluación docente?",
+    "opciones": [
+     "Ajustar los instrumentos de evaluación a los objetivos y las características del contexto educativo.",
+     "Favorecer la recogida de evidencias sobre los resultados y las actuaciones profesionales del profesorado.",
+     "Conocer la experiencia del profesorado, reconocer sus dificultades y logros y fomentar la corresponsabilidad en la mejora."
+    ],
+    "feedback": [
+     "porque se refiere al diseño de la evaluación, mientras que la capacidad de escucha implica atender a las experiencias, dificultades y logros del profesorado.",
+     "porque la recogida de evidencias forma parte de la evaluación, pero no recoge específicamente su dimensión de diálogo y escucha.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se refiere al diseño de la evaluación, mientras que la capacidad de escucha implica atender a las experiencias, dificultades y logros del profesorado. porque la recogida de evidencias forma parte de la evaluación, pero no recoge específicamente su dimensión de diálogo y escucha."
+   },
+   {
+    "id": "ecp-8-7",
+    "pregunta": "¿Qué contribuye a garantizar una comunicación efectiva durante la evaluación docente?",
+    "opciones": [
+     "Definir previamente las finalidades de la evaluación y los criterios para valorar la actuación profesional.",
+     "Establecer canales de retroalimentación y espacios seguros para expresar inquietudes e interpretar los resultados.",
+     "Utilizar distintas fuentes de información para fundamentar el análisis del desempeño y las decisiones de mejora."
+    ],
+    "feedback": [
+     "porque se refiere a la planificación y definición de la evaluación, no específicamente a los mecanismos de comunicación.",
+     "",
+     "porque se centra en la recogida y utilización de evidencias para fundamentar la evaluación, no en la comunicación entre los participantes."
+    ],
+    "correcta": 1,
+    "explicacion": "porque se refiere a la planificación y definición de la evaluación, no específicamente a los mecanismos de comunicación. porque se centra en la recogida y utilización de evidencias para fundamentar la evaluación, no en la comunicación entre los participantes."
+   },
+   {
+    "id": "ecp-8-8",
+    "pregunta": "Según Valle et al. (2023), ¿cómo se define la competencia docente?",
+    "opciones": [
+     "Como un conjunto de conductas observables que permiten desempeñar eficazmente una actividad profesional.",
+     "Como una combinación de atributos personales que explican el desempeño profesional.",
+     "Como la capacidad de integrar conocimientos, habilidades, actitudes y valores en situaciones reales de enseñanza y aprendizaje."
+    ],
+    "feedback": [
+     "porque corresponde a la concepción conductista de las competencias, centrada en las conductas observables.",
+     "porque se aproxima al modelo psicologicista, que destaca los atributos personales asociados al desempeño.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque corresponde a la concepción conductista de las competencias, centrada en las conductas observables. porque se aproxima al modelo psicologicista, que destaca los atributos personales asociados al desempeño."
+   },
+   {
+    "id": "ecp-8-9",
+    "pregunta": "¿Qué utilidad tienen las competencias docentes como referencia para el desarrollo profesional?",
+    "opciones": [
+     "Orientar el desarrollo profesional a partir de las fortalezas y las necesidades de mejora identificadas.",
+     "Valorar la eficacia de la práctica docente a partir de los resultados de aprendizaje del alumnado.",
+     "Establecer niveles de desempeño profesional a partir de la comparación entre docentes."
+    ],
+    "feedback": [
+     "",
+     "porque se centra en los resultados del alumnado, mientras que las competencias permiten reflexionar sobre distintas dimensiones de la práctica profesional.",
+     "porque plantea una comparación entre docentes, en lugar de utilizar las competencias como referencia para el desarrollo profesional."
+    ],
+    "correcta": 0,
+    "explicacion": "porque se centra en los resultados del alumnado, mientras que las competencias permiten reflexionar sobre distintas dimensiones de la práctica profesional. porque plantea una comparación entre docentes, en lugar de utilizar las competencias como referencia para el desarrollo profesional."
+   },
+   {
+    "id": "ecp-8-10",
+    "pregunta": "¿Qué dos procedimientos se mencionan expresamente entre las evidencias para evaluar las competencias docentes?",
+    "opciones": [
+     "Los cuestionarios a las familias y las entrevistas con la dirección.",
+     "La autoevaluación y la evaluación entre iguales.",
+     "Los informes de inspección y las encuestas al alumnado."
+    ],
+    "feedback": [
+     "porque recogen información procedente de otros miembros de la comunidad educativa, no de la reflexión individual y compartida del profesorado.",
+     "",
+     "porque aportan valoraciones de agentes externos al propio docente, en lugar de centrarse en su reflexión y en el intercambio entre iguales."
+    ],
+    "correcta": 1,
+    "explicacion": "porque recogen información procedente de otros miembros de la comunidad educativa, no de la reflexión individual y compartida del profesorado. porque aportan valoraciones de agentes externos al propio docente, en lugar de centrarse en su reflexión y en el intercambio entre iguales."
+   },
+   {
+    "id": "ecp-8-11",
+    "pregunta": "¿Cuál de las siguientes competencias forma parte de la propuesta de Perrenoud (2004)?",
+    "opciones": [
+     "Desarrollar la confianza, la resiliencia y la proactividad del profesorado.",
+     "Promover el desarrollo integral y el bienestar del alumnado y del docente.",
+     "Informar e implicar a las familias en el proceso educativo."
+    ],
+    "feedback": [
+     "porque la confianza, la resiliencia y la proactividad aparecen como dimensión del marco de la OCDE (2019).",
+     "porque el desarrollo integral y el bienestar se recogen en el marco español de competencias docentes de 2025.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la confianza, la resiliencia y la proactividad aparecen como dimensión del marco de la OCDE (2019). porque el desarrollo integral y el bienestar se recogen en el marco español de competencias docentes de 2025."
+   },
+   {
+    "id": "ecp-8-12",
+    "pregunta": "¿Qué aportan los marcos de competencias docentes a los procesos de evaluación del profesorado?",
+    "opciones": [
+     "Permiten identificar los conocimientos, habilidades, actitudes y valores que deben desarrollarse a lo largo de la carrera profesional.",
+     "Facilitan la valoración del desempeño docente mediante la aplicación de indicadores homogéneos en los distintos centros educativos.",
+     "Permiten establecer un perfil profesional centrado en las competencias necesarias para desarrollar la enseñanza en el aula."
+    ],
+    "feedback": [
+     "",
+     "porque los marcos competenciales deben adaptarse a las características y necesidades de cada contexto educativo.",
+     "porque las competencias docentes abarcan otras responsabilidades profesionales más allá de la enseñanza en el aula."
+    ],
+    "correcta": 0,
+    "explicacion": "porque los marcos competenciales deben adaptarse a las características y necesidades de cada contexto educativo. porque las competencias docentes abarcan otras responsabilidades profesionales más allá de la enseñanza en el aula."
+   },
+   {
+    "id": "ecp-8-13",
+    "pregunta": "¿Por qué se considera reduccionista una concepción de la calidad docente centrada en la enseñanza en el aula?",
+    "opciones": [
+     "Porque centra el análisis en las metodologías docentes, sin valorar suficientemente los resultados de aprendizaje del alumnado.",
+     "Porque deja fuera otras funciones y responsabilidades que también forman parte del ejercicio profesional docente.",
+     "Porque prioriza los conocimientos disciplinares frente a las competencias pedagógicas y transversales."
+    ],
+    "feedback": [
+     "porque una evaluación centrada en la enseñanza en el aula puede considerar tanto las metodologías como los resultados de aprendizaje.",
+     "",
+     "porque centrarse en la enseñanza en el aula no implica necesariamente dar prioridad a los conocimientos disciplinares."
+    ],
+    "correcta": 1,
+    "explicacion": "porque una evaluación centrada en la enseñanza en el aula puede considerar tanto las metodologías como los resultados de aprendizaje. porque centrarse en la enseñanza en el aula no implica necesariamente dar prioridad a los conocimientos disciplinares."
+   },
+   {
+    "id": "ecp-8-14",
+    "pregunta": "¿Cuál de las siguientes actuaciones se relaciona con la dimensión de «Acción socioeducativa integral» del marco español de competencias docentes de 2025?",
+    "opciones": [
+     "Revisar la programación didáctica y valorar el progreso del aprendizaje del alumnado.",
+     "Desarrollar actuaciones tutoriales que favorezcan el bienestar del alumnado y la convivencia.",
+     "Participar en proyectos de mejora del centro y en actividades de desarrollo profesional."
+    ],
+    "feedback": [
+     "porque corresponde a la dimensión de aprendizaje y enseñanza, relacionada con la programación, la práctica docente y la evaluación.",
+     "",
+     "porque se vincula con la dimensión de compromiso profesional, que incluye la participación en el centro, la mejora educativa y el desarrollo profesional continuo"
+    ],
+    "correcta": 1,
+    "explicacion": "porque corresponde a la dimensión de aprendizaje y enseñanza, relacionada con la programación, la práctica docente y la evaluación. porque se vincula con la dimensión de compromiso profesional, que incluye la participación en el centro, la mejora educativa y el desarrollo profesional continuo"
+   },
+   {
+    "id": "ecp-8-15",
+    "pregunta": "¿Cuál de las siguientes competencias pertenece a la dimensión de aprendizaje y enseñanza del marco español de 2025?",
+    "opciones": [
+     "Evaluación del proceso de aprendizaje y enseñanza.",
+     "Desarrollo profesional continuo.",
+     "Competencia digital docente."
+    ],
+    "feedback": [
+     "",
+     "porque el desarrollo profesional continuo pertenece a la dimensión de compromiso profesional.",
+     "porque la competencia digital docente se incluye entre las competencias vehiculares."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el desarrollo profesional continuo pertenece a la dimensión de compromiso profesional. porque la competencia digital docente se incluye entre las competencias vehiculares."
+   },
+   {
+    "id": "ecp-8-16",
+    "pregunta": "¿Cuál de las siguientes competencias pertenece a la dimensión de compromiso profesional del marco español de 2025?",
+    "opciones": [
+     "Acción tutorial.",
+     "Desarrollo profesional continuo.",
+     "Evaluación del proceso de aprendizaje y enseñanza."
+    ],
+    "feedback": [
+     "porque la acción tutorial se incluye en la dimensión de acción socioeducativa integral.",
+     "",
+     "porque la evaluación del proceso de aprendizaje y enseñanza pertenece a la dimensión de aprendizaje y enseñanza."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la acción tutorial se incluye en la dimensión de acción socioeducativa integral. porque la evaluación del proceso de aprendizaje y enseñanza pertenece a la dimensión de aprendizaje y enseñanza."
+   },
+   {
+    "id": "ecp-8-17",
+    "pregunta": "¿Qué competencias conforman la dimensión de competencias vehiculares del marco español de 2025?",
+    "opciones": [
+     "Programación, práctica docente y evaluación del aprendizaje.",
+     "Participación en el centro, compromiso con la mejora y desarrollo profesional continuo.",
+     "Liderazgo-comunicativa docente, digital docente y lingüística docente."
+    ],
+    "feedback": [
+     "porque son competencias de la dimensión de aprendizaje y enseñanza.",
+     "porque pertenecen a la dimensión de compromiso profesional.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque son competencias de la dimensión de aprendizaje y enseñanza. porque pertenecen a la dimensión de compromiso profesional."
+   },
+   {
+    "id": "ecp-8-18",
+    "pregunta": "¿Qué caracteriza al Modelo 9:20 propuesto por Valle et al. (2023)?",
+    "opciones": [
+     "Identifica nueve escenarios de actuación profesional y veinte competencias individuales.",
+     "Organiza veinte competencias docentes en nueve niveles progresivos de desarrollo profesional.",
+     "Distribuye veinte competencias docentes en nueve dimensiones centradas en la enseñanza en el aula."
+    ],
+    "feedback": [
+     "",
+     "porque el modelo distingue escenarios de actuación profesional, no niveles progresivos de desarrollo docente.",
+     "porque las competencias se distribuyen en diferentes escenarios profesionales, que abarcan también el centro educativo, las familias, la Administración y la sociedad."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el modelo distingue escenarios de actuación profesional, no niveles progresivos de desarrollo docente. porque las competencias se distribuyen en diferentes escenarios profesionales, que abarcan también el centro educativo, las familias, la Administración y la sociedad."
+   },
+   {
+    "id": "ecp-8-19",
+    "pregunta": "¿En qué escenario del Modelo 9:20 se sitúa la competencia de liderazgo pedagógico?",
+    "opciones": [
+     "Aula (grupo-clase).",
+     "Contexto próximo del centro.",
+     "Centro educativo."
+    ],
+    "feedback": [
+     "porque el escenario del aula comprende competencias relacionadas con la planificación, la enseñanza, la evaluación, el clima, la orientación y la inclusión.",
+     "porque el escenario del contexto próximo del centro se relaciona con la competencia de integración contextual.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque el escenario del aula comprende competencias relacionadas con la planificación, la enseñanza, la evaluación, el clima, la orientación y la inclusión. porque el escenario del contexto próximo del centro se relaciona con la competencia de integración contextual."
+   },
+   {
+    "id": "ecp-8-20",
+    "pregunta": "¿En qué escenario del Modelo 9:20 de Valle et al. (2023) se sitúa la competencia «Actualización y aprendizaje permanente»?",
+    "opciones": [
+     "Conmigo mismo.",
+     "Conocimiento.",
+     "Centro educativo."
+    ],
+    "feedback": [
+     "porque el escenario «Conmigo mismo» comprende el compromiso ético personal y profesional.",
+     "",
+     "porque el escenario «Centro educativo» incluye competencias como el trabajo en equipo, el liderazgo pedagógico y la participación institucional."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el escenario «Conmigo mismo» comprende el compromiso ético personal y profesional. porque el escenario «Centro educativo» incluye competencias como el trabajo en equipo, el liderazgo pedagógico y la participación institucional."
+   },
+   {
+    "id": "ecp-8-21",
+    "pregunta": "¿En qué escenario del Modelo 9:20 de Valle et al. (2023) se sitúa la competencia de «Acompañamiento (tutoría y orientación)»?",
+    "opciones": [
+     "Aula (grupo-clase).",
+     "Centro educativo.",
+     "Familias."
+    ],
+    "feedback": [
+     "",
+     "porque el escenario «Centro educativo» incluye competencias como el trabajo en equipo, el liderazgo pedagógico y la participación institucional.",
+     "porque el escenario «Familias» comprende la competencia de relación familiar."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el escenario «Centro educativo» incluye competencias como el trabajo en equipo, el liderazgo pedagógico y la participación institucional. porque el escenario «Familias» comprende la competencia de relación familiar."
+   },
+   {
+    "id": "ecp-8-22",
+    "pregunta": "¿Qué caracteriza a un diseño «glocal» de los marcos de competencias docentes?",
+    "opciones": [
+     "Aplicar las recomendaciones internacionales mediante criterios homogéneos que faciliten la movilidad del profesorado.",
+     "Definir las competencias docentes de cada centro a partir de sus necesidades, tomando como referencia sus propios criterios institucionales.",
+     "Considerar las recomendaciones supranacionales, adaptándolas a las particularidades de cada centro educativo."
+    ],
+    "feedback": [
+     "porque la existencia de referencias comunes no elimina la necesidad de adaptar las competencias al contexto educativo.",
+     "porque la adaptación local debe combinarse con los referentes generales y supranacionales.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la existencia de referencias comunes no elimina la necesidad de adaptar las competencias al contexto educativo. porque la adaptación local debe combinarse con los referentes generales y supranacionales."
+   },
+   {
+    "id": "ecp-8-23",
+    "pregunta": "¿Cómo deben responder los marcos de competencias docentes a los cambios en la profesión?",
+    "opciones": [
+     "Conservando las competencias establecidas para la formación inicial como referencia estable durante toda la trayectoria profesional.",
+     "Manteniendo cierta estabilidad para orientar las políticas docentes, incorporando periódicamente nuevas necesidades profesionales.",
+     "Actualizando continuamente sus competencias para responder a los cambios educativos, priorizando su flexibilidad frente a la estabilidad."
+    ],
+    "feedback": [
+     "porque las competencias deben evolucionar para atender las necesidades que surgen a lo largo de la carrera profesional.",
+     "",
+     "porque la flexibilidad debe combinarse con una estabilidad suficiente para desarrollar políticas docentes coherentes."
+    ],
+    "correcta": 1,
+    "explicacion": "porque las competencias deben evolucionar para atender las necesidades que surgen a lo largo de la carrera profesional. porque la flexibilidad debe combinarse con una estabilidad suficiente para desarrollar políticas docentes coherentes."
+   },
+   {
+    "id": "ecp-8-24",
+    "pregunta": "¿Qué se recomienda respecto al diseño de los marcos de competencias docentes?",
+    "opciones": [
+     "Fundamentarlos en la investigación y las evidencias, incorporando procesos de participación y creación compartida.",
+     "Fundamentarlos en las evidencias científicas y encargar su elaboración a especialistas que definan los criterios profesionales.",
+     "Elaborarlos mediante procesos participativos en los que los acuerdos entre profesionales constituyan el principal fundamento de las competencias."
+    ],
+    "feedback": [
+     "",
+     "porque la fundamentación científica debe complementarse con la participación de los agentes implicados en el diseño.",
+     "porque la participación debe combinarse con la investigación y las evidencias disponibles."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la fundamentación científica debe complementarse con la participación de los agentes implicados en el diseño. porque la participación debe combinarse con la investigación y las evidencias disponibles."
+   },
+   {
+    "id": "ecp-8-25",
+    "pregunta": "¿Cómo entiende las competencias docentes el modelo conductista?",
+    "opciones": [
+     "Como atributos personales que explican el desempeño profesional y la disposición a actuar.",
+     "Como una integración de conocimientos, habilidades, actitudes y características personales adaptadas al contexto.",
+     "Como un conjunto de conductas observables que permiten desempeñar eficazmente una función o actividad."
+    ],
+    "feedback": [
+     "porque corresponde al modelo psicologicista, que destaca los atributos personales asociados al desempeño.",
+     "porque corresponde al modelo holístico, que integra distintas dimensiones de la competencia y considera el contexto.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque corresponde al modelo psicologicista, que destaca los atributos personales asociados al desempeño. porque corresponde al modelo holístico, que integra distintas dimensiones de la competencia y considera el contexto."
+   },
+   {
+    "id": "ecp-8-26",
+    "pregunta": "¿Qué caracteriza al modelo psicologicista de competencias docentes?",
+    "opciones": [
+     "Considera las competencias como una combinación de atributos personales que explican el desempeño profesional.",
+     "Define las competencias a partir de las tareas y conductas observables realizadas durante el ejercicio profesional.",
+     "Entiende las competencias como una integración de conductas, atributos personales y características del contexto."
+    ],
+    "feedback": [
+     "",
+     "porque describe el modelo conductista, centrado en las tareas desempeñadas y las conductas observables.",
+     "porque corresponde al modelo holístico, que integra las conductas y los atributos personales considerando el contexto."
+    ],
+    "correcta": 0,
+    "explicacion": "porque describe el modelo conductista, centrado en las tareas desempeñadas y las conductas observables. porque corresponde al modelo holístico, que integra las conductas y los atributos personales considerando el contexto."
+   },
+   {
+    "id": "ecp-8-27",
+    "pregunta": "¿Qué distingue al modelo holístico de competencias docentes?",
+    "opciones": [
+     "La identificación de conductas observables asociadas al desempeño eficaz de determinadas tareas.",
+     "La integración de conductas, atributos personales y características del contexto en el desempeño profesional.",
+     "La consideración de los atributos personales y las actitudes como principales elementos explicativos del desempeño."
+    ],
+    "feedback": [
+     "porque describe el enfoque conductista de las competencias.",
+     "",
+     "porque corresponde al enfoque psicologicista, centrado en los atributos personales."
+    ],
+    "correcta": 1,
+    "explicacion": "porque describe el enfoque conductista de las competencias. porque corresponde al enfoque psicologicista, centrado en los atributos personales."
+   },
+   {
+    "id": "ecp-8-28",
+    "pregunta": "¿Cómo contribuye la evaluación docente al aprendizaje institucional de un centro educativo?",
+    "opciones": [
+     "Mediante el análisis de experiencias y la difusión de buenas prácticas entre el profesorado.",
+     "Mediante la comparación de los resultados obtenidos por los docentes para identificar las metodologías más eficaces.",
+     "Mediante el seguimiento de las programaciones docentes y la elaboración de informes sobre su cumplimiento."
+    ],
+    "feedback": [
+     "",
+     "porque se centra en la comparación de resultados, mientras que el aprendizaje institucional se orienta a la reflexión y la mejora compartida.",
+     "porque se centra en el seguimiento de la planificación y su cumplimiento, sin recoger la dimensión de aprendizaje colectivo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque se centra en la comparación de resultados, mientras que el aprendizaje institucional se orienta a la reflexión y la mejora compartida. porque se centra en el seguimiento de la planificación y su cumplimiento, sin recoger la dimensión de aprendizaje colectivo."
+   },
+   {
+    "id": "ecp-8-29",
+    "pregunta": "¿Qué influencia tienen las creencias de los equipos directivos sobre la evaluación docente?",
+    "opciones": [
+     "Condicionan la manera de interpretar y desarrollar la evaluación en el centro educativo.",
+     "Sirven como referencia para valorar las competencias profesionales del profesorado.",
+     "Permiten identificar las fortalezas y necesidades formativas del profesorado."
+    ],
+    "feedback": [
+     "",
+     "porque esta función corresponde a los marcos de competencias docentes, no a las creencias de los equipos directivos.",
+     "porque las fortalezas y necesidades formativas del profesorado se identifican mediante la evaluación docente, no a partir de las creencias de los equipos directivos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque esta función corresponde a los marcos de competencias docentes, no a las creencias de los equipos directivos. porque las fortalezas y necesidades formativas del profesorado se identifican mediante la evaluación docente, no a partir de las creencias de los equipos directivos."
+   },
+   {
+    "id": "ecp-8-30",
+    "pregunta": "¿Para qué pueden utilizarse los resultados obtenidos al aplicar un marco de competencias docentes en un centro educativo?",
+    "opciones": [
+     "Para comparar el desempeño del profesorado y establecer prioridades de reconocimiento profesional.",
+     "Para identificar necesidades formativas y orientar los planes de mejora del profesorado y del centro.",
+     "Para comprobar las competencias adquiridas en la formación inicial y determinar las necesidades de actualización."
+    ],
+    "feedback": [
+     "porque el uso formativo de los marcos competenciales prioriza la reflexión y la mejora frente a la comparación entre docentes.",
+     "",
+     "porque la evaluación se centra en las competencias profesionales desarrolladas en el contexto educativo, no en comprobar las adquiridas durante la formación inicial."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el uso formativo de los marcos competenciales prioriza la reflexión y la mejora frente a la comparación entre docentes. porque la evaluación se centra en las competencias profesionales desarrolladas en el contexto educativo, no en comprobar las adquiridas durante la formación inicial."
+   }
+  ],
+  "Tema 9": [
+   {
+    "id": "ecp-9-1",
+    "pregunta": "¿Qué caracteriza a la evaluación entre pares docentes?",
+    "opciones": [
+     "El análisis conjunto de las programaciones didácticas para acordar criterios de enseñanza.",
+     "La participación de docentes en un proceso de observación, valoración y retroalimentación de la práctica profesional.",
+     "El intercambio de experiencias docentes para identificar metodologías y estrategias educativas eficaces."
+    ],
+    "feedback": [
+     "porque la revisión conjunta de programaciones puede favorecer la colaboración docente, pero no constituye el rasgo característico de la evaluación entre pares.",
+     "",
+     "porque compartir experiencias puede contribuir al aprendizaje profesional, pero la evaluación entre pares implica también observar y valorar la práctica docente."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la revisión conjunta de programaciones puede favorecer la colaboración docente, pero no constituye el rasgo característico de la evaluación entre pares. porque compartir experiencias puede contribuir al aprendizaje profesional, pero la evaluación entre pares implica también observar y valorar la práctica docente."
+   },
+   {
+    "id": "ecp-9-2",
+    "pregunta": "¿Cuál es la finalidad principal de la retroalimentación en la evaluación entre pares?",
+    "opciones": [
+     "Revisar la adecuación de las prácticas docentes a los criterios de evaluación establecidos.",
+     "Registrar las valoraciones profesionales derivadas de la observación de la práctica docente.",
+     "Orientar decisiones de mejora de la práctica docente mediante comentarios constructivos."
+    ],
+    "feedback": [
+     "porque la revisión de las prácticas respecto a los criterios establecidos puede formar parte de la evaluación, pero no constituye la finalidad principal de la retroalimentación.",
+     "porque registrar valoraciones no garantiza que estas se traduzcan en orientaciones para mejorar la práctica docente.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la revisión de las prácticas respecto a los criterios establecidos puede formar parte de la evaluación, pero no constituye la finalidad principal de la retroalimentación. porque registrar valoraciones no garantiza que estas se traduzcan en orientaciones para mejorar la práctica docente."
+   },
+   {
+    "id": "ecp-9-3",
+    "pregunta": "¿Cómo debe ser la retroalimentación para que resulte útil en la evaluación entre pares?",
+    "opciones": [
+     "Específica, concreta y constructiva, ofreciendo orientaciones sobre cómo mejorar.",
+     "Positiva y motivadora, destacando los aspectos favorables de la práctica observada.",
+     "Descriptiva y general, facilitando que el docente identifique sus propias conclusiones."
+    ],
+    "feedback": [
+     "",
+     "porque los comentarios de apoyo pueden resultar insuficientes si no aportan orientaciones formativas.",
+     "porque una retroalimentación demasiado general puede dificultar la identificación de actuaciones de mejora."
+    ],
+    "correcta": 0,
+    "explicacion": "porque los comentarios de apoyo pueden resultar insuficientes si no aportan orientaciones formativas. porque una retroalimentación demasiado general puede dificultar la identificación de actuaciones de mejora."
+   },
+   {
+    "id": "ecp-9-4",
+    "pregunta": "¿Qué dificultad puede experimentar el docente que evalúa a un compañero?",
+    "opciones": [
+     "La incertidumbre sobre cómo se desarrollará su propia clase durante la observación.",
+     "La preocupación por formular comentarios que puedan resultar ofensivos para el compañero evaluado.",
+     "El temor a que los resultados de la evaluación afecten negativamente a su trayectoria profesional."
+    ],
+    "feedback": [
+     "porque se refiere a una preocupación habitual del docente que es observado.",
+     "",
+     "porque alude al temor del docente evaluado ante las posibles consecuencias de la evaluación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque se refiere a una preocupación habitual del docente que es observado. porque alude al temor del docente evaluado ante las posibles consecuencias de la evaluación."
+   },
+   {
+    "id": "ecp-9-5",
+    "pregunta": "¿Cómo se recomienda introducir la evaluación entre pares en los centros educativos?",
+    "opciones": [
+     "Mediante una incorporación progresiva y voluntaria, con el respaldo del profesorado implicado.",
+     "Mediante una planificación institucional que establezca su aplicación a todo el profesorado desde el inicio.",
+     "Mediante experiencias iniciales coordinadas por especialistas externos que definan los procedimientos de evaluación."
+    ],
+    "feedback": [
+     "",
+     "porque la implantación debe ser progresiva y contar con el respaldo de los docentes, evitando imponer su participación.",
+     "porque se recomienda que estas iniciativas surjan de los propios centros educativos y claustros."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la implantación debe ser progresiva y contar con el respaldo de los docentes, evitando imponer su participación. porque se recomienda que estas iniciativas surjan de los propios centros educativos y claustros."
+   },
+   {
+    "id": "ecp-9-6",
+    "pregunta": "¿Qué dificultad de carácter organizativo puede obstaculizar la evaluación entre pares?",
+    "opciones": [
+     "La falta de formación del profesorado para proporcionar una retroalimentación constructiva.",
+     "La desconfianza ante las posibles repercusiones profesionales de los resultados de la evaluación.",
+     "La falta de espacios y tiempos específicos para la observación y el intercambio entre docentes."
+    ],
+    "feedback": [
+     "porque se refiere a una dificultad relacionada con la formación de los participantes, no con la organización del centro.",
+     "porque recoge una resistencia del profesorado asociada a las posibles consecuencias de la evaluación.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se refiere a una dificultad relacionada con la formación de los participantes, no con la organización del centro. porque recoge una resistencia del profesorado asociada a las posibles consecuencias de la evaluación."
+   },
+   {
+    "id": "ecp-9-7",
+    "pregunta": "¿Qué efecto puede tener una relación de poder desigual entre quien evalúa y quien es evaluado?",
+    "opciones": [
+     "Favorecer la aceptación de las recomendaciones al proceder de una figura con mayor responsabilidad.",
+     "Incrementar la ansiedad del docente evaluado y dificultar una relación basada en la confianza.",
+     "Aumentar la objetividad de la evaluación al existir una relación jerárquica entre los participantes."
+    ],
+    "feedback": [
+     "porque la desigualdad de poder puede generar desconfianza y resistencia ante la evaluación.",
+     "",
+     "porque la relación jerárquica no garantiza una mayor objetividad y puede generar desconfianza en el docente evaluado.."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la desigualdad de poder puede generar desconfianza y resistencia ante la evaluación. porque la relación jerárquica no garantiza una mayor objetividad y puede generar desconfianza en el docente evaluado.."
+   },
+   {
+    "id": "ecp-9-8",
+    "pregunta": "¿Qué beneficio puede obtener el evaluador al participar en una evaluación entre pares?",
+    "opciones": [
+     "Mejorar su capacidad para valorar el desempeño profesional de otros docentes.",
+     "Identificar las necesidades de formación de sus compañeros a partir de la observación de sus prácticas.",
+     "Aprender nuevas prácticas y reconocer fortalezas y debilidades de su propia actuación docente."
+    ],
+    "feedback": [
+     "porque se centra en la capacidad para evaluar a otros docentes, no en el aprendizaje sobre la propia práctica profesional.",
+     "porque se refiere a la identificación de necesidades formativas de otros docentes, no al desarrollo profesional del evaluador.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se centra en la capacidad para evaluar a otros docentes, no en el aprendizaje sobre la propia práctica profesional. porque se refiere a la identificación de necesidades formativas de otros docentes, no al desarrollo profesional del evaluador."
+   },
+   {
+    "id": "ecp-9-9",
+    "pregunta": "¿Qué aportación puede realizar la evaluación entre pares a la cultura de un centro educativo?",
+    "opciones": [
+     "Fortalecer las relaciones de colaboración y el reconocimiento de las prácticas de otros docentes.",
+     "Facilitar la coordinación del profesorado mediante procedimientos de supervisión compartidos.",
+     "Favorecer la uniformidad de las prácticas pedagógicas mediante la observación entre compañeros."
+    ],
+    "feedback": [
+     "",
+     "porque la evaluación entre pares promueve la colaboración y el aprendizaje profesional, no el establecimiento de procedimientos de supervisión entre compañeros.",
+     "porque pretende favorecer el intercambio y la mejora de las prácticas docentes, no su uniformidad."
+    ],
+    "correcta": 0,
+    "explicacion": "porque la evaluación entre pares promueve la colaboración y el aprendizaje profesional, no el establecimiento de procedimientos de supervisión entre compañeros. porque pretende favorecer el intercambio y la mejora de las prácticas docentes, no su uniformidad."
+   },
+   {
+    "id": "ecp-9-10",
+    "pregunta": "¿Cuál es la finalidad principal de la investigación-acción según la definición de Elliott (1993)?",
+    "opciones": [
+     "Analizar problemas educativos para elaborar explicaciones aplicables a diferentes contextos escolares.",
+     "Estudiar una situación social con el propósito de mejorar la calidad de la acción desarrollada en ella.",
+     "Comprobar la eficacia de intervenciones educativas previamente diseñadas por especialistas."
+    ],
+    "feedback": [
+     "porque la investigación-acción se orienta a mejorar una situación concreta, no a elaborar explicaciones generalizables a diferentes contextos.",
+     "",
+     "porque la investigación-acción no consiste en comprobar intervenciones diseñadas por especialistas externos, sino en investigar y mejorar la práctica desde la participación de sus protagonistas."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la investigación-acción se orienta a mejorar una situación concreta, no a elaborar explicaciones generalizables a diferentes contextos. porque la investigación-acción no consiste en comprobar intervenciones diseñadas por especialistas externos, sino en investigar y mejorar la práctica desde la participación de sus protagonistas."
+   },
+   {
+    "id": "ecp-9-11",
+    "pregunta": "¿Qué papel desempeñan los participantes en un proceso de investigación-acción?",
+    "opciones": [
+     "Diseñan, desarrollan y evalúan actuaciones orientadas a mejorar su propia realidad educativa.",
+     "Aplican las propuestas elaboradas por investigadores especializados y valoran sus resultados.",
+     "Colaboran en la recogida de información para facilitar el análisis de los problemas educativos."
+    ],
+    "feedback": [
+     "",
+     "porque en la investigación-acción los participantes intervienen activamente en el diseño y desarrollo de las actuaciones, en lugar de limitarse a aplicar propuestas elaboradas por especialistas.",
+     "porque su participación no se limita a la recogida de información, sino que comprende también la planificación, la intervención y la evaluación."
+    ],
+    "correcta": 0,
+    "explicacion": "porque en la investigación-acción los participantes intervienen activamente en el diseño y desarrollo de las actuaciones, en lugar de limitarse a aplicar propuestas elaboradas por especialistas. porque su participación no se limita a la recogida de información, sino que comprende también la planificación, la intervención y la evaluación."
+   },
+   {
+    "id": "ecp-9-12",
+    "pregunta": "¿Qué fases caracterizan el desarrollo cíclico de la investigación-acción?",
+    "opciones": [
+     "Planificación, observación, reflexión y aplicación de resultados.",
+     "Diagnóstico, evaluación, intervención y seguimiento.",
+     "Planificación, acción, observación y reflexión."
+    ],
+    "feedback": [
+     "porque sustituye la fase de acción por la aplicación de resultados, que no constituye una de las cuatro fases del ciclo de investigación-acción descrito en el manual.",
+     "porque, aunque incluye actividades relacionadas con la investigación-acción, no recoge las cuatro fases establecidas.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque sustituye la fase de acción por la aplicación de resultados, que no constituye una de las cuatro fases del ciclo de investigación-acción descrito en el manual. porque, aunque incluye actividades relacionadas con la investigación-acción, no recoge las cuatro fases establecidas."
+   },
+   {
+    "id": "ecp-9-13",
+    "pregunta": "¿Qué caracteriza al enfoque empírico-analítico de la investigación-acción?",
+    "opciones": [
+     "La definición previa de objetivos por especialistas y la utilización preferente de métodos cuantitativos.",
+     "La selección de los problemas por el profesorado y el análisis cualitativo de sus propias prácticas.",
+     "La reflexión sobre las condiciones sociopolíticas y la transformación de las estructuras sociales."
+    ],
+    "feedback": [
+     "",
+     "porque describe características del enfoque hermenéutico-interpretativo, en el que el profesorado selecciona los problemas y reflexiona sobre su propia práctica.",
+     "porque recoge características del enfoque crítico-emancipador, orientado a analizar las condiciones sociopolíticas y promover transformaciones sociales."
+    ],
+    "correcta": 0,
+    "explicacion": "porque describe características del enfoque hermenéutico-interpretativo, en el que el profesorado selecciona los problemas y reflexiona sobre su propia práctica. porque recoge características del enfoque crítico-emancipador, orientado a analizar las condiciones sociopolíticas y promover transformaciones sociales."
+   },
+   {
+    "id": "ecp-9-14",
+    "pregunta": "¿Qué distingue al enfoque hermenéutico-interpretativo de la investigación-acción?",
+    "opciones": [
+     "La búsqueda de soluciones a partir de objetivos definidos por expertos y métodos de carácter instrumental.",
+     "La reflexión del profesorado sobre sus prácticas y la selección autónoma de los problemas que desea abordar.",
+     "El análisis de las relaciones de poder y de las condiciones sociales para promover cambios más allá de la escuela."
+    ],
+    "feedback": [
+     "porque describe el enfoque empírico-analítico, en el que los objetivos son definidos por especialistas y predomina una orientación instrumental.",
+     "",
+     "porque corresponde al enfoque crítico-emancipador, que incorpora el análisis de las relaciones de poder y las condiciones sociales para promover transformaciones más amplias."
+    ],
+    "correcta": 1,
+    "explicacion": "porque describe el enfoque empírico-analítico, en el que los objetivos son definidos por especialistas y predomina una orientación instrumental. porque corresponde al enfoque crítico-emancipador, que incorpora el análisis de las relaciones de poder y las condiciones sociales para promover transformaciones más amplias."
+   },
+   {
+    "id": "ecp-9-15",
+    "pregunta": "¿Qué finalidad caracteriza al enfoque crítico-emancipador de la investigación-acción?",
+    "opciones": [
+     "Mejorar la eficacia de las intervenciones educativas mediante el análisis de sus causas y efectos.",
+     "Favorecer la comprensión de la práctica mediante la reflexión sobre las decisiones docentes.",
+     "Promover la transformación social considerando las condiciones políticas, históricas y económicas."
+    ],
+    "feedback": [
+     "porque se aproxima al enfoque empírico-analítico, centrado en la eficacia de las intervenciones y en el análisis de las relaciones entre causas y efectos.",
+     "porque corresponde al enfoque hermenéutico-interpretativo, centrado en la comprensión y reflexión sobre la propia práctica docente.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque se aproxima al enfoque empírico-analítico, centrado en la eficacia de las intervenciones y en el análisis de las relaciones entre causas y efectos. porque corresponde al enfoque hermenéutico-interpretativo, centrado en la comprensión y reflexión sobre la propia práctica docente."
+   },
+   {
+    "id": "ecp-9-16",
+    "pregunta": "¿Qué debe realizarse durante la elaboración del plan de acción de una investigación-acción?",
+    "opciones": [
+     "Seleccionar un problema viable, analizar sus características y planificar una intervención adaptada al contexto.",
+     "Recopilar información sobre la intervención para determinar si se han alcanzado los objetivos previstos.",
+     "Valorar de manera colegiada los resultados y formular recomendaciones para mejorar la siguiente intervención."
+    ],
+    "feedback": [
+     "",
+     "porque corresponde a la fase de observación, en la que se recoge información para valorar la intervención desarrollada.",
+     "porque corresponde a la fase de reflexión, en la que se analizan los resultados y se proponen mejoras para el siguiente ciclo."
+    ],
+    "correcta": 0,
+    "explicacion": "porque corresponde a la fase de observación, en la que se recoge información para valorar la intervención desarrollada. porque corresponde a la fase de reflexión, en la que se analizan los resultados y se proponen mejoras para el siguiente ciclo."
+   },
+   {
+    "id": "ecp-9-17",
+    "pregunta": "¿Cuál es el propósito de la observación de la acción en la investigación-acción?",
+    "opciones": [
+     "Definir el problema educativo y seleccionar las estrategias más adecuadas para resolverlo.",
+     "Interpretar colectivamente los resultados y acordar las modificaciones del siguiente ciclo.",
+     "Recoger información que permita valorar la eficacia de la intervención desarrollada."
+    ],
+    "feedback": [
+     "porque corresponde a la fase de planificación, en la que se identifica el problema y se diseñan las estrategias de intervención.",
+     "porque corresponde a la fase de reflexión, en la que se analizan los resultados y se proponen mejoras para el siguiente ciclo.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque corresponde a la fase de planificación, en la que se identifica el problema y se diseñan las estrategias de intervención. porque corresponde a la fase de reflexión, en la que se analizan los resultados y se proponen mejoras para el siguiente ciclo."
+   },
+   {
+    "id": "ecp-9-18",
+    "pregunta": "¿Qué ocurre durante la fase de reflexión de la investigación-acción?",
+    "opciones": [
+     "Se revisa la literatura especializada para fundamentar la intervención educativa.",
+     "Se analizan colectivamente los resultados y se proponen mejoras para iniciar un nuevo ciclo.",
+     "Se aplican los instrumentos previstos para registrar las actuaciones de los participantes."
+    ],
+    "feedback": [
+     "porque la revisión de la literatura especializada corresponde a la fase de planificación, cuando se fundamenta y diseña la intervención.",
+     "",
+     "porque la aplicación de instrumentos para recoger información corresponde a la fase de observación."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la revisión de la literatura especializada corresponde a la fase de planificación, cuando se fundamenta y diseña la intervención. porque la aplicación de instrumentos para recoger información corresponde a la fase de observación."
+   },
+   {
+    "id": "ecp-9-19",
+    "pregunta": "¿Qué caracteriza a una evaluación formativa desarrollada en el centro educativo?",
+    "opciones": [
+     "La consideración del contexto escolar y la colaboración para mejorar la práctica docente.",
+     "La aplicación de estándares educativos para valorar el cumplimiento de los objetivos del sistema.",
+     "La revisión del desempeño profesional mediante procedimientos de supervisión externa."
+    ],
+    "feedback": [
+     "",
+     "porque se centra en la valoración del cumplimiento de objetivos del sistema educativo, en lugar de destacar la mejora de la práctica docente desde el contexto del centro.",
+     "porque se refiere a procedimientos de supervisión externa, mientras que la evaluación formativa destaca la colaboración y la reflexión profesional."
+    ],
+    "correcta": 0,
+    "explicacion": "porque se centra en la valoración del cumplimiento de objetivos del sistema educativo, en lugar de destacar la mejora de la práctica docente desde el contexto del centro. porque se refiere a procedimientos de supervisión externa, mientras que la evaluación formativa destaca la colaboración y la reflexión profesional."
+   },
+   {
+    "id": "ecp-9-20",
+    "pregunta": "¿Qué caracteriza especialmente a la evaluación entre pares docentes?",
+    "opciones": [
+     "La participación de profesionales de la misma especialidad que utilizan idénticos criterios de evaluación.",
+     "La intervención de los equipos directivos para coordinar la valoración del desempeño del profesorado.",
+     "La colaboración entre profesionales que comparten una misma comunidad profesional y contexto educativo."
+    ],
+    "feedback": [
+     "porque la evaluación entre pares no exige que los docentes pertenezcan a la misma especialidad ni que utilicen criterios idénticos.",
+     "porque la evaluación entre pares se fundamenta en la colaboración entre docentes, no en la intervención de los equipos directivos para valorar su desempeño.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque la evaluación entre pares no exige que los docentes pertenezcan a la misma especialidad ni que utilicen criterios idénticos. porque la evaluación entre pares se fundamenta en la colaboración entre docentes, no en la intervención de los equipos directivos para valorar su desempeño."
+   },
+   {
+    "id": "ecp-9-21",
+    "pregunta": "¿Qué condiciones favorecen la eficacia del acompañamiento pedagógico en los centros educativos?",
+    "opciones": [
+     "Establecer procedimientos de supervisión que permitan comprobar el cumplimiento de los objetivos docentes.",
+     "Integrar el acompañamiento en un plan institucional de desarrollo profesional y formar a quienes lo realizan.",
+     "Organizar observaciones periódicas de la práctica docente y comunicar sus resultados a los equipos directivos."
+    ],
+    "feedback": [
+     "porque se centra en la supervisión del cumplimiento de objetivos, mientras que el acompañamiento tiene una finalidad formativa.",
+     "",
+     "porque realizar observaciones y comunicar sus resultados no garantiza un acompañamiento efectivo si no existe un proceso de apoyo y mejora profesional."
+    ],
+    "correcta": 1,
+    "explicacion": "porque se centra en la supervisión del cumplimiento de objetivos, mientras que el acompañamiento tiene una finalidad formativa. porque realizar observaciones y comunicar sus resultados no garantiza un acompañamiento efectivo si no existe un proceso de apoyo y mejora profesional."
+   },
+   {
+    "id": "ecp-9-22",
+    "pregunta": "¿Cómo se desarrolla habitualmente el acompañamiento pedagógico?",
+    "opciones": [
+     "Mediante un apoyo continuado y contextualizado que responde a las situaciones cotidianas de la práctica docente.",
+     "Mediante intervenciones especializadas para atender las necesidades derivadas de nuevas exigencias educativas.",
+     "Mediante sesiones de reflexión dirigidas a desarrollar habilidades relacionadas con objetivos profesionales específicos."
+    ],
+    "feedback": [
+     "",
+     "porque describe la orientación de la asesoría técnica pedagógica, cuyas intervenciones suelen ser menos frecuentes.",
+     "porque se aproxima al coaching docente, centrado en objetivos y desempeños específicos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque describe la orientación de la asesoría técnica pedagógica, cuyas intervenciones suelen ser menos frecuentes. porque se aproxima al coaching docente, centrado en objetivos y desempeños específicos."
+   },
+   {
+    "id": "ecp-9-23",
+    "pregunta": "¿Qué caracteriza a la asesoría técnica pedagógica?",
+    "opciones": [
+     "El acompañamiento continuado de la práctica docente mediante la observación y el diálogo profesional.",
+     "El desarrollo del potencial individual del profesorado a través de preguntas y procesos de autorreflexión.",
+     "El apoyo especializado para adaptar la práctica docente a las exigencias curriculares y normativas."
+    ],
+    "feedback": [
+     "porque describe el acompañamiento pedagógico, caracterizado por un apoyo continuado y contextualizado de la práctica docente.",
+     "porque corresponde al coaching docente, que promueve la reflexión y la búsqueda de soluciones por parte del propio profesorado.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque describe el acompañamiento pedagógico, caracterizado por un apoyo continuado y contextualizado de la práctica docente. porque corresponde al coaching docente, que promueve la reflexión y la búsqueda de soluciones por parte del propio profesorado."
+   },
+   {
+    "id": "ecp-9-24",
+    "pregunta": "Según Resendiz (2024), ¿qué dinámica de asesoría técnica se relaciona con la falta de implicación y apertura al cambio del profesorado?",
+    "opciones": [
+     "Búsqueda de sentido.",
+     "Redención.",
+     "Resignificación y transformación."
+    ],
+    "feedback": [
+     "porque la búsqueda de sentido se relaciona con la motivación del docente por adquirir conocimientos que contribuyan a mejorar el aprendizaje de su alumnado.",
+     "",
+     "porque la resignificación y transformación se orienta a modificar aspectos de la práctica docente en los que se han identificado carencia."
+    ],
+    "correcta": 1,
+    "explicacion": "porque la búsqueda de sentido se relaciona con la motivación del docente por adquirir conocimientos que contribuyan a mejorar el aprendizaje de su alumnado. porque la resignificación y transformación se orienta a modificar aspectos de la práctica docente en los que se han identificado carencia."
+   },
+   {
+    "id": "ecp-9-25",
+    "pregunta": "¿Qué papel desempeña el coach en el desarrollo profesional docente?",
+    "opciones": [
+     "Favorecer la reflexión mediante preguntas que ayuden al profesorado a descubrir sus propias capacidades y soluciones.",
+     "Proporcionar modelos de enseñanza eficaz para que el profesorado los incorpore a su práctica profesional.",
+     "Ofrecer orientación especializada sobre las exigencias curriculares y las disposiciones normativas."
+    ],
+    "feedback": [
+     "",
+     "porque el coaching no consiste en proporcionar fórmulas o modelos de enseñanza eficaz, sino en favorecer que el propio docente descubra posibilidades de mejora mediante la reflexión.",
+     "porque describe una función propia de la asesoría técnica pedagógica, centrada en el apoyo especializado sobre cuestiones curriculares y normativas."
+    ],
+    "correcta": 0,
+    "explicacion": "porque el coaching no consiste en proporcionar fórmulas o modelos de enseñanza eficaz, sino en favorecer que el propio docente descubra posibilidades de mejora mediante la reflexión. porque describe una función propia de la asesoría técnica pedagógica, centrada en el apoyo especializado sobre cuestiones curriculares y normativas."
+   },
+   {
+    "id": "ecp-9-26",
+    "pregunta": "¿Qué etapas establece el modelo de coaching cognitivo de Costa y Garmston (1994)?",
+    "opciones": [
+     "Diagnóstico de necesidades, intervención pedagógica y valoración de resultados.",
+     "Planificación de la acción, aplicación de estrategias y valoración del desempeño docente.",
+     "Planificación y clarificación de objetivos, observación y reflexión."
+    ],
+    "feedback": [
+     "porque, aunque recoge actuaciones que pueden formar parte de un proceso de mejora docente, no corresponde a las tres etapas establecidas por Costa y Garmston (1994).",
+     "porque sustituye las etapas de observación y reflexión por la aplicación de estrategias y la valoración del desempeño docente.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "porque, aunque recoge actuaciones que pueden formar parte de un proceso de mejora docente, no corresponde a las tres etapas establecidas por Costa y Garmston (1994). porque sustituye las etapas de observación y reflexión por la aplicación de estrategias y la valoración del desempeño docente."
+   },
+   {
+    "id": "ecp-9-27",
+    "pregunta": "¿Qué caracteriza a la mentoría docente según su concepción actual?",
+    "opciones": [
+     "La transmisión de conocimientos y experiencias desde el mentor hacia el docente principiante.",
+     "La construcción compartida de conocimiento profesional que beneficia tanto al mentor como al docente novel.",
+     "La evaluación de las competencias del docente novel para comprobar su adaptación a la profesión."
+    ],
+    "feedback": [
+     "porque describe una relación unidireccional, mientras que la mentoría entendida como desarrollo profesional mutuo implica que ambos participantes aprenden y se benefician del proceso.",
+     "",
+     "porque la mentoría no se centra en comprobar las competencias del docente novel, sino en favorecer su desarrollo profesional mediante una relación de apoyo y aprendizaje mutuo."
+    ],
+    "correcta": 1,
+    "explicacion": "porque describe una relación unidireccional, mientras que la mentoría entendida como desarrollo profesional mutuo implica que ambos participantes aprenden y se benefician del proceso. porque la mentoría no se centra en comprobar las competencias del docente novel, sino en favorecer su desarrollo profesional mediante una relación de apoyo y aprendizaje mutuo."
+   },
+   {
+    "id": "ecp-9-28",
+    "pregunta": "¿Qué caracteriza al enfoque de mentoría como modelo?",
+    "opciones": [
+     "La transmisión de prácticas profesionales que sirven de ejemplo al docente principiante.",
+     "El diseño conjunto de estrategias educativas por parte del mentor y el docente novel.",
+     "La construcción del aprendizaje a partir de las experiencias y conocimientos previos del principiante."
+    ],
+    "feedback": [
+     "",
+     "porque corresponde a la mentoría como colaboración, en la que el mentor y el docente novel diseñan y planifican conjuntamente estrategias para mejorar la práctica docente.",
+     "porque corresponde a la mentoría como constructivismo, que destaca la construcción del aprendizaje del principiante mediante sus experiencias y aprendizajes previos."
+    ],
+    "correcta": 0,
+    "explicacion": "porque corresponde a la mentoría como colaboración, en la que el mentor y el docente novel diseñan y planifican conjuntamente estrategias para mejorar la práctica docente. porque corresponde a la mentoría como constructivismo, que destaca la construcción del aprendizaje del principiante mediante sus experiencias y aprendizajes previos."
+   },
+   {
+    "id": "ecp-9-29",
+    "pregunta": "¿Qué finalidad tiene la mentoría entendida como interacción social?",
+    "opciones": [
+     "Favorecer el bienestar emocional del docente principiante para reducir el riesgo de abandono.",
+     "Promover la construcción de aprendizajes mediante las experiencias previas y la interacción educativa.",
+     "Facilitar la integración del docente novel en las normas, dinámicas y relaciones del centro educativo."
+    ],
+    "feedback": [
+     "Incorrecta: porque corresponde a la mentoría como apoyo emocional, orientada al bienestar del docente y a reducir las posibilidades de abandono.",
+     "porque corresponde a la mentoría como constructivismo, que destaca la construcción del aprendizaje a partir de las experiencias sociales y los conocimientos previos del principiante.",
+     ""
+    ],
+    "correcta": 2,
+    "explicacion": "Incorrecta: porque corresponde a la mentoría como apoyo emocional, orientada al bienestar del docente y a reducir las posibilidades de abandono. porque corresponde a la mentoría como constructivismo, que destaca la construcción del aprendizaje a partir de las experiencias sociales y los conocimientos previos del principiante."
+   },
+   {
+    "id": "ecp-9-30",
+    "pregunta": "¿Qué se recomienda para implementar un programa de mentoría en un centro educativo?",
+    "opciones": [
+     "Diseñar el plan desde el equipo directivo y centrar la evaluación en el progreso individual del principiante.",
+     "Consensuar un plan, reservar espacios de trabajo y proporcionar formación específica a los mentores.",
+     "Organizar reuniones puntuales, definir objetivos y supervisar la adaptación del docente novel al centro."
+    ],
+    "feedback": [
+     "porque el programa debe contar con la participación y el consenso de la comunidad profesional, y su evaluación debe considerar el aprendizaje mutuo.",
+     "",
+     "porque la mentoría requiere un proceso sostenido, con espacios y tiempos específicos, y no se limita a reuniones puntuales ni a supervisar la adaptación del docente novel."
+    ],
+    "correcta": 1,
+    "explicacion": "porque el programa debe contar con la participación y el consenso de la comunidad profesional, y su evaluación debe considerar el aprendizaje mutuo. porque la mentoría requiere un proceso sostenido, con espacios y tiempos específicos, y no se limita a reuniones puntuales ni a supervisar la adaptación del docente novel."
+   }
+  ]
+ },
+ "examenes": {},
+ "pretest": [],
+ "posttest": []
+};
