@@ -12,6 +12,6 @@ Descargar el ZIP de la rama, descomprimir todos los archivos y abrir `index.html
 - `legacy.html` y `questions.json`: versión anterior, conservada.
 
 ## Validación
-ECP: 15 ítems por simulacro, cuotas 2/2/2/2/2/1/2/1/1, +0,4/−0,2/0. Prácticas de 10. Se corrigió la etiqueta del distractor del tema 1, pregunta 24; se excluyó provisionalmente la pregunta 3 del tema 6 por contradicción en el enunciado. No se han modificado las respuestas correctas del banco original. La nueva interfaz no transmite eventos analíticos durante las pruebas; el acceso a la versión antigua conserva su configuración original.
+ECP: 15 ítems por simulacro, cuotas 2/2/2/2/2/1/2/1/1, +0,4/−0,2/0. Prácticas de 10. Se corrigió la etiqueta del distractor del tema 1, pregunta 24; se excluyó provisionalmente la pregunta 3 del tema 6 por contradicción en el enunciado. No se han modificado las respuestas correctas del banco original. La interfaz nueva excluye provisionalmente el ítem 32 de Exámenes pasadas convocatorias de MRDyTE (opciones mezcladas con el siguiente enunciado), pero lo conserva intacto en los ficheros originales. Se conserva el orden de alternativas de MRDyTE. La nueva interfaz no transmite eventos analíticos durante las pruebas; el acceso a la versión antigua conserva su configuración original.
 
 No integrar en main hasta completar la validación docente.
